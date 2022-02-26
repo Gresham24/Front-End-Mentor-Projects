@@ -56,3 +56,11 @@ a:link {
     text-decoration: none;
   }
   
+i {
+    font-size: 36px;
+}
+
+footer {
+    text-align: right;
+    
+}
