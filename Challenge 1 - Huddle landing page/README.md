@@ -1,2 +1,2 @@
-# Front End Masters Projects
- Repo with all my Front End Masters Challenges
+# Huddle landing page challenge
+This challenge was to create a simple Huddle landing page
