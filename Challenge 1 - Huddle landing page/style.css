@@ -1,7 +1,7 @@
 
 
 body {
-    font-family: 'Open sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 350;
     background-image: url("images/bg-desktop.svg");
     background-repeat: no-repeat;
@@ -22,20 +22,25 @@ body {
 
 
 h1 {
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400, 600;
     font-size: 2em;
 }
 
 p {
-    font-family: 'Open sans', sans-serif;
+
 	font-size: 0.9em;
 
 }
 
 .body-text {
-    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 50px;
     max-width: 450px;
-    
+    line-height: 1.6;
+
 }
 
 .container {
@@ -47,7 +52,8 @@ p {
 
 .button {
     border: solid 1px grey;
-
+    font-family: 'Poppins', sans-serif;
+/**/
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -64,6 +70,10 @@ a:link {
     text-decoration: none;
   }
   
+  a:hover {
+      cursor: pointer;
+  }
+
   i {
     font-size: 36px;
     justify-content: center;
