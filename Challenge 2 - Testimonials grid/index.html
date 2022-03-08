@@ -1,76 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
   <title>Frontend Mentor | Challenge 2 - Testimonials grid</title>
 
   <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style> Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
-<link href="style.css" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
 
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
-<div class="container">
-<!-- use ID instead of class || use card-purple as class name-->
-  <div class="card-one">
-    <div class="card-container"> <!--remove this-->
-      <div class="header"> <!--find better name for all classes ~ graduate details-->
+  <div class="container">
 
-        <div class="profile-pic"><img src="Figma assets/image-daniel 1.png" alt="testimonial profile picture"></div>
-      
-        <div class="Daniel"> <!--use a general name-->
-          <h3>Daniel Clifford</h3> <!--add ID in h3 for specific names-->
-          <p>Verified Graduate</p>
+    <!-- use ID instead of class || use card-purple as class name-->
+    <div class="purple-card">
+
+      <div class="card-container">
+        <!--find better name for all classes ~ graduate details-->
+        <div class="graduate-details">
+
+          <div class="profile-pic">
+            <img src="Figma assets/image-daniel 1.png" alt="testimonial profile picture" />
+          </div>
+
+          <!--use a general name-->
+          <div class="name-title">
+
+            <h3>Daniel Clifford</h3>
+            <p>Verified Graduate</p>
+          </div>
+        </div>
+
+        <!--find better name-->
+        <div class="testimonial-summary">
+          <h2>
+            I received a job offer mid-course, and the subjects I learned were
+            current, if not more so, in the company I joined. I honestly feel I
+            got every penny's worth.
+          </h2>
+        </div>
+
+        <!--find better name-->
+        <div class="testimonial-text">
+          <p>
+            “I was an EMT for many years before I joined the bootcamp. I've been
+            looking to make a transition and have heard some people who had an
+            amazing experience here. I signed up for the free intro course and
+            found it incredibly fun! I enrolled shortly thereafter. The next 12
+            weeks was the best - and most grueling - time of my life. Since
+            completing the course, I've successfully switched careers, working
+            as a Software Engineer at a VR startup.”
+          </p>
         </div>
       </div>
-
-      <div class="heading"> <!--find better name-->
-        <h2>  I received a job offer mid-course, and the subjects I learned were current, if not more so, 
-          in the company I joined. I honestly feel I got every penny's worth.</h2>
-      </div>
-
-      <div class="paragraph"> <!--find better name-->
-        <p>“I was an EMT for many years before I joined the bootcamp. I've been looking to make a 
-          transition and have heard some people who had an amazing experience here. I signed up 
-          for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
-          The next 12 weeks was the best - and most grueling - time of my life. Since completing 
-          the course, I've successfully switched careers, working as a Software Engineer at a VR startup.”</p>
-      </div>
     </div>
-  </div>
-<!--
-  <div class="grid-two">
-    <div class="grid-container">
-      <div class="header">
 
-        <div class="profile-pic"><img src="Figma assets/image-jonathan 1.png" alt="testimonial profile picture"></div>
+    <!-- The rest of the other cards below:
 
-        <div class="Jonathan">
-          <h3>Jonathan Walters</h3>
-          <p>Verified Graduate</p>
+    <div class="grey-card">
+      <div class="card-container">
+
+        <div class="graduate-details">
+
+          <div class="profile-pic">
+            <img src="Figma assets/image-jonathan 1.png" alt="testimonial profile picture" />
+          </div>
+
+          <div class="name-title">
+            <h3>Jonathan Walters</h3>
+            <p>Verified Graduate</p>
+          </div>
+        </div>
+
+        <div class="testimonial-summary">
+          <h2>
+            The team was very supportive and kept me motivated.
+          </h2>
+        </div>
+
+        <div class="testimonial-text">
+          <p>
+            “I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+            for a big company. This was one of the best investments I've made in myself.”
+          </p>
         </div>
       </div>
-
-      <div class="heading">
-        <h2>The team was very supportive and kept me motivated.</h2>
-      </div>
-      
-      <div class="paragraph">
-        <p>“I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
-          for a big company. This was one of the best investments I've made in myself.”</p>
-      </div>
     </div>
-  </div>
 
+
+==========
 
   <div class="grid-three">
     <div class="grid-container">
@@ -148,16 +178,14 @@
           experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
           100% recommend!”</p>
       </div>
-    </div>
+    </div> -->
   </div>
-</div>
-
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
+      Name Here</a>.
   </div>
--->
-
 </body>
+
 </html>

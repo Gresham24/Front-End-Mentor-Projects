@@ -19,35 +19,49 @@ body {
     font-size: 13px;
 }
 
-.card-one {
+.purple-card {
     background-color: hsl(263, 55%, 52%);
-    display: flex;
+    /* display: flex; */
     width: 506px;
     height: 280px;
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 10px;
-    color: whhsl(0, 0%, 100%);
+    color: white;
 }
 
-.header {
+.name-title p {
+    opacity: 50%;
+}
+
+.testimonial-text {
+    opacity: 70%;
+}
+
+.graduate-details {
     display: flex;
     align-items: center;
+    padding-top: 5px;
 }
 
 .profile-pic {
     margin: 15px;
 }
-.heading {
-    display: flex;
+.testimonial-summary {
+    /* display: flex; */
     flex-direction: row;
     align-items: flex-start;
     padding: 10px;
 }
 
-.paragraph {
-    display: flex;
+.testimonial-text {
+    /* display: flex; */
     flex-direction: row;
     align-items: flex-start;
     padding: 10px;
 }
+
+/* .grey-card {
+    background: #48556A;
+
+} */
