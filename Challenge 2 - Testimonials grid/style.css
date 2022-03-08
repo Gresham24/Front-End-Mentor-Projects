@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/*standard fixed code above this*/
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+
+.card-one {
+    background-color: hsl(263, 55%, 52%);
+    display: flex;
+    width: 506px;
+    height: 280px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    color: whhsl(0, 0%, 100%);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    margin: 15px;
+}
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+}
