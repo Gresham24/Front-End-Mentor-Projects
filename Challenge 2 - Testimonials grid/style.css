@@ -73,7 +73,7 @@ body {
     margin: 50px;
     /* margin-top: 50px; */
     display: grid;
-    background-color: fuchsia;
+    background-color: fuchsia; /*this is just to help align the items and format the accordingly*/ 
   }
 
 .quotes {
