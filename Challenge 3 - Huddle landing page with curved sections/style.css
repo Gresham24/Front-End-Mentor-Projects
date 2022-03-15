@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -6,15 +12,127 @@
   color: hsl(228, 45%, 44%);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
+/* media (max-width: 1440px){
+
+} */
+
+/* the styling above this comment is standard */
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  padding: 100px;
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+}
+
+#header-logo {
+  width: 240px;
+  height: 39px;
+}
+
+#nav-signup-button {
+  border: 1px solid #ff52bf;
+  background-color: white;
+  color: #ff52bf;
+  border-radius: 50px;
+  padding: 12px 35px;
+  width: 136px;
+  height: 43px;
+}
+
+main {
+  padding: 80px;
+}
+
+h2 {
+  /* background-color: rgb(112, 87, 56); */
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  margin: 32px;
+}
+
+#hero {
+  text-align: center;
+  /* background-color:rgb(136, 255, 144); */
+
+}
+
+.top-hero-section p {
+  /* background-color: rgb(252, 176, 84); */
+  max-width: 605px;
+  margin: auto;
+  
+}
+
+.body-signup-button {
+
+  background: #ff52bf;
+  color: white;
+  margin: 32px 35px 100px;
+  width: 300px;
+  height: 43px;
+  border: 1px solid #ff52bf;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+}
+
+.body-signup-button:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.mockup-screen {
+ position: relative;
+}
+
+.bottom-hero-section{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 130px 0;
+  text-align: left;
+  align-content: space-between;
+
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.bottom-hero-section p {
+  color: #CFCFCF;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.colour-bg {
+  /* background-color: #F5FAFF; */
+  width: 1440px;
+}
+
+.blue-body-container img {
+  width: 522px;
+  height: 425px;
+}
+
+.blue-body-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 200px 0 190px 150px;
+  background-color: #F5FAFF;
+}
+
+.section-text {
+  max-width: 510px;
+
+}
+
+.white-body-container img {
+  width: 522px;
+  height: 425px;
 }
