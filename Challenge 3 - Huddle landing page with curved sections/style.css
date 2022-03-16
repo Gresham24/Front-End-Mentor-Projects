@@ -20,12 +20,14 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  padding: 100px;
-  font-size: 18px;
+  /* padding: 100px; */
+  /* font-size: 16px; */
 }
 
 header {
   display: flex;
+  padding: 100px;
+  justify-content: space-between;
 }
 
 #header-logo {
@@ -43,8 +45,9 @@ header {
   height: 43px;
 }
 
-main {
-  padding: 80px;
+#nav-signup-button:hover {
+  cursor: pointer;
+  opacity: 50%;
 }
 
 h2 {
@@ -57,18 +60,15 @@ h2 {
 #hero {
   text-align: center;
   /* background-color:rgb(136, 255, 144); */
-
 }
 
 .top-hero-section p {
   /* background-color: rgb(252, 176, 84); */
   max-width: 605px;
   margin: auto;
-  
 }
 
 .body-signup-button {
-
   background: #ff52bf;
   color: white;
   margin: 32px 35px 100px;
@@ -82,20 +82,19 @@ h2 {
 
 .body-signup-button:hover {
   cursor: pointer;
-  opacity: 70%;
+  opacity: 50%;
 }
 
 .mockup-screen {
- position: relative;
+  position: relative;
 }
 
-.bottom-hero-section{
+.bottom-hero-section {
   display: flex;
   justify-content: space-evenly;
   margin: 130px 0;
   text-align: left;
   align-content: space-between;
-
 }
 
 h1 {
@@ -104,15 +103,29 @@ h1 {
 }
 
 .bottom-hero-section p {
-  color: #CFCFCF;
+  color: #cfcfcf;
   font-size: 18px;
   font-weight: 400;
 }
 
 .colour-bg {
   /* background-color: #F5FAFF; */
-  width: 1440px;
 }
+
+/* align imgage header properly */
+.top-bg-section-1,
+.top-bg-section-2,
+.top-bg-footer,
+.bottom-bg-section-1,
+.bottom-bg-section-2 {
+  margin: -5px;
+  width: 100%;
+}
+
+/* .bottom-bg-section-1,
+.bottom-bg-section-2 {
+  width: 100%;
+} */
 
 .blue-body-container img {
   width: 522px;
@@ -123,16 +136,70 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
-  padding: 200px 0 190px 150px;
-  background-color: #F5FAFF;
+  padding: 50px 0;
+  background-color: #f5faff;
+  max-height: 560px;
 }
 
 .section-text {
   max-width: 510px;
+  line-height: 1.6em;
+  margin: 150px 0;
+}
 
+.section-text h3 {
+  margin-bottom: 25px;
+  font-size: 36px;
 }
 
 .white-body-container img {
   width: 522px;
   height: 425px;
+}
+
+.white-body-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 50px 0;
+  max-height: fit-content;
+}
+
+.empty-bg {
+  /* background-color: greenyellow; */
+}
+
+.white-cta-container {
+  text-align: center;
+  font-size: 36px;
+  margin: 100px 0;
+}
+
+.footer-menu {
+  background-color: #00252E;
+  padding: 50px 100px;
+  margin: -5px;
+  color: white;
+}
+
+.navy-body-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.phone-details {
+  display: flex;
+}
+
+.email-details {
+  display: flex;
+}
+
+.newsletter-container p {
+  width: 345px;
+  justify-content: left;
+}
+
+.logo-lorem-container p {
+  width: 345px;
 }
