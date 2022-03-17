@@ -4,24 +4,8 @@
   box-sizing: border-box;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-/* media (max-width: 1440px){
-
-} */
-
-/* the styling above this comment is standard */
-
 body {
   font-family: "Open Sans", sans-serif;
-  /* padding: 100px; */
-  /* font-size: 16px; */
 }
 
 header {
@@ -47,11 +31,11 @@ header {
 
 #nav-signup-button:hover {
   cursor: pointer;
-  opacity: 50%;
+  box-shadow: 0.5px 0.5px 5px #ff52bf;
+
 }
 
 h2 {
-  /* background-color: rgb(112, 87, 56); */
   font-family: "Poppins", sans-serif;
   font-size: 48px;
   margin: 32px;
@@ -59,11 +43,9 @@ h2 {
 
 #hero {
   text-align: center;
-  /* background-color:rgb(136, 255, 144); */
 }
 
 .top-hero-section p {
-  /* background-color: rgb(252, 176, 84); */
   max-width: 605px;
   margin: auto;
 }
@@ -74,7 +56,7 @@ h2 {
   margin: 32px 35px 100px;
   width: 300px;
   height: 43px;
-  border: 1px solid #ff52bf;
+  border: none ;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 50px;
@@ -82,7 +64,7 @@ h2 {
 
 .body-signup-button:hover {
   cursor: pointer;
-  opacity: 50%;
+  background-color: #FFC0E8;
 }
 
 .mockup-screen {
@@ -108,11 +90,7 @@ h1 {
   font-weight: 400;
 }
 
-.colour-bg {
-  /* background-color: #F5FAFF; */
-}
-
-/* align imgage header properly */
+/* makes top and bottom bg images to mash with colour bg */
 .top-bg-section-1,
 .top-bg-section-2,
 .top-bg-footer,
@@ -121,11 +99,6 @@ h1 {
   margin: -5px;
   width: 100%;
 }
-
-/* .bottom-bg-section-1,
-.bottom-bg-section-2 {
-  width: 100%;
-} */
 
 .blue-body-container img {
   width: 522px;
@@ -165,10 +138,6 @@ h1 {
   max-height: fit-content;
 }
 
-.empty-bg {
-  /* background-color: greenyellow; */
-}
-
 .white-cta-container {
   text-align: center;
   font-size: 36px;
@@ -178,28 +147,105 @@ h1 {
 .footer-menu {
   background-color: #00252E;
   padding: 50px 100px;
-  margin: -5px;
   color: white;
+
 }
 
 .navy-body-container {
   display: flex;
   justify-content: space-evenly;
+  align-items: baseline;
 }
 
-.phone-details {
-  display: flex;
+.navy-body-container p {
+  font-size: 12px;
+  
 }
 
-.email-details {
+.left-foot-section p {
+  margin-top: 32px;
+}
+
+
+.contact-details {
   display: flex;
+  margin-top: 15px;
+}
+
+.contact-details img {
+  margin-right: 20px;
 }
 
 .newsletter-container p {
   width: 345px;
   justify-content: left;
+
+}
+
+.right-footer-section p {
+  margin-top: 20px;
+  line-height: 1.2rem;
+}
+
+.newsletter-container h3 {
+  font-weight: 600;
+  font-size: 28px;
+  
 }
 
 .logo-lorem-container p {
   width: 345px;
+  line-height: 1.2rem;
+}
+
+
+form {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+input {
+  padding: 12px 35px;
+  border: none;
+  border-radius: 4px;
+
+}
+
+#email {
+  width: 310px;
+}
+
+
+#subscribe {
+  background: #ff52bf;
+  color: white;
+  margin-left: 48px;
+
+}
+
+#subscribe:hover {
+  background-color: #FFC0E8;
+  cursor: pointer;
+}
+
+.social-icons {
+font-size: 30px;
+margin: 70px 0;
+max-width: 130px;
+display: flex;
+justify-content: space-between;
+
+}
+
+.social-icons a {
+ color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

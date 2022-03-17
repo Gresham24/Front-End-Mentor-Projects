@@ -18,7 +18,8 @@
 <body>
 
   <header>
-    <div id="header-logo"><img src="images/logo.svg" alt="Huddle logo"></div>
+    <div id="header-logo"> <a href="#"><img src="images/logo.svg" alt="Huddle logo"></a>
+      </div>
     <button type="button" id="nav-signup-button">Try It free</button>
   </header>
 
@@ -50,8 +51,8 @@
       </div>
     </section>
 
-<img src="images/bg-section-top-desktop-1.svg" class="top-bg-section-1" alt="image of top background">
-    
+    <img src="images/bg-section-top-desktop-1.svg" class="top-bg-section-1" alt="image of top background">
+
     <!-- need to change the bg colour for this section to light-blue -->
     <section class="colour-bg">
       <!-- this body-container separates the contents (text and illustration) from the top and bottom bg images -->
@@ -107,46 +108,50 @@
     </section>
   </main>
 
-  
+
   <img src="images/bg-footer-top-desktop.svg" class="top-bg-footer" alt="image of top footer background">
   <section class="footer-menu">
     <div class="navy-body-container">
       <div class="left-foot-section">
-        <div class="logo-lorem-container">
-          <img src="images/logo-white.svg" id="footer-logo" alt="image of logo">
+        <div class="logo-lorem-container"> <a href="#"><img src="images/logo-white.svg" id="footer-logo" alt="image of logo"></a>
+          
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
             vestibulum a, ultrices quis sem.</p>
         </div>
-        <div class="phone-details">
-          <!-- enter icon for phone -->
-          <i>#</i>
-          <p> Phone: +1-543-123-4567</p>
-        </div>
-        <div class="email-details">
-          <!-- enter icon for email -->
-          <i>#</i>
-          <p>example@huddle.com</p>
-        </div>
+        <!-- new contact details below -->
+        <p class="contact-details">
+            <img src="./images/icon-phone.svg" alt=""> Phone: +1-543-123-4567
+        </p>
+        </p>
+        <p class="contact-details">
+          <img src="./images/icon-email.svg" alt=""> example@huddle.com
+      </p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a>
+      </div>
       </div>
 
       <div class="right-footer-section">
         <div class="newsletter-container">
-          <h3>Newsletter</h3>
+          <h3>NEWSLETTER</h3>
           <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We'll never
             send you spam or pass on your email address</p>
         </div>
-        <div class="subscription-form">
-          <span class="email-field"> </span>
-          <button type="button" id="subscribe-button">Subscribe</button>
-        </div>
+
+        <form>
+          <div class="subscription-form">
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="subscription-form">
+            <input type="submit" value="Subscribe" id="subscribe">
+          </div>
+        </form>
+
       </div>
     </div>
-    <div class="social-icons">
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>
-    </div>
-
+    
   </section>
 
   <footer>
