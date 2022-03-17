@@ -6,7 +6,9 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+
 }
+
 
 header {
   display: flex;
@@ -27,6 +29,7 @@ header {
   padding: 12px 35px;
   width: 136px;
   height: 43px;
+  
 }
 
 #nav-signup-button:hover {
@@ -35,8 +38,12 @@ header {
 
 }
 
-h2 {
+h1, h2, h3 {
   font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  
   font-size: 48px;
   margin: 32px;
 }
@@ -48,18 +55,20 @@ h2 {
 .top-hero-section p {
   max-width: 605px;
   margin: auto;
+  font-size: 20px;
 }
 
 .body-signup-button {
   background: #ff52bf;
   color: white;
-  margin: 32px 35px 100px;
-  width: 300px;
-  height: 43px;
+  margin: 50px 35px 120px;
+  width: 400px;
+  height: 80px;
   border: none ;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 50px;
+  font-size: 20px;
 }
 
 .body-signup-button:hover {
@@ -82,11 +91,12 @@ h2 {
 h1 {
   font-size: 96px;
   font-weight: 700;
+  font-family: "Open Sans", "sans-serif";
 }
 
 .bottom-hero-section p {
   color: #cfcfcf;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -153,17 +163,18 @@ h1 {
 
 .navy-body-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: baseline;
 }
 
 .navy-body-container p {
-  font-size: 12px;
-  
+  font-size: 14px;
+  line-height: 1.6rem;
 }
 
 .left-foot-section p {
   margin-top: 32px;
+  width: 345px;
 }
 
 
@@ -172,9 +183,12 @@ h1 {
   margin-top: 15px;
 }
 
-.contact-details img {
+#phone-icon, #email-icon {
   margin-right: 20px;
+  /* font-size: 20px; */
 }
+
+
 
 .newsletter-container p {
   width: 345px;
@@ -184,12 +198,14 @@ h1 {
 
 .right-footer-section p {
   margin-top: 20px;
-  line-height: 1.2rem;
+  /* line-height: 1.2rem; */
+  
 }
 
 .newsletter-container h3 {
+  font-family: "Open Sans", "sans-serif";
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   
 }
 
@@ -214,6 +230,7 @@ input {
 
 #email {
   width: 310px;
+  height: 50px;
 }
 
 
@@ -221,7 +238,8 @@ input {
   background: #ff52bf;
   color: white;
   margin-left: 48px;
-
+  height: 50px;
+  font-size: 16px;
 }
 
 #subscribe:hover {
