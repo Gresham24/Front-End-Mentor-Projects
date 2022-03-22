@@ -106,7 +106,8 @@ h1 {
 .top-bg-footer,
 .bottom-bg-section-1,
 .bottom-bg-section-2 {
-  margin: -5px;
+  /* margin: -5px; */
+  display: block;
   width: 100%;
 }
 

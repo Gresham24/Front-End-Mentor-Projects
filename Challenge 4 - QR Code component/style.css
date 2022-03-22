@@ -57,6 +57,7 @@ img {
 footer {
   position: absolute;
   bottom: -15px;
-
-  /* margin: 15px; */
+}
+.attribution {
+  max-width: 100%;
 }
