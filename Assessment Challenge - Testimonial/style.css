@@ -26,7 +26,7 @@ h1 {
 section {
   display: flex;
   justify-content: space-around;
-  margin: 50px;
+  margin: 30px;
   flex-wrap: wrap;
 }
 
@@ -47,7 +47,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: flex-end;
   align-content: space-between;
-  margin: 50px;
+  margin: 30px;
 }
 
 blockquote {
