@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+:root {
+    --bg-color: #ECF2F8;
+    --act-btn-color: #33EAA8;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 77px;
+}
+
+.menu-button {
+    border: none;
+    background-color: white;
+    padding: 12px 52px;
+    border-radius: 7px;
+    width: 165px;
+    height: 52px;
+}
+
+.menu-button:hover {
+    background: #33EAA8;
+}
+
+/* Last two styles are for the donate button (the last button on the menu) 
+to change colour once hovered over */
+.menu-button:nth-last-of-type(1) {
+    background: #33EAA8;
+}
+
+.menu-button:nth-last-of-type(1):hover {
+    background-color: rgba(51, 234, 168, 0.53);
+}
+
