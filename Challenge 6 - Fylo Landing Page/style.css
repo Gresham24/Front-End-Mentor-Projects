@@ -25,25 +25,22 @@ body {
   align-items: center;
 }
 
-header {
+nav {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  /* padding: 10px 77px; */
   margin: 60px 120px;
 }
-.menu-button {
+menu a {
   font: var(--nav-font);
-  border: none;
-  background-color: white;
   color: var(--Desaturated-Blue);
   padding: 12px 20px;
-  border-radius: 7px;
+  text-decoration: none;
   width: auto;
   height: 42px;
 }
 
-.menu-button:hover {
+menu a:hover {
   cursor: pointer;
 }
 
