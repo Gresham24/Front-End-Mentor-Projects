@@ -4,14 +4,6 @@
   box-sizing: border-box;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 /*standard fixed code above this*/
 body {
   font-family: "Barlow Semi Condensed", sans-serif;

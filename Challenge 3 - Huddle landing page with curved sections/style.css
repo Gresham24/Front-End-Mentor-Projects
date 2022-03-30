@@ -162,13 +162,13 @@ h1 {
 
 }
 
-.navy-body-container {
+footer {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.navy-body-container p {
+footer p {
   font-size: 14px;
   line-height: 1.6rem;
 }

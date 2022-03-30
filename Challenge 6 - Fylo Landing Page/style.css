@@ -234,7 +234,7 @@ blockquote::before {
     color: var(--Light-Grayish-Blue);
 }
 
-.footer-nav-menu {
+footer {
   background-color: var(--Very-Dark-Blue);
   padding: 100px 120px;
 }
@@ -272,13 +272,4 @@ ul {
 #fourth-col i {
     font-size: 25px;
     padding: 15px;
-}
-
-/* last footer */
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a, p {
-  color: hsl(228, 45%, 44%);
 }
