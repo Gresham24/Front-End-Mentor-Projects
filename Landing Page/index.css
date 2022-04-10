@@ -18,7 +18,8 @@
   /* TEXT */
   --h1-font: normal 700 40px/50px "Playfair Display", sans-serif;
   --h2-font: normal 600 24px/30px "Playfair Display", sans-serif;
-  /* TO DO: add h3 and h4 */
+  --h3-font: normal 600 16px/21px "Playfair Display", sans-serif;
+  --h4-font: normal 600 14px/21px "Playfair Display", sans-serif;
   --big-p-font: normal 400 20px/35px "Open Sans", sans-serif;
   /*nav text and title + body sections*/
   --mid-p-font: normal 400 16px/18px "Open Sans", sans-serif;
@@ -45,7 +46,14 @@ h2 {
   font: var(--h2-font);
 }
 
-/* ADD H3 AND H4 */
+h3 {
+  font: var(--h3-font);
+}
+
+h4 {
+  font: var(--h4-font);
+}
+
 h1,
 h2,
 h3,
