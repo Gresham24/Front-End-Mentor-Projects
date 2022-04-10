@@ -9,16 +9,16 @@
   --Blue: hsla(216, 78%, 47%, 1);
   --Dark-Blue: hsla(206, 56%, 22%, 1);
   --Social-media-grey: hsla(207, 19%, 44%, 1);
-  --Text-grey: hsla(207, 19%, 44%, 1);
+  --grey-text: hsla(207, 19%, 44%, 1);
   --icon-light-blue: hsla(215, 72%, 82%, 1);
-  --icon-bg-blue: hsla(213, 65%, 97%, 1) ;
+  --icon-bg-blue: hsla(213, 65%, 97%, 1);
   --page-bg-blue: hsla(214, 100%, 99%, 1);
   --gold: hsla(36, 78%, 63%, 1);
   --green: hsla(155, 54%, 46%, 1);
   /* TEXT */
   --h1-font: normal 700 40px/50px "Playfair Display", sans-serif;
-  --h2-font: normal 600 24px/30px "Playfair Display", sans-serif; 
-  --big-p-font: normal 400 20px/27px "Open Sans", sans-serif;
+  --h2-font: normal 600 24px/30px "Playfair Display", sans-serif;
+  --big-p-font: normal 400 20px/35px "Open Sans", sans-serif;
   /*nav text and title + body sections*/
   --mid-p-font: normal 400 16px/18px "Open Sans", sans-serif;
   /* green-heading-font */
@@ -30,8 +30,29 @@
 
 body {
   font: var(--big-p-font);
+  color: var(--grey-text);
   /* padding: 15px 100px 70px 100px; */
 
+}
+
+/* FONT FORMATTING */
+h1 {
+  font: var(--h1-font);
+}
+
+h2 {
+  font: var(--h2-font);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--Dark-Blue);
+}
+
+span {
+  font-weight: bold;
 }
 
 header {
@@ -60,8 +81,48 @@ header {
 /* Change border colour to blue when hovered over */
 #get-it-now-btn:hover {
   background-color: white;
-  color:var(--Blue);
+  color: var(--Blue);
   border-radius: 47px;
   /* border-color: var(--Blue);
   border-width: 5px; */
+}
+
+#hero-section {
+  background-image: url(Assets/hero-bg.svg);
+  background-repeat: no-repeat;
+  /* height: auto; */
+  background-color: var(--page-bg-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#left-hero-col {
+  width: 493px;
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#hero-title-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#app-badges {
+  display: flex;
+  gap: 18px;
+}
+
+#scroll-to-features-btn {
+  display: flex;
+  font: var(--small-p-font);
+  gap: 8px;
+}
+
+#iPhone-hero-mockup {
+  width: 585.5px;
+  height: 813.5px;
 }
