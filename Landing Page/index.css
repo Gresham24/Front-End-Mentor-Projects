@@ -62,6 +62,7 @@ header {
   margin-top: 7px;
   padding: 25px 100px;
   box-shadow: var(--nav-bar-shadow);
+
 }
 
 /* Change hover states for nav buttons */
@@ -88,10 +89,11 @@ header {
 }
 
 #hero-section {
+  /* REMOVE THE BG IMAGE AND ADD BLUE CIRCLE IMAGE INDIVIDUALLY */
   background-image: url(Assets/hero-bg.svg);
   background-repeat: no-repeat;
   /* height: auto; */
-  background-color: var(--page-bg-blue);
+  /* background-color: var(--page-bg-blue); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,4 +127,8 @@ header {
 #iPhone-hero-mockup {
   width: 585.5px;
   height: 813.5px;
+}
+
+nav {
+  color: red;
 }
