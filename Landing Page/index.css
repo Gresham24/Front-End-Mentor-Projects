@@ -4,6 +4,26 @@
   box-shadow: border-box;
 }
 
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Playfair Display', serif; */
-
+:root {
+  /* colours */
+  --Blue: hsla(216, 78%, 47%, 1);
+  --Dark-Blue: hsla(206, 56%, 22%, 1);
+  --Social-media-grey: hsla(207, 19%, 44%, 1);
+  --Text-grey: hsla(207, 19%, 44%, 1);
+  --icon-light-blue: hsla(215, 72%, 82%, 1);
+  --icon-bg-blue: hsla(213, 65%, 97%, 1) ;
+  --page-bg-blue: hsla(214, 100%, 99%, 1);
+  --gold: hsla(36, 78%, 63%, 1);
+  --green: hsla(155, 54%, 46%, 1);
+  /* TEXT */
+  --h1-font: normal 700 40px/50px "Playfair Display", sans-serif;
+  --h2-font: normal 600 24px/30px "Playfair Display", sans-serif; 
+  --big-p-font: normal 400 20px/27px "Open Sans", sans-serif;
+  /*nav text and title + body sections*/
+  --mid-p-font: normal 400 16px/18px "Open Sans", sans-serif;
+  /* green-heading-font */
+  --small-p-font: normal 400 14px/19px "Open Sans", sans-serif;
+  --nav-font: normal 400 16px/21px "Open Sans", sans-serif;
+  --btn-font: normal 700 16px/20px "Open Sans", sans-serif;
+  /* --btn-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25); */
+}
