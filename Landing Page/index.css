@@ -18,6 +18,7 @@
   /* TEXT */
   --h1-font: normal 700 40px/50px "Playfair Display", sans-serif;
   --h2-font: normal 600 24px/30px "Playfair Display", sans-serif;
+  /* TO DO: add h3 and h4 */
   --big-p-font: normal 400 20px/35px "Open Sans", sans-serif;
   /*nav text and title + body sections*/
   --mid-p-font: normal 400 16px/18px "Open Sans", sans-serif;
@@ -43,7 +44,7 @@ h1 {
 h2 {
   font: var(--h2-font);
 }
-
+/* ADD H3 AND H4 */
 h1,
 h2,
 h3,
@@ -51,6 +52,7 @@ h4 {
   color: var(--Dark-Blue);
 }
 
+/* TO DO: add class="bold-text" to span in HTML */
 span {
   font-weight: bold;
 }
@@ -59,14 +61,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 7px;
+  /* margin-top: 7px; */
   padding: 25px 100px;
   box-shadow: var(--nav-bar-shadow);
 
 }
 
-/* Change hover states for nav buttons */
-.nav-menu-buttons a {
+/* TO DO: remember to add hover states for nav buttons */
+/* TO DO: Use buttons */
+nav a {
   text-decoration: none;
   color: var(--Dark-Blue);
   padding: 10px 16px;
@@ -79,18 +82,19 @@ header {
   border-radius: 47px;
 }
 
-/* Change border colour to blue when hovered over */
-#get-it-now-btn:hover {
+/* TO DO: remember to change border colour to blue when hovered over */
+/* #get-it-now-btn:hover {
   background-color: white;
   color: var(--Blue);
-  border-radius: 47px;
-  /* border-color: var(--Blue);
-  border-width: 5px; */
-}
+  border-radius: 47px; 
+  border-color: var(--Blue);
+  border-width: 5px; 
+}*/
 
 #hero-section {
-  /* REMOVE THE BG IMAGE AND ADD BLUE CIRCLE IMAGE INDIVIDUALLY */
-  background-image: url(Assets/hero-bg.svg);
+  /* TO DO: REMOVE THE BG IMAGE AND ADD BLUE CIRCLE IMAGE INDIVIDUALLY */
+  /* TO DO: Add bottom concave image for the background */
+  /* background-image: url(Assets/hero-bg.svg); */
   background-repeat: no-repeat;
   /* height: auto; */
   /* background-color: var(--page-bg-blue); */
@@ -127,12 +131,4 @@ header {
 #iPhone-hero-mockup {
   width: 585.5px;
   height: 813.5px;
-}
-
-nav {
-  color: red;
-}
-
-body {
-  background-color: aqua;
 }
