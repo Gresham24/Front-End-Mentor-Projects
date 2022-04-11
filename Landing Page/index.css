@@ -72,13 +72,13 @@ header {
   /* margin: 0px 20px; */
   padding: 25px 0px;
   box-shadow: var(--nav-bar-shadow);
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100vw;
+  height: auto;
   background-color: white;
 }
 
-/* TO DO: remember to add hover states for nav buttons */
-/* TO DO: Use buttons */
 nav a {
   text-decoration: none;
   color: var(--Dark-Blue);
@@ -88,7 +88,8 @@ nav a {
 
 nav a:hover {
   text-decoration: none;
-  opacity: 60%; 
+  text-decoration: underline;
+  text-underline-offset: 9px;
   font: var(--nav-font);
 }
 
@@ -102,27 +103,24 @@ nav a:hover {
   border-color: white;
 }
 
-/* TO DO: remember to change border colour to blue when hovered over */
 #get-it-now-btn button:hover {
   cursor: pointer;
   background-color: white;
   color: var(--Blue);
-  border-radius: 30px; 
+  border-radius: 30px;
   padding: 10px 16px;
   border-style: solid;
   border-color: var(--Blue);
 }
 
 #hero-section {
-  /* TO DO: REMOVE THE BG IMAGE AND ADD BLUE CIRCLE IMAGE INDIVIDUALLY */
   /* TO DO: Add bottom concave image for the background */
-  /* background-image: url(Assets/hero-bg.svg); */
-  background-repeat: no-repeat;
   /* height: auto; */
-  /* background-color: var(--page-bg-blue); */
+  background-color:antiquewhite;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* padding-top: px; */
 }
 
 #left-hero-col {
@@ -153,4 +151,15 @@ nav a:hover {
 #iPhone-hero-mockup {
   width: 585.5px;
   height: 813.5px;
+}
+
+#hero-bg-circle {
+  /* position: absolute; */
+  /* z-index: -2; */
+  width: 761px;
+  height: 763px;
+}
+
+.right-hero-section {
+
 }
