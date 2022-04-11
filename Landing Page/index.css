@@ -33,8 +33,6 @@
 body {
   font: var(--big-p-font);
   color: var(--grey-text);
-  /* padding: 15px 100px 70px 100px; */
-
 }
 
 /* FONT FORMATTING */
@@ -74,9 +72,10 @@ header {
   box-shadow: var(--nav-bar-shadow);
   position: sticky;
   top: 0;
-  width: 100vw;
+  width: auto;
   height: auto;
   background-color: white;
+  z-index: 2;
 }
 
 nav a {
@@ -115,17 +114,19 @@ nav a:hover {
 
 #hero-section {
   /* TO DO: Add bottom concave image for the background */
+  width: 100vw;
   /* height: auto; */
   background-color:antiquewhite;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  /* padding-top: px; */
+  align-items: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+  /* padding-top: 32px; */
+  padding: 32px 100px;
 }
 
 #left-hero-col {
   width: 493px;
-  padding: 0px 100px;
+
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -151,15 +152,20 @@ nav a:hover {
 #iPhone-hero-mockup {
   width: 585.5px;
   height: 813.5px;
+
 }
 
 #hero-bg-circle {
-  /* position: absolute; */
-  /* z-index: -2; */
-  width: 761px;
-  height: 763px;
+
+  position: absolute;
+width: 761px;
+height: 763.87px;
+float: right;
+/* top: 32.11px; */
+
+  z-index: -1;
 }
 
 .right-hero-section {
-
+  z-index: 1;
 }
