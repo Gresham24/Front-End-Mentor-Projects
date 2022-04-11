@@ -25,9 +25,9 @@
   --mid-p-font: normal 400 16px/18px "Open Sans", sans-serif;
   /* green-heading-font */
   --small-p-font: normal 400 14px/19px "Open Sans", sans-serif;
-  --nav-font: normal 400 16px/21px "Open Sans", sans-serif;
+  --nav-font: normal 700 16px/21px "Open Sans", sans-serif;
   --btn-font: normal 700 16px/20px "Open Sans", sans-serif;
-  --nav-bar-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
+  --nav-bar-shadow: 0px 2px 12px rgba(0, 0, 0, 0.10);
 }
 
 body {
@@ -61,19 +61,20 @@ h4 {
   color: var(--Dark-Blue);
 }
 
-/* TO DO: add class="bold-text" to span in HTML */
-span {
+.bold-text {
   font-weight: bold;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  /* margin-top: 7px; */
-  padding: 25px 100px;
+  /* margin: 0px 20px; */
+  padding: 25px 0px;
   box-shadow: var(--nav-bar-shadow);
-
+  position: fixed;
+  width: 100vw;
+  background-color: white;
 }
 
 /* TO DO: remember to add hover states for nav buttons */
@@ -81,24 +82,36 @@ header {
 nav a {
   text-decoration: none;
   color: var(--Dark-Blue);
-  padding: 10px 16px;
-  font: var(--mid-p-font);
+  margin: 10px 16px;
+  font: var(--nav-font);
 }
 
-#get-it-now-btn {
+nav a:hover {
+  text-decoration: none;
+  opacity: 60%; 
+  font: var(--nav-font);
+}
+
+#get-it-now-btn button {
+  font: var(--nav-font);
   background: var(--Blue);
   color: white;
-  border-radius: 47px;
+  border-radius: 30px;
+  padding: 10px 16px;
+  border-style: solid;
+  border-color: white;
 }
 
 /* TO DO: remember to change border colour to blue when hovered over */
-/* #get-it-now-btn:hover {
+#get-it-now-btn button:hover {
+  cursor: pointer;
   background-color: white;
   color: var(--Blue);
-  border-radius: 47px; 
+  border-radius: 30px; 
+  padding: 10px 16px;
+  border-style: solid;
   border-color: var(--Blue);
-  border-width: 5px; 
-}*/
+}
 
 #hero-section {
   /* TO DO: REMOVE THE BG IMAGE AND ADD BLUE CIRCLE IMAGE INDIVIDUALLY */
