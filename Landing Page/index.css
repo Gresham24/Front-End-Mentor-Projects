@@ -221,11 +221,6 @@ nav a:hover {
   font: var(--mid-p-font)
 }
 
-.feature-icon {
-  width: 60px;
-  height: 60px;
-}
-
 
 #features-container {
   display: flex;
@@ -257,21 +252,33 @@ color: var(--Blue);
 
 #Features {
 background-color: var(--Blue);
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 50px;
 }
 
 #Features h2, h4 {
 color: white;
 } 
 
-.features-title p {
+#features-title p {
   color: white;
   font: var(--mid-p-font);
+  padding-top: 10px;
   } 
+
+  #features-title {
+    text-align: center;
+    width: 590px;
+  }
 
   #Features p {
     color: var(--icon-light-blue);
     font: var(--mid-p-font);
     }
+
+  
 
   #left-features-list {
     display: flex;
@@ -291,4 +298,21 @@ color: white;
     width: 275px;
     text-align: left;
     gap: 70px;
+  }
+
+  #mockup-features-container {
+    display: flex;
+    align-content: center;
+  }
+
+  #features-top-bg-img {
+    width: 100%;
+    /* TO DO: Find out why the gap was still there after using display block */
+    margin: -2px;
+    display: block;
+
+  }
+
+  #features-bottom-bg-img {
+    width: 100%;
   }
