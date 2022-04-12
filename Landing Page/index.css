@@ -20,12 +20,12 @@
   --h2-font: normal 600 24px/30px "Playfair Display", sans-serif;
   --h3-font: normal 600 16px/21px "Playfair Display", sans-serif;
   --h4-font: normal 600 14px/21px "Playfair Display", sans-serif;
-  --big-p-font: normal 400 20px/35px "Open Sans", sans-serif;
-  /*nav text and title + body sections*/
-  --mid-p-font: normal 400 16px/18px "Open Sans", sans-serif;
   /* green-heading-font */
   --small-p-font: normal 400 14px/19px "Open Sans", sans-serif;
+  /*nav text and body font*/
   --nav-font: normal 700 16px/21px "Open Sans", sans-serif;
+  --mid-p-font: normal 400 16px/27px "Open Sans", sans-serif;
+  --big-p-font: normal 400 20px/35px "Open Sans", sans-serif;
   --btn-font: normal 700 16px/20px "Open Sans", sans-serif;
   --nav-bar-shadow: 0px 2px 12px rgba(0, 0, 0, 0.10);
 }
@@ -62,6 +62,18 @@ h4 {
 
 .bold-text {
   font-weight: bold;
+}
+
+/* padding for each section */
+#hero-section,
+#About,
+#Features,
+#mobile-app-section,
+#Testimonials,
+#CTA-section,
+footer {
+
+  padding: 32px 100px;
 }
 
 header {
@@ -120,9 +132,9 @@ nav a:hover {
   background-color: var(--page-bg-blue);
   display: flex;
   justify-content: space-between;
-  align-items: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+  align-items: center;
   /* padding-top: 32px; */
-  padding: 32px 100px;
+  /* padding: 32px 100px; */
 }
 
 #left-hero-col {
@@ -151,7 +163,7 @@ nav a:hover {
 }
 
 #iPhone-hero-mockup {
-  
+
   width: 761px;
   height: 763.87px;
   padding-top: 50px;
@@ -159,27 +171,80 @@ nav a:hover {
 }
 
 #hero-bg-circle {
-position:absolute;
-width: 761px;
-height: 763.87px;
-z-index: -1;
-padding-top: 40px;
-padding-left: 80px;
+  position: absolute;
+  width: 761px;
+  height: 763.87px;
+  z-index: -1;
+  padding-top: 40px;
+  padding-left: 80px;
 }
 
 .right-hero-section {
   z-index: 1;
-/* margin-right: -200px; */
-padding-top: 40px;
+  /* margin-right: -200px; */
+  padding-top: 40px;
 }
 
 #hero-bottom-bg {
   position: relative;
   /* TO DO: find a way to move to the top */
-  margin-top: -360px ;
+  margin-top: -360px;
   padding: 100px 0px;
   display: inline-block;
   z-index: 2;
   width: 100%;
 }
 
+#about-title-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  width: 767px;
+}
+
+.feature-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  gap: 20px;
+}
+
+.feature-set p {
+  font: var(--mid-p-font)
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+}
+
+
+#features-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+#About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 38px;
+}
+
+.feature-set a {
+font: var(--btn-font);
+text-decoration: none;
+color: var(--Blue);
+
+}
+
+.feature-set a::after {
+  content: url(Assets/Arrow.svg);
+  display: inline-block;
+  margin-left: 8px;
+  
+}
