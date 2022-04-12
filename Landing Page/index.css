@@ -76,6 +76,8 @@ footer {
   padding: 32px 100px;
 }
 
+/* STYLING FOR NAVBAR (HEADER) */
+
 header {
   display: flex;
   justify-content: space-around;
@@ -124,6 +126,8 @@ nav a:hover {
   border-style: solid;
   border-color: var(--Blue);
 }
+
+/* STYLING FOR HERO SECTION */
 
 #hero-section {
   /* TO DO: Add bottom concave image for the background */
@@ -187,13 +191,15 @@ nav a:hover {
 
 #hero-bottom-bg {
   position: relative;
-  /* TO DO: find a way to move to the top */
+  /* TO DO: find a way to position it correctly - must cut the right ride */
   margin-top: -360px;
   padding: 100px 0px;
   display: inline-block;
   z-index: 2;
   width: 100%;
 }
+
+/* STYLING FOR ABOUT SECTION */
 
 #about-title-text {
   display: flex;
@@ -239,12 +245,50 @@ nav a:hover {
 font: var(--btn-font);
 text-decoration: none;
 color: var(--Blue);
-
 }
 
 .feature-set a::after {
   content: url(Assets/Arrow.svg);
   display: inline-block;
-  margin-left: 8px;
-  
+  margin-left: 8px;  
 }
+
+/* STYLING FOR FEATURES SECTION */
+
+#Features {
+background-color: var(--Blue);
+}
+
+#Features h2, h4 {
+color: white;
+} 
+
+.features-title p {
+  color: white;
+  font: var(--mid-p-font);
+  } 
+
+  #Features p {
+    color: var(--icon-light-blue);
+    font: var(--mid-p-font);
+    }
+
+  #left-features-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 275px;
+    text-align: right;
+    gap: 70px;
+  }
+
+  #right-features-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 275px;
+    text-align: left;
+    gap: 70px;
+  }
