@@ -12,7 +12,7 @@
   --grey-text: hsla(207, 19%, 44%, 1);
   --icon-light-blue: hsla(215, 72%, 82%, 1);
   --icon-bg-blue: hsla(213, 65%, 97%, 1);
-  --page-bg-blue: hsla(214, 100%, 99%, 1);
+  --page-bg-blue: rgb(245, 249, 255);
   --gold: hsla(36, 78%, 63%, 1);
   --green: hsla(155, 54%, 46%, 1);
   /* TEXT */
@@ -33,6 +33,7 @@
 body {
   font: var(--big-p-font);
   color: var(--grey-text);
+
 }
 
 /* FONT FORMATTING */
@@ -114,9 +115,9 @@ nav a:hover {
 
 #hero-section {
   /* TO DO: Add bottom concave image for the background */
-  width: 100vw;
-  /* height: auto; */
-  background-color:antiquewhite;
+  /* width: 100vw; */
+  height: 100%;
+  background-color: var(--page-bg-blue);
   display: flex;
   justify-content: space-between;
   align-items: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
@@ -150,22 +151,35 @@ nav a:hover {
 }
 
 #iPhone-hero-mockup {
-  width: 585.5px;
-  height: 813.5px;
+  
+  width: 761px;
+  height: 763.87px;
+  padding-top: 50px;
 
 }
 
 #hero-bg-circle {
-
-  position: absolute;
+position:absolute;
 width: 761px;
 height: 763.87px;
-float: right;
-/* top: 32.11px; */
-
-  z-index: -1;
+z-index: -1;
+padding-top: 40px;
+padding-left: 80px;
 }
 
 .right-hero-section {
   z-index: 1;
+/* margin-right: -200px; */
+padding-top: 40px;
 }
+
+#hero-bottom-bg {
+  position: relative;
+  /* TO DO: find a way to move to the top */
+  margin-top: -360px ;
+  padding: 100px 0px;
+  display: inline-block;
+  z-index: 2;
+  width: 100%;
+}
+
