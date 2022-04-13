@@ -1,4 +1,3 @@
-
 /* TO DO: 
   - GO THROUGH FONT COLOURS 
   - Fix background images of cricles being cut 
@@ -77,6 +76,7 @@ h4 {
 #Features,
 #mobile-app-section,
 #Testimonials,
+#Pricing,
 #CTA-section,
 footer {
 
@@ -204,7 +204,7 @@ nav a:hover {
   display: inline-block;
   z-index: 2;
   width: 100%;
-  
+
 }
 
 /* STYLING FOR ABOUT SECTION */
@@ -407,8 +407,8 @@ nav a:hover {
 
 .button-frame-container {
   position: relative;
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .button-bg-frame {
@@ -422,17 +422,18 @@ align-items: center;
   display: flex;
   align-items: center;
   /* left: 200px; */
-position: relative;
-/* padding-left: 100px; */
-/* background-image: url(Assets/bg\ circle\ img.svg); */
+  position: relative;
+  /* padding-left: 100px; */
+  /* background-image: url(Assets/bg\ circle\ img.svg); */
 
 }
 
 .light-blue-bg-circle {
-position: absolute;
+  position: absolute;
 }
 
-.white-iphone, .iphone-mockup {
+.white-iphone,
+.iphone-mockup {
   z-index: 1;
 }
 
@@ -476,9 +477,9 @@ position: absolute;
 }
 
 .name-title {
-display: flex;
-flex-direction: column;
-line-height: 1em;
+  display: flex;
+  flex-direction: column;
+  line-height: 1em;
 }
 
 .testimonial-reference {
@@ -486,6 +487,7 @@ line-height: 1em;
   align-items: center;
   gap: 11px;
 }
+
 /* styling testimonial text and block */
 .testimonial-text {
   font: var(--mid-p-font);
@@ -502,12 +504,12 @@ line-height: 1em;
 #testimonial-container {
   display: flex;
   gap: 50px;
-  }
-  
-  /* PRICING SECTION */
+}
+
+/* PRICING SECTION */
 
 
-.top-pricing-bg, 
+.top-pricing-bg,
 .bottom-pricing-bg {
   width: 100%;
   display: flex;
@@ -516,3 +518,28 @@ line-height: 1em;
 #Pricing {
   background-color: var(--page-bg-blue);
 }
+
+.green-text span {
+  background: hsla(154, 56%, 44%, 0.13);
+  padding: 10px;
+  border-radius: 29px;
+}
+
+.pricing-header h2 {
+  width: 308px;
+}
+
+.pricing-header p {
+  font: var(--mid-p-font);
+
+}
+
+.pricing-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 610px;
+  align-items: center;
+  gap: 7px;
+}
+
