@@ -543,3 +543,52 @@ nav a:hover {
   gap: 7px;
 }
 
+#card-green,
+#card-gold,
+#card-blue {
+  background-color: antiquewhite;
+  border-top-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  width: 300px;
+  height: auto;
+}
+
+#card-green,
+#card-gold,
+#card-blue p {
+  font: var(--small-p-font);
+}
+
+#card-green {
+  border-color: var(--green);
+}
+#card-gold {
+  border-color: var(--gold);
+}
+#card-blue {
+  border-color: var(--Blue);
+}
+
+#card-green h2 {
+  color: var(--green);
+}
+#card-gold h2 {
+  color: var(--gold);
+}
+#card-blue h2 {
+  color: var(--Blue);
+}
+
+
+.get-started-btn {
+  font: var(--btn-font);
+  text-decoration: none;
+  color: var(--Blue);
+  /* background: var(--Blue); */
+  border-radius: 30px;
+  padding: 10px 16px;
+  border-style: solid;
+  border-color: var(--Blue);
+
+}
