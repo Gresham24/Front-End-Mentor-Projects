@@ -437,6 +437,12 @@ position: absolute;
 
 /* TESTIMONIAL SECTION */
 
+#Testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 38px;
+}
 
 .heading-brands-container {
   display: flex;
@@ -452,7 +458,6 @@ position: absolute;
 }
 
 /* grouping of name, title and profile picture of testimonial */
-
 .title-text {
   font-style: italic;
   font-size: 14px;
@@ -479,3 +484,21 @@ line-height: 1em;
   align-items: center;
   gap: 11px;
 }
+/* styling testimonial text and block */
+.testimonial-text {
+  font: var(--mid-p-font);
+}
+
+.testimonial-block {
+  width: 243px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 13px;
+}
+
+#testimonial-container {
+  display: flex;
+  gap: 50px;
+  }
+  
