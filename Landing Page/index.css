@@ -430,3 +430,15 @@ position: absolute;
 
 /* TESTIMONIAL SECTION */
 
+.heading-brands-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.list-of-companies {
+  display: flex;
+  padding-top: 30px;
+  gap: 74px;
+}
