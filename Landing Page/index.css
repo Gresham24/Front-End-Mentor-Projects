@@ -1,3 +1,10 @@
+
+/* TO DO: 
+  - GO THROUGH FONT COLOURS 
+  - Fix background images of cricles being cut 
+  - */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -191,7 +198,7 @@ nav a:hover {
 
 .hero-bottom-bg {
   position: relative;
-  /* TO DO: find a way to position it correctly - must cut the right ride */
+  /* TO DO: find a way to position it correctly - must cut the right side */
   margin-top: -360px;
   padding: 100px 0px;
   display: inline-block;
@@ -430,6 +437,7 @@ position: absolute;
 
 /* TESTIMONIAL SECTION */
 
+
 .heading-brands-container {
   display: flex;
   flex-direction: column;
@@ -441,4 +449,33 @@ position: absolute;
   display: flex;
   padding-top: 30px;
   gap: 74px;
+}
+
+/* grouping of name, title and profile picture of testimonial */
+
+.title-text {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.title-text::before {
+  content: url(Assets/verified-tick.svg);
+  display: inline-block;
+}
+
+.name-title {
+display: flex;
+flex-direction: column;
+line-height: 1em;
+}
+
+.testimonial-reference {
+  display: flex;
+  align-items: center;
+  gap: 11px;
 }
