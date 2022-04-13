@@ -17,7 +17,7 @@
   --green: hsla(155, 54%, 46%, 1);
   /* TEXT */
   --h1-font: normal 700 40px/50px "Playfair Display", sans-serif;
-  --h2-font: normal 600 24px/30px "Playfair Display", sans-serif;
+  --h2-font: normal 600 24px/40px "Playfair Display", sans-serif;
   --h3-font: normal 600 16px/21px "Playfair Display", sans-serif;
   --h4-font: normal 600 14px/21px "Playfair Display", sans-serif;
   /* green-heading-font */
@@ -321,6 +321,11 @@ nav a:hover {
 
 /* MOBILE APP SECTION */
 
+#mobile-app-section {
+  display: flex;
+  justify-content: space-between;
+}
+
 .green-text {
   font: var(--grey-text);
   color: var(--green);
@@ -342,6 +347,7 @@ nav a:hover {
   flex-direction: column;
   align-items: flex-start;
   width: 235px;
+  gap: 8px;
 }
 
 .mobile-app-feature p {
@@ -353,12 +359,9 @@ nav a:hover {
   gap: 55px;
 }
 
-/* #try-it-out-btn button::after {
-  content: url(Assets/Arrow-white.svg);
-  margin-left: 8px;  
-  align-items: center;
-
-} */
+.mobile-app-feature h4 {
+  padding-top: 15px;
+}
 
 .try-it-out-free-btn {
   text-decoration: none;
@@ -369,13 +372,39 @@ nav a:hover {
   padding: 10px 16px;
   border-style: solid;
   border-color: white;
+  position: relative;
+  z-index: 1;
+  left: 55px;
+  bottom: 10px;
+  /* Need to find better way to move the elements other than margin */
+  margin-left: -55px;
 }
+
 .try-it-out-free-btn:hover {
-cursor: pointer;
-background-color: white;
-color: var(--Blue);
-border-radius: 30px;
-padding: 10px 16px;
-border-style: solid;
-border-color: var(--Blue);
+  cursor: pointer;
+  background-color: white;
+  color: var(--Blue);
+  border-radius: 30px;
+  padding: 10px 16px;
+  border-style: solid;
+  border-color: var(--Blue);
 }
+
+#left-mobile-app-section-col {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+
+.button-frame-container {
+  position: relative;
+display: flex;
+align-items: center;
+}
+
+.button-bg-frame {
+  position: relative;
+  z-index: -2;
+}
+
