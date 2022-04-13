@@ -237,82 +237,145 @@ nav a:hover {
 }
 
 .feature-set a {
-font: var(--btn-font);
-text-decoration: none;
-color: var(--Blue);
+  font: var(--btn-font);
+  text-decoration: none;
+  color: var(--Blue);
 }
 
 .feature-set a::after {
   content: url(Assets/Arrow.svg);
   display: inline-block;
-  margin-left: 8px;  
+  margin-left: 8px;
 }
 
 /* STYLING FOR FEATURES SECTION */
 
 #Features {
-background-color: var(--Blue);
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 50px;
+  background-color: var(--Blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
 
-#Features h2, h4 {
-color: white;
-} 
+#features-title h2,
+#mockup-features-container h4 {
+  color: white;
+}
 
 #features-title p {
   color: white;
   font: var(--mid-p-font);
   padding-top: 10px;
-  } 
 
-  #features-title {
-    text-align: center;
-    width: 590px;
-  }
+}
 
-  #Features p {
-    color: var(--icon-light-blue);
-    font: var(--mid-p-font);
-    }
+#features-title {
+  text-align: center;
+  width: 590px;
+}
 
-  
+#Features p {
+  color: var(--icon-light-blue);
+  font: var(--mid-p-font);
+  opacity: 70%;
+}
 
-  #left-features-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    width: 275px;
-    text-align: right;
-    gap: 70px;
-  }
 
-  #right-features-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    width: 275px;
-    text-align: left;
-    gap: 70px;
-  }
 
-  #mockup-features-container {
-    display: flex;
-    align-content: center;
-  }
+#left-features-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 275px;
+  text-align: right;
+  gap: 70px;
+}
 
-  #features-top-bg-img {
-    width: 100%;
-    /* TO DO: Find out why the gap was still there after using display block */
-    margin: -2px;
-    display: block;
+#right-features-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 275px;
+  text-align: left;
+  gap: 70px;
+}
 
-  }
+#mockup-features-container {
+  display: flex;
+  align-content: center;
+}
 
-  #features-bottom-bg-img {
-    width: 100%;
-  }
+#features-top-bg-img {
+  width: 100%;
+  /* TO DO: Find out why the gap was still there after using display block */
+  margin: -2px;
+  display: block;
+}
+
+#features-bottom-bg-img {
+  width: 100%;
+}
+
+/* MOBILE APP SECTION */
+
+.green-text {
+  font: var(--grey-text);
+  color: var(--green);
+}
+
+#mobile-app-title p {
+  font: var(--mid-p-font);
+}
+
+#mobile-app-title {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 422px;
+}
+
+.mobile-app-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 235px;
+}
+
+.mobile-app-feature p {
+  font: var(--mid-p-font);
+}
+
+#mobile-app-features-container {
+  display: flex;
+  gap: 55px;
+}
+
+/* #try-it-out-btn button::after {
+  content: url(Assets/Arrow-white.svg);
+  margin-left: 8px;  
+  align-items: center;
+
+} */
+
+.try-it-out-free-btn {
+  text-decoration: none;
+  font: var(--btn-font);
+  color: white;
+  background: var(--Blue);
+  border-radius: 30px;
+  padding: 10px 16px;
+  border-style: solid;
+  border-color: white;
+}
+.try-it-out-free-btn:hover {
+cursor: pointer;
+background-color: white;
+color: var(--Blue);
+border-radius: 30px;
+padding: 10px 16px;
+border-style: solid;
+border-color: var(--Blue);
+}
