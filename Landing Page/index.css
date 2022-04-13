@@ -543,6 +543,7 @@ nav a:hover {
   gap: 7px;
 }
 
+/* card styling */
 #card-green,
 #card-gold,
 #card-blue {
@@ -562,6 +563,7 @@ nav a:hover {
 
 #card-green {
   border-color: var(--green);
+  padding: 50px 35px 35px 35px;
 }
 #card-gold {
   border-color: var(--gold);
@@ -580,15 +582,25 @@ nav a:hover {
   color: var(--Blue);
 }
 
-
+/* button styling */
 .get-started-btn {
   font: var(--btn-font);
   text-decoration: none;
   color: var(--Blue);
-  /* background: var(--Blue); */
+  /* background: white; */
   border-radius: 30px;
   padding: 10px 16px;
   border-style: solid;
   border-color: var(--Blue);
+}
 
+.get-started-btn:hover {
+  font: var(--btn-font);
+  text-decoration: none;
+  color: white;
+  background: var(--Blue);
+  border-radius: 30px;
+  padding: 10px 16px;
+  border-style: solid;
+  border-color: transparent;
 }
