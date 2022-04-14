@@ -720,3 +720,43 @@ on the before state and a different pseudo-element arrow for the hover state */
 }
 
 
+/* FOOTER SECTION */
+
+footer p, a {
+  font: var(--mid-p-font);
+}
+
+#footer-columns {
+  padding-top: 180px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 100px;
+}
+
+#left-footer-col {
+  display: flex;
+  flex-direction: column;
+  width: 245px;
+  gap: 26px;
+}
+
+#products-links,
+#services-links,
+#company-links,
+#more-links {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+#footer-nav-menu {
+  /* background-color: antiquewhite; */
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 80px;
+}
+
+#footer-nav-menu a {
+text-decoration: none;
+color: var(--grey-text);
+}
