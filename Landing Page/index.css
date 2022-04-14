@@ -22,12 +22,12 @@
   --gold: hsla(36, 78%, 63%, 1);
   --green: hsla(155, 54%, 46%, 1);
   /* TEXT */
-  --h1-font: normal 700 40px/50px "Playfair Display", sans-serif;
-  --h2-font: normal 600 24px/40px "Playfair Display", sans-serif;
-  --h3-font: normal 600 16px/21px "Playfair Display", sans-serif;
-  --h4-font: normal 600 14px/21px "Playfair Display", sans-serif;
+  --h1-font: normal 700 40px/47px 'Abhaya Libre', serif;
+  --h2-font: normal 600 24px/28px 'Abhaya Libre', serif;
+  --h3-font: normal 600 16px/21px 'Abhaya Libre', serif;
+  /* --h4-font: normal 600 14px/21px 'Abhaya Libre', serif; */
   /* green-heading-font */
-  --small-p-font: normal 400 14px/19px "Open Sans", sans-serif;
+  --small-p-font: normal 400 14px/22px "Open Sans", sans-serif;
   /*nav text and body font*/
   --nav-font: normal 700 16px/21px "Open Sans", sans-serif;
   --mid-p-font: normal 400 16px/27px "Open Sans", sans-serif;
@@ -55,14 +55,13 @@ h3 {
   font: var(--h3-font);
 }
 
-h4 {
+/* h4 {
   font: var(--h4-font);
-}
+} */
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   color: var(--Dark-Blue);
 }
 
@@ -267,7 +266,7 @@ nav a:hover {
 }
 
 #features-title h2,
-#mockup-features-container h4 {
+#mockup-features-container h3 {
   color: white;
 }
 
@@ -367,9 +366,12 @@ nav a:hover {
   gap: 55px;
 }
 
-.mobile-app-feature h4 {
+.mobile-app-feature h3 {
   padding-top: 15px;
 }
+
+
+
 
 .try-it-out-free-btn {
   text-decoration: none;
@@ -517,6 +519,10 @@ nav a:hover {
 
 #Pricing {
   background-color: var(--page-bg-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
 }
 
 .green-text span {
@@ -527,6 +533,7 @@ nav a:hover {
 
 .pricing-header h2 {
   width: 308px;
+  padding-top: 10px;
 }
 
 .pricing-header p {
@@ -540,19 +547,31 @@ nav a:hover {
   text-align: center;
   width: 610px;
   align-items: center;
-  gap: 7px;
+  gap: 15px;
 }
 
 /* card styling */
+.card-containter {
+  display: flex;
+  gap: 76px;
+}
+
 #card-green,
 #card-gold,
 #card-blue {
-  background-color: antiquewhite;
+  background-color: white;
+  padding: 50px 35px 35px 35px;
   border-top-style: solid;
   border-width: 5px;
   border-radius: 5px;
-  width: 300px;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 60px;
+  width: 230px;
 }
 
 #card-green,
@@ -563,22 +582,25 @@ nav a:hover {
 
 #card-green {
   border-color: var(--green);
-  padding: 50px 35px 35px 35px;
 }
+
 #card-gold {
   border-color: var(--gold);
 }
+
 #card-blue {
   border-color: var(--Blue);
 }
 
-#card-green h2 {
+#card-green-header {
   color: var(--green);
 }
-#card-gold h2 {
+
+#card-gold-header {
   color: var(--gold);
 }
-#card-blue h2 {
+
+#card-blue-header {
   color: var(--Blue);
 }
 
@@ -603,4 +625,22 @@ nav a:hover {
   padding: 10px 16px;
   border-style: solid;
   border-color: transparent;
+}
+
+
+/* CTA - GET OUR FINANCE APP NOW */
+
+.CTA-container {
+  background-color: var(--Blue);
+  width: 1227.5px;
+  height: 298px;
+  border-radius: 21px;
+}
+
+.CTA-container h2 {
+  color: white;
+}
+.CTA-container p {
+  color: var(--icon-light-blue);
+  
 }
