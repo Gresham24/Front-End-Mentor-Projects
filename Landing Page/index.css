@@ -1,7 +1,8 @@
 /* TO DO: 
   - GO THROUGH FONT COLOURS 
   - Fix background images of cricles being cut 
-  - */
+  - find the best hover states for the CTA buttons
+  */
 
 
 * {
@@ -370,10 +371,10 @@ nav a:hover {
   padding-top: 15px;
 }
 
+/* Button styling: - created a button with an arrow added as a pseudo element
+                   - added an arrow (as a pseudo-element) to the button on hover state  */
 
-
-
-.try-it-out-free-btn {
+#try-it-out-free-btn button {
   text-decoration: none;
   font: var(--btn-font);
   color: white;
@@ -381,16 +382,23 @@ nav a:hover {
   border-radius: 30px;
   padding: 10px 16px;
   border-style: solid;
-  border-color: white;
+  border-color: transparent;
   position: relative;
   z-index: 1;
   left: 55px;
   bottom: 10px;
-  /* Need to find better way to move the elements other than margin */
+  /* Need to find better way to move the elements other than margin so that it overlaps with the dotted grid */
   margin-left: -55px;
 }
 
-.try-it-out-free-btn:hover {
+/* added the arrow as a pseudo-element for the button */
+#try-it-out-free-btn button::after {
+  content: url(Assets/Arrow-white.svg);
+  display: inline-block;
+  margin-left: 8px;
+}
+
+#try-it-out-free-btn button:hover {
   cursor: pointer;
   background-color: white;
   color: var(--Blue);
@@ -399,6 +407,41 @@ nav a:hover {
   border-style: solid;
   border-color: var(--Blue);
 }
+
+#try-it-out-free-btn button:hover::after {
+  content: url(Assets/Arrow.svg);
+  display: inline-block;
+  margin-left: 8px;
+}
+
+
+/* Old styling for the button that used the arrow image in the HTML */
+
+/* .try-it-out-free-btn {
+  text-decoration: none;
+  font: var(--btn-font);
+  color: white;
+  background: var(--Blue);
+  border-radius: 30px;
+  padding: 10px 16px;
+  border-style: solid;
+  border-color: transparent;
+  position: relative;
+  z-index: 1;
+  left: 55px;
+  bottom: 10px;
+  margin-left: -55px;
+} */
+/* .try-it-out-free-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: var(--Blue);
+  border-radius: 30px;
+  padding: 10px 16px;
+  border-style: solid;
+  border-color: var(--Blue);
+} */
+
 
 #left-mobile-app-section-col {
   display: flex;
@@ -606,12 +649,11 @@ nav a:hover {
   color: var(--Blue);
 }
 
-/* button styling */
-.get-started-btn {
+
+/* .get-started-btn {
   font: var(--btn-font);
   text-decoration: none;
   color: var(--Blue);
-  /* background: white; */
   border-radius: 30px;
   padding: 10px 16px;
   border-style: solid;
@@ -627,6 +669,42 @@ nav a:hover {
   padding: 10px 16px;
   border-style: solid;
   border-color: transparent;
+} */
+
+/* button styling */
+.get-started-btn button {
+  font: var(--btn-font);
+  color: var(--Blue);
+  background: white;
+  border-radius: 30px;
+  padding: 10px 16px;
+  border-style: solid;
+  border-color: var(--Blue);
+
+}
+
+.get-started-btn button::after {
+  content: url(Assets/Arrow.svg);
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.get-started-btn button:hover {
+  font: var(--btn-font);
+  cursor: pointer;
+  background-color: var(--Blue);
+  color: white;
+  border-radius: 30px;
+  padding: 10px 16px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.get-started-btn button:hover::after {
+  content: url(Assets/Arrow-white.svg);
+  display: inline-block;
+  margin-left: 8px;
+
 }
 
 
@@ -659,7 +737,7 @@ nav a:hover {
   color: var(--icon-light-blue);
 }
 
-#try-it-for-free-btn {
+.try-it-for-free-btn button {
   text-decoration: none;
   font: var(--btn-font);
   color: var(--Blue);
@@ -670,19 +748,30 @@ nav a:hover {
   border-color: var(--Blue);
 }
 
-/* #try-it-for-free-btn:hover {
-  text-decoration: none;
-  font: var(--btn-font);
-  cursor: pointer;
-  background-color: var(--Blue);
-  color: white;
-  border-radius: 30px;
-  padding: 10px 16px;
-  border-style: solid;
-  border-color: white;
-} */
+/* TO DO: Find out hte best styling for the hover states of these buttons */
 
-#watch-demo-btn {
+.try-it-for-free-btn button::after {
+  content: url(Assets/Arrow.svg);
+  margin-left: 8px;
+}
+
+/* .try-it-for-free-btn button:hover {
+    text-decoration: none;
+    font: var(--btn-font);
+    color: white;
+    background: var(--Blue);
+    border-radius: 30px;
+    padding: 10px 16px;
+    border-style: solid;
+    border-color: white;
+  }
+  
+  .try-it-for-free-btn button:hover:after {
+    content: url(Assets/Arrow-white.svg);
+    margin-left: 8px;
+    } */
+
+.watch-demo-btn button {
   text-decoration: none;
   font: var(--btn-font);
   background-color: var(--Blue);
@@ -693,19 +782,27 @@ nav a:hover {
   border-color: white;
 }
 
-/* #watch-demo-btn:hover {
-  text-decoration: none;
-  font: var(--btn-font);
-  background-color: white;
-  color: var(--Blue);
-  border-radius: 30px;
-  padding: 10px 16px;
-  border-style: solid;
-  border-color: var(--Blue);
-} */
+.watch-demo-btn button::after {
+  content: url(Assets/Arrow-white.svg);
+  margin-left: 8px;
+}
 
-/* TO DO: ADD a separate styling for the buttons with a pseudo-element arrow that 
-on the before state and a different pseudo-element arrow for the hover state */
+/* .watch-demo-btn button:hover {
+    text-decoration: none;
+    font: var(--btn-font);
+    background-color: white;
+    color: var(--Blue);
+    border-radius: 30px;
+    padding: 10px 16px;
+    border-style: solid;
+    border-color: transparent;
+  }
+  
+  .watch-demo-btn button:hover:after {
+    content: url(Assets/Arrow.svg);
+    margin-left: 8px;
+    } */
+
 
 .cta-header {
   display: flex;
