@@ -505,6 +505,7 @@ nav a:hover {
 
 #testimonial-container {
   display: flex;
+  justify-content: center;
   gap: 50px;
 }
 
@@ -523,6 +524,7 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   gap: 80px;
+  /* padding-bottom: 100px; */
 }
 
 .green-text span {
@@ -630,11 +632,23 @@ nav a:hover {
 
 /* CTA - GET OUR FINANCE APP NOW */
 
+#CTA-section {
+  padding-bottom: 150px;
+}
+
 .CTA-container {
   background-color: var(--Blue);
   width: 1227.5px;
   height: 298px;
+  position: relative;
+  /* margin: -150px is to make it cross over to the top section. margin: auto is to center align it  */
+  margin: -150px auto;
   border-radius: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 .CTA-container h2 {
@@ -642,5 +656,67 @@ nav a:hover {
 }
 .CTA-container p {
   color: var(--icon-light-blue);
-  
 }
+
+#try-it-for-free-btn {
+  text-decoration: none;
+  font: var(--btn-font);
+  color: var(--Blue);
+  background: white;
+  border-radius: 30px;
+  padding: 10px 16px;
+  border-style: solid;
+  border-color: var(--Blue);
+}
+
+/* #try-it-for-free-btn:hover {
+  text-decoration: none;
+  font: var(--btn-font);
+  cursor: pointer;
+  background-color: var(--Blue);
+  color: white;
+  border-radius: 30px;
+  padding: 10px 16px;
+  border-style: solid;
+  border-color: white;
+} */
+
+#watch-demo-btn {
+  text-decoration: none;
+  font: var(--btn-font);
+  background-color: var(--Blue);
+  color: white;
+  border-radius: 30px;
+  padding: 10px 16px;
+  border-style: solid;
+  border-color: white;
+}
+
+/* #watch-demo-btn:hover {
+  text-decoration: none;
+  font: var(--btn-font);
+  background-color: white;
+  color: var(--Blue);
+  border-radius: 30px;
+  padding: 10px 16px;
+  border-style: solid;
+  border-color: var(--Blue);
+} */
+
+/* TO DO: ADD a separate styling for the buttons with a pseudo-element arrow that 
+on the before state and a different pseudo-element arrow for the hover state */
+
+.cta-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+
+.CTA-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 27px;
+}
+
+
