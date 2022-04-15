@@ -2,10 +2,12 @@
   - GO THROUGH FONT COLOURS 
   - Fix background images of cricles being cut 
   - find the best hover states for the CTA buttons
+  - change nav hover colors
+  - remove flexbox where not necessary 
   */
 
 
-* {
+*, *:after, *:before {
   margin: 0;
   padding: 0;
   box-shadow: border-box;
@@ -97,7 +99,7 @@ header {
   width: auto;
   height: auto;
   background-color: white;
-  z-index: 2;
+  z-index: 50;
 }
 
 nav a {
@@ -114,7 +116,7 @@ nav a:hover {
   font: var(--nav-font);
 }
 
-#get-it-now-btn button {
+#get-it-now-btn {
   font: var(--nav-font);
   background: var(--Blue);
   color: white;
@@ -124,7 +126,7 @@ nav a:hover {
   border-color: white;
 }
 
-#get-it-now-btn button:hover {
+#get-it-now-btn:hover {
   cursor: pointer;
   background-color: white;
   color: var(--Blue);
@@ -137,12 +139,13 @@ nav a:hover {
 /* STYLING FOR HERO SECTION */
 
 #hero-section {
-  height: 100%;
+  /* height: 100%; */
   background-color: var(--page-bg-blue);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
+
 
 #left-hero-col {
   width: 493px;
@@ -152,9 +155,9 @@ nav a:hover {
 }
 
 #hero-title-text {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 15px; */
 }
 
 #app-badges {
@@ -190,21 +193,18 @@ nav a:hover {
 
 .hero-bottom-bg {
   position: relative;
-  margin-top: -330px;
+  /* margin-top: -330px; */
   padding: 100px 0px;
   display: inline-block;
-  z-index: 0;
   width: 100%;
   /* border style just to see where the image starts and ends */
-  /* border-style: solid; */
+  border-style: solid;
 }
 
-/* STYLING FOR ABOUT SECTION */
+/*  ABOUT SECTION */
 
 #about-title-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: center;
   gap: 25px;
   width: 767px;
 }
@@ -244,7 +244,7 @@ nav a:hover {
 
 .feature-set a::after {
   content: url(Assets/Arrow.svg);
-  display: inline-block;
+  /* display: inline-block; */
   margin-left: 8px;
 }
 
