@@ -6,6 +6,10 @@
   - remove flexbox where not necessary 
   */
 
+html {
+  scroll-behavior: smooth;
+
+}
 
 *,
 *:after,
@@ -60,9 +64,6 @@ h3 {
   font: var(--h3-font);
 }
 
-/* h4 {
-  font: var(--h4-font);
-} */
 
 h1,
 h2,
@@ -75,7 +76,6 @@ h3 {
 }
 
 /* padding for each section */
-#hero-section,
 #About,
 #Features,
 #mobile-app-section,
@@ -83,7 +83,6 @@ h3 {
 #Pricing,
 #CTA-section,
 footer {
-
   padding: 32px 100px;
 }
 
@@ -93,13 +92,10 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* margin: 0px 20px; */
   padding: 25px 0px;
   box-shadow: var(--nav-bar-shadow);
   position: sticky;
-  top: 0;
-  width: auto;
-  height: auto;
+  top: 0px;
   background-color: white;
   z-index: 50;
 }
@@ -141,12 +137,10 @@ nav a:hover {
 
 /* STYLING FOR HERO SECTION */
 
-#hero-section {
-  background-color: var(--page-bg-blue);
-}
-
 .hero-content-container {
+  background-color: var(--page-bg-blue);
   display: flex;
+  padding: 0px 100px
 }
 
 #left-hero-col {
@@ -177,9 +171,8 @@ nav a:hover {
   width: 761px;
   height: 763.87px;
   top: 100px;
-  left: 100px;
+  left: 200px;
   z-index: 1;
-
 }
 
 #hero-bg-circle {
@@ -192,35 +185,39 @@ nav a:hover {
 
 
 .hero-bottom-bg {
-  position: relative;
-  /* margin-top: -330px; */
-  padding: 100px 0px;
-  display: inline-block;
   width: 100%;
-  /* border style just to see where the image starts and ends */
-  border-style: solid;
+  position: relative;
+  margin-top: -220px;
 }
 
 /*  ABOUT SECTION */
 
 #about-title-text {
   text-align: center;
-  gap: 25px;
-  width: 767px;
+  margin-top: 80px;
+  width: 100%;
+}
+
+#about-title-text p {
+  padding-top: 25px;
 }
 
 .feature-set {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 270px;
-  gap: 20px;
+  margin-top: 40px;
+  width: 280px;
+  gap: 10px;
+  text-align: center;
 }
 
 .feature-set p {
-  font: var(--mid-p-font)
+  font: var(--mid-p-font);
 }
-
+.feature-set h3 {
+  margin-top: 10px;
+}
 
 #features-container {
   display: flex;
@@ -228,23 +225,23 @@ nav a:hover {
   gap: 50px;
 }
 
-#About {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 38px;
-}
-
-.feature-set a {
+.learn-more-btn {
   font: var(--btn-font);
   text-decoration: none;
   color: var(--Blue);
+  margin-top: 10px;
 }
 
-.feature-set a::after {
+.learn-more-btn:hover {
+  font: var(--btn-font);
+  text-decoration: underline;
+  text-underline-offset: 9px;
+  color: var(--Blue);
+  margin-top: 10px;
+}
+
+.learn-more-btn::after {
   content: url(Assets/Arrow.svg);
-  /* display: inline-block; */
   margin-left: 8px;
 }
 
@@ -256,6 +253,7 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  padding-top: 100px;
 }
 
 #features-title h2,
@@ -280,8 +278,6 @@ nav a:hover {
   font: var(--mid-p-font);
   opacity: 70%;
 }
-
-
 
 #left-features-list {
   display: flex;

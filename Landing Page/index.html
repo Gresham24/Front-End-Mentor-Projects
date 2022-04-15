@@ -7,9 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
-        rel="stylesheet"> -->
     <link
         href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
@@ -19,8 +16,8 @@
 </head>
 
 <body>
-    <!-- Nav bar -->
     <header>
+        <!-- START: Nav bar -->
         <img src="Assets/Skyscanner Logo.svg" alt="Skyscanner logo" class="logo">
         <nav>
             <!-- TO DO: Use buttons -->
@@ -32,12 +29,13 @@
             <a href="#CTA-section">Contact</a>
             <a href="#"><button id="get-it-now-btn">Get it now</button></a>
         </nav>
+        <!-- END: Nav bar -->
     </header>
 
     <main>
-        <!-- hero section -->
+        <!-- START: Hero section -->
         <section id="hero-section">
-            
+
             <div class="hero-content-container">
                 <div id="left-hero-col">
                     <div id="hero-title-text">
@@ -61,17 +59,16 @@
                     <img src="Assets/iPhone-hero-mockup.svg" alt="iphone app mockup image" id="iPhone-hero-mockup">
                 </div>
             </div>
-            <!-- add container for above stuff then add bottom bg image here -->
+            <img src="Assets/hero-bottom-bg-img.svg" alt="bottom background  image for hero section"
+                class="hero-bottom-bg">
         </section>
+        <!-- END: Hero section -->
 
-        <img src="Assets/hero-bottom-bg-img.svg" alt="bottom background  image for hero section" class="hero-bottom-bg">
-
-        <!-- about section -->
+        <!-- START: About section -->
         <section id="About">
-
             <div id="about-title-text">
                 <h2>New Personal Finance App</h2>
-                <p>Take conntrol of your money, balance your income and expenses, and understand where your money goes.
+                <p>Take conntrol of your money, balance your income and expenses, and understand <br> your money goes.
                 </p>
             </div>
 
@@ -81,7 +78,7 @@
                     <h3>Easy access</h3>
                     <p>Take this wherever you go so that you know what's going on with your money at all times.</p>
 
-                    <a href="#learn-more">Learn more</a>
+                    <a href="#learn-more" class="learn-more-btn">Learn more</a>
 
                 </div>
                 <div class="feature-set">
@@ -89,7 +86,7 @@
                     <h3>Budgets that work</h3>
                     <p>Create budgets you can actually stick to, and see how you're spending your money.</p>
 
-                    <a href="#learn-more">Learn more</a>
+                    <a href="#learn-more" class="learn-more-btn">Learn more</a>
 
 
                 </div>
@@ -98,15 +95,16 @@
                     <h3>Total control</h3>
                     <p>Take a full control of your expenses. This will help you to do that anywhere anytime.</p>
 
-                    <a href="#learn-more">Learn more</a>
+                    <a href="#learn-more" class="learn-more-btn">Learn more</a>
                 </div>
             </div>
         </section>
 
         <img src="Assets/features-top-bg-image.svg" alt="top background image for about section"
             class="features-top-bg-img">
+        <!-- END: About section -->
 
-        <!-- feature section -->
+        <!-- START: Features section -->
         <section id="Features">
 
             <div id="features-title">
@@ -157,9 +155,11 @@
 
         <img src="Assets/features-bottom-bg-image.svg" alt="bottom background image for about section"
             class="features-bottom-bg-img">
+        <!-- END: Features section -->
 
+
+        <!-- START: Mobile app section -->
         <section id="mobile-app-section">
-            <!-- mobile app section-->
             <div id="left-mobile-app-section-col">
                 <div id="mobile-app-title">
                     <!-- green text -->
@@ -201,7 +201,9 @@
                 <img src="Assets/bg circle img.svg" alt="background image of circle" class="light-blue-bg-circle">
             </div>
         </section>
-        <!-- Testimonisals section -->
+        <!-- END: Mobile app section -->
+
+        <!-- START: Testimonisals section -->
         <section id="Testimonials">
             <div class="heading-brands-container">
                 <p class="green-text">OUR ACHIEVEMENTS</p>
@@ -291,12 +293,12 @@
                 </div>
             </div>
         </section>
-
-
+        <!-- put this image inside the section it belongs in -->
         <img src="Assets/top-bg-border.svg" alt="Top background image for pricing section" class="top-pricing-bg">
+        <!-- END: Testimonisals section -->
 
-        <!-- Pricing section -->
 
+        <!-- START: Pricing section -->
         <section id="Pricing">
             <div class="pricing-header">
                 <p class="green-text"><span>OUR PRICING</span></p>
@@ -346,9 +348,9 @@
 
         <img src="Assets/bottom-bg-border.svg" alt="bottom background image for pricing section"
             class="bottom-pricing-bg">
+        <!-- END: Pricing section -->
 
-
-        <!-- CTA - Get a our nance app now section  -->
+        <!-- START: CTA section -->
         <section id="CTA-section">
             <div class="CTA-container">
                 <div class="cta-header">
@@ -364,9 +366,11 @@
                 </div>
             </div>
         </section>
+        <!-- END: CTA section -->
+
     </main>
 
-    <!-- Footer -->
+    <!-- START: Footer section -->
     <footer>
         <div id="footer-columns">
             <div id="left-footer-col">
@@ -381,7 +385,7 @@
                     <a href="#" id="linkedin-link"><img src="Assets/LinkedIn.svg" alt="linkedIn contact link"></a>
                 </div>
             </div>
-            <!-- footer nav menu -->
+            <!-- footer nav buttons -->
             <div id="footer-nav-menu">
                 <div id="products-links">
                     <p><span class="bold-text">Products</span></p>
@@ -417,11 +421,14 @@
                 </div>
             </div>
         </div>
-        <!-- footer footer -->
+        <!-- END: Footer section -->
+
+        <!-- START: sub-footer section -->
         <div id="copyright-section">
             <img src="Assets/heart.svg" alt="heart icon">
             <p id="copyright-text">Copyright &copy; 2019. Crafted with love</p>
         </div>
+        <!-- END: sub-footer section -->
     </footer>
 </body>
 
