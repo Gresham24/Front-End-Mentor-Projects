@@ -7,7 +7,9 @@
   */
 
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   margin: 0;
   padding: 0;
   box-shadow: border-box;
@@ -114,6 +116,7 @@ nav a:hover {
   text-decoration: underline;
   text-underline-offset: 9px;
   font: var(--nav-font);
+  color: var(--Blue);
 }
 
 #get-it-now-btn {
@@ -139,13 +142,12 @@ nav a:hover {
 /* STYLING FOR HERO SECTION */
 
 #hero-section {
-  /* height: 100%; */
   background-color: var(--page-bg-blue);
-  display: flex;
-  /* justify-content: space-between; */
-  /* align-items: center; */
 }
 
+.hero-content-container {
+  display: flex;
+}
 
 #left-hero-col {
   width: 493px;
@@ -154,21 +156,20 @@ nav a:hover {
   gap: 50px;
 }
 
-#hero-title-text {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* gap: 15px; */
+#hero-title-text p {
+  padding-top: 40px;
 }
 
-#app-badges {
-  display: flex;
-  gap: 18px;
+#hero-title-text h1 {
+  padding-top: 90px;
+}
+
+.apple-store-btn {
+  margin-right: 18px;
 }
 
 #scroll-to-features-btn {
-  display: flex;
   font: var(--small-p-font);
-  gap: 8px;
 }
 
 #iPhone-hero-mockup {
@@ -185,7 +186,6 @@ nav a:hover {
   position: absolute;
   width: 761px;
   height: 763.87px;
-  /* z-index: 1; */
   margin-top: 40px;
   margin-left: 200px;
 }
