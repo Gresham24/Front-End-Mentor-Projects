@@ -330,22 +330,19 @@ nav a:hover {
 }
 
 #mobile-app-title {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
   width: 422px;
+}
+#mobile-app-title p, h2 {
+  margin-top: 7px;
 }
 
 .mobile-app-feature {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   width: 235px;
-  gap: 8px;
 }
 
 .mobile-app-feature p {
   font: var(--mid-p-font);
+  margin-top: 8px;
 }
 
 #mobile-app-features-container {
@@ -402,34 +399,6 @@ nav a:hover {
   display: inline-block;
   margin-left: 8px;
 }
-
-
-/* Old styling for the button that used the arrow image in the HTML */
-
-/* .try-it-out-free-btn {
-  text-decoration: none;
-  font: var(--btn-font);
-  color: white;
-  background: var(--Blue);
-  border-radius: 30px;
-  padding: 10px 16px;
-  border-style: solid;
-  border-color: transparent;
-  position: relative;
-  z-index: 1;
-  left: 55px;
-  bottom: 10px;
-  margin-left: -55px;
-} */
-/* .try-it-out-free-btn:hover {
-  cursor: pointer;
-  background-color: white;
-  color: var(--Blue);
-  border-radius: 30px;
-  padding: 10px 16px;
-  border-style: solid;
-  border-color: var(--Blue);
-} */
 
 
 #left-mobile-app-section-col {
