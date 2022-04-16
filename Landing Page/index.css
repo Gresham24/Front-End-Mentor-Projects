@@ -1,8 +1,7 @@
 /* TO DO: 
   - GO THROUGH FONT COLOURS 
-  - Fix background images of cricles being cut 
+  - Fix circle background image + phone positioning of mobile app section 
   - find the best hover states for the CTA buttons
-  - change nav hover colors
   - remove flexbox where not necessary 
   */
 
@@ -301,7 +300,6 @@ nav a:hover {
 
 #mockup-features-container {
   display: flex;
-  align-content: center;
 }
 
 .features-top-bg-img {
