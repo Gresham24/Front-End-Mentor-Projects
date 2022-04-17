@@ -326,7 +326,8 @@ nav a:hover {
 
 #mobile-app-section {
   display: flex;
-  justify-content: space-between;
+  margin: 40px 0 100px 0;
+  /* justify-content: space-around; */
 }
 
 .green-text {
@@ -428,7 +429,7 @@ h2 {
 #right-mobile-app-section-col {
   display: flex;
   align-items: center;
-  left: 200px;
+  left: 50px;
   position: relative;
 }
 
