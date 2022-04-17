@@ -214,6 +214,7 @@ nav a:hover {
 .feature-set p {
   font: var(--mid-p-font);
 }
+
 .feature-set h3 {
   margin-top: 10px;
 }
@@ -313,7 +314,7 @@ nav a:hover {
   width: 100%;
 }
 
-        /* MOBILE APP SECTION */
+/* MOBILE APP SECTION */
 
 #mobile-app-section {
   display: flex;
@@ -332,7 +333,9 @@ nav a:hover {
 #mobile-app-title {
   width: 422px;
 }
-#mobile-app-title p, h2 {
+
+#mobile-app-title p,
+h2 {
   margin-top: 7px;
 }
 
@@ -437,23 +440,23 @@ nav a:hover {
 /* TESTIMONIAL SECTION */
 
 #Testimonials {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 38px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .heading-brands-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
+  width: 100%;
+  text-align: center;
 }
 
+.heading-brands-container h2 {
+  margin-top: 20px;
+}
+
+
 .list-of-companies {
+  justify-content: center;
   display: flex;
-  padding-top: 30px;
+  margin-top: 50px;
   gap: 74px;
 }
 
@@ -474,8 +477,6 @@ nav a:hover {
 }
 
 .name-title {
-  display: flex;
-  flex-direction: column;
   line-height: 1em;
 }
 
@@ -483,25 +484,24 @@ nav a:hover {
   display: flex;
   align-items: center;
   gap: 11px;
+  margin-top: 13px;
 }
 
 /* styling testimonial text and block */
 .testimonial-text {
   font: var(--mid-p-font);
+  margin-top: 13px;
 }
 
 .testimonial-block {
   width: 243px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 13px;
 }
 
 #testimonial-container {
   display: flex;
   justify-content: center;
   gap: 50px;
+  margin-top: 38px;
 }
 
 /* PRICING SECTION */
