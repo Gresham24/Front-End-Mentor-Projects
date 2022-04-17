@@ -659,8 +659,8 @@ text-align: center;
   margin-top: 30px;
 }
 .CTA-buttons {
-  margin-top: 44px;
-  }
+margin-top: 44px;
+}
 
 .try-it-for-free-btn {
   margin-right: 27px;
@@ -705,6 +705,7 @@ footer {
 #footer-columns {
   margin-top: 180px;
   display: flex;
+  align-items: baseline;
   gap: 100px;
 }
 
@@ -736,8 +737,9 @@ footer {
 
 #copyright-section {
   margin-top: 123px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+text-align: center;
+}
+
+#copyright-section p {
+  margin-top: 20px;
 }
