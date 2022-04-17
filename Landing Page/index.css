@@ -313,7 +313,7 @@ nav a:hover {
   width: 100%;
 }
 
-/* MOBILE APP SECTION */
+        /* MOBILE APP SECTION */
 
 #mobile-app-section {
   display: flex;
@@ -348,6 +348,7 @@ nav a:hover {
 #mobile-app-features-container {
   display: flex;
   gap: 55px;
+  margin-top: 32px;
 }
 
 .mobile-app-feature h3 {
@@ -355,10 +356,10 @@ nav a:hover {
 }
 
 /* Button styling: 
-- created a button with an arrow added as a pseudo element
-- added an arrow (as a pseudo-element) to the button on hover state  */
+- I created a button with an arrow added as a pseudo element
+- I added an arrow (as a pseudo-element) to the button on hover state  */
 
-#try-it-out-free-btn button {
+#try-it-out-free-btn {
   text-decoration: none;
   font: var(--btn-font);
   color: white;
@@ -374,17 +375,16 @@ nav a:hover {
   /* Need to find better way to move the elements other than margin so that 
   it overlaps with the dotted grid */
   margin-left: -55px;
-
 }
 
 /* added the arrow as a pseudo-element for the button */
-#try-it-out-free-btn button::after {
+#try-it-out-free-btn::after {
   content: url(Assets/Arrow-white.svg);
   display: inline-block;
   margin-left: 8px;
 }
 
-#try-it-out-free-btn button:hover {
+#try-it-out-free-btn:hover {
   cursor: pointer;
   background-color: white;
   color: var(--Blue);
@@ -394,7 +394,7 @@ nav a:hover {
   border-color: var(--Blue);
 }
 
-#try-it-out-free-btn button:hover::after {
+#try-it-out-free-btn:hover::after {
   content: url(Assets/Arrow.svg);
   display: inline-block;
   margin-left: 8px;
@@ -402,9 +402,7 @@ nav a:hover {
 
 
 #left-mobile-app-section-col {
-  display: flex;
-  flex-direction: column;
-  gap: 52px;
+  margin-top: 200px;
 }
 
 
@@ -412,6 +410,7 @@ nav a:hover {
   position: relative;
   display: flex;
   align-items: center;
+  margin-top: 32px;
 }
 
 .button-bg-frame {
@@ -419,16 +418,11 @@ nav a:hover {
   z-index: -2;
 }
 
-/* TO DO: Figure out how to align background circle and phone to get cut off screen without 
-    affecting scrolling */
 #right-mobile-app-section-col {
   display: flex;
   align-items: center;
-  /* left: 200px; */
+  left: 200px;
   position: relative;
-  /* padding-left: 100px; */
-  /* background-image: url(Assets/bg\ circle\ img.svg); */
-
 }
 
 .light-blue-bg-circle {
@@ -607,30 +601,8 @@ nav a:hover {
   color: var(--Blue);
 }
 
-
-/* .get-started-btn {
-  font: var(--btn-font);
-  text-decoration: none;
-  color: var(--Blue);
-  border-radius: 30px;
-  padding: 10px 16px;
-  border-style: solid;
-  border-color: var(--Blue);
-}
-
-.get-started-btn:hover {
-  font: var(--btn-font);
-  text-decoration: none;
-  color: white;
-  background: var(--Blue);
-  border-radius: 30px;
-  padding: 10px 16px;
-  border-style: solid;
-  border-color: transparent;
-} */
-
 /* button styling */
-.get-started-btn button {
+.get-started-btn {
   font: var(--btn-font);
   color: var(--Blue);
   background: white;
@@ -641,13 +613,13 @@ nav a:hover {
 
 }
 
-.get-started-btn button::after {
+.get-started-btn::after {
   content: url(Assets/Arrow.svg);
   display: inline-block;
   margin-left: 8px;
 }
 
-.get-started-btn button:hover {
+.get-started-btn:hover {
   font: var(--btn-font);
   cursor: pointer;
   background-color: var(--Blue);
@@ -658,11 +630,10 @@ nav a:hover {
   border-color: transparent;
 }
 
-.get-started-btn button:hover::after {
+.get-started-btn:hover::after {
   content: url(Assets/Arrow-white.svg);
   display: inline-block;
   margin-left: 8px;
-
 }
 
 
@@ -695,7 +666,7 @@ nav a:hover {
   color: var(--icon-light-blue);
 }
 
-.try-it-for-free-btn button {
+.try-it-for-free-btn {
   text-decoration: none;
   font: var(--btn-font);
   color: var(--Blue);
@@ -708,28 +679,12 @@ nav a:hover {
 
 /* TO DO: Find out hte best styling for the hover states of these buttons */
 
-.try-it-for-free-btn button::after {
+.try-it-for-free-btn::after {
   content: url(Assets/Arrow.svg);
   margin-left: 8px;
 }
 
-/* .try-it-for-free-btn button:hover {
-    text-decoration: none;
-    font: var(--btn-font);
-    color: white;
-    background: var(--Blue);
-    border-radius: 30px;
-    padding: 10px 16px;
-    border-style: solid;
-    border-color: white;
-  }
-  
-  .try-it-for-free-btn button:hover:after {
-    content: url(Assets/Arrow-white.svg);
-    margin-left: 8px;
-    } */
-
-.watch-demo-btn button {
+.watch-demo-btn {
   text-decoration: none;
   font: var(--btn-font);
   background-color: var(--Blue);
@@ -740,27 +695,10 @@ nav a:hover {
   border-color: white;
 }
 
-.watch-demo-btn button::after {
+.watch-demo-btn::after {
   content: url(Assets/Arrow-white.svg);
   margin-left: 8px;
 }
-
-/* .watch-demo-btn button:hover {
-    text-decoration: none;
-    font: var(--btn-font);
-    background-color: white;
-    color: var(--Blue);
-    border-radius: 30px;
-    padding: 10px 16px;
-    border-style: solid;
-    border-color: transparent;
-  }
-  
-  .watch-demo-btn button:hover:after {
-    content: url(Assets/Arrow.svg);
-    margin-left: 8px;
-    } */
-
 
 .cta-header {
   display: flex;
