@@ -1,8 +1,3 @@
-/* TO DO: 
-  - GO THROUGH FONT COLOURS 
-  - find the best hover states for the CTA buttons
-  */
-
 html {
   scroll-behavior: smooth;
 }
@@ -522,7 +517,7 @@ h2 {
 }
 
 #pricing-section-content {
-  background-color: var(--page-bg-blue);
+  background-color: var(--icon-bg-blue);
   padding-bottom: 200px;
 }
 
@@ -682,7 +677,6 @@ h2 {
   border-color: var(--Blue);
 }
 
-/* TO DO: Find out hte best styling for the hover states of these buttons */
 .try-it-for-free-btn::after {
   content: url(Assets/Arrow.svg);
   margin-left: 8px;
@@ -709,7 +703,7 @@ h2 {
 
 footer {
   font: var(--mid-p-font);
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 #footer-columns {
