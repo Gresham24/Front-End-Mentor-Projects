@@ -7,7 +7,6 @@
 
 html {
   scroll-behavior: smooth;
-
 }
 
 *,
@@ -78,14 +77,16 @@ h3 {
 #About,
 #Features,
 #mobile-app-section,
-#Testimonials,
-#Pricing,
+#content-container,
+#pricing-section-content,
 #CTA-section,
 footer {
   padding: 32px 100px;
 }
 
+
 /* STYLING FOR NAVBAR (HEADER) */
+
 
 header {
   display: flex;
@@ -134,7 +135,9 @@ nav a:hover {
   border-color: var(--Blue);
 }
 
+
 /* STYLING FOR HERO SECTION */
+
 
 .hero-content-container {
   background-color: var(--page-bg-blue);
@@ -189,7 +192,9 @@ nav a:hover {
   margin-top: -220px;
 }
 
+
 /*  ABOUT SECTION */
+
 
 #about-title-text {
   text-align: center;
@@ -245,7 +250,9 @@ nav a:hover {
   margin-left: 8px;
 }
 
+
 /* STYLING FOR FEATURES SECTION */
+
 
 #Features {
   background-color: var(--Blue);
@@ -265,7 +272,6 @@ nav a:hover {
   color: white;
   font: var(--mid-p-font);
   padding-top: 10px;
-
 }
 
 #features-title {
@@ -314,7 +320,9 @@ nav a:hover {
   width: 100%;
 }
 
+
 /* MOBILE APP SECTION */
+
 
 #mobile-app-section {
   display: flex;
@@ -383,7 +391,6 @@ h2 {
 /* added the arrow as a pseudo-element for the button */
 #try-it-out-free-btn::after {
   content: url(Assets/Arrow-white.svg);
-  display: inline-block;
   margin-left: 8px;
 }
 
@@ -399,15 +406,12 @@ h2 {
 
 #try-it-out-free-btn:hover::after {
   content: url(Assets/Arrow.svg);
-  display: inline-block;
   margin-left: 8px;
 }
-
 
 #left-mobile-app-section-col {
   margin-top: 200px;
 }
-
 
 .button-frame-container {
   position: relative;
@@ -437,7 +441,9 @@ h2 {
   z-index: 1;
 }
 
+
 /* TESTIMONIAL SECTION */
+
 
 #Testimonials {
   margin-bottom: 70px;
@@ -473,7 +479,6 @@ h2 {
 
 .title-text::before {
   content: url(Assets/verified-tick.svg);
-  display: inline-block;
 }
 
 .name-title {
@@ -499,10 +504,12 @@ h2 {
 
 #testimonial-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 50px;
   margin-top: 38px;
 }
+
+
 
 /* PRICING SECTION */
 
@@ -510,16 +517,15 @@ h2 {
 .top-pricing-bg,
 .bottom-pricing-bg {
   width: 100%;
-  display: flex;
 }
 
-#Pricing {
+.top-pricing-bg {
+  display: block;
+}
+
+#pricing-section-content {
   background-color: var(--page-bg-blue);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 80px;
-  /* padding-bottom: 100px; */
+padding-bottom: 200px;
 }
 
 .green-text span {
@@ -529,28 +535,28 @@ h2 {
 }
 
 .pricing-header h2 {
-  width: 308px;
   padding-top: 10px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .pricing-header p {
   font: var(--mid-p-font);
-
+  text-align: center;
+  margin-top: 10px;
 }
 
 .pricing-header {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 610px;
+  width: 100%;
   align-items: center;
-  gap: 15px;
 }
 
-/* card styling */
+/* individual card styling */
 .card-containter {
   display: flex;
+  justify-content: center;
   gap: 76px;
+  margin-top: 80px;
 }
 
 #card-green,
@@ -577,31 +583,27 @@ h2 {
   font: var(--small-p-font);
 }
 
+/* card color styling */
 #card-green {
   border-color: var(--green);
 }
-
 #card-gold {
   border-color: var(--gold);
 }
-
 #card-blue {
   border-color: var(--Blue);
 }
-
 #card-green-header {
   color: var(--green);
 }
-
 #card-gold-header {
   color: var(--gold);
 }
-
 #card-blue-header {
   color: var(--Blue);
 }
 
-/* button styling */
+/* card button styling */
 .get-started-btn {
   font: var(--btn-font);
   color: var(--Blue);
@@ -610,12 +612,9 @@ h2 {
   padding: 10px 16px;
   border-style: solid;
   border-color: var(--Blue);
-
 }
-
 .get-started-btn::after {
   content: url(Assets/Arrow.svg);
-  display: inline-block;
   margin-left: 8px;
 }
 
@@ -629,44 +628,42 @@ h2 {
   border-style: solid;
   border-color: transparent;
 }
-
 .get-started-btn:hover::after {
   content: url(Assets/Arrow-white.svg);
-  display: inline-block;
   margin-left: 8px;
 }
 
 
 /* CTA - GET OUR FINANCE APP NOW */
 
-#CTA-section {
-  padding-bottom: 150px;
-}
-
 .CTA-container {
   background-color: var(--Blue);
-  width: 1227.5px;
+  width: 100%;
   height: 298px;
   position: relative;
-  /* margin: -150px is to make it cross over to the top section. margin: auto is to center align it  */
-  margin: -150px auto;
+  /* margin: -300px is to make it cross over to the top section. margin: auto is to center align it  */
+text-align: center;
+  margin-top: -300px;
   border-radius: 21px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
 }
 
-.CTA-container h2 {
+.cta-header {
+  margin-top: 50px;
+}
+.cta-header h2 {
   color: white;
+  padding-top: 60px;
 }
-
-.CTA-container p {
+.cta-header p {
   color: var(--icon-light-blue);
+  margin-top: 30px;
 }
+.CTA-buttons {
+  margin-top: 44px;
+  }
 
 .try-it-for-free-btn {
+  margin-right: 27px;
   text-decoration: none;
   font: var(--btn-font);
   color: var(--Blue);
@@ -676,9 +673,7 @@ h2 {
   border-style: solid;
   border-color: var(--Blue);
 }
-
 /* TO DO: Find out hte best styling for the hover states of these buttons */
-
 .try-it-for-free-btn::after {
   content: url(Assets/Arrow.svg);
   margin-left: 8px;
@@ -694,31 +689,17 @@ h2 {
   border-style: solid;
   border-color: white;
 }
-
 .watch-demo-btn::after {
   content: url(Assets/Arrow-white.svg);
   margin-left: 8px;
 }
 
-.cta-header {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 30px;
-}
-
-.CTA-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 27px;
-}
-
 
 /* FOOTER SECTION */
 
-footer p,
-a {
+footer {
   font: var(--mid-p-font);
+  margin-top: 200px;
 }
 
 #footer-columns {
