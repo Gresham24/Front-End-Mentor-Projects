@@ -1,8 +1,6 @@
 /* TO DO: 
   - GO THROUGH FONT COLOURS 
-  - Fix circle background image + phone positioning of mobile app section 
   - find the best hover states for the CTA buttons
-  - remove flexbox where not necessary 
   */
 
 html {
@@ -311,7 +309,6 @@ nav a:hover {
 
 .features-top-bg-img {
   width: 100%;
-  /* TO DO: Find out why the gap was still there after using display block */
   margin: -2px;
   display: block;
 }
@@ -429,7 +426,7 @@ h2 {
 #right-mobile-app-section-col {
   display: flex;
   align-items: center;
-  left: 50px;
+  left: 60px;
   position: relative;
 }
 
@@ -438,7 +435,7 @@ h2 {
 }
 
 .white-iphone,
-.iphone-mockup {
+.iphone-mobile-app-mockup {
   z-index: 1;
 }
 
@@ -526,7 +523,7 @@ h2 {
 
 #pricing-section-content {
   background-color: var(--page-bg-blue);
-padding-bottom: 200px;
+  padding-bottom: 200px;
 }
 
 .green-text span {
@@ -588,18 +585,23 @@ padding-bottom: 200px;
 #card-green {
   border-color: var(--green);
 }
+
 #card-gold {
   border-color: var(--gold);
 }
+
 #card-blue {
   border-color: var(--Blue);
 }
+
 #card-green-header {
   color: var(--green);
 }
+
 #card-gold-header {
   color: var(--gold);
 }
+
 #card-blue-header {
   color: var(--Blue);
 }
@@ -614,6 +616,7 @@ padding-bottom: 200px;
   border-style: solid;
   border-color: var(--Blue);
 }
+
 .get-started-btn::after {
   content: url(Assets/Arrow.svg);
   margin-left: 8px;
@@ -629,6 +632,7 @@ padding-bottom: 200px;
   border-style: solid;
   border-color: transparent;
 }
+
 .get-started-btn:hover::after {
   content: url(Assets/Arrow-white.svg);
   margin-left: 8px;
@@ -643,7 +647,7 @@ padding-bottom: 200px;
   height: 298px;
   position: relative;
   /* margin: -300px is to make it cross over to the top section. margin: auto is to center align it  */
-text-align: center;
+  text-align: center;
   margin-top: -300px;
   border-radius: 21px;
 }
@@ -651,16 +655,19 @@ text-align: center;
 .cta-header {
   margin-top: 50px;
 }
+
 .cta-header h2 {
   color: white;
   padding-top: 60px;
 }
+
 .cta-header p {
   color: var(--icon-light-blue);
   margin-top: 30px;
 }
+
 .CTA-buttons {
-margin-top: 44px;
+  margin-top: 44px;
 }
 
 .try-it-for-free-btn {
@@ -674,6 +681,7 @@ margin-top: 44px;
   border-style: solid;
   border-color: var(--Blue);
 }
+
 /* TO DO: Find out hte best styling for the hover states of these buttons */
 .try-it-for-free-btn::after {
   content: url(Assets/Arrow.svg);
@@ -690,6 +698,7 @@ margin-top: 44px;
   border-style: solid;
   border-color: white;
 }
+
 .watch-demo-btn::after {
   content: url(Assets/Arrow-white.svg);
   margin-left: 8px;
@@ -738,7 +747,7 @@ footer {
 
 #copyright-section {
   margin-top: 123px;
-text-align: center;
+  text-align: center;
 }
 
 #copyright-section p {
