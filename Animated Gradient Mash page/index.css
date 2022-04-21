@@ -17,12 +17,6 @@ body {
 }
 
 .gradient-bg {
-    /* background-image: url(images/\ gradient-bg.png); */
-    /* background-repeat: none; */
-    /* background-color: white; */
-    /* opacity: 50%; */
-    /* width: 100vw; */
-    /* backdrop-filter: blur(160px); */
     transition: all 2s ease-in-out;
 }
 
