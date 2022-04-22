@@ -14,10 +14,11 @@
     --Light-Purple: #A3A8F0;
     --Solid-Gradient: #6A70DE;
     /* Font */
-    --h1-font: normal 700 40px/50px 'Montserrat', serif;
-    --h2-font: normal 700 20px/25px 'Montserrat', serif;
-    --p-font: normal 700 15px/18px 'Montserrat', serif;
-    --btn-font: normal 700 15px/18px 'Montserrat', serif;
+    --h1-font: normal 700 40px/50px 'Montserrat', sans-serif;
+    --h2-font: normal 700 20px/25px 'Montserrat', sans-serif;
+    --p-font: normal 700 15px/18px 'Montserrat', sans-serif;
+    --btn-font: normal 700 15px/18px 'Montserrat', sans-serif;
     /* card shadow */
     --card-shadow: 0px 5px 35px -12px rgba(163, 168, 240, 0.75);
 }
+
