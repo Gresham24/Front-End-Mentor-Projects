@@ -10,7 +10,7 @@
     --Light-Grayish-Blue: #B3B5C6;
     --Dark-Blue: #6D768D;
     --Dark-Grayish-Blue: #494C5F;
-    --Liear-Gradient: gradient(87.51deg, #9BA0F0 2.29%, #6A70DE 61.6%);
+    --Liear-Gradient: linear-gradient(87.51deg, #9BA0F0 2.29%, #6A70DE 61.6%);
     --Light-Purple: #A3A8F0;
     --Solid-Gradient: #6A70DE;
     /* Font */
@@ -28,3 +28,57 @@ body {
     background-position: right top, left bottom;
     background-repeat: no-repeat, no-repeat;
 }
+
+/* font formatting */
+h1 {
+    font: var(--h1-font);
+}
+
+h2 {
+    font: var(--h2-font);
+}
+
+p {
+    font: var(--p-font);
+}
+
+.learnMoreBt {
+    font: var(--btn-font);
+}
+
+/* Price Toggle Button (monthly state) */
+.priceToggleBg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100px;
+    height: 47px;
+    border-radius: 49px;
+    background: var(--Liear-Gradient);
+}
+.toggleBtn {
+    width: 37px;
+    height: 37px;
+    background: white;
+    border-radius: 60px;
+    margin: 0px 5px;
+}
+/* Price Toggle Button (annual state) */
+/* .priceToggleBg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100px;
+    height: 47px;
+    border-radius: 49px;
+    background: var(--Liear-Gradient);
+}
+.toggleBtn {
+    width: 37px;
+    height: 37px;
+    background: white;
+    border-radius: 60px;
+    margin: 0px 5px;
+} */
