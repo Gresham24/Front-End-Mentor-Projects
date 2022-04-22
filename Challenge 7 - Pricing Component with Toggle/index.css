@@ -7,7 +7,7 @@
 :root {
     /* colour styles */
     --Very-Light-Grayish-Blue: #F6F6FE;
-    --Light-Grayish-Blue:#B3B5C6;
+    --Light-Grayish-Blue: #B3B5C6;
     --Dark-Blue: #6D768D;
     --Dark-Grayish-Blue: #494C5F;
     --Liear-Gradient: gradient(87.51deg, #9BA0F0 2.29%, #6A70DE 61.6%);
@@ -22,3 +22,9 @@
     --card-shadow: 0px 5px 35px -12px rgba(163, 168, 240, 0.75);
 }
 
+body {
+    background-color: var(--Very-Light-Grayish-Blue);
+    background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
+    background-position: right top, left bottom;
+    background-repeat: no-repeat, no-repeat;
+}
