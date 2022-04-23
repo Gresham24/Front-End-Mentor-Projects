@@ -24,9 +24,12 @@
 
 body {
     background-color: var(--Very-Light-Grayish-Blue);
-    background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
+    background-image: url(images/bg-top.svg), url(images/bg-bottom\ 2.svg);
     background-position: right top, left bottom;
     background-repeat: no-repeat, no-repeat;
+    /* the bottom left border doesn't go all the way to the bottom, hence why 
+    I added a height for the body */
+    height: 740px;
 }
 
 /* Font formatting */
@@ -70,6 +73,7 @@ p {
     height: 47px;
     border-radius: 49px;
     background: var(--Linear-Gradient);
+    cursor: pointer;
 }
 
 .toggleBtn {
@@ -91,6 +95,7 @@ p {
     height: 47px;
     border-radius: 49px;
     background: var(--Linear-Gradient);
+    cursor: pointer;
 }
 .toggleBtn {
     width: 37px;
@@ -105,7 +110,6 @@ p {
     flex-direction: row;
     align-items: center;
     gap: 31px;
-    margin-top: 50px;
 }
 
 /* Card layout formatting */
@@ -164,6 +168,7 @@ p {
     color: white;
     width: 288px;
     height: 42px;
+    cursor: pointer;
 }
 
 .professionalPlan .learnMoreBtn {
@@ -176,3 +181,18 @@ a {
 }
 
 /* aligning cards */
+
+.cardContainer {
+    display: flex;
+    align-items: center;
+}
+
+.pageContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
