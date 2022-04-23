@@ -10,7 +10,7 @@
     --Light-Grayish-Blue: #B3B5C6;
     --Dark-Blue: #6D768D;
     --Dark-Grayish-Blue: #494C5F;
-    --Liear-Gradient: linear-gradient(87.51deg, #9BA0F0 2.29%, #6A70DE 61.6%);
+    --Linear-Gradient: linear-gradient(87.51deg, #9BA0F0 2.29%, #6A70DE 61.6%);
     --Light-Purple: #A3A8F0;
     --Solid-Gradient: #6A70DE;
     /* Font */
@@ -69,7 +69,7 @@ p {
     width: 100px;
     height: 47px;
     border-radius: 49px;
-    background: var(--Liear-Gradient);
+    background: var(--Linear-Gradient);
 }
 
 .toggleBtn {
@@ -90,7 +90,7 @@ p {
     width: 100px;
     height: 47px;
     border-radius: 49px;
-    background: var(--Liear-Gradient);
+    background: var(--Linear-Gradient);
 }
 .toggleBtn {
     width: 37px;
@@ -108,6 +108,7 @@ p {
     margin-top: 50px;
 }
 
+/* Card layout formatting */
 .basicPlan,
 .masterPlan {
     width: 350px;
@@ -119,10 +120,11 @@ p {
 
 .professionalPlan {
     color: white;
-    background: var(--Liear-Gradient);
+    background: var(--Linear-Gradient);
     width: 350px;
     height: 500px;
     border-radius: 7px;
+    box-shadow: var(--card-shadow);
 }
 
 .cardContent {
@@ -133,6 +135,9 @@ p {
     gap: 15px;
     padding: 40px 31px;
 }
+.professionalPlan .cardContent {
+    padding: 63px 31px;
+}
 
 /* last line  must be 40px to the button */
 .underline {
@@ -142,11 +147,32 @@ p {
     border-width: 0.5px;
     border-color: var(--Light-Grayish-Blue);
 }
-
 .professionalPlan .underline {
     border-color: white;
 }
 
-.professionalPlan .cardContent {
-    padding: 63px 31px;
+/* button formatting */
+.learnMoreBtn {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--Linear-Gradient);
+    font: var(--btn-font);
+    letter-spacing: 0.13em;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    width: 288px;
+    height: 42px;
 }
+
+.professionalPlan .learnMoreBtn {
+    background: white;
+    color: var(--Solid-Gradient);
+}
+
+a {
+    padding-top: 20px;
+}
+
+/* aligning cards */
