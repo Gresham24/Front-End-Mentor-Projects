@@ -74,10 +74,12 @@ p {
     border-radius: 49px;
     background: var(--Linear-Gradient);
     cursor: pointer;
-
+}
+.priceToggleBg:hover {
+    opacity: 85%;
 }
 
-.toggleBtn {
+#toggleBtn {
     width: 37px;
     height: 37px;
     background: white;
@@ -104,7 +106,7 @@ p {
     background: var(--Linear-Gradient);
     cursor: pointer;
 }
-.toggleBtn {
+#toggleBtn {
     width: 37px;
     height: 37px;
     background: white;

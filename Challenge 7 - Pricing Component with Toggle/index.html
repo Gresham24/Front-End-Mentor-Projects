@@ -19,8 +19,10 @@
     <h2 class="title">Our Pricing</h2>
     <div class="priceSwitchContainer">
       <p>Annually</p>
+      <!-- NOTE: the <<this.classList.toggle('annual')>> is a function that
+        toggles the styling for the class .priceToggleBg.annual -->
       <div class="priceToggleBg" onclick="this.classList.toggle('annual')">
-        <div onclick="annualPriceSwitch()" class="toggleBtn"> </div>
+        <div id="toggleBtn" onclick="annualPriceSwitch()"> </div>
       </div>
       <p>Monthly</p>
     </div>
@@ -35,7 +37,7 @@
         <div class="cardContent">
           <h2>Basic</h2>
 
-          <h1 id="basicPrice" id="currency" >$</h1>
+          <h1 id="basicPrice"></h1>
           <!-- &dollar;19.99
             &dollar;199.99 -->
           <div class="underline"> </div>
@@ -56,6 +58,8 @@
 
           <h2>Professional</h2>
           <h1 id="professionalPrice"></h1>
+           <!-- &dollar;19.99
+            &dollar;199.99 -->
           <div class="underline"> </div>
           <p>1 TB Storage</p>
           <div class="underline"> </div>
@@ -73,6 +77,8 @@
           <div class="cardContent">
           <h2>Master</h2>
           <h1 id="masterPrice"></h1>
+           <!-- &dollar;19.99
+            &dollar;199.99 -->
           <div class="underline"> </div>
           <p>2 TB Storage</p>
           <div class="underline"> </div>
