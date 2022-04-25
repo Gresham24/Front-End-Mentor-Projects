@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 :root {
@@ -23,13 +24,9 @@
 }
 
 body {
+    background: url(images/bg-top.svg) top right, url(images/bg-bottom-2.svg) bottom left;
     background-color: var(--Very-Light-Grayish-Blue);
-    background-image: url(images/bg-top.svg), url(images/bg-bottom\ 2.svg);
-    background-position: right top, left bottom;
-    background-repeat: no-repeat, no-repeat;
-    /* the bottom left border doesn't go all the way to the bottom, hence why 
-    I added a height for the body */
-    height: 740px;
+    background-repeat: no-repeat;
 }
 
 /* Font formatting */
@@ -85,7 +82,8 @@ p {
     background: white;
     border-radius: 60px;
     margin: 0px 5px;
-
+    border: none;
+    cursor: pointer;
 }
 
 /* Price Toggle Button (annual state) */
@@ -197,6 +195,7 @@ a {
 }
 
 .pageContentContainer {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,3 +204,4 @@ a {
     gap: 50px;
     margin-top: 50px;
 }
+

@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+
 
   <title>Challenge 7 | Pricing Component with toggle </title>
 </head>
@@ -19,10 +19,13 @@
     <h2 class="title">Our Pricing</h2>
     <div class="priceSwitchContainer">
       <p>Annually</p>
+<!-- TO DO: Turn the toggleBtn div into a button -->
+
       <!-- NOTE: the <<this.classList.toggle('annual')>> is a function that
         toggles the styling for the class .priceToggleBg.annual -->
-      <div class="priceToggleBg" onclick="this.classList.toggle('annual')">
-        <div id="toggleBtn" onclick="annualPriceSwitch()"> </div>
+      <div class="priceToggleBg" >
+        <!-- <div id="toggleBtn" onclick="annualPriceSwitch()"> </div> -->
+        <button id="toggleBtn" onclick="annualPriceSwitch()"> </button>
       </div>
       <p>Monthly</p>
     </div>
@@ -38,8 +41,7 @@
           <h2>Basic</h2>
 
           <h1 id="basicPrice"></h1>
-          <!-- &dollar;19.99
-            &dollar;199.99 -->
+
           <div class="underline"> </div>
           <p>500 GB Storage</p>
           <div class="underline"> </div>
@@ -58,8 +60,7 @@
 
           <h2>Professional</h2>
           <h1 id="professionalPrice"></h1>
-           <!-- &dollar;19.99
-            &dollar;199.99 -->
+
           <div class="underline"> </div>
           <p>1 TB Storage</p>
           <div class="underline"> </div>
@@ -77,8 +78,7 @@
           <div class="cardContent">
           <h2>Master</h2>
           <h1 id="masterPrice"></h1>
-           <!-- &dollar;19.99
-            &dollar;199.99 -->
+
           <div class="underline"> </div>
           <p>2 TB Storage</p>
           <div class="underline"> </div>
