@@ -23,12 +23,15 @@
     --card-shadow: 0px 5px 35px -12px rgba(163, 168, 240, 0.75);
 }
 
+html {
+    position: relative;
+}
 
 body {
     background: url(images/bg-bottom-2.svg) bottom left, url(images/bg-top.svg) top right;
-    background-color:var(--Very-Light-Grayish-Blue);
+    background-color: var(--Very-Light-Grayish-Blue);
     background-repeat: no-repeat;
-    height: 100vh;
+    /* height: 100vh; */
 }   
 
 /* Font formatting */
@@ -61,24 +64,6 @@ p {
 .card {
     color: var(--Dark-Grayish-Blue);
 }
-
-/* Taahir's Toggle button 
-
-.toggleContainer {
-    background-color: #6A70DE; 
-    display: inline-block;
-    width: 100px;
-    height: 47px;
-    border-radius: 49px;
-}
-
-#switch {
-    position: absolute;
-    width: 37px;
-    height: 37px;
-    background-color: white;
-    
-} */
 
 .priceSwitchContainer {
     display: flex;
@@ -117,7 +102,7 @@ p {
     content: "";
     position: absolute;
     top: 5px;
-    left: 5px;
+    left: 55px;
     width: 40px;
     height: 40px;
     background-color: white;
@@ -127,7 +112,7 @@ p {
 
 /* Monthly/Checked button state */
 .toggleInput:checked ~ .toggleBG::after {
-    transform: translateX(50px);
+    transform: translateX(-50px);
 }
 
 

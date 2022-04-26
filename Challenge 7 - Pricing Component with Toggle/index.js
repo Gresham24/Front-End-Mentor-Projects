@@ -4,25 +4,25 @@ let basicPriceGet = 19.99
 let professionalPriceGet = 24.99
 let masterPriceGet = 39.99
 
-// convert the variables to into prices for display on HTML
-let basicPriceDisplay = "$"+basicPriceGet
-let professionalPriceDisplay = "$"+professionalPriceGet
-let masterPriceDisplay = "$"+masterPriceGet
+// convert the variables to into prices with currency for display on HTML
+let basicPriceDisplay = "$" + basicPriceGet
+let professionalPriceDisplay = "$" + professionalPriceGet
+let masterPriceDisplay = "$" + masterPriceGet
 
-// Display the prices with $ in the HTML
-document.getElementById("basicPrice").textContent = basicPriceDisplay
-document.getElementById("professionalPrice").textContent = professionalPriceDisplay
-document.getElementById("masterPrice").textContent = masterPriceDisplay
+// Function to display the prices with $ in the HTML
+function displayMonthlyPrices(){
+    document.getElementById("basicPrice").textContent = basicPriceDisplay
+    document.getElementById("professionalPrice").textContent = professionalPriceDisplay
+    document.getElementById("masterPrice").textContent = masterPriceDisplay
+}
 
-// Got the prices from the HTML 
-// let basicPriceGet = document.getElementById("basicPrice").textContent
-// let professionalPriceGet = document.getElementById("professionalPrice").textContent
-// let masterPriceGet = document.getElementById("masterPrice").textContent
+displayMonthlyPrices()
 
 
-// Multiplier/discount price
+// Annual price multiplier
 let multiplier = 10
 
+// function to calculate the Annual price
 function annualPriceSwitch() {
     let basicAnnual = basicPriceGet * multiplier
     let professionalAnnual = professionalPriceGet * multiplier
@@ -34,26 +34,15 @@ function annualPriceSwitch() {
     masterPrice.textContent = "$" + masterAnnual.toFixed(2)
 }
 
+// to grab a reference of the checkbox(via id="toggleSwitch") and assign it to a constant 
+const switchPrice = document.querySelector("#toggleSwitch")
 
-// NOTE: This part was meant to display the original (monthly) price when clicked again
-// if (basicPriceDisplay == basicPrice.textContent){
-//     console.log(basicPriceDisplay)
-// }
-
-
-
-// NOTE: this function below is meant to mimic the <<this.classList.toggle('annual')>> function in the HTML priceToggleBtn onclick
-
-// let toggleStateClass = document.getElementsByClassName("priceToggleBg.annual")
-// function toggle(toggleStateClass) {
-// }
-
-
-
-// NOTE: Writing this down for future use - the method below converts numbers into an international format
-
-// const numberFormatter = new Intl.NumberFormat('en-US', {
-//     style: 'currency',
-//     currency: 'USD',
-// })
-// console.log(numberFormatter.format(multiplier))
+// Change event for the check and uncheck status of the toggle
+switchPrice.addEventListener("change", function () {
+    if (switchPrice.checked) {
+        annualPriceSwitch()
+    } else {
+        // Display the prices with $ in the HTML
+        displayMonthlyPrices()
+    }
+});
