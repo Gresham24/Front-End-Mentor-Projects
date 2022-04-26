@@ -18,15 +18,33 @@
     <!-- START: Title + button -->
     <h2 class="title">Our Pricing</h2>
     <div class="priceSwitchContainer">
-      <p>Annually</p>
-<!-- TO DO: Turn the toggleBtn div into a button -->
 
+      <p>Annual</p>
+<!-- tag to call the price calculation function: 
+              onclick="annualPriceSwitch()"  -->
+      <div class="priceToggleContaier">
+        <label class="toggle" for="toggleSwitch">
+          <input class="toggleInput" type="checkbox" id="toggleSwitch" >
+          <div class="toggleBG"></div>
+        </label>
+      </div>
+
+
+      <!-- Taaahir's TOGGLE button 
+    <div class="priceToggleContaier">
+      <label class="toggleContainer">
+        <input id="toggleBtn" type="checkbox">
+        <span class="switch"> </span>
+    </div> -->
+
+<!-- OLD TOGGLE -->
       <!-- NOTE: the <<this.classList.toggle('annual')>> is a function that
         toggles the styling for the class .priceToggleBg.annual -->
-      <div class="priceToggleBg" >
+      <!-- <div class="priceToggleBg" > -->
         <!-- <div id="toggleBtn" onclick="annualPriceSwitch()"> </div> -->
-        <button id="toggleBtn" onclick="annualPriceSwitch()"> </button>
-      </div>
+        <!-- <button id="toggleBtn" onclick="annualPriceSwitch()"> </button> -->
+      <!-- </div> -->
+
       <p>Monthly</p>
     </div>
     <!-- END: Title + button -->

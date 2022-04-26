@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 :root {
@@ -23,11 +23,13 @@
     --card-shadow: 0px 5px 35px -12px rgba(163, 168, 240, 0.75);
 }
 
+
 body {
-    background: url(images/bg-top.svg) top right, url(images/bg-bottom-2.svg) bottom left;
-    background-color: var(--Very-Light-Grayish-Blue);
+    background: url(images/bg-bottom-2.svg) bottom left, url(images/bg-top.svg) top right;
+    background-color:var(--Very-Light-Grayish-Blue);
     background-repeat: no-repeat;
-}
+    height: 100vh;
+}   
 
 /* Font formatting */
 h1 {
@@ -60,56 +62,22 @@ p {
     color: var(--Dark-Grayish-Blue);
 }
 
-/* Price Toggle Button (monthly state) */
-.priceToggleBg {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+/* Taahir's Toggle button 
+
+.toggleContainer {
+    background-color: #6A70DE; 
+    display: inline-block;
     width: 100px;
     height: 47px;
     border-radius: 49px;
-    background: var(--Linear-Gradient);
-    cursor: pointer;
-}
-.priceToggleBg:hover {
-    opacity: 85%;
 }
 
-#toggleBtn {
+#switch {
+    position: absolute;
     width: 37px;
     height: 37px;
-    background: white;
-    border-radius: 60px;
-    margin: 0px 5px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Price Toggle Button (annual state) */
-
-.priceToggleBg.annual {
-    justify-content: flex-start;
-
-}
-
-/* .priceToggleBg {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100px;
-    height: 47px;
-    border-radius: 49px;
-    background: var(--Linear-Gradient);
-    cursor: pointer;
-}
-#toggleBtn {
-    width: 37px;
-    height: 37px;
-    background: white;
-    border-radius: 60px;
-    margin: 0px 5px;
+    background-color: white;
+    
 } */
 
 .priceSwitchContainer {
@@ -118,6 +86,51 @@ p {
     align-items: center;
     gap: 31px;
 }
+
+.toggle {
+    width: 100px;
+    height: 50px;
+    border-radius: 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.toggleInput {
+    /* hide this to show checkbox */
+    display: none;
+}
+
+.toggleBG {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border-radius: 40px;
+    background: var(--Linear-Gradient);
+}
+
+.toggleBG:hover {
+    opacity: 90%;
+}
+
+/* white toggle button */
+.toggleBG::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 40px;
+    transition: transform 0.3s;
+}
+
+/* Monthly/Checked button state */
+.toggleInput:checked ~ .toggleBG::after {
+    transform: translateX(50px);
+}
+
+
 
 /* Card layout formatting */
 .basicPlan,
@@ -146,6 +159,7 @@ p {
     gap: 15px;
     padding: 40px 31px;
 }
+
 .professionalPlan .cardContent {
     padding: 63px 31px;
 }
@@ -158,6 +172,7 @@ p {
     border-width: 0.5px;
     border-color: var(--Light-Grayish-Blue);
 }
+
 .professionalPlan .underline {
     border-color: white;
 }
@@ -192,16 +207,16 @@ a {
 .cardContainer {
     display: flex;
     align-items: center;
+
 }
 
 .pageContentContainer {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     align-content: center;
     gap: 50px;
-    margin-top: 50px;
+    padding-top: 50px;
 }
-
