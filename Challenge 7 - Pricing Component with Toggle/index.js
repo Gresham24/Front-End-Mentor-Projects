@@ -46,3 +46,4 @@ switchPrice.addEventListener("change", function () {
         displayMonthlyPrices()
     }
 });
+

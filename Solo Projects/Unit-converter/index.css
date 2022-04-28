@@ -1,8 +1,22 @@
-html, body {
+body {
     margin: 0;
     padding: 0;
     color: #FFFFFF;
     text-align: center;
+    background-color: rgb(171, 171, 237);
+}
+
+.card {
+    height: auto;
+    width: 550px;
+    background: linear-gradient(246.26deg, 
+    #585DFE 0%, 
+    #FB3796 100%);
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: white;
+    margin: 50px;
 }
 
 h1 {
@@ -12,10 +26,7 @@ h1 {
     font-size: 22px;
     line-height: 38px;
     /* identical to box height, or 173% */
-
-
     letter-spacing: -0.05em;
-
 }
 
 h2 {
@@ -24,26 +35,13 @@ h2 {
     font-weight: 800;
     font-size: 97.5723px;
     line-height: 24px;
-
 }
 
-body {
-    height: auto;
-    background: linear-gradient(246.26deg, 
-    #585DFE 0%, 
-    #FB3796 100%);
+span {
+    color: red;
 }
 
 section {
     background: #1F2937;
-    height: 100vh;
-    padding: 10px;
+    padding: 5px;
 }
-
-/* font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-
-color: #D2D2D2; */
