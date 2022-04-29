@@ -1,24 +1,24 @@
-let measurement = document.getElementById("metricUnit").textContent
+const measurement = document.getElementById("metricUnit").textContent
 
 // Meters to feet conversion
-let feet = measurement * 3.28084
+let feet = (measurement * 3.28084).toFixed(3)
 // Feet to meters conversion
-let meters = measurement * 0.3048
+let meters = (measurement * 0.3048).toFixed(3)
 
 // liters to gallons conversion
-let gallons = measurement * 0.264172
+let gallons = (measurement * 0.264172).toFixed(3)
 // gallons to liters conversion
-let liters = measurement * 3.78541
+let liters = (measurement * 3.78541).toFixed(3)
 
 // kilograms to pounds conversion 
-let kilograms = measurement * 0.453592 
+let kilograms = (measurement * 0.453592).toFixed(3)
 // pounds to kilograms conversion
-let pounds = measurement * 2.20462
+let pounds = (measurement * 2.20462).toFixed(3)
 
 // display Length strings
-let meterUnit = measurement + " meters = " + feet.toFixed(3) + " feet | " + measurement + " feet = " + meters.toFixed(3) + " meters" 
-let volumeUnit = measurement + " litres = " + gallons.toFixed(3) + " gallons | " + measurement + " gallons = " + liters.toFixed(3) + " litres" 
-let massUnit = measurement + " kilograms = " + pounds.toFixed(3) + " pounds | " + measurement + " pounds = " + kilograms.toFixed(3) + " kilograms" 
+let meterUnit = measurement + " meters = " + feet + " feet | " + measurement + " feet = " + meters + " meters" 
+let volumeUnit = measurement + " litres = " + gallons + " gallons | " + measurement + " gallons = " + liters + " litres" 
+let massUnit = measurement + " kilograms = " + pounds + " pounds | " + measurement + " pounds = " + kilograms + " kilograms" 
 
 function unitConversion() {
     document.getElementById("lengthResult").textContent = meterUnit

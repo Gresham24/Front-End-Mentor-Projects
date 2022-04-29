@@ -9,14 +9,14 @@ body {
 .card {
     height: auto;
     width: 550px;
-    background: linear-gradient(246.26deg, 
-    #585DFE 0%, 
-    #FB3796 100%);
+    background: linear-gradient(246.26deg,
+            #585DFE 0%,
+            #FB3796 100%);
     border-style: solid;
     border-radius: 20px;
     border-width: 5px;
     border-color: white;
-    margin: 50px;
+    margin: 100px;
 }
 
 h1 {
@@ -25,7 +25,6 @@ h1 {
     font-weight: 800;
     font-size: 22px;
     line-height: 38px;
-    /* identical to box height, or 173% */
     letter-spacing: -0.05em;
 }
 
@@ -38,10 +37,16 @@ h2 {
 }
 
 span {
-    color: red;
+    color: grey;
 }
 
-section {
+.unitsContainer {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
     background: #1F2937;
-    padding: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
 }
