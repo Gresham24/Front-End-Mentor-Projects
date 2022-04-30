@@ -1,4 +1,66 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.05em;
+}
+
+.greenText {
+    color: #10B981;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #6B7280;
+}
+
+.generator {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #10B981;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    border-style: none;
+    padding: 10px 20px 10px 10px;
+    cursor: pointer;
+}
+
+.generator::before {
+    content: url(Lightning-bolt.svg);
+    position: relative;
+    padding-right: 10px;
+    top: 3px;
+}
+
+.card {
+    background: #ECFDF5;
+    width: 550px;
+    height: 550px;
+    padding: 110px 52px 0px 52px;
+    margin: 100px;
+    /* display: flex;
+flex-direction: column;
+align-items: flex-start; */
+
+}
+
+.dividerLine {
+    margin: 35px 0px;
+    border: 1px solid #D5D4D8
 }
