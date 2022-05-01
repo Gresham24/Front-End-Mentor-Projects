@@ -64,3 +64,11 @@ align-items: flex-start; */
     margin: 35px 0px;
     border: 1px solid #D5D4D8
 }
+
+.passwordSuggestions > .newPassword {
+    color: #5DEF92;
+    width: 211px;
+    height: 39px;
+    background: #273549;
+    border-radius: 6px;
+}
