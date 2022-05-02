@@ -51,8 +51,8 @@ p {
 .card {
     background: #ECFDF5;
     width: 550px;
-    height: 550px;
-    padding: 110px 52px 0px 52px;
+    min-height: 550px;
+    padding: 110px 52px 20px 52px;
     margin: 100px;
     /* display: flex;
 flex-direction: column;
@@ -71,4 +71,12 @@ align-items: flex-start; */
     height: 39px;
     background: #273549;
     border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+}
+
+.passwordSuggestions{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
