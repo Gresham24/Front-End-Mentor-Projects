@@ -24,3 +24,24 @@ const lowerCase = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", 
 const specialCharacter = [ "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "~", "<", ">", "?", "[", "]", "{", "}"]
 const number = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+// Storing the length of each character set array
+const getUpperCaseLength = upperCase.length;
+const getLowerCaseLength = lowerCase.length;
+const getSpecialCharLength = specialChar.length;
+const getNumberLength = numChar.length;
+
+
+// END OF SCRIPT
+
+// THIS IS A MINI TEST PASSWORD GENERATOR FOR ALL CHARACTERS - USED THIS TO TEST THE LOGIC FROM SCRATCH AND WILL EXPAND ON THIS BY INCLUDING MULTIPLE ARRAYS
+const getPasswordLength = 12;
+
+let fullCharSet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z","!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "~", "<", ">", "?", "[", "]", "{", "}",0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const getFullCharSetLength = fullCharSet.length;
+
+let newPassword = '';
+for (let i = 0; i < getPasswordLength; i++) {
+  const getRandCharPosition = Math.floor(Math.random() * getFullCharSetLength);
+  newPassword = newPassword + lowerCase[getRandCharPosition];
+}
+console.log(newPassword);
