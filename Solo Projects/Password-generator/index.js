@@ -14,34 +14,51 @@
 
 // START OF SCRIPT
 
+const getPasswordLength = 16;
+
 // Declaration of global variables
 const button = document.querySelector(".generator")
 const password = document.querySelector(".newPassword")
 
 //Declaration of array to choose characters from
-const upperCase = [ "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-const lowerCase = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-const specialCharacter = [ "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "~", "<", ">", "?", "[", "]", "{", "}"]
-const number = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+const upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+const lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+const specialCharacter = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "~", "<", ">", "?", "[", "]", "{", "}"]
+const numChar = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 // Storing the length of each character set array
 const getUpperCaseLength = upperCase.length;
 const getLowerCaseLength = lowerCase.length;
-const getSpecialCharLength = specialChar.length;
+const getSpecialCharLength = specialCharacter.length;
 const getNumberLength = numChar.length;
+
+function generator() {
+    let arrPassword = ''
+    for (let i = 0; i < 1; i++) {
+        // why does this work for any condition where i higher than any number above 1
+        for (let i = 0; i < getPasswordLength; i++) {
+            if (arrPassword.length < getPasswordLength) {
+                arrPassword += upperCase[Math.floor(Math.random() * getUpperCaseLength)]
+                if (arrPassword.length < getPasswordLength) {
+                    arrPassword += lowerCase[Math.floor(Math.random() * getLowerCaseLength)]
+                    if (arrPassword.length < getPasswordLength) {
+                        arrPassword += specialCharacter[Math.floor(Math.random() * getSpecialCharLength)]
+                        if (arrPassword.length < getPasswordLength) {
+                            arrPassword += numChar[Math.floor(Math.random() * getNumberLength)]
+                        }
+                    }
+                }
+            }
+        }
+        console.log(arrPassword);
+    }
+}
+generator()
+generator()
+generator()
+generator()
+
+
 
 
 // END OF SCRIPT
-
-// THIS IS A MINI TEST PASSWORD GENERATOR FOR ALL CHARACTERS - USED THIS TO TEST THE LOGIC FROM SCRATCH AND WILL EXPAND ON THIS BY INCLUDING MULTIPLE ARRAYS
-const getPasswordLength = 12;
-
-let fullCharSet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z","!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "~", "<", ">", "?", "[", "]", "{", "}",0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-const getFullCharSetLength = fullCharSet.length;
-
-let newPassword = '';
-for (let i = 0; i < getPasswordLength; i++) {
-  const getRandCharPosition = Math.floor(Math.random() * getFullCharSetLength);
-  newPassword = newPassword + lowerCase[getRandCharPosition];
-}
-console.log(newPassword);
