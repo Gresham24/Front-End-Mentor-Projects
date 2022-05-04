@@ -14,11 +14,8 @@
 
 // START OF SCRIPT
 
-const getPasswordLength = 16;
-
 // Declaration of global variables
-const button = document.querySelector(".generator")
-const password = document.querySelector(".newPassword")
+const buttonClick = document.getElementById("generatorBtn")
 
 //Declaration of array to choose characters from
 const upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
@@ -32,7 +29,15 @@ const getLowerCaseLength = lowerCase.length;
 const getSpecialCharLength = specialCharacter.length;
 const getNumberLength = numChar.length;
 
-function generatorPassword() {
+
+buttonClick.addEventListener('click', function generatorPassword(){
+    let newPassword1 = document.getElementById("password1")
+    let newPassword2 = document.getElementById("password2")
+    let newPassword3 = document.getElementById("password3")
+    let newPassword4 = document.getElementById("password4")
+
+    let getPasswordLength = document.getElementById("passwordLength").value
+    // TO DO: find a better name for arrPassword
     let arrPassword = ''
     for (let i = 0; i < 1; i++) {
         // why does this work for any condition where i higher than any number above 1
@@ -50,13 +55,20 @@ function generatorPassword() {
                 }
             }
         }
-        console.log(arrPassword);
+        console.log(arrPassword) 
     }
-}
-generatorPassword()
-generatorPassword()
-generatorPassword()
-generatorPassword()
+    newPassword1.innerText = arrPassword
+    newPassword2.innerText = arrPassword
+    newPassword3.innerText = arrPassword
+    newPassword4.innerText = arrPassword
+
+})
+
+// 
+// generatorPassword() 
+// generatorPassword()
+// generatorPassword()
+// generatorPassword()
 
 
 

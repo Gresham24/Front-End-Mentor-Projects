@@ -19,20 +19,20 @@
             <p>Never use an insecure password again.</p>
         </div>
 
-        <form>
-            <p class="formTitle">Enter password length:</p>
-            <button onclick="generatorPassword()" class="generatorBtn">Generate passwords</button> 
-            <label for="getPassLength"> </label>
-            <input class="getPassLength" type="number">
-        </form>
+    <form>
+        <p class="formTitle">Enter password length:</p>
+        <button type="button" id="generatorBtn">Generate passwords</button> 
+        <input id="passwordLength" type="text"> 
+    </form>
+        
 
         <div class="dividerLine"></div>
 
         <div class="passwordSuggestions">
-            <div class="newPassword"><i class="fas fa-ellipsis-h"></i></div>
-            <div class="newPassword"><i class="fas fa-ellipsis-h"></i></div>
-            <div class="newPassword"><i class="fas fa-ellipsis-h"></i></div>
-            <div class="newPassword"><i class="fas fa-ellipsis-h"></i></div>
+            <div id="password1"><i class="fas fa-ellipsis-h"></i></div>
+            <div id="password2"><i class="fas fa-ellipsis-h"></i></div>
+            <div id="password3"><i class="fas fa-ellipsis-h"></i></div>
+            <div id="password4"><i class="fas fa-ellipsis-h"></i></div>
         </div>
     </div>
     <script src="index.js"></script>

@@ -26,7 +26,7 @@ p {
 }
 
 /* Form content styling */
-.getPassLength {
+#passwordLength {
     width: 50px;
     margin-left: 15px;
     height: 42px;
@@ -34,6 +34,7 @@ p {
     border: solid 1px;
     text-align: center;
     scroll-snap-type: none;
+
 }
 
 .formTitle {
@@ -43,7 +44,7 @@ p {
 }
 
 /* Button formatting */
-.generatorBtn {
+#generatorBtn {
     font-weight: 500;
     font-size: 16px;
     color: #FFFFFF;
@@ -54,7 +55,7 @@ p {
     cursor: pointer;
 }
 
-.generatorBtn::before {
+#generatorBtn::before {
     content: url(Lightning-bolt.svg);
     position: relative;
     padding-right: 10px;
@@ -72,6 +73,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     gap: 25px;
 }
 
@@ -81,7 +83,10 @@ p {
     width: 446px;
 }
 
-.passwordSuggestions>.newPassword {
+#password1,
+#password2,
+#password3,
+#password4 {
     color: #5DEF92;
     min-width: 200px;
     height: 100%;
