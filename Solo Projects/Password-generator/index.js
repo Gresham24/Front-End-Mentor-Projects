@@ -32,7 +32,7 @@ const getLowerCaseLength = lowerCase.length;
 const getSpecialCharLength = specialCharacter.length;
 const getNumberLength = numChar.length;
 
-function generator() {
+function generatorPassword() {
     let arrPassword = ''
     for (let i = 0; i < 1; i++) {
         // why does this work for any condition where i higher than any number above 1
@@ -53,10 +53,10 @@ function generator() {
         console.log(arrPassword);
     }
 }
-generator()
-generator()
-generator()
-generator()
+generatorPassword()
+generatorPassword()
+generatorPassword()
+generatorPassword()
 
 
 
