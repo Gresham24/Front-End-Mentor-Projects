@@ -5,6 +5,9 @@ body {
     font-family: 'Inter';
     font-style: normal;
     background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -12,7 +15,6 @@ h1 {
     font-weight: 800;
     font-size: 40px;
     letter-spacing: -0.05em;
-    margin-bottom: 2px;
 }
 
 .greenText {
@@ -34,7 +36,6 @@ p {
     border: solid 1px;
     text-align: center;
     scroll-snap-type: none;
-
 }
 
 .formTitle {
@@ -69,24 +70,18 @@ p {
     width: 470px;
     min-height: 550px;
     padding: 0px 15px 20px 25px;
-    margin: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     gap: 25px;
 }
 
 .dividerLine {
-    margin-bottom: 10px;
     border: 1px solid #D5D4D8;
     width: 446px;
 }
 
-#password1,
-#password2,
-#password3,
-#password4 {
+.password {
     color: #5DEF92;
     min-width: 200px;
     height: 100%;
@@ -99,7 +94,6 @@ p {
 .passwordSuggestions {
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     gap: 15px;
 }
 
