@@ -33,21 +33,15 @@ buttonClick.addEventListener('click', function generatorPassword() {
         let getRandCharPosition = Math.floor(Math.random() * getFullCharacterArrLength)
         passwordString = passwordString + fullCharacterArr[getRandCharPosition]
     }
-    newPassword[2].innerText = passwordString
+    for (let j = 0; j < newPassword.length; j++) {
+        newPassword[j].innerText = passwordString
+    }
 })
+
 
 // END OF SCRIPT
 
 
-// for (let j = 0; j < newPassword.length; j++) {
-//     newPassword[j].innerText = passwordString
-// }
-
-// Scrimba suggested solution
-
-// function getRandomPassword() {
-//     let getRandCharPosition = Math.floor(Math.random() * getFullCharacterArrLength)
-//     passwordString = passwordString + fullCharacterArr[getRandCharPosition]
-// }
-
-// getRandomPassword()
+// possible solution to test: generate a random password for each element. 
+// 1. define a function which will return a new random password.
+// 2. call that function and assign the returned value to the blank element on each iteration
