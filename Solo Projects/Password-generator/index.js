@@ -23,23 +23,31 @@ const fullCharacterArr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
 // Storing the array length 
 const getFullCharacterArrLength = fullCharacterArr.length;
 
-buttonClick.addEventListener('click', function generatorPassword() {
-    // generates a nodelist of password classes
-    let newPassword = document.getElementsByClassName('password')
-    // gets the input value from HTML
+function generatorPassword() {
+
     let getPasswordLength = document.getElementById("passwordLength").value
     let passwordString = ''
     for (let i = 0; i < getPasswordLength; i++) {
         let getRandCharPosition = Math.floor(Math.random() * getFullCharacterArrLength)
         passwordString = passwordString + fullCharacterArr[getRandCharPosition]
     }
-    for (let j = 0; j < newPassword.length; j++) {
-        newPassword[j].innerText = passwordString
+    return passwordString;
+}
+
+buttonClick.addEventListener('click', function () {
+    let passwordBlocks = document.querySelectorAll('.password').length
+    let newPassword = document.getElementsByClassName('password')
+
+    for (let i = 0; i < passwordBlocks; i++) {
+        newPassword[i].innerText = generatorPassword()
     }
 })
 
-
 // END OF SCRIPT
+
+// function randomNumber(getFullCharacterArrLength){
+//     return Math.floor(Math.random() * getFullCharacterArrLength)
+// }
 
 
 // possible solution to test: generate a random password for each element. 
