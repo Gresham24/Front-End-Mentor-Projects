@@ -31,7 +31,7 @@ body {
     background: url(images/bg-bottom-2.svg) bottom left, url(images/bg-top.svg) top right;
     background-color: var(--Very-Light-Grayish-Blue);
     background-repeat: no-repeat;
-    /* min-height: 100vh; */
+    min-height: 100vh;
 }   
 
 /* Font formatting */
