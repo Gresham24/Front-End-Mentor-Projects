@@ -35,7 +35,6 @@ p {
     border-radius: 6px;
     border: solid 1px;
     text-align: center;
-    scroll-snap-type: none;
 }
 
 .formTitle {
@@ -44,7 +43,7 @@ p {
     font-weight: 600;
 }
 
-/* Button formatting */
+/* Button styling */
 #generatorBtn {
     font-weight: 500;
     font-size: 16px;
@@ -95,6 +94,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    overflow-wrap: break-word;
 }
 
 i {
