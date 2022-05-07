@@ -1,4 +1,4 @@
-# Frontend Mentor - Testimonials grid section
+# Testimonial Grid Challenge
+This challenge was to build a testimonial grid
 
-![Design preview for the Testimonials grid section coding challenge](./design/desktop-preview.jpg)
-
+Hosted at: https://challenge-2-testimonial-grid.netlify.app

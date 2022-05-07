@@ -1,7 +1,4 @@
-# Frontend Mentor - QR code component
+# QR Code Component
+This challenge was to build a QR Code Component (it will soon be linked to my personal portfolio 😉)
 
-![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
-
-## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
+Hosted at: https://challenge-4-qr-code.netlify.app
