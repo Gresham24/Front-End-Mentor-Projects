@@ -57,12 +57,12 @@ p {
     color: var(--Light-Grey);
 }
 
-.ratingButtons {
+#ratingWrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.ratingButtons button {
+#ratingWrapper button {
     cursor: pointer;
     font: var(--rate-font);
     color: var(--Light-Grey);
@@ -73,17 +73,16 @@ p {
     height: 51px;
     padding-top: 5px;
 }
-.ratingButtons button:hover {
+#ratingWrapper button:hover {
     background-color: var(--Orange);
     color: var(--Pure-White);
 }
 
-/* Clicked state for the rating buttons
-
-.ratingButtons button:clicked {
+.active {
     background-color: var(--Medium-Grey);
     color: var(--Pure-White);
-} */
+    cursor:none;
+}
 
 #submitBtn {
     cursor: pointer;
@@ -103,10 +102,9 @@ p {
     background-color: var(--Pure-White);
 }
 
-/* THANK YOU CARD */
-
+/* Show this card after the button is submitted */
 .thankYouCard {
-    margin: 50px;
+    /* margin: 50px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,10 +117,14 @@ p {
     text-align: center;
 }
 
-/* Show this after button submitted */
 .ratingResult {
     color: var(--Orange);
     background-color: var(--Dark-Blue);
     padding: 5px 20px;
     border-radius: 22.5px;
+}
+
+/* This will be the default state of the card */
+.hide {
+    /* display: none; */
 }
