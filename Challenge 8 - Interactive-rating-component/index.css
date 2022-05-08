@@ -17,5 +17,15 @@
 --h1-font: normal 700 28px/35px 'Overpass';
 --p-font: normal 400 15px/24px 'Overpass';
 --rate-font: normal 700 16px/24px 'Overpass';
---button-font: normal 700 15px/19px 'Overpass';
 }
+
+body {
+    font: var(--p-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Blue);
+    color: var(--Pure-White);
+}
+
