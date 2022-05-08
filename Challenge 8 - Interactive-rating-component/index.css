@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    /* color styles */
+    --Dark-Blue: #262E38;
+    --Light-Grey: #969FAD;
+    --Medium-Grey: #7C8798;
+    --Orange: #FC7614;
+    --Pure-White: white;
+    --Very-Dark-Blue: #131518;
+    --Black-Gradient: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+/* Font */
+--h1-font: normal 700 28px/35px 'Overpass';
+--p-font: normal 400 15px/24px 'Overpass';
+--rate-font: normal 700 16px/24px 'Overpass';
+--button-font: normal 700 15px/19px 'Overpass';
+}
