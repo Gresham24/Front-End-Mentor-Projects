@@ -13,19 +13,46 @@
     --Pure-White: white;
     --Very-Dark-Blue: #131518;
     --Black-Gradient: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
-/* Font */
---h1-font: normal 700 28px/35px 'Overpass';
---p-font: normal 400 15px/24px 'Overpass';
---rate-font: normal 700 16px/24px 'Overpass';
+    /* Font */
+    --h1-font: normal 700 28px/35px 'Overpass';
+    --p-font: normal 400 15px/24px 'Overpass';
+    --rate-font: normal 700 16px/24px 'Overpass';
 }
 
 body {
     font: var(--p-font);
+    /* remove flexbbox and put it on each card */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--Very-Dark-Blue);
     color: var(--Pure-White);
+    min-height: 100vh;
 }
 
+.ratingCard {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:flex-start;
+    width: 412px;
+    height: 416px;
+    background: var(--Black-Gradient);
+    border-radius: 30px;
+    padding: 32px;
+}
+
+.icon-star {
+    background-color: var(--Dark-Blue);
+    width: 32px;
+    height: 32px;
+    border-style: none;
+    border-radius: 50px;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+p {
+    color: var(--Light-Grey);
+}
