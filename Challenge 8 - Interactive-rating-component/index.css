@@ -16,20 +16,21 @@
     /* Font */
     --h1-font: normal 700 28px/35px 'Overpass';
     --p-font: normal 400 15px/24px 'Overpass';
-    --rate-font: normal 700 16px/24px 'Overpass';
+    --rate-font: normal 700 16px/0px 'Overpass';
 }
 
 body {
     font: var(--p-font);
-    /* remove flexbbox and put it on each card */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     background-color: var(--Very-Dark-Blue);
     color: var(--Pure-White);
     min-height: 100vh;
 }
+
+/* RATING CARD */
 
 .ratingCard {
     display: flex;
@@ -70,11 +71,19 @@ p {
     border-radius: 30px;
     width: 51px;
     height: 51px;
+    padding-top: 5px;
 }
 .ratingButtons button:hover {
     background-color: var(--Orange);
     color: var(--Pure-White);
 }
+
+/* Clicked state for the rating buttons
+
+.ratingButtons button:clicked {
+    background-color: var(--Medium-Grey);
+    color: var(--Pure-White);
+} */
 
 #submitBtn {
     cursor: pointer;
@@ -86,15 +95,34 @@ p {
     width: 341px;
     height: 45px;
     letter-spacing: 2px;
+    padding-top: 5px;
+
 }
 #submitBtn:hover {
     color: var(--Orange);
     background-color: var(--Pure-White);
 }
 
-/* Clicked state for the rating buttons
+/* THANK YOU CARD */
 
-.ratingButtons button:clicked {
-    background-color: var(--Medium-Grey);
-    color: var(--Pure-White);
-} */
+.thankYouCard {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    width: 412px;
+    height: 416px;
+    background: var(--Black-Gradient);
+    border-radius: 30px;
+    padding: 35px;
+    text-align: center;
+}
+
+/* Show this after button submitted */
+.ratingResult {
+    color: var(--Orange);
+    background-color: var(--Dark-Blue);
+    padding: 5px 20px;
+    border-radius: 22.5px;
+}
