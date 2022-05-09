@@ -25,29 +25,52 @@
     <h1>How did we do?</h1>
     <p>Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!</p>
-    <div id="ratingWrapper">
-      <button id="rating1">1</button>
-      <button id="rating2">2</button>
-      <button id="rating3">3</button>
-      <button id="rating4">4</button>
-      <button id="rating5">5</button>
+
+    <form>
+      <div id="ratingsWrapper">
+        <label for="extremelyPoor" class="radio-label">
+          <input type="radio" id="extremelyPoor" name="rating" value="1" class="radio-input" />
+          <div class="radioButton">1</div>
+        </label>
+
+        <label for="bad" class="radio-label">
+          <input type="radio" id="bad" name="rating" value="2" class="radio-input" />
+          <div class="radioButton">2</div>
+        </label>
+
+        <label for="average" class="radio-label">
+          <input type="radio" id="average" name="rating" value="3" class="radio-input" />
+          <div class="radioButton">3</div>
+        </label>
+
+        <label for="good" class="radio-label">
+          <input type="radio" id="good" name="rating" value="4" class="radio-input" />
+          <div class="radioButton">4</div>
+        </label>
+
+        <label for="excellent" class="radio-label">
+          <input type="radio" id="excellent" name="rating" value="5" class="radio-input" />
+          <div class="radioButton">5</div>
+        </label>
+      </div>
+      <input type="submit" value="SUBMIT" id="submitBtn" />
+    </form>
+  </div>
+    <!-- Rating state end -->
+
+
+    <!-- Thank you state start -->
+    <div class="thankYouCard hide">
+      <img src="images/illustration-thank-you.svg" alt="image of phone">
+      <!-- input rating result here -->
+      <p class="ratingResult"> You selected x out of 5</p>
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support,
+        don't hesitate to get in touch!</p>
     </div>
-    <button id="submitBtn">SUBMIT</button>
-  </div>
-  <!-- Rating state end -->
+    <!-- Thank you state end -->
 
-
-  <!-- Thank you state start -->
-  <div class="thankYouCard hide">
-    <img src="images/illustration-thank-you.svg" alt="image of phone">
-          <!-- input rating result here -->
-    <p class="ratingResult"> You selected x out of 5</p>
-    <h1>Thank you!</h1>
-    <p>We appreciate you taking the time to give a rating. If you ever need more support,
-      don't hesitate to get in touch!</p>
-  </div>
-  <!-- Thank you state end -->
-
-  <script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>

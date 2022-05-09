@@ -1,17 +1,3 @@
-// STEP BY STEP TO DO LIST:
-// 1. create arrays made up of the characters to be used in the password generator
-// 2. get the total number of characters in each array (the length) 
-// 3. create an onclick event listener that will initialize a function that will store the for loops
-// 4. create a variable assigned to a blank string - this will be used to store the generated password
-// 5. create a variable that will generate and store the password class nodelist
-// 6. get the input value from the HTML input box 
-// 7. use the length (total number of elements in the array) as a range to generate a random number (random character position)
-//     - the random character position will be used as an index to get the random character from the array
-// 8. access random array elements using the random character position as an index
-// 9. reassign the blank string variable with a concatination of the radnom array elements
-// 10. create a loop to iterates through the previous step as many times as the specified password length
-// 11. create a loop to iterate through the nodelist and input the newPassword string into each HTML element with the .password class
-
 
 // START OF SCRIPT
 
