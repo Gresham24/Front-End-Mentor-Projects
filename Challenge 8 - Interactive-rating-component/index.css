@@ -93,6 +93,7 @@ p {
 .radio-input:checked+.radioButton {
     color: var(--Pure-White);
     background-color: var(--Medium-Grey);
+    transition: 0.2s ease;
 }
 
 #submitBtn {
