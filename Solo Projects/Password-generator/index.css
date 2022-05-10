@@ -30,15 +30,16 @@ p {
 /* Form content styling */
 #passwordLength {
     width: 50px;
-    margin-left: 15px;
+    margin-left: 5px;
     height: 42px;
     border-radius: 6px;
     border: solid 1px;
     text-align: center;
+
 }
 
 .formTitle {
-    font-size: 1em;
+    font-size: 16px;
     color: #273549;
     font-weight: 600;
 }
@@ -53,6 +54,7 @@ p {
     border-style: none;
     padding: 10px 20px 12px 10px;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 #generatorBtn::before {
@@ -100,5 +102,5 @@ p {
 i {
     opacity: 50%;
     color: #6B7280;
-    font-size: 1.6em;
+    font-size: 18px;
 }
