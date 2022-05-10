@@ -26,29 +26,29 @@
     <p>Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!</p>
 
-    <form>
+    <form id="ratingForm">
       <div id="ratingsWrapper">
-        <label for="extremelyPoor" class="radio-label">
+        <label for="extremelyPoor">
           <input type="radio" id="extremelyPoor" name="rating" value="1" class="radio-input" />
           <div class="radioButton">1</div>
         </label>
 
-        <label for="bad" class="radio-label">
+        <label for="bad">
           <input type="radio" id="bad" name="rating" value="2" class="radio-input" />
           <div class="radioButton">2</div>
         </label>
 
-        <label for="average" class="radio-label">
+        <label for="average">
           <input type="radio" id="average" name="rating" value="3" class="radio-input" />
           <div class="radioButton">3</div>
         </label>
 
-        <label for="good" class="radio-label">
+        <label for="good">
           <input type="radio" id="good" name="rating" value="4" class="radio-input" />
           <div class="radioButton">4</div>
         </label>
 
-        <label for="excellent" class="radio-label">
+        <label for="excellent">
           <input type="radio" id="excellent" name="rating" value="5" class="radio-input" />
           <div class="radioButton">5</div>
         </label>
@@ -63,7 +63,7 @@
     <div class="thankYouCard hide">
       <img src="images/illustration-thank-you.svg" alt="image of phone">
       <!-- input rating result here -->
-      <p class="ratingResult"> You selected x out of 5</p>
+      <p id="ratingResult"></p>
       <h1>Thank you!</h1>
       <p>We appreciate you taking the time to give a rating. If you ever need more support,
         don't hesitate to get in touch!</p>

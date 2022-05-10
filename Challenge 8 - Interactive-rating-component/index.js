@@ -1,12 +1,23 @@
-// STEPS:
-// 1. Fetch all the buttons within the rating wrapper div
-// 2. Loop through the buttons to see which button is clicked 
-// 3. Add an .active class to the button that is clicked
-// 4. Store the clicked button value (rating number) in a variable
-// 4. when the submit button is clicked:
-//      - replace the ratingResult string inside the .thankYouCard with "you selected [ratingX] out of 5"
-// 5. Display the .thankYouCard class
-// 6. Add an alert when the user clicks the submit button without selecting a rating 
-//      - you forgot to select a rating 
+// Get rating value from radio button
+let ratingValue = "";
+function getRating() {
+  ratingValue = document.querySelector('input[name="rating"]:checked').value;
+  return ratingValue;
+}
+
+// Elements used to show and hide the cards on submit
+const showResults = document.querySelector('.thankYouCard');
+const hideRatings = document.querySelector('.ratingCard');
+
+const formSubmit = document.getElementById("ratingForm");
+let ratingString = document.getElementById("ratingResult");
+
+// event.preventDefault() stops the form from submitting 
+formSubmit.addEventListener("submit", function(event) {
+    event.preventDefault()
+    ratingString.textContent = "You selected " + getRating() + " out of 5";
+    showResults.style.display = 'flex';
+    hideRatings.style.display = 'none';
+  });
 
 
