@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+  <script src="https://kit.fontawesome.com/ad1f99e0dc.js" crossorigin="anonymous"></script>
   <title>Challenge 9 | Ping coming soon page</title>
 
+  <div id="container">
 
-  We are launching soon!
+    <img src="images/logo.svg" alt="PING logo">
+    <h1>We are launching <span id="bold-text">soon!</span></h1>
+    <p>Subscribe and get notified</p>
 
-  Subscribe and get notified
+    <form>
+      <label for="emailAddress">
+        <input type="email" name="email" id="emailAddress" placeholder="Your email address…">
+        <input type="submit" value="Notify Me">
+    </form>
 
-  Notify Me
+    <div id="dashboardImg">
+      <img src="images/illustration-dashboard.png" alt="image of a dashboard illustration">
+    </div>
 
-  &copy; Copyright Ping. All rights reserved.
+    <footer>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
 
+  </div>
   <script src="index.js"></script>
-</body>
+  </body>
+
 </html>
