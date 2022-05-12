@@ -54,3 +54,29 @@ footer p {
     color: var(--grey);
 }
 
+/* INPUT FORM STYLING */
+#emailAddress {
+    font: var(--input-font);
+    height: 56px;
+    width: 421px;
+    border-radius: 28px;
+    border: solid 1px rgba(194, 211, 255, 1);
+    padding: 18px 30px;
+}
+#submitButton {
+    font: var(--btn-font);
+    color: white;
+    background: var(--blue);
+    height: 56px;
+    width: 200px;
+    border-radius: 28px;
+    border: none;
+    box-shadow: var(--shadow);
+    margin-left: 16px;
+}
+
+#dashboardImg img {
+    width: 740px;
+    height: 483px;
+    /* margin-top: 95px; */
+}
