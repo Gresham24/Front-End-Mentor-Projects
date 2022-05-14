@@ -46,6 +46,10 @@ h1 {
     color: black;
     font-weight: 700;
 }
+#error-text {
+    color: var(--light-red);
+    font-weight: 400;
+}
 p {
     font: var(--p-font);
 }
@@ -60,7 +64,7 @@ footer p {
 }
 
 /* INPUT FORM STYLING */
-#emailAddress {
+#email-input {
     font: var(--input-font);
     height: 56px;
     width: 421px;
@@ -72,7 +76,7 @@ footer p {
 ::placeholder {
     color: hsla(223, 59%, 83%, 1);
 }
-.error {
+/* .error {
     font: var(--input-font);
     height: 56px;
     width: 421px;
@@ -81,7 +85,7 @@ footer p {
     padding: 18px 30px;
     box-shadow: 0px 0px 7px 3px hsla(0, 0%, 0%, 0);
     border-color: var(--light-red);
-}
+} */
 #submitBtn {
     font: var(--btn-font);
     color: white;
