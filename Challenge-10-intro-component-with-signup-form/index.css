@@ -12,11 +12,10 @@
     --purple: hsl(248, 32%, 49%);
     --dark-purple: hsl(249, 10%, 26%);
     --grey: hsl(246, 25%, 77%);
-
     /* Font styles */
     --h1-ff: normal 700 50px/55px 'Poppins';
     --p-ff: normal 500 16px/25px 'Poppins';
-    --btn-ff: normal 600 15px/26px 'Poppins';
+    --btn-ff: normal 400 15px/0px 'Poppins';
     --plc-holder-ff: normal 600 14px/26px 'Poppins';
     --small-txt-ff: normal 500 11px/16.5px 'Poppins';
     /* Shadow styles */
@@ -44,6 +43,36 @@ h1 {
     font: var(--h1-ff);
     letter-spacing: -0.52px;
 }
-p {
+.left-col p {
     margin-top: 11px;
+}
+
+/* Right column styling */
+.right-col {
+    color: white;
+}
+.bold-text {
+    font-weight: 500;
+}
+.price-notice {
+font: var(--btn-ff);
+box-shadow: var(--form-shadow);
+width: 540px;
+height: 60px;
+border-radius: 10px;
+background-color: var(--purple);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+form {
+    width: 540px;
+    height: 474px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--form-shadow);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
 }
