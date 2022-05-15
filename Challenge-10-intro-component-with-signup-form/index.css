@@ -127,7 +127,9 @@ input[type=text] {
 
 /* ERROR STATES */
 .error-state {
-    /* border-color: var(--red); */
+    /* border: solid 2px var(--red); */
+    background: url('images/icon-error.svg') no-repeat;
+    background-position: 97%;
 }
 
 .error-msg {
@@ -135,5 +137,6 @@ input[type=text] {
     font-style: italic;
     color: var(--red);
     text-align: right;
-    display: none;
+    /* display: none; */
+    margin-top: -15px;
 }
