@@ -28,11 +28,22 @@ body{
     background-image: url(images/bg-intro-desktop.png);
     background-color: var(--red);
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     font: var(--p-ff);
 }
 
-
-
-
+/* Left column styling */
+.left-col {
+    width: 525px;
+    height: 220px;
+    color: white;
+}
+h1 {
+    font: var(--h1-ff);
+    letter-spacing: -0.52px;
+}
+p {
+    margin-top: 11px;
+}
