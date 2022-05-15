@@ -26,4 +26,13 @@
 
 body{
     background-image: url(images/bg-intro-desktop.png);
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font: var(--p-ff);
 }
+
+
+
+
