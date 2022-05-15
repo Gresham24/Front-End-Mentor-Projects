@@ -14,8 +14,8 @@
     --grey: hsl(246, 25%, 77%);
     /* Font styles */
     --h1-ff: normal 700 50px/55px 'Poppins';
-    --p-ff: normal 500 16px/25px 'Poppins';
-    --btn-ff: normal 600 15px/0px 'Poppins';
+    --p-ff: normal 500 16px 'Poppins';
+    --btn-ff: normal 600 15px 'Poppins';
     --plc-holder-ff: normal 600 14px/26px 'Poppins';
     --small-txt-ff: normal 500 11px/16.5px 'Poppins';
     /* Shadow styles */
@@ -36,7 +36,6 @@ body {
 /* Left column styling */
 .left-col {
     width: 525px;
-    height: 220px;
     color: white;
 }
 
@@ -50,15 +49,13 @@ h1 {
 }
 
 /* Right column styling */
-.right-col {
-    color: white;
-}
 
 .bold-text {
     font-weight: 600;
 }
 
 .price-notice {
+    color: white;
     font: var(--btn-ff);
     box-shadow: var(--form-shadow);
     width: 540px;
@@ -72,7 +69,6 @@ h1 {
 
 form {
     width: 540px;
-    height: 474px;
     background-color: white;
     border-radius: 10px;
     box-shadow: var(--form-shadow);
@@ -109,11 +105,13 @@ form p {
     border-radius: 5px;
     box-shadow: var(--btn-shadow);
     cursor: pointer;
+    padding: 15px 0;
 }
-#fName,
-#lName,
-#emailAddress,
-#password {
+#submitBtn:hover{
+    background-color: #77E2B3;
+}
+
+.input-field {
     height: 56px;
     padding: 15px 32px;
     border: solid 1px var(--purple);
@@ -127,3 +125,15 @@ input[type=text] {
     letter-spacing: 0.25px;
 }
 
+/* ERROR STATES */
+.error-state {
+    /* border-color: var(--red); */
+}
+
+.error-msg {
+    font: var(--small-txt-ff);
+    font-style: italic;
+    color: var(--red);
+    text-align: right;
+    display: none;
+}
