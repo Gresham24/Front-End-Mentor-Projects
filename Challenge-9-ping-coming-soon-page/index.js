@@ -20,7 +20,6 @@ form.addEventListener('submit', function (event) {
     if (email.value === '') {
         let blankString = "Please enter an email address"
         error.textContent = blankString
-        return error.textContent
     } else {
         console.log("email added")
     }
