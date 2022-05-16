@@ -5,19 +5,22 @@
 // 4. add if statement to check if the email matches the regex function
 // 5. display the error message whe criteria not met
 
-
+const form = document.getElementById('form');
 const submit = document.getElementById('submitBtn');
 const error = document.getElementById('error-text');
 const email = document.getElementById('email-input');
 
-let getText = document.querySelector('emailAddress').value;
+// let getText = document.querySelector('emailAddress').value;
 
 
-submit.addEventListener('click', function (event) {
+
+form.addEventListener('submit', function (event) {
     event.preventDefault();
 
     if (email.value === '') {
-        console.log("no email")
+        let blankString = "Please enter an email address"
+        error.textContent = blankString
+        return error.textContent
     } else {
         console.log("email added")
     }
