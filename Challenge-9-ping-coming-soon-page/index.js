@@ -10,9 +10,9 @@ const submit = document.getElementById('submitBtn');
 const error = document.getElementById('error-text');
 const email = document.getElementById('email-input');
 
-// let getText = document.querySelector('emailAddress').value;
-
-
+// Use to call the class for the default style of the input box
+// const email_address = document.querySelector('#email-inputr');
+// console.log(email_address)
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -20,6 +20,7 @@ form.addEventListener('submit', function (event) {
     if (email.value === '') {
         let blankString = "Please enter an email address"
         error.textContent = blankString
+        error.style.display = 'flex';
     } else {
         console.log("email added")
     }
