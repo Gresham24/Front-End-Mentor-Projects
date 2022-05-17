@@ -1,27 +1,34 @@
-// TO DO LIST
-// 1. style the native error message
-// 2. declare variables for: button submit, email value, error text, valid email checker (regex)
-// 3. add an onsubmit event to check if the email is empty
-// 4. add if statement to check if the email matches the regex function
-// 5. display the error message whe criteria not met
-
 const form = document.getElementById('form');
 const submit = document.getElementById('submitBtn');
-const error = document.getElementById('error-text');
 const email = document.getElementById('email-input');
 
-// Use to call the class for the default style of the input box
-// const email_address = document.querySelector('#email-inputr');
-// console.log(email_address)
+// Variables used to print the messages
+const blankEmail = document.querySelector('.error-text');
+const correctEmail = document.querySelector('.success-text');
+const invalidEmail = document.querySelector('.error-text');
+
+// Valid email format identifier
+const validEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+function validInput() {
+    if (email.value === '') {
+        blankEmail.innerHTML = "Please enter an email address"
+        blankEmail.className = 'error-text'
+        email.id = 'error-email-border'
+        
+    } else if (email.value.match(validEmail)) {
+        correctEmail.innerHTML = "Email submitted!"
+        correctEmail.className = 'success-text'
+
+    } else {
+        invalidEmail.innerHTML = "Please provide a valid email address"
+        invalidEmail.className = 'error-text'
+        email.id = 'error-email-border'
+    }
+    return
+}
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();
-
-    if (email.value === '') {
-        let blankString = "Please enter an email address"
-        error.textContent = blankString
-        error.style.display = 'flex';
-    } else {
-        console.log("email added")
-    }
+    validInput()
 })
