@@ -126,11 +126,12 @@ input[type=text] {
 }
 
 /* ERROR STATES */
-/* .error-state {
-    border: solid 2px var(--red);
+.error-state {
+    /* border: solid 2px var(--red);
     background: url('images/icon-error.svg') no-repeat;
     background-position: 97%;
-} */
+     */
+}
 
 .error-msg {
     font: var(--small-txt-ff);
