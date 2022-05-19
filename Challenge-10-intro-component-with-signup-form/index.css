@@ -50,7 +50,6 @@ h1 {
 }
 
 /* Right column styling */
-
 .bold-text {
     font-weight: 600;
 }
@@ -92,11 +91,7 @@ form p {
     color: var(--red);
 }
 
-/* Input fields + button styling */
-::placeholder {
-    font: var(--plc-holder-ff);
-}
-
+/* button styling */
 #submitBtn {
     font: var(--btn-ff);
     color: white;
@@ -109,11 +104,14 @@ form p {
     cursor: pointer;
     padding: 15px 0;
 }
-
 #submitBtn:hover {
     background-color: #77E2B3;
 }
 
+/* Input fields + button styling */
+::placeholder {
+    font: var(--plc-holder-ff);
+}
 .input-field {
     height: 56px;
     padding: 15px 32px;
@@ -138,17 +136,6 @@ input[type=text] {
     background: url('images/icon-error.svg') no-repeat;
     background-position: 97%;
 }
-
-.error-msg {
-    font: var(--small-txt-ff);
-    font-style: italic;
-    color: var(--red);
-    text-align: right;
-    /* hiding error message text */
-    display: none;
-    margin-top: -15px;
-}
-
 #fName-error,
 #lName-error,
 #email-error,
@@ -160,11 +147,10 @@ input[type=text] {
     margin-top: -15px;
 }
 
-/* SUCCESS STATES */
+/* SUCCESS STATE */
 .success-state {
     height: 56px;
     padding: 15px 32px;
     border: solid 2px var(--green);
     border-radius: 5px;
-
 }

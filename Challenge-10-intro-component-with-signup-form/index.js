@@ -1,35 +1,6 @@
-// TO DO:
-// 1. Create tags for error states
-// 2. Create styling for error state tags
-// 3. Store input values in variables:
-//      - valid email identifier (regex expression) = let validEmail;
-//      - ID name for each input
-//      - class name for each input
-//      - class name for error states
-// 4. Initiate a function inputChecker() to encompass everything
-// 5. Create a for loop to iterate through each input field
-//      - get each instance and store it in a variable: let input;
-// 6. Create the logic to determine if each input is empty (input === '')
-//      - when true, print error text: "... cannot be empty" 
-//      - call the error state string
-//      - when false do nothing
-// 7. For email, create else if statement for email
-//      - if the email is != validEmail OR matches(validEmail) 
-//      - do nothing
-//      - else print "looks like this is not an email"
-// 8. Create an onsubmit event with main function 
-//      - add event.preventDefault() to restrict the form from submitting if none of the input is entered
-
-// RESEARCH TO DO:
-// how to get all the input values from a form
-// how to add specific error messages for different input values
-// 
-
-/*********** Instructions above *********/
-
 const getForm = document.getElementById('signupForm');
 
-// Email format validation
+// Regex for email format validation
 const emailFormat =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -47,10 +18,10 @@ function formValidity() {
     const passwordValue = password.value.trim()
 
     // get error state strings
-    let nameErr = document.getElementById('fName-error');
-    let surnameErr = document.getElementById('lName-error');
-    let emailErr = document.getElementById('email-error');
-    let passwordErr = document.getElementById('password-error');
+    const nameErr = document.getElementById('fName-error');
+    const surnameErr = document.getElementById('lName-error');
+    const emailErr = document.getElementById('email-error');
+    const passwordErr = document.getElementById('password-error');
 
     // adds an error message if the input is empty, if not, changes the border color and removes error message
     if (fnameValue === '') {
@@ -95,6 +66,7 @@ getForm.addEventListener('submit', function (event) {
     formValidity();
 });
 
+// disables whitespace from being entered in the password field
 password.addEventListener('keypress', function (event) {
     const key = event.keyCode;
     if (key === 32) {
