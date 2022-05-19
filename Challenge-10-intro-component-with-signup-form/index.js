@@ -29,50 +29,64 @@
 
 const getForm = document.getElementById('signupForm');
 
+
+
 const emailFormat =
-  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-function test() {
-  // get input values by Name
-  const fname = getForm.elements['Name'];
-  const lname = getForm.elements['Surname'];
-  const email = getForm.elements['emailAddress'];
-  const password = getForm.elements['Password'];
 
-  // get error state string
-  let nameErr = document.getElementById('fName-error');
-  let surnameErr = document.getElementById('lName-error');
-  let emailErr = document.getElementById('email-error');
-  let passwordErr = document.getElementById('password-error');
 
-  if (fname.value.length === 0) {
-    nameErr.innerHTML = 'First name cannot be empty';
-    fname.className = 'error-state'
-  }
-  if (lname.value.length === 0) {
-    surnameErr.innerHTML = 'Last Name cannot be empty';
-    lname.className = 'error-state'
+function formValidity() {
+    // get input values by Name
+    const fname = getForm.elements['Name'];
+    const lname = getForm.elements['Surname'];
+    const email = getForm.elements['emailAddress'];
+    const password = getForm.elements['Password'];
 
-  }
-  if (email.value.length === 0) {
-    emailErr.innerHTML = 'Email cannot be empty';
-    email.className = 'error-state'
+    // get error state string
+    let nameErr = document.getElementById('fName-error');
+    let surnameErr = document.getElementById('lName-error');
+    let emailErr = document.getElementById('email-error');
+    let passwordErr = document.getElementById('password-error');
 
-  } else if (!email.match(emailFormat)) {
-    emailErr.innerHTML = 'Looks like this is not an email';
-  } 
-  if (password.value.length === 0) {
-    passwordErr.innerHTML = 'Password cannot be empty';
-    password.className = 'error-state'
+// put input fields logic in a function
+// check if the function is true and then remove the error messages if so
 
-  }
+    if (fname.value.length === 0) {
+        nameErr.innerHTML = 'First name cannot be empty';
+        fname.className = 'error-state'
+    } else {
+        fname.className = ('success-state');
+    }
 
+    if (lname.value.length === 0) {
+        surnameErr.innerHTML = 'Last Name cannot be empty';
+        lname.className = 'error-state'
+    } else {
+        lname.className = ('success-state');
+    }
+
+    if (email.value.length === 0) {
+        emailErr.innerHTML = 'Email cannot be empty';
+        email.className = 'error-state'
+    } else if (!email.value.match(emailFormat)) {
+        emailErr.innerHTML = 'Looks like this is not an email';
+    } else {
+        email.className = ('success-state');
+    }
+    
+    if (password.value.length === 0) {
+        passwordErr.innerHTML = 'Password cannot be empty';
+        password.className = 'error-state'
+    } else {
+        password.className = ('success-state');
+    }
 }
 
 // onsubmit event listener
 getForm.addEventListener('submit', function (event) {
-  event.preventDefault();
-  test();
+    event.preventDefault();
+    formValidity();
 });
 
 

@@ -53,9 +53,9 @@ h1 {
 
 .bold-text {
     font-weight: 600;
-  }
-  
-  .price-notice {
+}
+
+.price-notice {
     color: white;
     font: var(--btn-ff);
     box-shadow: var(--form-shadow);
@@ -66,9 +66,9 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  form {
+}
+
+form {
     width: 540px;
     background-color: white;
     border-radius: 10px;
@@ -79,24 +79,25 @@ h1 {
     gap: 20px;
     text-align: center;
     margin-top: 24px;
-  }
-  
-  form p {
+}
+
+form p {
     margin-top: -10px;
     color: var(--grey);
     font: var(--small-txt-ff);
-  }
-  
-  .highlight-text {
+}
+
+.highlight-text {
     font-weight: 700;
     color: var(--red);
-  }
-  
-  /* Input fields + button styling */
-  ::placeholder {
+}
+
+/* Input fields + button styling */
+::placeholder {
     font: var(--plc-holder-ff);
-  }
-  #submitBtn {
+}
+
+#submitBtn {
     font: var(--btn-ff);
     color: white;
     letter-spacing: 1px;
@@ -107,35 +108,38 @@ h1 {
     box-shadow: var(--btn-shadow);
     cursor: pointer;
     padding: 15px 0;
-  }
-  #submitBtn:hover{
+}
+
+#submitBtn:hover {
     background-color: #77E2B3;
-  }
-  
-  .input-field {
+}
+
+.input-field {
     height: 56px;
     padding: 15px 32px;
     border: solid 1px var(--grey);
     border-radius: 5px;
     caret-color: var(--purple);
-  }
-  /* input text when typing */
-  input[type=text] {
+}
+
+/* input text when typing */
+input[type=text] {
     font: var(--plc-holder-ff);
     color: hsla(248, 9%, 26%, 1);
     letter-spacing: 0.25px;
-  }
-  
-  /* ERROR STATES */
-  .error-state {
+}
+
+/* ERROR STATES */
+.error-state {
     height: 56px;
     padding: 15px 32px;
     border: solid 2px var(--red);
     border-radius: 5px;
     background: url('images/icon-error.svg') no-repeat;
     background-position: 97%;
-  }
-  .error-msg {
+}
+
+.error-msg {
     font: var(--small-txt-ff);
     font-style: italic;
     color: var(--red);
@@ -143,15 +147,24 @@ h1 {
     /* hiding error message text */
     display: none;
     margin-top: -15px;
-  }
-  #fName-error,
-  #lName-error,
-  #email-error,
-  #password-error {
+}
+
+#fName-error,
+#lName-error,
+#email-error,
+#password-error {
     font: var(--small-txt-ff);
     font-style: italic;
     color: var(--red);
     text-align: right;
     margin-top: -15px;
-  }
-  
+}
+
+/* SUCCESS STATES */
+.success-state {
+    height: 56px;
+    padding: 15px 32px;
+    border: solid 2px var(--green);
+    border-radius: 5px;
+
+}
