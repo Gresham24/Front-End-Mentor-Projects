@@ -12,10 +12,10 @@ function formValidity() {
     const password = getForm.elements['Password'];
 
     // get trimmed values of inputs
-    const fnameValue = fname.value.trim()
-    const lnameValue = lname.value.trim()
-    const emailValue = email.value.trim()
-    const passwordValue = password.value.trim()
+    const fnameValue = fname.value.trim();
+    const lnameValue = lname.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
 
     // get error state strings
     const nameErr = document.getElementById('fName-error');
@@ -51,7 +51,7 @@ function formValidity() {
         email.className = 'success-state';
         emailErr.innerHTML = '';
     }
-    
+
     if (password.value.length === 0) {
         passwordErr.innerHTML = 'Password cannot be empty';
         password.className = 'error-state';

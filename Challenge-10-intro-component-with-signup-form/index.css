@@ -104,6 +104,7 @@ form p {
     cursor: pointer;
     padding: 15px 0;
 }
+
 #submitBtn:hover {
     background-color: #77E2B3;
 }
@@ -112,6 +113,7 @@ form p {
 ::placeholder {
     font: var(--plc-holder-ff);
 }
+
 .input-field {
     height: 56px;
     padding: 15px 32px;
@@ -136,6 +138,7 @@ input[type=text] {
     background: url('images/icon-error.svg') no-repeat;
     background-position: 97%;
 }
+
 #fName-error,
 #lName-error,
 #email-error,
