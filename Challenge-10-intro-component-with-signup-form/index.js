@@ -29,34 +29,30 @@
 
 const getForm = document.getElementById('signupForm');
 
-
-
+// Email format validation
 const emailFormat =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-
-
 function formValidity() {
-    // get input values by Name
+    // get input values by name element
     const fname = getForm.elements['Name'];
     const lname = getForm.elements['Surname'];
     const email = getForm.elements['emailAddress'];
     const password = getForm.elements['Password'];
 
-    // get error state string
+    // get error state strings
     let nameErr = document.getElementById('fName-error');
     let surnameErr = document.getElementById('lName-error');
     let emailErr = document.getElementById('email-error');
     let passwordErr = document.getElementById('password-error');
 
-// put input fields logic in a function
-// check if the function is true and then remove the error messages if so
-
+    // adds an error message if the input is empty, if not, changes the border color and removes error message
     if (fname.value.length === 0) {
         nameErr.innerHTML = 'First name cannot be empty';
         fname.className = 'error-state'
     } else {
         fname.className = ('success-state');
+        nameErr.innerHTML = '';
     }
 
     if (lname.value.length === 0) {
@@ -64,15 +60,18 @@ function formValidity() {
         lname.className = 'error-state'
     } else {
         lname.className = ('success-state');
+        surnameErr.innerHTML = '';
     }
 
     if (email.value.length === 0) {
         emailErr.innerHTML = 'Email cannot be empty';
         email.className = 'error-state'
+        // checks email format matches regex expressionn
     } else if (!email.value.match(emailFormat)) {
         emailErr.innerHTML = 'Looks like this is not an email';
     } else {
         email.className = ('success-state');
+        emailErr.innerHTML = '';
     }
     
     if (password.value.length === 0) {
@@ -80,21 +79,11 @@ function formValidity() {
         password.className = 'error-state'
     } else {
         password.className = ('success-state');
+        passwordErr.innerHTML = '';
     }
 }
 
-// onsubmit event listener
 getForm.addEventListener('submit', function (event) {
     event.preventDefault();
     formValidity();
 });
-
-
-// First Name cannot be empty
-
-
-
-
-
-// on signup form run a for each on keyup
-// key press on any input on signup form, define an array of error messages
