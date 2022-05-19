@@ -80,8 +80,8 @@ function formValidity() {
         email.className = 'success-state';
         emailErr.innerHTML = '';
     }
-
-    if (passwordValue === '') {
+    
+    if (password.value.length === 0) {
         passwordErr.innerHTML = 'Password cannot be empty';
         password.className = 'error-state';
     } else {
@@ -95,3 +95,9 @@ getForm.addEventListener('submit', function (event) {
     formValidity();
 });
 
+password.addEventListener('keypress', function (event) {
+    const key = event.keyCode;
+    if (key === 32) {
+        event.preventDefault();
+    }
+});
