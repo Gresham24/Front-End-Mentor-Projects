@@ -23,47 +23,60 @@
 
   <section class="right-col">
     <div class="price-notice">
-      <p><span class="bold-text">Try it free 7 days</span> then $20/mo. thereafter</p>
+      <p>
+        <span class="bold-text">Try it free 7 days</span> then $20/mo.
+        thereafter
+      </p>
     </div>
-    <form id="signup-form">
 
-      <input type="text" 
-            name="first-name" 
-            id="fName" 
-            placeholder="First Name" 
-            class="input-field error-state">
+    <form id="signupForm" name="myForm">
+      <input
+        type="text"
+        name="Name"
+        id="fName"
+        placeholder="First Name"
+        class="input-field"
+      />
+      <p id="fName-error"></p>
 
-      <p class="fName-error error-msg"></p>
+      <input
+        type="text"
+        name="Surname"
+        id="lName"
+        placeholder="Last Name"
+        class="input-field"
+      />
+      <p id="lName-error"></p>
 
-      <input type="text" 
-            name="last-name" 
-            id="lName" 
-            placeholder="Last Name" 
-            class="input-field error-state">
+      <input
+        type="email"
+        name="Email"
+        id="emailAddress"
+        placeholder="Email Address"
+        class="input-field"
+      />
+      <p id="email-error"></p>
 
-      <p class="lName-error error-msg">Last Name cannot be empty</p>
+      <input
+        type="password"
+        name="Password"
+        id="password"
+        placeholder="Password"
+        class="input-field"
+      />
+      <p id="password-error"></p>
 
-      <input type="email" 
-            name="email" 
-            id="emailAddress" 
-            placeholder="Email Address" 
-            class="input-field error-state">
-
-      <p class="emailAddress-error error-msg">Looks like this is not an email</p>
-
-      <input type="password" 
-            name="password" 
-            id="password" 
-            placeholder="Password" 
-            class="input-field error-state">
-            
-      <p class="password-error error-msg">Password cannot be empty</p>
-
-      <input type="submit" value="CLAIM YOUR FREE TRIAL" id="submitBtn">
-      <p>By clicking the button, you are agreeing to our <span class="highlight-text">Terms and Services</span></p>
-
+      <input 
+        type="submit" 
+        value="CLAIM YOUR FREE TRIAL" 
+        id="submitBtn" />
+      <p>
+        By clicking the button, you are agreeing to our
+        <span class="highlight-text">Terms and Services</span>
+      </p>
     </form>
   </section>
+
   <script src="index.js"></script>
 </body>
 

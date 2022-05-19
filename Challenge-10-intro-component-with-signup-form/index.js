@@ -17,33 +17,63 @@
 //      - if the email is != validEmail OR matches(validEmail) 
 //      - do nothing
 //      - else print "looks like this is not an email"
-// 8. Create an onsubmit event with a function to identify if each input field is not empty 
-//      - add event.preventDefault() to restrict the form from submitting if none of the input field criterion are met 
+// 8. Create an onsubmit event with main function 
+//      - add event.preventDefault() to restrict the form from submitting if none of the input is entered
 
-const form = document.getElementById('signup-form')
-
-// Individual input values
-const fname = document.getElementById('fName')
-const lname = document.getElementById('lName')
-const emailInput = document.getElementById('emailAddress')
-const passwordInput = document.getElementById('password')
+// RESEARCH TO DO:
+// how to get all the input values from a form
+// how to add specific error messages for different input values
 // 
-const emailFormat = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
+/*********** Instructions above *********/
 
+const getForm = document.getElementById('signupForm');
 
+const emailFormat =
+  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-form.addEventListener('submit', function(event){
-    event.preventDefault();
+function test() {
+  // get input values by Name
+  const fname = getForm.elements['Name'];
+  const lname = getForm.elements['Surname'];
+  const email = getForm.elements['emailAddress'];
+  const password = getForm.elements['Password'];
 
-})
+  // get error state string
+  let nameErr = document.getElementById('fName-error');
+  let surnameErr = document.getElementById('lName-error');
+  let emailErr = document.getElementById('email-error');
+  let passwordErr = document.getElementById('password-error');
 
+  if (fname.value.length === 0) {
+    nameErr.innerHTML = 'First name cannot be empty';
+    fname.className = 'error-state'
+  }
+  if (lname.value.length === 0) {
+    surnameErr.innerHTML = 'Last Name cannot be empty';
+    lname.className = 'error-state'
 
+  }
+  if (email.value.length === 0) {
+    emailErr.innerHTML = 'Email cannot be empty';
+    email.className = 'error-state'
 
+  } else if (!email.match(emailFormat)) {
+    emailErr.innerHTML = 'Looks like this is not an email';
+  } 
+  if (password.value.length === 0) {
+    passwordErr.innerHTML = 'Password cannot be empty';
+    password.className = 'error-state'
 
+  }
 
+}
 
-
+// onsubmit event listener
+getForm.addEventListener('submit', function (event) {
+  event.preventDefault();
+  test();
+});
 
 
 // First Name cannot be empty
