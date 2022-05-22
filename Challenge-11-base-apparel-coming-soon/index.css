@@ -11,7 +11,7 @@
     --dark-grayish: hsl(0, 6%, 24%);
     --nude2: hsla(0, 74%, 74%, 1);
     /* Set gradients using "background: " property */
-    --background-gradient: linear-gradient(221.42deg, #FFF1F1 2.6%, #FFFFFF 96.36%);
+    --bg-gradient: linear-gradient(221.42deg, #FFF1F1 2.6%, #FFFFFF 96.36%);
     --btn-gradient: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
     /* Font styles */
     --h1-ff: normal 300 64px/64px 'Josefin Sans', Sans-Serif;
@@ -20,4 +20,18 @@
     --error-ff: normal 400 13px/28px 'Josefin Sans', Sans-Serif;
     /* Shadow styles */
     --btn-shadow: 0px 15px 20px 0px hsla(0, 43%, 60%, 0.25);
+}
+
+body {
+    background: var(--bg-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap:220px;
+}
+
+.left-col {
+    background: url('images/top-left-bg.svg') no-repeat top right, url('images/bottom-right-bg.svg') no-repeat bottom right;
+    height: 100vh;
 }

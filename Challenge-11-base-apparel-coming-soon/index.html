@@ -7,38 +7,39 @@
 
   <link rel="stylesheet" href="index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic"
+    rel="stylesheet" />
 
   <title>Challenge 11 | Base Apparel coming soon page</title>
-
 </head>
 
 <body>
   <section class="left-col">
-    <div class="logo">
-      <img src="images/logo.svg" alt="image of logo">
+    <div class="content-wrapper">
+      <div class="logo">
+        <img src="images/logo.svg" alt="image of logo">
+      </div>
+
+      <h1>We're <br>
+        <span class="emphasis-text">coming soon</span>
+      </h1>
+
+      <p class="body-text">Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+      <form id="signup">
+        <input type="email" name="Email" id="emailAddress" placeholder="Email Address">
+        <button id="submitBtn"><img src="images/btn-arrow.svg" alt="submit button icon"></button>
+        <small id="error-text"></small>
+      </form>
     </div>
-
-    <h1>We're <br>
-      <span class="emphasis-text">coming soon</span>
-    </h1>
-
-    <p class="body-text">Hello fellow shoppers! We're currently building our new fashion store.
-      Add your email below to stay up-to-date with announcements and our launch deals.</p>
-
-    <form id="signup">
-      <input type="email" name="Email" id="emailAddress" placeholder="Email Address">
-      <button id="submitBtn"><img src="images/btn-arrow.svg" alt="submit button icon"></button>
-      <small id="error-text"></small>
-    </form>
-
   </section>
 
   <section class="right-col">
     <div class="hero-img">
       <img src="images/hero-desktop.jpg" alt="image of woman">
     </div>
-
   </section>
 
   <script src="index.js"></script>
