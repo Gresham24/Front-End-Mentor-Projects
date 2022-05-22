@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    /* Colors styles */
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish: hsl(0, 6%, 24%);
+    --nude2: hsla(0, 74%, 74%, 1);
+    /* Set gradients using "background: " property */
+    --background-gradient: linear-gradient(221.42deg, #FFF1F1 2.6%, #FFFFFF 96.36%);
+    --btn-gradient: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    /* Font styles */
+    --h1-ff: normal 300 64px/64px 'Josefin Sans', Sans-Serif;
+    --h1-span-ff: normal 600 64px/71px 'Josefin Sans', Sans-Serif;
+    --p-ff: normal 400 16px/28px 'Josefin Sans', Sans-Serif;
+    --error-ff: normal 400 13px/28px 'Josefin Sans', Sans-Serif;
+    /* Shadow styles */
+    --btn-shadow: 0px 15px 20px 0px hsla(0, 43%, 60%, 0.25);
+
+}
