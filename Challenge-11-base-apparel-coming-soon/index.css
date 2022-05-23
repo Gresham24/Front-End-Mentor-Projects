@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+/************************** CUSTOM VARIABLES ***************************/
 :root {
     /* Colors styles */
     --desaturated-red: hsl(0, 36%, 70%);
@@ -24,12 +26,9 @@
 body {
     background: var(--bg-gradient);
     display: flex;
-    /* justify-content: space-around; */
-    /* align-content: center; */
-    /* height: 100vh; */
     width: 100vw;
-    /* gap:220px; */
 }
+
 
 /************************** FONTS ***************************/
 h1 {
@@ -63,26 +62,23 @@ input::placeholder {
     margin-left: 32px;
 }
 
+
 /************************** LEFT COLUMN **************************/
 .left-col {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding-left: 25%;
-    /* align-items: center; */
     background: url('images/top-left-bg.svg') no-repeat top right 100%, url('images/bottom-right-bg.svg') no-repeat bottom right;
     height: 100vh;
     width: 100vw;
 }
 
 .contentWrapper {
-    /* display: flex;
-flex-direction: column;
-justify-items: center;
-gap: 40px; */
     padding-bottom: 165px;
     width: 445px;
 }
+
 
 /************************** FORM **************************/
 form {
@@ -104,7 +100,6 @@ input[type=email] {
 }
 
 #submitBtn {
-    z-index: 5;
     width: 100px;
     border-radius: 28px;
     cursor: pointer;
@@ -124,20 +119,15 @@ input[type=email] {
 
 
 /*************************** ERROR STATE ***************************/
-/* red border */
+/* red border + error icon */
 .email-error {
     background: url('images/icon-error.svg') no-repeat;
     background-position: 75%;
-    height: 56px;
     border: solid 2px var(--soft-red);
-    border-radius: 28px;
-    width: 445px;
-    height: 56px;
-    padding-left: 32px;
 }
 
 
-/*************************** HERO IMAGE ***************************/
+/*************************** RIGHT COLUMN - HERO IMAGE ***************************/
 .hero-img {
     height: 100vh;
 }
