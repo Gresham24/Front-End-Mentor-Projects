@@ -17,6 +17,7 @@ function validate() {
         clearErrors();
     } else {
         error.innerHTML = 'Please provide a valid email';
+        email.classList.add('email-error');
     }
 }
 
@@ -27,4 +28,5 @@ submit.addEventListener('click', function (event) {
 // clears error messages
 function clearErrors() {
     error.innerHTML = '';
+    email.classList.remove('email-error');
 }
