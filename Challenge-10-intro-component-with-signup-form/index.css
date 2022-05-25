@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Variables */
+/******************* Variables *******************/
 :root {
     /* Colors styles */
     --red: hsl(0, 100%, 74%);
@@ -33,7 +33,7 @@ body {
     font: var(--p-ff);
 }
 
-/* Left column styling */
+/******************* Left column styling *******************/
 .left-col {
     width: 525px;
     color: white;
@@ -49,7 +49,7 @@ h1 {
     margin-top: 11px;
 }
 
-/* Right column styling */
+/******************** Right column styling ********************/
 .bold-text {
     font-weight: 600;
 }
@@ -89,9 +89,10 @@ form p {
 .highlight-text {
     font-weight: 700;
     color: var(--red);
+    text-decoration-line: none;
 }
 
-/* button styling */
+/******************** button styling ********************/
 #submitBtn {
     font: var(--btn-ff);
     color: white;
@@ -109,7 +110,11 @@ form p {
     background-color: #77E2B3;
 }
 
-/* Input fields + button styling */
+#submitBtn:active {
+    background-color: #64bd97;
+}
+
+/******************** Input fields + button styling ********************/
 ::placeholder {
     font: var(--plc-holder-ff);
 }
@@ -123,13 +128,14 @@ form p {
 }
 
 /* input text when typing */
-input[type=text] {
+input[type=text],
+input[type=email] {
     font: var(--plc-holder-ff);
     color: hsla(248, 9%, 26%, 1);
     letter-spacing: 0.25px;
 }
 
-/* ERROR STATES */
+/******************** ERROR STATES ********************/
 .error-state {
     height: 56px;
     padding: 15px 32px;
@@ -137,6 +143,11 @@ input[type=text] {
     border-radius: 5px;
     background: url('images/icon-error.svg') no-repeat;
     background-position: 97%;
+}
+
+.error-font {
+    font: var(--plc-holder-ff);
+    color: var(--red);
 }
 
 #fName-error,
