@@ -83,6 +83,7 @@ input::placeholder {
 /************************** FORM **************************/
 form {
     display: flex;
+    flex-direction: row;
 }
 
 .input-field {
@@ -92,6 +93,7 @@ form {
     height: 56px;
     background-color: transparent;
     padding-left: 32px;
+
 }
 
 input[type=email] {
