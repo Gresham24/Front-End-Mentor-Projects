@@ -34,22 +34,24 @@ body {
     justify-content: center;
 }
 
+
+/*********************** Card ***********************/
+
 main {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     min-height: 509px;
-    width: 920px;
+    min-width: 920px;
     background-color: white;
     border: none;
     border-radius: 23px;
+    /* gap: 87px; */
+    /* padding: 0px 50px; */
 }
 
 /*********************** FONTS ***********************/
-
-/* clicked on item = fw: 700 */
-/* hovered item = color: soft red */
 
 h1 {
     font: var(--h1-ff);
@@ -60,6 +62,10 @@ h1 {
     font: var(--p-heading-ff);
     color: var(--Very-dark-grayish-blue);
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
 }
 .heading:hover {
     color: var(--Soft-red);
@@ -67,11 +73,48 @@ h1 {
 .expanded-text {
     font: var(--body-ff);
     color: var(--Dark-grayish-blue);
+    display: none;
+    transition: 0.5s;
 }
+
+
+/*********************** CONTENT COLUMN ***********************/
+
+.wrapper {
+    width: 350px;
+}
+
+
+/*********************** ACCORDION ITEMS ***********************/
+
+/*  Arrow button added as pseudo-element
+
+.heading::after {
+    content: url(images/icon-arrow-down.svg);
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-color: rgb(241, 161, 161);
+} */
+
+.faq-item {
+    border-bottom: solid var(--Light-grayish-blue);
+    padding: 15px 0px;
+}
+
+.clicked-arrow-btn {
+transform: rotate(180deg);
+transition: 0.5s;
+}
+
+/* Hidden state for accordion item body */
+.show-text { 
+display: contents;
+}
+
 /****** activated states ******/
 /* rename to active */
 .selected-item {
     color: var(--Very-dark-desaturated-blue);
     font-weight: 700;
 } 
-
