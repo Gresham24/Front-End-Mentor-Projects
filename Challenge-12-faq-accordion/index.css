@@ -16,4 +16,62 @@
     /* gradients */
     --Soft-violet: hsl(273, 75%, 66%);
     --Soft-blue: hsl(240, 73%, 65%);
+    --bg-gradient: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    /* fonts */
+    --h1-ff: normal 700 32px/40px 'Kumbh Sans';
+    --p-heading-ff: normal 400 14px/18px 'Kumbh Sans';
+    --body-ff: normal 400 12px/18px 'Kumbh Sans';
+    /* shadows */
+    --card-shadow: 0px 50px 50px -20px #35127A7F;
+    ;
 }
+
+body {
+    background: var(--bg-gradient) no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 509px;
+    width: 920px;
+    background-color: white;
+    border: none;
+    border-radius: 23px;
+}
+
+/*********************** FONTS ***********************/
+
+/* clicked on item = fw: 700 */
+/* hovered item = color: soft red */
+
+h1 {
+    font: var(--h1-ff);
+    margin-bottom: 35px;
+    color: var(--Very-dark-desaturated-blue);
+}
+.heading {
+    font: var(--p-heading-ff);
+    color: var(--Very-dark-grayish-blue);
+    cursor: pointer;
+}
+.heading:hover {
+    color: var(--Soft-red);
+}
+.expanded-text {
+    font: var(--body-ff);
+    color: var(--Dark-grayish-blue);
+}
+/****** activated states ******/
+/* rename to active */
+.selected-item {
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+} 
+
