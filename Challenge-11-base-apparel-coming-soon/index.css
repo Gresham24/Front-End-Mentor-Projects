@@ -121,11 +121,15 @@ input[type=email] {
 
 
 /*************************** ERROR STATE ***************************/
-/* red border + error icon */
+/* red border + error icon + red text*/
 .email-error {
     background: url('images/icon-error.svg') no-repeat;
     background-position: 75%;
     border: solid 2px var(--soft-red);
+}
+
+.placeholder-error {
+color: var(--soft-red);
 }
 
 

@@ -18,6 +18,8 @@ function validate() {
     } else {
         error.innerHTML = 'Please provide a valid email';
         email.classList.add('email-error');
+    //  email field does not change to red when wrong input is added
+        email.classList.add('placeholder-error');
     }
 }
 
