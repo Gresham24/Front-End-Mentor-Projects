@@ -1,11 +1,3 @@
-/*
-Notes: 
-I still need to refactor the code so that all the input fields are checked at once and each individual error message
-is displayed when it fails in the process. Currently all the logic works in isolation, which makes it difficult to add the success
-state on a successful submission - I had to create a separate if statement to check this.
-*/
-
-
 const getForm = document.getElementById('signupForm');
 
 // Regex for email format validation
@@ -18,11 +10,7 @@ const lname = getForm.elements['Surname'];
 const email = getForm.elements['emailAddress'];
 const password = getForm.elements['Password'];
 
-// get input field for all inputs to generate success state
-const inputField = document.getElementsByClassName('input-field');
-
 function formValidity() {
-
     // get trimmed values of inputs
     const fnameValue = fname.value.trim();
     const lnameValue = lname.value.trim();
@@ -78,26 +66,14 @@ function formValidity() {
         emailValue.match(emailFormat) &&
         password.value.length !== 0) {
         // successState()
-        alert('Form submitted successfully!')
         getForm.reset();
+        alert('Form submitted successfully!')
     }
 }
-/* Function to add green boxes after submission:
-
-function successState() {
-    for (let i = 0; i < inputField.length; i++) {
-        inputField[i].classList.add('success-state');
-    }
-}
-
-*/
-
 
 getForm.addEventListener('submit', function (event) {
     event.preventDefault();
     formValidity();
-
-
 });
 
 // disables whitespace from being entered in the password field
