@@ -1,3 +1,6 @@
+// how can I make the input text change to red when an invalid email address is added?
+// I tried it at line 25 but this class doesn't change anything
+
 const getForm = document.getElementById('signup');    // get the form 
 
 const email = getForm.elements['Email'];    // get the email input by the name value
@@ -18,8 +21,8 @@ function validate() {
     } else {
         error.innerHTML = 'Please provide a valid email';
         email.classList.add('email-error');
-    //  email field does not change to red when wrong input is added
-        email.classList.add('placeholder-error');
+//  NEED HELP: the email field does not change to red when an incorrect input is added
+        email.classList.add('field-error-text');
     }
 }
 

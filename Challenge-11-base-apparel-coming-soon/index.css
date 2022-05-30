@@ -128,7 +128,7 @@ input[type=email] {
     border: solid 2px var(--soft-red);
 }
 
-.placeholder-error {
+.field-error-text {
 color: var(--soft-red);
 }
 
