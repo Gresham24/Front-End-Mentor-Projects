@@ -1,3 +1,6 @@
+/* TO DO: 
+    - ADD SMOOTH ANIMATIONS FOR DROP DOWNS */
+
 *,
 *::before,
 *::after {
@@ -7,23 +10,22 @@
 }
 
 :root {
-    /* colors */
+/* colors */
     --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
     --Soft-red: hsl(14, 88%, 65%);
     --Very-dark-grayish-blue: hsl(237, 12%, 33%);
     --Dark-grayish-blue: hsl(240, 6%, 50%);
     --Light-grayish-blue: hsl(240, 5%, 91%);
-    /* gradients */
+/* gradients */
     --Soft-violet: hsl(273, 75%, 66%);
     --Soft-blue: hsl(240, 73%, 65%);
     --bg-gradient: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
-    /* fonts */
+/* fonts */
     --h1-ff: normal 700 32px/40px 'Kumbh Sans';
     --p-heading-ff: normal 400 14px/18px 'Kumbh Sans';
     --body-ff: normal 400 12px/18px 'Kumbh Sans';
-    /* shadows */
+/* shadows */
     --card-shadow: 0px 50px 50px -20px #35127A7F;
-    ;
 }
 
 body {
@@ -98,7 +100,7 @@ h1 {
 } */
 
 .faq-item {
-    border-bottom: solid var(--Light-grayish-blue);
+    border-bottom: solid 1px var(--Light-grayish-blue);
     padding: 15px 0px;
 }
 
