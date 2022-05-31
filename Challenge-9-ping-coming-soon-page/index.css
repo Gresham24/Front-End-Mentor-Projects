@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* CUSTOM VARIABLES */
+/****************** CUSTOM VARIABLES ******************/
 :root {
     /* font */
     --h1-font: normal 400 48px/60px 'Libre Franklin';
@@ -36,7 +36,7 @@ body {
     gap: 20px;
 }
 
-/* FONT STYLING */
+/******************* FONT STYLING *******************/
 
 h1 {
     font: var(--h1-font);
@@ -61,9 +61,8 @@ footer p {
 }
 
 
-
-/* INPUT FORM STYLING */
-#email-input {
+/******************* INPUT FORM STYLING *******************/
+.email-input {
     font: var(--input-font);
     height: 56px;
     width: 421px;
@@ -92,7 +91,7 @@ footer p {
     transition: 0.1s;
 }
 
-/* ERROR STATE TEXT */
+/******************* ERROR STATE TEXT *******************/
 .error-text {
     color: var(--light-red);
     font: italic 400 12px/20px 'Libre Franklin';
@@ -100,7 +99,7 @@ footer p {
     margin: 6px 0 0 30px;
     text-align: left;
 }
-#error-email-border {
+.error-email-border {
     font: var(--input-font);
     height: 56px;
     width: 421px;
@@ -110,7 +109,7 @@ footer p {
     box-shadow: 0px 0px 7px 3px hsla(0, 0%, 0%, 0);
 }
 
-/* SUCCESS STATE */
+/******************* SUCCESS STATE *******************/
 .success-text {
     color: green;
     font: italic 400 12px/20px 'Libre Franklin';
@@ -129,7 +128,7 @@ footer {
     margin-top: 50px;
 }
 
-/* Icons styling */
+/******************* Icons styling *******************/
 .icons i {
     font-size: 20px;
     color: var(--blue);
