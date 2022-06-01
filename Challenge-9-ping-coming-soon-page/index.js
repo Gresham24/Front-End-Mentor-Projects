@@ -9,7 +9,7 @@ const validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 function validInput() {
     if (validEmail.test(email.value)) {
-        alert('Email address submitted!')
+        alert('Email address submitted!');
         clearErrors();
         form.reset();
     } else if (email.value === '') {

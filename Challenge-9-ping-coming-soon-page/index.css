@@ -13,7 +13,7 @@
     --input-font: normal 300 16px/20px 'Libre Franklin';
     --footer-font: normal 300 12px/14px 'Libre Franklin';
     /* color styles */
-    --blue: hsl(223, 87%, 63%); 
+    --blue: hsl(223, 87%, 63%);
     --pale-blue: hsl(223, 100%, 88%);
     --light-red: hsl(354, 100%, 66%);
     --grey: hsl(0, 0%, 59%);
@@ -34,6 +34,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 30px 0px;
 }
 
 /******************* FONT STYLING *******************/
@@ -43,13 +44,16 @@ h1 {
     color: var(--grey);
     margin-top: 20px;
 }
+
 #bold-text {
     color: black;
     font-weight: 700;
 }
+
 p {
     font: var(--p-font);
 }
+
 footer p {
     font: var(--footer-font);
     color: var(--grey);
@@ -71,9 +75,11 @@ footer p {
     padding: 18px 30px;
     box-shadow: 0px 0px 7px 3px hsla(0, 0%, 0%, 0);
 }
+
 ::placeholder {
     color: hsla(223, 59%, 83%, 1);
 }
+
 #submitBtn {
     font: var(--btn-font);
     color: white;
@@ -85,10 +91,15 @@ footer p {
     box-shadow: var(--shadow);
     margin-left: 16px;
 }
+
 #submitBtn:hover {
     opacity: 80%;
     cursor: pointer;
     transition: 0.1s;
+}
+
+#submitBtn:active {
+    background: hsl(223, 60%, 51%);
 }
 
 /******************* ERROR STATE TEXT *******************/
@@ -99,6 +110,7 @@ footer p {
     margin: 6px 0 0 30px;
     text-align: left;
 }
+
 .error-email-border {
     font: var(--input-font);
     height: 56px;
@@ -139,6 +151,7 @@ footer {
     padding: 10px;
     border-color: rgba(76, 123, 243, 0.15);
 }
+
 .icons i:hover {
     background-color: var(--blue);
     color: white;
