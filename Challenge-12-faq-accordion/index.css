@@ -75,9 +75,13 @@ h1 {
 .expanded-text {
     font: var(--body-ff);
     color: var(--Dark-grayish-blue);
-    display: none;
-    transition: 0.5s;
+    max-height: 0px;
+    overflow: hidden;
+    /* display: none; */
+    /* transition: all 0.5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out; */
 }
+
 
 
 /*********************** CONTENT COLUMN ***********************/

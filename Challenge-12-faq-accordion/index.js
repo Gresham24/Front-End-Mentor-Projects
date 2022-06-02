@@ -5,50 +5,47 @@
 //      if they have any 
 
 /*************** TO DO ***************/ 
-// 1. Get the clicked state of the faq item and store it in a variable
+// 1. Get the clicked state of the faq item and store it in a variable [DONE]
 // 2. Once an item is clicked:
-//      - change the color of the question to bold (set the active state)
-//      - flip the arrow icon image 180 degrees
-//      - show the expanded-text (answer) for the clicked variable 
+//      - change the color of the question to bold (set the active state) [DONE]
+//      - flip the arrow icon image 180 degrees (".clicked-arrow-btn") [DONE]
+//      - show the expanded-text (answer) for the clicked variable  [DONE]
 //          -- by adding the styling of expanded-text class (display: 'flex')   
-//  3. check to see if the faq item clicked state is inactive (clicked again)
+//  3. check to see if the faq item clicked state is inactive (or clicked again)
 //  4. if clicked again
 //      - hide the expanded-text class
 //      - rotate the arrow icon back
 //      - remove the active state 
-
+//  5. when clicked, show the text through altering the max-height and overflow hidden classes
 
 const questionClick = document.getElementsByClassName('heading');
-const answer = document.getElementsByClassName('expanded-text');
+const answerArr = document.getElementsByClassName('expanded-text');
+const arrowButton = document.getElementsByClassName('arrow-btn');
+
+const answer1 = document.getElementById('answer-one'),
+        answer2 = document.getElementById('answer-two'),
+        answer3 = document.getElementById('answer-three'),
+        answer4 = document.getElementById('answer-four'),
+        answer5 = document.getElementById('answer-five');
+
+
 
 // Use this function to store the click events
-// function accordion () {
-//     alert('clicked');
-// }
 
-// Function to display the expanded text
-function displayText() {
-    for (let i = 0; i < answer.length; i++) {
-        answer[i].style.display = 'flex';
-    }
-}
 
-for (let j = 0; j < questionClick.length; j++) {
-    questionClick[j].addEventListener('click', function () {
-        if (questionClick[j]) {
-            // questionClick[j].className = 'selected-item';
-            questionClick[j].classList.add('selected-item');
-            displayText();
+for (let i = 0; i < questionClick.length; i++) {
+    questionClick[i].addEventListener('click', function () {
+        if (questionClick[i]) {
+            // iterates through each of the arrow buttons and flips the arrow button of the selected heading 
+            for (let j = 0; j < arrowButton.length; j++) {
+                arrowButton[i].classList.add('clicked-arrow-btn');
+                for (let k = 0; k < answerArr.length; k++) {
+                    // show the text by removing the overflow = hidden and adding max-height to the expanded text class
+                    answerArr[i].classList.add('show-text');
+                    
+                }
+            }
+            questionClick[i].classList.add('selected-item');
         }
-
-
-        // for (let j = 0; j < answer.length; j++) {
-        //    if (answer[j] === activeElement) {
-        //        content
-        //    }
-        //     // answer[j].style.display = 'flex';
-        // }
-        // answer.style.display = 'flex'
-        // alert('clicked');
     });
 }
