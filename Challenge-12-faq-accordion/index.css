@@ -10,21 +10,21 @@
 }
 
 :root {
-/* colors */
+    /* colors */
     --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
     --Soft-red: hsl(14, 88%, 65%);
     --Very-dark-grayish-blue: hsl(237, 12%, 33%);
     --Dark-grayish-blue: hsl(240, 6%, 50%);
     --Light-grayish-blue: hsl(240, 5%, 91%);
-/* gradients */
+    /* gradients */
     --Soft-violet: hsl(273, 75%, 66%);
     --Soft-blue: hsl(240, 73%, 65%);
     --bg-gradient: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
-/* fonts */
+    /* fonts */
     --h1-ff: normal 700 32px/40px 'Kumbh Sans';
     --p-heading-ff: normal 400 14px/18px 'Kumbh Sans';
     --body-ff: normal 400 12px/18px 'Kumbh Sans';
-/* shadows */
+    /* shadows */
     --card-shadow: 0px 50px 50px -20px #35127A7F;
 }
 
@@ -49,8 +49,6 @@ main {
     background-color: white;
     border: none;
     border-radius: 23px;
-    /* gap: 87px; */
-    /* padding: 0px 50px; */
 }
 
 /*********************** FONTS ***********************/
@@ -60,6 +58,7 @@ h1 {
     margin-bottom: 35px;
     color: var(--Very-dark-desaturated-blue);
 }
+
 .heading {
     font: var(--p-heading-ff);
     color: var(--Very-dark-grayish-blue);
@@ -69,22 +68,21 @@ h1 {
     justify-content: space-between;
     padding-bottom: 10px;
 }
+
 .heading:hover {
     color: var(--Soft-red);
 }
+
 .expanded-text {
     font: var(--body-ff);
     color: var(--Dark-grayish-blue);
-    max-height: 0px;
+    height: 0px;
     overflow: hidden;
-    /* display: none; */
-    /* transition: all 0.5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out; */
 }
 
 
-
 /*********************** CONTENT COLUMN ***********************/
+
 
 .wrapper {
     width: 350px;
@@ -109,13 +107,14 @@ h1 {
 }
 
 .clicked-arrow-btn {
-transform: rotate(180deg);
-transition: 0.5s;
+    transform: rotate(180deg);
+    transition: 0.5s;
 }
 
 /* Hidden state for accordion item body */
-.show-text { 
-display: contents;
+.show-text {
+    display: contents;
+    /* transition-duration: 400ms; */
 }
 
 /****** activated states ******/
@@ -123,4 +122,4 @@ display: contents;
 .selected-item {
     color: var(--Very-dark-desaturated-blue);
     font-weight: 700;
-} 
+}

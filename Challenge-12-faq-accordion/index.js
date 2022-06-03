@@ -1,16 +1,5 @@
-// When accordion item (heading) is clicked:
-// it will get an active state (class with bolded text)
-// it will display the extended text
-// it will remove the show-text  class from any other accordion item that was clicked previously
-//      if they have any 
+/*************** TO DO ***************/
 
-/*************** TO DO ***************/ 
-// 1. Get the clicked state of the faq item and store it in a variable [DONE]
-// 2. Once an item is clicked:
-//      - change the color of the question to bold (set the active state) [DONE]
-//      - flip the arrow icon image 180 degrees (".clicked-arrow-btn") [DONE]
-//      - show the expanded-text (answer) for the clicked variable  [DONE]
-//          -- by adding the styling of expanded-text class (display: 'flex')   
 //  3. check to see if the faq item clicked state is inactive (or clicked again)
 //  4. if clicked again
 //      - hide the expanded-text class
@@ -18,22 +7,69 @@
 //      - remove the active state 
 //  5. when clicked, show the text through altering the max-height and overflow hidden classes
 
+
+/*
+Look into: 
+- ToggleClass()
+- Aria 
+- Timeout delay at the end of a function
+- if .wrapper + .active
+- create a loop inside a function outside of the 
+*/ 
+
+
 const questionClick = document.getElementsByClassName('heading');
 const answerArr = document.getElementsByClassName('expanded-text');
 const arrowButton = document.getElementsByClassName('arrow-btn');
 
-const answer1 = document.getElementById('answer-one'),
-        answer2 = document.getElementById('answer-two'),
-        answer3 = document.getElementById('answer-three'),
-        answer4 = document.getElementById('answer-four'),
-        answer5 = document.getElementById('answer-five');
 
 
+// for (let i = 0; i < questionClick.length; i++) {
+//     let selectedItem = questionClick[i];
+//     selectedItem.addEventListener('click', function () {
+//         for (let j = 0; j < arrowButton.length; j++) {
+//             for (let k = 0; k < answerArr.length; k++) {
+//                 if (!selectedItem) {
+                
+//                 }
+//             }
+//         }// console.log(selectedItem);
+//     });
+// }
 
-// Use this function to store the click events
+
+// arrowButton[i].classList.add('clicked-arrow-btn');
+// answerArr[i].classList.add('show-text');
+// selectedItem.classList.add('selected-item');
+
+
 
 
 for (let i = 0; i < questionClick.length; i++) {
+
+
+    let selectedItem = questionClick[i];
+    selectedItem.addEventListener('click', function () {
+        if (selectedItem) {
+            for (let j = 0; j < arrowButton.length; j++) {      // iterates through each of the arrow buttons and flips the arrow button of the selected heading 
+                for (let k = 0; k < answerArr.length; k++) {    // iterates through the expanded text class list to display the selected text
+                    arrowButton[i].classList.add('clicked-arrow-btn');
+                    answerArr[i].classList.add('show-text');    // show the text by removing the overflow = hidden and adding max-height to the expanded text class
+                    selectedItem.classList.add('selected-item');
+                }
+            }
+        }
+        console.log(selectedItem);
+    });
+}
+
+// const answer1 = document.getElementById('answer-one'),
+//     answer2 = document.getElementById('answer-two'),
+//     answer3 = document.getElementById('answer-three'),
+//     answer4 = document.getElementById('answer-four'),
+//     answer5 = document.getElementById('answer-five');
+
+/* 
     questionClick[i].addEventListener('click', function () {
         if (questionClick[i]) {
             // iterates through each of the arrow buttons and flips the arrow button of the selected heading 
@@ -48,4 +84,5 @@ for (let i = 0; i < questionClick.length; i++) {
             questionClick[i].classList.add('selected-item');
         }
     });
-}
+
+*/
