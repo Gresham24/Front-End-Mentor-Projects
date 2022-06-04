@@ -90,7 +90,10 @@ h1 {
 .wrapper {
     width: 350px;
 }
+.arrow-btn {
+    transition: all 0.25s ease-in-out;
 
+}
 
 /*********************** ACCORDION ITEMS ***********************/
 
@@ -108,8 +111,7 @@ h1 {
 .heading.active {
     color: var(--Very-dark-desaturated-blue);
     font-weight: 700;
-    transition: all 0.1s ease-in-out;
-
+    transition: all 0.25s ease-in-out;
 }
 
 .expanded-text.active {
