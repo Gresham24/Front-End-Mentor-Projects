@@ -1,6 +1,3 @@
-/* TO DO: 
-    - ADD SMOOTH ANIMATIONS FOR DROP DOWNS */
-
 *,
 *::before,
 *::after {
@@ -31,6 +28,7 @@
 body {
     background: var(--bg-gradient) no-repeat;
     height: 100vh;
+    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,10 +40,11 @@ body {
 main {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding-right: 95px;
     min-height: 509px;
-    min-width: 920px;
+    width: 920px;
     background-color: white;
     border: none;
     border-radius: 23px;
@@ -67,12 +66,10 @@ h1 {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 10px;
-
 }
 
 .heading:hover {
     color: var(--Soft-red);
-
 }
 
 .expanded-text {
@@ -80,26 +77,29 @@ h1 {
     color: var(--Dark-grayish-blue);
     max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.15s ease-in-out;
+    transition: max-height 0.25s ease-in-out;
 }
 
 
 /*********************** RIGHT CONTENT COLUMN ***********************/
 
+#content-col {
+    padding: 10px 0;
+
+}
 
 .wrapper {
     width: 350px;
 }
+
 .arrow-btn {
     transition: all 0.25s ease-in-out;
-
 }
 
-/*********************** ACCORDION ITEMS ***********************/
-
+/****** accordion items ******/
 .faq-item {
     border-bottom: solid 1px var(--Light-grayish-blue);
-    padding: 15px 0px;
+    padding: 10px 0px;
 }
 
 /****** activated states ******/
@@ -117,4 +117,29 @@ h1 {
 .expanded-text.active {
     max-height: 100vh;
     transition: max-height 0.5s ease-in-out;
+}
+
+
+/*********************** LEFT COLUMN GRAPHICS ***********************/
+
+#graphics-col {
+    background: url('images/bg-pattern-desktop.svg') no-repeat;
+    background-position: 116% 65%;
+    position: relative;
+    width: 100%;
+    /* height: 585px; */
+
+}
+
+.illustrations {
+    height: 535px;
+    background: url('images/illustration-woman-online-desktop.svg') no-repeat;
+    background-position: -80px 110px;
+}
+
+.box-icon {
+    position: relative;
+    top: 250px;
+    right: 95px;
+    z-index: 1;
 }
