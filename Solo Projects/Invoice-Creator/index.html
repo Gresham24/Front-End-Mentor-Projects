@@ -1,0 +1,57 @@
+<html>
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" href="index.css">
+	<link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+	<title>Gresham's Solo Project 3</title>
+</head>
+
+<body>
+	<header>
+		<h1>Invoice creator</h1>
+		<p class="sub-header">Thanks for choosing GoodCorp, LLC!</p>
+	</header>
+	<section>
+		<div class="button-wrapper">
+			<button id="wash">Wash Car: $10</button>
+			<button id="mow">Mow Lawn: $20</button>
+			<button id="weeds">Pull Weeds: $30</button>
+		</div>
+		<div class="invoice-items">
+			<div class="headings">
+				<p>TASK</p>
+				<p>total</p>
+			</div>
+			<div id="item-one">
+				<p class="item">Wash Car</p>
+				<button class="remove-button">Remove</button>
+				<p class="price">$10</p>
+			</div>
+			<div id="item-two">
+				<p class="item">Mow Lawn</p>
+				<button class="remove-button">Remove</button>
+				<p class="price">$20</p>
+			</div>
+			<div id="item-three">
+				<p class="item">Pull Weeds</p>
+				<button class="remove-button">Remove</button>
+				<p class="price">$30</p>
+			</div>
+		</div>
+		<!-- add solid bottom border for invoice list -->
+		<div class="summary">
+			<div class="headings">
+				<p>NOTES</p>
+				<p>TOTAL AMOUNT</p>
+			</div>
+			<p> We accept cash, credit card, or PayPal</p>
+			<p id="total-amount"></p>
+		</div>
+
+		<button id="email-invoice"> Send invoice</button>
+
+	</section>
+	<script src="index.js"></script>
+</body>
+
+</html>
