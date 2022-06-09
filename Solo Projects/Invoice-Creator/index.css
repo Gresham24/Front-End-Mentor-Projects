@@ -94,5 +94,30 @@ h1 {
 .summary button::before {
     content: url('images/Mail.svg');
 
+    /* display: inline-block; */
+    /* justify-content: center;
+    align-items: center;
+    width: 1.6rem;
+    height: 1.2rem; */
+}
 
+/***************** LAYOUT *****************/
+.card {
+    margin: 0 auto;
+    width: 550px;
+    /* height: 719px; */
+    border: solid;
+    border-radius: 7px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 1px;
+
+    /* height: 190px; */
+    background-color: var(--blue);
+    color: white;
 }
