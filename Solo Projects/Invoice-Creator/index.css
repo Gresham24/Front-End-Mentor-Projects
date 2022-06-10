@@ -99,11 +99,14 @@ header p {
     border-radius: 7px;
     border-style: none;
     padding: 0.9rem 1.7rem;
+    display: block;
+    margin-top: 50px;
 }
 
 .summary button::before {
     content: url('images/Mail.svg');
-
+    width: 20px;
+    
     /* display: inline-block; */
     /* justify-content: center;
     align-items: center;
@@ -147,14 +150,14 @@ section {
     color: var(--light-grey);
 }
 
-#item-one,
-#item-two,
-#item-three {
-    /* display: flex; */
-    background-color: pink;
-    
+.list-item {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(126, 124, 124);
 }
-.price {
-    text-align: right;
+.remove-button {
+margin-left: 15px;
+}
+.price { 
 
 }
