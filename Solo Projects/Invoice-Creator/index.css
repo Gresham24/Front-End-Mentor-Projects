@@ -1,3 +1,7 @@
+
+/* Add body height */
+
+
 *,
 *::after,
 *::before {
@@ -68,6 +72,10 @@ header p {
     font: var(--remove-btn);
 }
 
+.summary p {
+    font: var(--sml-heading);
+}
+
 /***************** BUTTONS *****************/
 
 .button-wrapper button {
@@ -76,6 +84,7 @@ header p {
     border: solid 2px transparent;
     background-color: var(--baby-blue);
     color: var(--purple);
+    cursor: pointer;
 }
 
 .button-wrapper button:hover {
@@ -90,6 +99,8 @@ header p {
     border: none;
     background: none;
     color: var(--grey);
+    cursor: pointer;
+
 }
 
 .summary button {
@@ -101,24 +112,37 @@ header p {
     padding: 0.9rem 1.7rem;
     display: block;
     margin-top: 50px;
+    cursor: pointer;
+}
+
+.summary button:active {
+    background-color: #3058ac;
 }
 
 .summary button::before {
-    content: url('images/Mail.svg');
-    width: 20px;
-    
-    /* display: inline-block; */
-    /* justify-content: center;
-    align-items: center;
-    width: 1.6rem;
-    height: 1.2rem; */
+    content:"";
+    background-image: url('images/Mail.svg');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    position: relative;
+    margin-right: 12px;
+    top: 4px;
 }
 
 /***************** LAYOUT *****************/
 .card {
-    margin: 0 auto;
+    margin: 20px auto;
     width: 550px;
     border: solid;
+
+}
+
+header,
+section {
+    /* padding: 0 40px 40px 40px; */
 }
 
 header {
@@ -138,7 +162,9 @@ section {
     gap: 2.2rem;
     padding-top: 40px;
 }
-
+.headings {
+    margin-top: 40px;
+}
 .invoice-items .headings {
     display: flex;
     flex-direction: row;
@@ -150,13 +176,58 @@ section {
     color: var(--light-grey);
 }
 
-.item-list {
-    flex-direction: row;
-    background-color: rgb(126, 124, 124);
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
 }
-.remove-button {
-margin-left: 15px;
-}
-.price { 
 
+.list-of-items {
+    flex-direction: row;
+    /* background-color: rgb(126, 124, 124); */
+}
+
+.remove-button {
+
+    /* margin-left: 15px; */
+    position: relative;
+    right: 80px;
+
+}
+
+.price {
+    color: white;
+    /* margin-left: 285px; */
+}
+
+.solid-line {
+    border: solid 1px grey;
+    width: 100%;
+    margin: 30px 0 11px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary .headings {
+    display: flex;
+    justify-content: space-between;
+    color: var(--grey);
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+}
+
+.total>p {
+    font-weight: 400;
+    color: white;
+}
+
+.total .total-amount {
+    font: normal 600 3.6rem 'Inter';
 }
