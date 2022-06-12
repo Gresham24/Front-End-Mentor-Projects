@@ -1,7 +1,4 @@
 
-/* Add body height */
-
-
 *,
 *::after,
 *::before {
@@ -38,7 +35,14 @@ html {
 
 }
 
-/* add pseudo-element for envelope */
+
+/* TO DO:
+    - Add body height 
+    - Remove envelope as pseudo-element
+    - style $ sign for the price
+*/
+
+
 
 /***************** TYPOGRAPHY *****************/
 h1 {
