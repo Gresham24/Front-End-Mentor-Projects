@@ -82,6 +82,11 @@ header p {
 
 /***************** BUTTONS *****************/
 
+.currency {
+    color: var(--grey);
+    
+}
+
 .button-wrapper button {
     padding: 0.9rem 1.3rem;
     border-radius: 7px;
