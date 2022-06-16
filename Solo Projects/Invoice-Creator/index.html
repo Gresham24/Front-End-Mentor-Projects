@@ -7,7 +7,7 @@
 		rel="stylesheet" />
 	<title>Gresham's Solo Project 3</title>
 </head>
-<!-- New HTML structure -->
+
 <body>
 	<div class="card">
 
@@ -24,12 +24,13 @@
 				<button id="weeds">Pull Weeds: $30</button>
 			</div>
 
-			<div class="headings">
+			<div class="item-headings">
 				<p>TASK</p>
 				<p>TOTAL</p>
 			</div>
 
 			<div class="list-of-items">
+
 				<div class="description">
 					<p id="wash-price" class="item">Wash Car</p>
 					<p id="mow-price" class="item">Mow Lawn</p>
@@ -51,7 +52,7 @@
 			</div>
 			<div class="solid-line"></div>
 
-			<div class="headings">
+			<div class="summary-headings">
 				<p>NOTES</p>
 				<p>TOTAL AMOUNT</p>
 			</div>
@@ -62,66 +63,8 @@
 			</div>
 			<!-- add image of envelope in button -->
 			<button id="email-invoice" class="send-button"> Send invoice</button>
-
-		</section>
 	</div>
 	<script src="index.js"></script>
 </body>
-
-<!-- BELOW IS THE OLD STRUCTURE OF THE BODY - keeping it just in case -->
-<!-- 
-	<body>
-	<div class="card">
-		<header>
-			<h1>Invoice creator</h1>
-			<p>Thanks for choosing GoodCorp, LLC!</p>
-		</header>
-		<section>
-			<div class="button-wrapper">
-				<button id="wash">Wash Car: $10</button>
-				<button id="mow">Mow Lawn: $20</button>
-				<button id="weeds">Pull Weeds: $30</button>
-			</div>
-			<div class="invoice-items">
-				<div class="headings">
-					<p>TASK</p>
-					<p>TOTAL</p>
-				</div>
-				<div class="list-of-items">
-					<div id="item-one" class="list-item">
-						<p class="item">Wash Car</p>
-						<button class="remove-button">Remove</button>
-						<p class="price"><span class="currency">$</span>10</p>
-					</div>
-					<div id="item-two" class="list-item">
-						<p class="item">Mow Lawn</p>
-						<button class="remove-button">Remove</button>
-						<p class="price"><span class="currency">$</span>20</p>
-					</div>
-					<div id="item-three" class="list-item">
-						<p class="item">Pull Weeds</p>
-						<button class="remove-button">Remove</button>
-						<p class="price"><span class="currency">$</span>30</p>
-					</div>
-
-				</div>
-			</div>
-			<div class="solid-line"></div>
-			<div class="summary">
-				<div class="headings">
-					<p>NOTES</p>
-					<p>TOTAL AMOUNT</p>
-				</div>
-				<div class="total">
-					<p> We accept cash, credit card, or PayPal</p>
-					<p id="total-amount" class="total-amount"><span class="currency">$</span>60</p>
-				</div>
-				<!-- find the best way to add envelope icon in button -->
-<button id="email-invoice"> Send invoice</button>
-</div>
-</section>
-</div>
-<script src="index.js"></script>
-</body> -->
 
 </html>
