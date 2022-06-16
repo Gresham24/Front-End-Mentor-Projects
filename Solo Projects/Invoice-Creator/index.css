@@ -11,9 +11,13 @@ html {
     font-size: 62.5%;
 }
 
-/***************** custom variables *****************/
+/* ============================
+
+            CUSTOM VARIABLES
+
+=============================== */
 :root {
-    /* colors */
+    /**** colors ****/
     --blue: #3a69d2;
     --baby-blue: #d1d4f4;
     --navy: #1f2937;
@@ -21,7 +25,7 @@ html {
     --grey: #d5d4d8;
     --light-grey: #f5f5f5;
     --black: #1c1c1c;
-    /* font */
+    /**** font ****/
     --h1-ff: normal 700 4rem 'Inter';
     --item-ff: normal 700 2rem/2rem 'Inter';
     --sml-heading: normal 700 1.2rem/2rem 'Inter';
@@ -29,12 +33,16 @@ html {
     --prices: normal 500 2.4rem/2rem 'Inter';
     --btn-ff: normal 500 1.4rem 'Inter';
     --remove-btn: normal 400 0.8rem/2rem 'Inter';
-    /* shadow */
+    /**** shadow ****/
     --submit-shadow: 0px 1px 2px 0px #0000000d;
 }
 
 
-/***************** TYPOGRAPHY *****************/
+/* ============================
+
+            TYPOGRAPHY
+
+=============================== */
 h1 {
     font: var(--h1-ff);
     margin-bottom: 0.9rem;
@@ -71,7 +79,11 @@ header p {
     font: var(--p-ff);
 }
 
-/***************** BUTTONS *****************/
+/* ============================
+
+            BUTTONS
+
+=============================== */
 
 .button-wrapper button {
     padding: 0.9rem 1.3rem;
@@ -88,13 +100,6 @@ header p {
 
 .button-wrapper button:active {
     background-color: #a9addb;
-}
-
-@media (max-width: 373px) {
-    .button-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 
@@ -133,7 +138,11 @@ top: 5px;
 margin-right: 5px;
 }
 
-/***************** LAYOUT *****************/
+/* ============================
+
+            LAYOUT
+
+=============================== */
 
 body {
     display: flex;
@@ -150,7 +159,7 @@ body {
     max-width: 550px;
 }
 
-/*** header ***/
+/****** header ******/
 header {
     display: flex;
     flex-direction: column;
@@ -160,7 +169,7 @@ header {
     border-radius: 7px 7px 0px 0px;
 }
 
-/*** main body ***/
+/****** main body ******/
 section {
     display: flex;
     flex-direction: column;
@@ -178,6 +187,17 @@ section {
     flex-direction: row;
     justify-content: space-between;
 }
+
+@media (max-width: 500px) {
+        header {
+        padding: 5em 3em;
+        text-align: center;
+    }
+    .button-wrapper {
+        flex-direction: column;
+    }
+}
+
 
 .item-headings,
 .summary-headings {
@@ -227,7 +247,7 @@ section {
     margin: 3rem 0 1rem;
 }
 
-/*** summary section ***/
+/****** summary section ******/
 
 .summary-headings {
     margin-top: 1em;

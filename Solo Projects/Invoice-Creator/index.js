@@ -8,10 +8,12 @@ When the send invoice button is clicked, the invoice (form) is submitted
 *****************/
 
 // TO DO LIST:
-//      - when a specific button is clicked, fetch the price (value) attached to it
+//      - when a specific button (invoice item) is clicked, fetch the price (value) attached to it
 //      - display the line item in the invoice [add it to an array]
 //      - add the price (value) to the total amount 
 //      - if the remove button is clicked, remove the line item from the array
+//      - check if a line item is already added/clicked/present in the array.
+//          - if it is, it should not be added
 //      - when the send invoice button is clicked, reset the invoice
 
 const washPrice = 10;
@@ -20,9 +22,9 @@ const weedsPrice = 30;
 
 let total = null;
 
-const washBtn = document.getElementById('wash');
-const mowBtn = document.getElementById('mow');
-const weedsBtn = document.getElementById('weeds');
+const washBtn = document.getElementById('wash-btn');
+const mowBtn = document.getElementById('mow-btn');
+const weedsBtn = document.getElementById('weeds-btn');
 
 const removeWash = document.getElementById('remove-wash');
 const removeMow = document.getElementById('remove-mow');
