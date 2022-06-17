@@ -62,7 +62,7 @@ header p {
     font: var(--item-ff);
 }
 
-.price p {
+.price {
     font: var(--prices);
 }
 
@@ -71,7 +71,7 @@ header p {
     font: var(--btn-ff);
 }
 
-.remove-buttons button {
+.remove-button {
     font: var(--remove-btn);
 }
 
@@ -103,14 +103,15 @@ header p {
 }
 
 
-.remove-buttons button {
+.remove-button {
     border: none;
     background: none;
     color: var(--grey);
     cursor: pointer;
+
 }
 
-.remove-buttons button:active {
+.remove-button:active {
     color: #b3b3b4;
 }
 
@@ -131,11 +132,11 @@ header p {
     background-color: #3058ac;
 }
 
-.mail-icon{
+.mail-icon {
     height: 20px;
-position: relative;
-top: 5px;
-margin-right: 5px;
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
 }
 
 /* ============================
@@ -189,10 +190,11 @@ section {
 }
 
 @media (max-width: 500px) {
-        header {
+    header {
         padding: 5em 3em;
         text-align: center;
     }
+
     .button-wrapper {
         flex-direction: column;
     }
@@ -208,21 +210,22 @@ section {
     margin-top: 2em;
 }
 
-.list-of-items {
+#list-of-items {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.remove-buttons button {
+.remove-button {
     display: block;
 }
 
-.description {
+.item {
     margin-right: 1.5rem;
     color: var(--light-grey);
 }
 
-.price p {
+.price {
     text-align: right;
     color: var(--light-grey);
 }
@@ -237,8 +240,8 @@ section {
 }
 
 .item,
-.remove-buttons button,
-.price p {
+.remove-button,
+.price {
     margin-top: 2rem;
 }
 

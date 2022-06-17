@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 	<link rel="stylesheet" href="index.css">
@@ -7,13 +8,8 @@
 		rel="stylesheet" />
 	<title>Gresham's Solo Project 3</title>
 </head>
+
 <body>
-
-<!-- CHANGES TO MAKE:
-	- add class="item-button" to the button-wrapper child elements
-	- use item-button selector in CSS
--->
-
 	<div class="card">
 
 		<header>
@@ -34,31 +30,15 @@
 				<p>TOTAL</p>
 			</div>
 
-			<div class="list-of-items">
-<!-- These line items will be removed from the MArkup - I only added them in right 
-	now just to get the formatting right. I plan on displaying them through the 
-	script as template strings  -->
-				<div class="description">
-					<p id="wash" class="item"></p>
-					<p id="mow" class="item"></p>
-					<p id="weeds" class="item"></p>
-				</div>
+			<div id="list-of-items">
 
-				<div class="remove-buttons">
-					<button id="remove-wash"></button>
-					<button id="remove-mow"></button>
-					<button id="remove-weeds"></button>
-				</div>
-
-				<div class="price">
-					<p id="wash-price"></p>
-					<p id="mow-price"></p>
-					<p id="weeds-price"></p>
-				</div>
+				<p id="wash" class="item">Wash Car</p>
+				<button id="remove-wash" class="remove-button">Remove</button>
+				<p id="wash-price" class="price"><span class="currency">$</span>10</p>
 
 			</div>
-			<div class="solid-line"></div>
 
+			<div class="solid-line"></div>
 			<div class="summary-headings">
 				<p>NOTES</p>
 				<p>TOTAL AMOUNT</p>
@@ -66,9 +46,11 @@
 
 			<div class="invoice-summary">
 				<p> We accept cash, credit card, or PayPal</p>
+				<!-- TOTAL AMOUNT -->
 				<p id="total-amount" class="total-amount">$0</p>
 			</div>
-			<button id="email-invoice" class="send-button"> <img src="images/Mail.svg" class="mail-icon" alt="image of icon to send the email"> Send invoice</button>
+			<!-- RESET BUTTON -->
+			<button id="email-invoice" class="send-button">Send invoice</button>
 	</div>
 	<script src="index.js"></script>
 </body>
