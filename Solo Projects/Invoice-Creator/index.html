@@ -6,19 +6,17 @@
 	<link rel="stylesheet" href="index.css">
 	<link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
 		rel="stylesheet" />
-	<title>Gresham's Solo Project 3</title>
+	<title>Gresham's Invoice Creator</title>
 </head>
 
 <body>
 	<div class="card">
-
 		<header>
 			<h1>Invoice creator</h1>
 			<p>Thanks for choosing GoodCorp, LLC!</p>
 		</header>
 
 		<section>
-
 			<div class="button-wrapper">
 				<button id="wash-btn" class="item-button">Wash Car: $10</button>
 				<button id="mow-btn" class="item-button">Mow Lawn: $20</button>
@@ -29,8 +27,10 @@
 				<p>TASK</p>
 				<p>TOTAL</p>
 			</div>
-<!-- TO DO: Remove IDs so that they are not repeated in the loop -->
+
 			<div id="list-of-items">
+				<!-- INVOICE LINE ITEMS -->
+
 				<!-- <div class="line-item">
 					<p class="item">Wash Car</p>
 					<button class="remove-button">Remove</button>
@@ -46,24 +46,20 @@
 					<button class="remove-button">Remove</button>
 					<p class="price"><span class="currency">$</span>30</p>
 				</div> -->
-
 			</div>
-
 			<div class="solid-line"></div>
 			<div class="summary-headings">
 				<p>NOTES</p>
 				<p>TOTAL AMOUNT</p>
 			</div>
-
 			<div class="invoice-summary">
 				<p> We accept cash, credit card, or PayPal</p>
 				<!-- TOTAL AMOUNT -->
 				<p id="total-amount" class="total-amount">$0</p>
 			</div>
 			<!-- RESET BUTTON -->
-			<button id="email-invoice" class="send-button">Send invoice</button>
+			<button id="email-invoice"  class="send-button"><img src="images/Mail.svg" class="mail-icon" alt="image of icon to send the email">Send invoice</button>
 	</div>
 	<script src="index.js"></script>
 </body>
-
 </html>

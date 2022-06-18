@@ -7,14 +7,14 @@
 const totalAmt = document.getElementById('total-amount');
 const resetBtn = document.getElementById('email-invoice');
 const lineItems = document.getElementById('list-of-items');
-/******** ADD invoice item buttons ************/ 
+/******** Add buttons ************/ 
 const washBtn = document.getElementById('wash-btn');
 const mowBtn = document.getElementById('mow-btn');
 const weedsBtn = document.getElementById('weeds-btn');
-/******** REMOVE invoice item buttons ************/ 
-// const removeWash = document.getElementById('remove-wash');
-// const removeMow = document.getElementById('remove-mow');
-// const removeWeeds = document.getElementById('remove-weeds');
+/******** Remove buttons ************/ 
+const removeWash = document.getElementById('remove-wash');
+const removeMow = document.getElementById('remove-mow');
+const removeWeeds = document.getElementById('remove-weeds');
 
 let servicesRequested = [];
 
@@ -50,8 +50,7 @@ function renderServices() {
     lineItems.innerHTML = service;
 }
 
-/******** TOTAL CALCULATOR ************/ 
-
+/******** Total amount calculator ************/ 
 function calcTotal() {
     let finalTotal = 0;
     for (let i = 0; i < servicesRequested.length; i++) {
@@ -64,17 +63,20 @@ function calcTotal() {
     totalAmt.innerHTML = `$${finalTotal}`;
 }
 
+/******** Send/reset invoice ************/ 
 function resetInvoice() {
     totalAmt.innerText = "$0";
 }
+
+/******** Remove invoice items ************/ 
+
 
 /* ============================
  EVENT LISTENERS
 =============================== */
 
 
-/******** ADD BUTTONS ************/ 
-
+/******** Add invoice items buttons ************/ 
 washBtn.addEventListener('click', function (event) {
     event.preventDefault;
     servicesRequested.push('Wash Car');
@@ -97,15 +99,15 @@ weedsBtn.addEventListener('click', function (event) {
 }, {once : true})
 
 
-/******** SEND INVOICE/RESET BUTTON ************/ 
-
+/******** Reset invoice button ************/ 
 resetBtn.addEventListener('click', function () {
     resetInvoice();
 })
-/* ============================
- TEST CONSOLES
-=============================== */
 
+
+/* ============================
+ Questions 
+=============================== */
 
             // if (servicesRequested.includes(availableItems[i].desc)) {
             //     service += `
