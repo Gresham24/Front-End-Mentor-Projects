@@ -108,7 +108,10 @@ header p {
     background: none;
     color: var(--grey);
     cursor: pointer;
+}
 
+.remove-button:hover {
+    font-size: .9rem;
 }
 
 .remove-button:active {
@@ -127,8 +130,7 @@ header p {
     cursor: pointer;
 }
 
-.send-button:active,
-.send-button:focus {
+.send-button:active {
     background-color: #3058ac;
 }
 
