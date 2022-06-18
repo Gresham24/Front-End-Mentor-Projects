@@ -17,16 +17,14 @@ const weedsBtn = document.getElementById('weeds-btn');
 // const removeMow = document.getElementById('remove-mow');
 // const removeWeeds = document.getElementById('remove-weeds');
 
-let invoiceItems = [
+let availableItems = [
     { desc: 'Wash Car', price: 10 },
-    { service: mowBtn, desc: 'Mow Lawn', price: 20 }, // remove service btn
-    { service: weedsBtn, desc: 'Pull Weeds', price: 30 }, // remove service btn
+    { desc: 'Mow Lawn', price: 20 },
+    { desc: 'Pull Weeds', price: 30 },
 ];
 
-let service = '';
-let ServicesRequested = [];
+let servicesRequested = ['Wash Car', 'Mow Lawn', 'Pull Weeds'];
 let finalTotal = 0;
-
 
 /* ============================
  GLOBAL FUNCTIONS
@@ -34,38 +32,31 @@ let finalTotal = 0;
 
 function renderServices() {
     let service = '';
-    for (let i = 0; i < invoiceItems.length; i++) {
-        service += `
-            <div class="line-item">
-                <p id="wash" class="item"> ${invoiceItems[i].desc}</p>
-		        <button id="remove-wash" class="remove-button">Remove</button>
-		        <p id="wash-price" class="price"><span class="currency">$</span> ${invoiceItems[i].price}</p>
-            </div>
-            `;
+    // Would it be more efficient to have the loop go through the servicesRequested array and the compare it to the
+    //      objects in the availableItems array?
+    for (let i = 0; i < availableItems.length; i++) {
+        if (availableItems[i].desc == servicesRequested[i]) {
+            service += `
+                <div class="line-item">
+                    <p class="item"> ${availableItems[i].desc}</p>
+                    <button class="remove-button">Remove</button>
+                    <p class="price"><span class="currency">$</span> ${availableItems[i].price}</p>
+                </div>
+                `;
+        }
     }
     lineItems.innerHTML = service;
 }
-
-// function getServices() {
-//     service = `
-//         <div class="line-item">
-//             <p id="wash" class="item"> ${invoiceItems[0].desc}</p>
-//     		<button id="remove-wash" class="remove-button">Remove</button>
-//     		<p id="wash-price" class="price"><span class="currency">$</span> ${invoiceItems[0].price}</p>
-//         </div>
-//             `;
-//     lineItems.innerHTML = service;
-// }
-
 
 
 /* ============================
  EVENT LISTENERS
 =============================== */
 
-washBtn.addEventListener('click', function () {
-    ServicesRequested.push(renderServices())
-})
+// washBtn.addEventListener('click', function () {
+//     servicesRequested.push('Wash Car');   // Problem: displays all items
+//     console.log(servicesRequested);
+// })
 
 
 
@@ -73,4 +64,4 @@ washBtn.addEventListener('click', function () {
  TEST CONSOLES
 =============================== */
 
-// renderServices() 
+renderServices() 
