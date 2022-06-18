@@ -6,16 +6,17 @@
 
 const totalAmt = document.getElementById('total-amount');
 const resetBtn = document.getElementById('email-invoice');
-// Section to add items
 const lineItems = document.getElementById('list-of-items');
-// ADD invoice item
+/******** ADD invoice item buttons ************/ 
 const washBtn = document.getElementById('wash-btn');
 const mowBtn = document.getElementById('mow-btn');
 const weedsBtn = document.getElementById('weeds-btn');
-// REMOVE invoice item
+/******** REMOVE invoice item buttons ************/ 
 // const removeWash = document.getElementById('remove-wash');
 // const removeMow = document.getElementById('remove-mow');
 // const removeWeeds = document.getElementById('remove-weeds');
+
+let servicesRequested = [];
 
 let availableItems = [
     { desc: 'Wash Car', price: 10 },
@@ -23,9 +24,6 @@ let availableItems = [
     { desc: 'Pull Weeds', price: 30 },
 ];
 
-let finalTotal = 0;
-//   'Wash Car', 'Mow Lawn', 'Pull Weeds'
-let servicesRequested = [];
 
 /* ============================
  GLOBAL FUNCTIONS
@@ -52,32 +50,58 @@ function renderServices() {
     lineItems.innerHTML = service;
 }
 
+/******** TOTAL CALCULATOR ************/ 
+
+function calcTotal() {
+    let finalTotal = 0;
+    for (let i = 0; i < servicesRequested.length; i++) {
+        for (let j = 0; j < availableItems.length; j++) {
+            if (servicesRequested[i] == availableItems[j].desc) {
+                finalTotal += Number(availableItems[j].price);
+            }
+        }
+    }
+    totalAmt.innerHTML = `$${finalTotal}`;
+}
+
+function resetInvoice() {
+    totalAmt.innerText = "$0";
+}
+
 /* ============================
  EVENT LISTENERS
 =============================== */
 
-washBtn.addEventListener('click', function () {
+
+/******** ADD BUTTONS ************/ 
+
+washBtn.addEventListener('click', function (event) {
+    event.preventDefault;
     servicesRequested.push('Wash Car');
     renderServices();
+    calcTotal();
+}, {once : true})
 
-    console.log(servicesRequested);
-})
-
-mowBtn.addEventListener('click', function () {
+mowBtn.addEventListener('click', function (event) {
+    event.preventDefault;
     servicesRequested.push('Mow Lawn');
     renderServices();
+    calcTotal();
+}, {once : true})
 
-    console.log(servicesRequested);
-})
-
-weedsBtn.addEventListener('click', function () {
+weedsBtn.addEventListener('click', function (event) {
+    event.preventDefault;
     servicesRequested.push('Pull Weeds');
     renderServices();
+    calcTotal();
+}, {once : true})
 
-    console.log(servicesRequested);
+
+/******** SEND INVOICE/RESET BUTTON ************/ 
+
+resetBtn.addEventListener('click', function () {
+    resetInvoice();
 })
-
-
 /* ============================
  TEST CONSOLES
 =============================== */
