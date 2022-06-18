@@ -23,8 +23,9 @@ let availableItems = [
     { desc: 'Pull Weeds', price: 30 },
 ];
 
-let servicesRequested = ['Wash Car', 'Mow Lawn', 'Pull Weeds'];
 let finalTotal = 0;
+//   'Wash Car', 'Mow Lawn', 'Pull Weeds'
+let servicesRequested = [];
 
 /* ============================
  GLOBAL FUNCTIONS
@@ -35,7 +36,8 @@ function renderServices() {
     // Would it be more efficient to have the loop go through the servicesRequested array and the compare it to the
     //      objects in the availableItems array?
     for (let i = 0; i < availableItems.length; i++) {
-        if (availableItems[i].desc == servicesRequested[i]) {
+
+        if (servicesRequested.includes(availableItems[i].desc)) {
             service += `
                 <div class="line-item">
                     <p class="item"> ${availableItems[i].desc}</p>
@@ -44,24 +46,47 @@ function renderServices() {
                 </div>
                 `;
         }
+
+
+        // if (servicesRequested[i] == availableItems[i].desc) {
+        //     service += `
+        //         <div class="line-item">
+        //             <p class="item"> ${availableItems[i].desc}</p>
+        //             <button class="remove-button">Remove</button>
+        //             <p class="price"><span class="currency">$</span> ${availableItems[i].price}</p>
+        //         </div>
+        //         `;
+        // }
     }
     lineItems.innerHTML = service;
 }
-
 
 /* ============================
  EVENT LISTENERS
 =============================== */
 
-// washBtn.addEventListener('click', function () {
-//     servicesRequested.push('Wash Car');   // Problem: displays all items
-//     console.log(servicesRequested);
-// })
+washBtn.addEventListener('click', function () {
+    servicesRequested.push('Wash Car');
+    renderServices(); 
+    
+    console.log(servicesRequested);
+})
 
+mowBtn.addEventListener('click', function () {
+    servicesRequested.push('Mow Lawn');
+    renderServices(); 
+    
+    console.log(servicesRequested);
+})
+
+weedsBtn.addEventListener('click', function () {
+    servicesRequested.push('Pull Weeds');
+    renderServices(); 
+
+    console.log(servicesRequested);
+})
 
 
 /* ============================
  TEST CONSOLES
 =============================== */
-
-renderServices() 
