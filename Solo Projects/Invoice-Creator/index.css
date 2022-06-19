@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/**** Reset the root font size to 10px. Therefore 1.6rem = 10px ****/
+/**** Reset the root font size to 10px. To make  1.6rem = 10px ****/
 html {
     font-size: 62.5%;
 }
@@ -16,6 +16,7 @@ html {
             CUSTOM VARIABLES
 
 =============================== */
+
 :root {
     /**** colors ****/
     --blue: #3a69d2;
@@ -93,11 +94,9 @@ header p {
     color: var(--purple);
     cursor: pointer;
 }
-
 .button-wrapper button:hover {
     border: solid 2.5px white;
 }
-
 .button-wrapper button:active {
     background-color: #a9addb;
 }
@@ -109,14 +108,12 @@ header p {
     color: var(--grey);
     cursor: pointer;
 }
-
 .remove-button:hover {
     font-size: .9rem;
     color: red;
 }
-
 .remove-button:active {
-    color: #b3b3b4;
+    color: rgb(187, 0, 0);
 }
 
 .send-button {
@@ -130,11 +127,9 @@ header p {
     margin-top: 5rem;
     cursor: pointer;
 }
-
 .send-button:hover {
     background-color: #4175e7;
 }
-
 .send-button:active {
     background-color: var(--blue);
 }
@@ -162,7 +157,7 @@ body {
 }
 
 .card {
-    border: 3px solid black;
+    border: 5px solid black;
     border-radius: 12px;
     max-width: 550px;
 }
@@ -187,7 +182,7 @@ section {
 }
 
 .button-wrapper button {
-    margin: 0.4em;
+    margin: 0 0.4em;
 }
 
 .button-wrapper {
@@ -228,7 +223,7 @@ section {
 }
 
 .item {
-    margin-right: 1.5rem;
+    margin-right: 1em;
     color: var(--light-grey);
 }
 
@@ -254,7 +249,7 @@ section {
 
 .solid-line {
     border: solid 1px var(--grey);
-    margin: 3rem 0 1rem;
+    margin: 3em 0 1em;
 }
 
 /****** summary section ******/
@@ -267,7 +262,7 @@ section {
 
 .invoice-summary {
     display: flex;
-    align-items: c;
+    align-items: center;
     justify-content: space-between;
     margin-top: 1em;
 }
