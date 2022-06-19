@@ -88,14 +88,14 @@ header p {
 .button-wrapper button {
     padding: 0.9rem 1.3rem;
     border-radius: 7px;
-    border: solid 2px transparent;
+    border: solid 2.5px transparent;
     background-color: var(--baby-blue);
     color: var(--purple);
     cursor: pointer;
 }
 
 .button-wrapper button:hover {
-    border: solid 2px white;
+    border: solid 2.5px white;
 }
 
 .button-wrapper button:active {
@@ -112,6 +112,7 @@ header p {
 
 .remove-button:hover {
     font-size: .9rem;
+    color: red;
 }
 
 .remove-button:active {
@@ -130,8 +131,12 @@ header p {
     cursor: pointer;
 }
 
+.send-button:hover {
+    background-color: #4175e7;
+}
+
 .send-button:active {
-    background-color: #3058ac;
+    background-color: var(--blue);
 }
 
 .mail-icon {
