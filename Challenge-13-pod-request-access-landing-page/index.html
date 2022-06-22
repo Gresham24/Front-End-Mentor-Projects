@@ -5,9 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Chivo:300,300italic,regular,italic,700,700italic,900,900italic"
+    rel="stylesheet" />
 
-  <title>Frontend Mentor | Pod request access landing page</title>
+  <title>Challenge 13 | Podcast Request page</title>
 </head>
 
 <body>
@@ -17,23 +20,29 @@
   <div class="content-wrapper">
     <h1>Publish your podcasts
       everywhere</h1>
-  
+
     <p>Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify,
       Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
-  
-  
-    <label for="email"> <input type="email" name="" id="email"></label>
-    <label for="submit-btn"> <input type="button" value="Request access"></label>
-    <span class="error-msg"></span>
-  
+
+
+    <label for="email">
+      <input type="email" name="" id="email">
+    </label>
+    <button>Request Access</button>
+    <span class="error-msg">Oops! Please check your email</span>
+
     <div class="logo-container">
-      <div class="logo"><img src="" alt=""></div>
-      <div class="logo"><img src="" alt=""></div>
-      <div class="logo"><img src="" alt=""></div>
-      <div class="logo"><img src="" alt=""></div>
+      <div class="logo"><img src="images/spotify.svg" alt="link to the Spotify website"></div>
+      <div class="logo"><img src="images/apple-podcast.svg" alt="link to the Apple Podcast website"></div>
+      <div class="logo"><img src="images/google-podcasts.svg" alt="link to the Google Podcast website"></div>
+      <div class="logo"><img src="images/pocket-casts.svg" alt="link to the Pocket Cast website"></div>
     </div>
   </div>
+  <div class="dotted-background">
+    <img src="images/bg-pattern-dots.svg" alt="background image of dots">
+  </div>
 
+  <script src="index.js"></script>
 </body>
 
 </html>

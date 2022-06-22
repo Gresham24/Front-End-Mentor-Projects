@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** Reset the root font size to 10px. To make  1.6rem = 10px ****/
+html {
+    font-size: 62.5%;
+}
+
+/* ============================
+
+            CUSTOM VARIABLES
+
+=============================== */
+
+:root {
+    /**** colors ****/
+    --green: #54E6AF;
+    --light-green: #B3FFE2;
+    --grey: #C2CBE5;
+    --red: #FB3E3E;
+    --bg-black: #121725;   
+    /**** font ****/
+    --h1-ff: normal 700 4rem 'Inter';
+    --p-ff: normal 400 1.6rem 'Inter';
+    --btn-ff: normal 500 1.4rem 'Inter';
+    --error-btn-ff: normal 400 0.8rem/2rem 'Inter';
+    --plc-holder-ff: normal 400 0.8rem/2rem 'Inter';
+}
