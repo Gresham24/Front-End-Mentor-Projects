@@ -29,10 +29,8 @@ let availableItems = [
 /******** Generate invoice line items ************/
 function renderServices() {
     let service = '';
-// Would it be more efficient to have the loop go through the servicesRequested array and the compare it to the objects in the availableItems array? 
     for (let i = 0; i < servicesRequested.length; i++) {
         for (let j = 0; j < availableItems.length; j++) {
-// How can I use the array method .includes() here instead of the comparison?
             if (servicesRequested[i] == availableItems[j].desc) {
                 service += `
                 <div class="line-item">
@@ -77,25 +75,30 @@ function resetInvoice() {
 /******** Add invoice items buttons ************/
 washBtn.addEventListener('click', function (event) {
     event.preventDefault;
-    servicesRequested.push('Wash Car');
-    renderServices();
-    calcTotal();
-// How else can prevent the buttons from adding items more than once apart from { once : true }? (right now i can't click them after removing items)
-}, { once: true })
+    if (!servicesRequested.includes('Wash Car')) {
+        servicesRequested.push('Wash Car');
+        renderServices();
+        calcTotal();
+    }
+})
 
 mowBtn.addEventListener('click', function (event) {
     event.preventDefault;
-    servicesRequested.push('Mow Lawn');
-    renderServices();
-    calcTotal();
-}, { once: true })
+    if (!servicesRequested.includes('Mow Lawn')) {
+        servicesRequested.push('Mow Lawn');
+        renderServices();
+        calcTotal();
+    }
+})
 
 weedsBtn.addEventListener('click', function (event) {
     event.preventDefault;
-    servicesRequested.push('Pull Weeds');
-    renderServices();
-    calcTotal();
-}, { once: true })
+    if (!servicesRequested.includes('Pull Weeds')) {
+        servicesRequested.push('Pull Weeds');
+        renderServices();
+        calcTotal();
+    }
+})
 
 /******** Remove buttons ************/
 document.body.addEventListener('click', function (event) {
