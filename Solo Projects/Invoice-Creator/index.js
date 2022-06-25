@@ -29,6 +29,7 @@ let availableItems = [
 /******** Generate invoice line items ************/
 function renderServices() {
     let service = '';
+    let finalTotal = 0;
     for (let i = 0; i < servicesRequested.length; i++) {
         for (let j = 0; j < availableItems.length; j++) {
             if (servicesRequested[i] == availableItems[j].desc) {
@@ -40,23 +41,16 @@ function renderServices() {
                 </div>
                 `;
             }
-        }
-    }
-    lineItems.innerHTML = service;
-}
-
-/******** Total amount calculator ************/
-function calcTotal() {
-    let finalTotal = 0;
-    for (let i = 0; i < servicesRequested.length; i++) {
-        for (let j = 0; j < availableItems.length; j++) {
+            // calculation for the total amount
             if (servicesRequested[i] == availableItems[j].desc) {
                 finalTotal += Number(availableItems[j].price);
             }
         }
     }
+    lineItems.innerHTML = service;
     totalAmt.innerHTML = `$${finalTotal}`;
 }
+
 
 /******** Send/reset invoice ************/
 function resetInvoice() {
@@ -78,7 +72,6 @@ washBtn.addEventListener('click', function (event) {
     if (!servicesRequested.includes('Wash Car')) {
         servicesRequested.push('Wash Car');
         renderServices();
-        calcTotal();
     }
 })
 
@@ -87,7 +80,6 @@ mowBtn.addEventListener('click', function (event) {
     if (!servicesRequested.includes('Mow Lawn')) {
         servicesRequested.push('Mow Lawn');
         renderServices();
-        calcTotal();
     }
 })
 
@@ -96,7 +88,6 @@ weedsBtn.addEventListener('click', function (event) {
     if (!servicesRequested.includes('Pull Weeds')) {
         servicesRequested.push('Pull Weeds');
         renderServices();
-        calcTotal();
     }
 })
 
@@ -105,7 +96,6 @@ document.body.addEventListener('click', function (event) {
     if (event.target.id == 'wash-car') {
         let itemIndex = servicesRequested.indexOf('Wash Car');
         servicesRequested.splice(itemIndex, 1);
-        calcTotal();
         renderServices();
     }
 })
@@ -114,7 +104,6 @@ document.body.addEventListener('click', function (event) {
     if (event.target.id == 'mow-lawn') {
         let itemIndex = servicesRequested.indexOf('Mow Lawn');
         servicesRequested.splice(itemIndex, 1);
-        calcTotal();
         renderServices();
     }
 })
@@ -123,7 +112,6 @@ document.body.addEventListener('click', function (event) {
     if (event.target.id == 'pull-weeds') {
         let itemIndex = servicesRequested.indexOf('Pull weeds');
         servicesRequested.splice(itemIndex, 1);
-        calcTotal();
         renderServices();
     }
 })
