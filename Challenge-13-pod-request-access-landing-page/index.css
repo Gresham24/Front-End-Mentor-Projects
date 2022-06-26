@@ -25,9 +25,70 @@ html {
     --red: #FB3E3E;
     --bg-black: #121725;   
     /**** font ****/
-    --h1-ff: normal 700 4rem 'Inter';
-    --p-ff: normal 400 1.6rem 'Inter';
-    --btn-ff: normal 500 1.4rem 'Inter';
-    --error-btn-ff: normal 400 0.8rem/2rem 'Inter';
-    --plc-holder-ff: normal 400 0.8rem/2rem 'Inter';
+    --h1-ff: normal 300 5.2rem/6.2rem 'Chivo';
+    --p-ff: normal 300 1.8rem/2.8rem 'Chivo';
+    --btn-ff: normal 700 1.4rem/2.8rem 'Chivo';
+    --error-msg-ff: normal 400 1.2rem/1.4rem 'Chivo';
+    --plc-holder-ff: normal 400 1.4rem/2.8rem 'Chivo';
+}
+
+
+/* ============================
+            TYPOGRAPHY
+=============================== */
+
+h1 {
+    font: var(--h1-ff);
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+    color: var(--green);
+}
+.accent-text {
+    color: white;
+}
+
+p {
+    font: var(--p-ff);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--grey);
+}
+
+.request-btn {
+    font: var(--btn-ff);
+}
+
+.error-msg {
+    color: var(--red);
+    font: var(--error-msg-ff);
+}
+
+
+
+/* ============================
+            BUTTONS
+=============================== */
+
+.request-btn {
+    padding: 0.9rem 10.9rem;
+    background-color: var(--green);
+    border: none;
+    border-radius: 28px;
+    display: block;
+}
+
+
+
+/* ============================
+            LAYOUT
+=============================== */
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(33, 33, 46);
+    min-width: 375px;
 }
