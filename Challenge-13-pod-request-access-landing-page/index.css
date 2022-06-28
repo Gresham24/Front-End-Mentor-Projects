@@ -221,6 +221,16 @@ form .error-msg {
 
 
 @media (min-width: 769px) {
-
-
+.container {
+    background: none;
+}
+.content-wrapper {
+    background-color: var(--bg-black);
+    width: 635px;
+    align-items: flex-start;
+}
+.content-wrapper p {
+    text-align: left;
+    width: 445px;
+}
 }
