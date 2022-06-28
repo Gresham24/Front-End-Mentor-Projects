@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 /**** Reset the root font size to 10px. 
 To make  1.6rem = 10px ****/
 html {
@@ -91,33 +95,58 @@ p {
 .request-btn {
     padding: 0.9rem 10.9rem;
     background-color: var(--green);
+    display: block;
     border: none;
     border-radius: 28px;
-    display: block;
     margin-top: 16px;
     width: 327px;
     margin-bottom: 8px;
 }
 
 
-/* ============================
-            IMAGES
-=============================== */
-body {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(images/image-host.jpg);
-    height: 100vh;
+form {
+    margin: 4.8rem auto;
+}
+
+form .error-msg {
+    margin-left: 32px;
 }
 
 
+/* ============================
+            IMAGES
+=============================== */
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    padding-top: 3.3rem;
+    max-width: 535px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.google-podcasts img,
+.pocket-casts img {
+    width: 100px;
+}
 
 
 /* ============================
             LAYOUT
 =============================== */
 
-
+body {
+    background-color: var(--bg-black);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(images/image-host.jpg);
+    height: 100vh;
+}
 
 .container {
     display: flex;
@@ -125,10 +154,8 @@ body {
     align-items: center;
     justify-content: center;
     min-width: 375px;
-    padding: 0px 24px;
     padding-top: 6.2rem;
     height: 100vh;
-    background-color: var(--bg-black);
 }
 
 .content-wrapper {
@@ -149,39 +176,21 @@ p {
     margin-top: 1.6rem;
 }
 
-form {
-    margin: 4.8rem auto;
-}
 
-form .error-msg {
-    margin-left: 32px;
-}
-
-
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.6rem;
-    margin-top: 3.3rem;
-    max-width: 535px;
-}
-
-.logo img {
-    width: 80px;
-}
 
 @media (max-width: 768px) {
     .content-wrapper {
         align-items: center;
+        padding: 0rem 2.4rem;
     }
 
 
     .container {
         opacity: .9;
+        background-color: var(--bg-black);
     }
 
-    .container h1,
+    .content-wrapper h1,
     p {
         min-width: 327px;
         text-align: center;
@@ -210,7 +219,7 @@ form .error-msg {
 
     .logo-container {
         order: 3;
-    gap: 1.6rem;
+        gap: 1.6rem;
     }
 
     .dotted-background {
@@ -221,16 +230,60 @@ form .error-msg {
 
 
 @media (min-width: 769px) {
-.container {
-    background: none;
+
+    body {
+        background-position: top right;
+    }
+
+    .content-wrapper h1,
+    p {
+        text-align: left;
+    }
+
+    h1 {
+        font: var(--h1-ff);
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    .content-wrapper {
+        background-color: var(--bg-black);
+        width: 735px;
+    }
+
+    .content-wrapper p {
+        width: 445px;
+    }
+
+    .logo-container {
+        justify-content: left;
+        margin-bottom: 50px;
+    }
+
+    .container {
+        align-items: flex-start;
+        padding: 0rem 2.4rem;
+    }
+
+
 }
-.content-wrapper {
-    background-color: var(--bg-black);
-    width: 635px;
-    align-items: flex-start;
-}
-.content-wrapper p {
-    text-align: left;
-    width: 445px;
-}
+
+@media (min-width: 1440px) {
+    .container {
+        padding: 13rem 0rem 13rem 16.5rem;
+    }
+    .dotted-background {
+        width: 100%;
+    }
+
+    .dotted-background img {
+        position: relative;
+        width: auto;
+        left: 80%;
+    }
 }
