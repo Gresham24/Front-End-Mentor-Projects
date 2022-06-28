@@ -177,6 +177,7 @@ p {
 }
 
 
+/* TO DO: Create styling for buttons inn tablet and desktop mode*/
 
 @media (max-width: 768px) {
     .content-wrapper {
@@ -239,6 +240,11 @@ p {
     p {
         text-align: left;
     }
+/* replace ibg image with cropped version to avoid this styling */
+    .header-logo {
+        background-color: var(--bg-black);
+        padding: 80px 100px 100px 0px;
+    }
 
     h1 {
         font: var(--h1-ff);
@@ -268,6 +274,8 @@ p {
     .container {
         align-items: flex-start;
         padding: 0rem 2.4rem;
+        margin: 0 auto;
+
     }
 
 
@@ -277,9 +285,12 @@ p {
     .container {
         padding: 13rem 0rem 13rem 16.5rem;
     }
+
     .dotted-background {
         width: 100%;
     }
+
+    .content-wrapper {}
 
     .dotted-background img {
         position: relative;
