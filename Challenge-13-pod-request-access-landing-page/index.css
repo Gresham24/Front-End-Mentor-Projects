@@ -74,7 +74,7 @@ p {
     font: var(--error-msg-ff);
 }
 
-
+/* Replace px with rem for padding and margins */
 
 /* ============================
             INPUT FORM
@@ -83,23 +83,25 @@ p {
 .email-input {
     border: none;
     border-radius: 28px;
-    width: 327px;
+    /* width: 327px; */
+    width: 100%;
     height: 46px;
     padding-left: 32px;
     font: var(--plc-holder-ff);
     color: white;
     background-color: var(--dark-grey);
-
 }
 
-.request-btn {
-    padding: 0.9rem 10.9rem;
+.request-btn { 
+    padding: 0.9rem 0rem;
+    /* padding: 0.9rem 10.9rem; */
     background-color: var(--green);
     display: block;
     border: none;
     border-radius: 28px;
     margin-top: 16px;
-    width: 327px;
+    width: 100%;
+    /* width: 327px; */
     margin-bottom: 8px;
 }
 
@@ -179,7 +181,7 @@ p {
 
 /* TO DO: Create styling for buttons inn tablet and desktop mode*/
 
-@media (max-width: 768px) {
+@media (min-width: 375px) {
     .content-wrapper {
         align-items: center;
         padding: 0rem 2.4rem;
