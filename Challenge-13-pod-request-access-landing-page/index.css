@@ -74,7 +74,12 @@ p {
     font: var(--error-msg-ff);
 }
 
-/* Replace px with rem for padding and margins */
+/* 
+TO DO: 
+    - Replace px with rem for padding and margins 
+    - Create styling for buttons inn tablet and desktop mode
+    - Use the right background images  
+*/
 
 /* ============================
             INPUT FORM
@@ -114,12 +119,32 @@ form .error-msg {
     margin-left: 32px;
 }
 
+/* ============================
+            IMAGES
+=============================== */
+
+
+
+
+
+/* ============================
+            LAYOUT
+=============================== */
+
+
+
+
+
+
+
+
+
 
 /* ============================
             IMAGES
 =============================== */
 
-.logo-container {
+/* .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,14 +160,14 @@ form .error-msg {
 .google-podcasts img,
 .pocket-casts img {
     width: 100px;
-}
+} */
 
 
 /* ============================
             LAYOUT
 =============================== */
 
-body {
+/* body {
     background-color: var(--bg-black);
     background-repeat: no-repeat;
     background-position: center;
@@ -176,12 +201,11 @@ h1 {
 
 p {
     margin-top: 1.6rem;
-}
+} */
 
 
-/* TO DO: Create styling for buttons inn tablet and desktop mode*/
 
-@media (min-width: 375px) {
+/* @media (min-width: 375px) {
     .content-wrapper {
         align-items: center;
         padding: 0rem 2.4rem;
@@ -228,11 +252,10 @@ p {
     .dotted-background {
         display: none;
     }
+} */
 
-}
 
-
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
 
     body {
         background-position: top right;
@@ -242,7 +265,6 @@ p {
     p {
         text-align: left;
     }
-/* replace ibg image with cropped version to avoid this styling */
     .header-logo {
         background-color: var(--bg-black);
         padding: 80px 100px 100px 0px;
@@ -277,13 +299,10 @@ p {
         align-items: flex-start;
         padding: 0rem 2.4rem;
         margin: 0 auto;
-
     }
+} */
 
-
-}
-
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
     .container {
         padding: 13rem 0rem 13rem 16.5rem;
     }
@@ -299,4 +318,4 @@ p {
         width: auto;
         left: 80%;
     }
-}
+} */
