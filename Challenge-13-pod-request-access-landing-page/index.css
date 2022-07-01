@@ -94,7 +94,7 @@ TO DO:
     padding-left: 32px;
     font: var(--plc-holder-ff);
     color: white;
-    background-color: var(--dark-grey);
+    /* background-color: var(--dark-grey); */
 }
 
 .request-btn { 
