@@ -16,27 +16,33 @@
   <main class="container container-flex">
     <div class="header-logo"> <img src="images/logo.svg" alt="header logo image"></div>
 
-    <div class="text-wrapper">
-      <h1>PUBLISH YOUR PODCASTS <span class="accent-text">EVERYWHERE.</span></h1>
-      <p>Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify,
-        Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+    <div class="background-block">
+      <div class="text-wrapper">
+        <h1>PUBLISH YOUR PODCASTS <span class="accent-text">EVERYWHERE.</span></h1>
+        <p>Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify,
+          Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+      </div>
+
+      <form id="form">
+        <label for="email"></label>
+        <input type="email" id="email" class="email-input" placeholder="Email address">
+        <button class="request-btn">Request Access</button>
+        <p class="error-msg">Oops! Please check your email</p>
+      </form>
+
+      <div class="logo-container">
+        <div class="podcast-logo spotify"><img src="images/spotify.svg" alt="link to the Spotify website"></div>
+        <div class="podcast-logo apple"><img src="images/apple-podcast.svg" alt="link to the Apple Podcast website">
+        </div>
+        <div class="podcast-logo google"><img src="images/google-podcasts.svg" alt="link to the Google Podcast website">
+        </div>
+        <div class="podcast-logo pocket-casts"><img src="images/pocket-casts.svg" alt="link to the Pocket Cast website">
+        </div>
+      </div>
     </div>
 
-    <form id="form">
-      <label for="email"></label>
-      <input type="email" id="email" class="email-input" placeholder="Email address">
-      <button class="request-btn">Request Access</button>
-      <p class="error-msg">Oops! Please check your email</p>
-    </form>
-
-    <div class="logo-container">
-      <div class="podcast-logo spotify"><img src="images/spotify.svg" alt="link to the Spotify website"></div>
-      <div class="podcast-logo apple"><img src="images/apple-podcast.svg" alt="link to the Apple Podcast website"></div>
-      <div class="podcast-logo google"><img src="images/google-podcasts.svg" alt="link to the Google Podcast website"></div>
-      <div class="podcast-logo pocket-casts"><img src="images/pocket-casts.svg" alt="link to the Pocket Cast website"></div>
-    </div>
-
-    <img src="images/bg-pattern-dots.svg" class="dotted-background" alt="background image of dots">
+    <div class="dotted-background"><img src="images/bg-pattern-dots.svg" alt="background image of dots"></div>
+    
   </main>
   <script src="index.js"></script>
 </body>

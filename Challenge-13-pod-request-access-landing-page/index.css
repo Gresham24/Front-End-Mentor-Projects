@@ -124,14 +124,16 @@ form .error-msg {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-top: 3.3rem;
+    margin-top: 3.3rem;
 }
+
 /* TO DO: Find out how to center align the logos as the screen size decreases */
 .podcast-logo {
     padding-top: 0.5rem;
     margin-left: .5rem;
     width: 6rem;
 }
+
 .google {
     width: 9rem;
 }
@@ -156,24 +158,8 @@ body {
     height: 100vh;
 }
 
-.container {
-    background-color: var(--navy-bg);
-    opacity: .9;
-    padding: 6.2rem 0 9.4rem;
-    margin: 0 auto;
-    text-align: center;
-    height: 100%;
-    min-width: 240px;
-}
-
-.container-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .text-wrapper,
-form, 
+form,
 .logo-container {
     max-width: 535px;
     padding: 0 2.4rem;
@@ -185,6 +171,89 @@ form,
 
 .text-wrapper p {
     margin-top: 1.6rem;
+}
+
+.container {
+    background-color: var(--navy-bg);
+    opacity: .9;
+    padding: 6.2rem 0 9.4rem;
+    margin: 0 auto;
+    text-align: center;
+    height: 100vh;
+    min-width: 240px;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+form {
+    order: 4;
+}
+
+
+
+/* ============================
+            MEDIA QUERIES
+=============================== */
+
+/******* Tablet view *******/
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+    }
+    
+p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+.text-wrapper,
+form,
+.logo-container {
+    max-width: 635px;
+    padding: 0;
+}
+
+    body {
+        background-image: url(images/tablet-bg-image.jpg);
+        background-color: var(--navy-bg);
+        background-size: auto;
+        background-position: top right;
+    }
+
+    .container-flex {
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .container {
+        background: none;
+        opacity: 100%;
+        text-align: left;
+        padding: 5rem 0 0 3.9rem;
+    }
+
+    .background-block {
+        background-color: var(--navy-bg);
+        margin-top: 15.2rem;
+    }
+
+    .dotted-background {
+        display: block;
+        width: auto;
+    }
+
+    /* .dotted-background img {
+        position: relative;
+        width: auto;
+        left: 80%;
+    } */
 }
 
 /* ============================
@@ -227,56 +296,6 @@ p {
     margin-top: 1.6rem;
 } */
 
-
-
-/* @media (min-width: 375px) {
-    .content-wrapper {
-        align-items: center;
-        padding: 0rem 2.4rem;
-    }
-
-
-    .container {
-        opacity: .9;
-        background-color: var(--bg-black);
-    }
-
-    .content-wrapper h1,
-    p {
-        min-width: 327px;
-        text-align: center;
-    }
-
-    .logo img {
-        width: 60px;
-    }
-
-    .google-podcasts img,
-    .pocket-casts img {
-        width: 80px;
-    }
-
-    h1 {
-        order: 1;
-    }
-
-    p {
-        order: 2;
-    }
-
-    form {
-        order: 4;
-    }
-
-    .logo-container {
-        order: 3;
-        gap: 1.6rem;
-    }
-
-    .dotted-background {
-        display: none;
-    }
-} */
 
 
 /* @media (min-width: 769px) {
@@ -323,23 +342,5 @@ p {
         align-items: flex-start;
         padding: 0rem 2.4rem;
         margin: 0 auto;
-    }
-} */
-
-/* @media (min-width: 1440px) {
-    .container {
-        padding: 13rem 0rem 13rem 16.5rem;
-    }
-
-    .dotted-background {
-        width: 100%;
-    }
-
-    .content-wrapper {}
-
-    .dotted-background img {
-        position: relative;
-        width: auto;
-        left: 80%;
     }
 } */
