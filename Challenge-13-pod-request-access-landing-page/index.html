@@ -15,35 +15,32 @@
 
 <body>
   <main class="container">
-    <div class="header-logo">
-      <img src="images/logo.svg" alt="header logo image">
-    </div>
-    <div class="content-wrapper">
-      <h1>PUBLISH YOUR PODCASTS <span class="accent-text">EVERYWHERE.</span></h1>
 
+    <img src="images/logo.svg" class="header-logo" alt="header logo image">
+
+    <div class="text-wrapper">
+      <h1>PUBLISH YOUR PODCASTS <span class="accent-text">EVERYWHERE.</span></h1>
       <p>Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify,
         Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+    </div>
 
-      <form id="form">
-        <label for="email">
-          <input type="email" name="" id="email" class="email-input" placeholder="Email address">
-        </label>
-        <button class="request-btn">Request Access</button>
-        <span class="error-msg">Oops! Please check your email</span>
-      </form>
-
-      <div class="logo-container">
-        <div class="logo spotify"><img src="images/spotify.svg" alt="link to the Spotify website"></div>
-        <div class="logo apple-podcast"><img src="images/apple-podcast.svg" alt="link to the Apple Podcast website">
-        </div>
-        <div class="logo google-podcasts"><img src="images/google-podcasts.svg"
-            alt="link to the Google Podcast website"></div>
-        <div class="logo pocket-casts"><img src="images/pocket-casts.svg" alt="link to the Pocket Cast website"></div>
+    <div class="logo-container">
+      <div class="logo spotify"><img src="images/spotify.svg" alt="link to the Spotify website"></div>
+      <div class="logo apple-podcast"><img src="images/apple-podcast.svg" alt="link to the Apple Podcast website">
       </div>
+      <div class="logo google-podcasts"><img src="images/google-podcasts.svg" alt="link to the Google Podcast website">
+      </div>
+      <div class="logo pocket-casts"><img src="images/pocket-casts.svg" alt="link to the Pocket Cast website"></div>
     </div>
-    <div class="dotted-background">
-      <img src="images/bg-pattern-dots.svg" alt="background image of dots">
-    </div>
+
+    <form id="form">
+      <label for="email"></label>
+      <input type="email" id="email" class="email-input" placeholder="Email address">
+      <button class="request-btn">Request Access</button>
+      <p class="error-msg">Oops! Please check your email</p>
+    </form>
+
+    <img src="images/bg-pattern-dots.svg" class="dotted-background" alt="background image of dots">
   </main>
   <script src="index.js"></script>
 </body>

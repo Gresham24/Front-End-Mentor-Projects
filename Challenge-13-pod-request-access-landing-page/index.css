@@ -25,17 +25,16 @@ html {
 :root {
     /**** colors ****/
     --green: #54E6AF;
-    --light-green: #B3FFE2;
-    --grey: #C2CBE5;
+    --light-grey: #C2CBE5;
+    --grey: #5A668A;
     --dark-grey: #2C344B;
     --red: #FB3E3E;
-    --bg-black: #121725;
+    --navy-bg: #121725; 
     /**** font ****/
-    --h1-ff: normal 300 5.2rem/6.2rem 'Chivo';
-    --p-ff: normal 300 1.8rem/2.8rem 'Chivo';
-    --btn-ff: normal 700 1.4rem/2.8rem 'Chivo';
+    --h1-ff: normal 400 2.6rem/3.8rem 'Chivo';
+    --p-ff: normal 400 1.5rem/2.5rem 'Chivo';
+    --input-ff: normal 400 1.4rem/2.8rem 'Chivo';
     --error-msg-ff: normal 400 1.2rem/1.4rem 'Chivo';
-    --plc-holder-ff: normal 700 1.4rem/2.8rem 'Chivo';
 }
 
 
@@ -171,7 +170,7 @@ form .error-msg {
     background-color: var(--bg-black);
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(images/image-host.jpg);
+    background-image: url(images/desktop-bg-image.jpg);
     height: 100vh;
 }
 
