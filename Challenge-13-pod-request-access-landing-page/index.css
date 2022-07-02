@@ -58,19 +58,12 @@ p {
     color: var(--grey);
 }
 
-
 .error-msg {
     color: var(--red);
     font: var(--error-msg-ff);
     text-align: left;
 }
 
-/* 
-TO DO: 
-    - Replace px with rem for padding and margins 
-    - Create styling for buttons in tablet and desktop mode
-    - Use the right background images  
-*/
 
 /* ============================
             INPUT FORM
@@ -109,7 +102,7 @@ form {
     cursor: pointer;
 }
 
-.request-btn:hover, 
+.request-btn:hover,
 .request-btn:focus {
     background-color: var(--light-green);
 }
@@ -211,7 +204,7 @@ form {
             MEDIA QUERIES
 =============================== */
 
-/******* Tablet view *******/
+/******* TABLET *******/
 @media (min-width: 768px) {
 
     h1 {
@@ -241,6 +234,7 @@ form {
     .container-flex {
         align-items: flex-start;
         justify-content: space-between;
+        gap: 152px;
     }
 
     .container {
@@ -256,6 +250,7 @@ form {
 
     .logo-container {
         order: 4;
+        margin: 0;
     }
 
     .text-wrapper p {
@@ -263,10 +258,14 @@ form {
         width: 445px;
     }
 
+    form {
+        margin-top: 4rem;
+    }
+
     .email-input,
     .request-btn {
         display: inline;
-        width: 445px;
+        max-width: 445px;
     }
 
     .email-input {
@@ -275,10 +274,11 @@ form {
 
     .request-btn {
         width: 16.2rem;
-        margin-left: -17.2rem;
+        position: relative;
+        right: 27%;
     }
 
-    .request-btn:hover, 
+    .request-btn:hover,
     .request-btn:focus {
         background-color: var(--light-green);
     }
@@ -297,61 +297,61 @@ form {
     .dotted-background {
         display: block;
         width: auto;
-        padding-top: 2rem;
     }
-
-
-
-    /* .dotted-background img {
-        position: relative;
-        width: auto;
-        left: 80%;
-    } */
 }
 
-/* @media (min-width: 769px) {
 
-    body {
-        background-position: top right;
-    }
-
-    .content-wrapper h1,
-    p {
-        text-align: left;
-    }
-    .header-logo {
-        background-color: var(--bg-black);
-        padding: 80px 100px 100px 0px;
-    }
+/******* DESKTOP *******/
+@media (min-width: 1124px) {
 
     h1 {
-        font: var(--h1-ff);
-        font-size: 4.8rem;
-        line-height: 5.6rem;
+        font-size: 5.2rem;
+        line-height: 6.2rem;
     }
 
-    p {
-        font-size: 1.8rem;
-        line-height: 2.5rem;
-    }
-
-    .content-wrapper {
-        background-color: var(--bg-black);
-        width: 735px;
-    }
-
-    .content-wrapper p {
-        width: 445px;
-    }
-
-    .logo-container {
-        justify-content: left;
-        margin-bottom: 50px;
+    body {
+        background-image: url(images/desktop-bg-image.jpg);
+        background-size: auto;
+        background-position: 0;
+        background-position: right 130px;
     }
 
     .container {
-        align-items: flex-start;
-        padding: 0rem 2.4rem;
-        margin: 0 auto;
+        padding: 10.2rem 0 13rem 16.5rem;
     }
-} */
+
+    .container-flex {
+        gap: 0;
+    }
+
+    .bg-block {
+        margin-top: 10.3rem;
+        padding-right: 5.8rem;
+    }
+
+    .text-wrapper {
+        max-width: 665px;
+    }
+
+    .email-input,
+    .request-btn {
+        max-width: 427px;
+    }
+
+    form {
+        margin-left: 0;
+    }
+
+    .dotted-background {
+        position: relative;
+        width: 100%;
+        bottom: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    .dotted-background img {
+        width: auto;
+    }
+}
