@@ -24,6 +24,7 @@ img {
     /**** colors ****/
     --green: #54E6AF;
     --light-grey: #C2CBE5;
+    --light-green: #B3FFE2;
     --grey: #5A668A;
     --dark-grey: #2C344B;
     --red: #FB3E3E;
@@ -75,6 +76,11 @@ TO DO:
             INPUT FORM
 =============================== */
 
+form {
+    width: 100%;
+    margin: 5.7rem auto;
+}
+
 .email-input,
 .request-btn {
     display: block;
@@ -103,9 +109,9 @@ TO DO:
     cursor: pointer;
 }
 
-form {
-    width: 100%;
-    margin: 5.7rem auto;
+.request-btn:hover, 
+.request-btn:focus {
+    background-color: var(--light-green);
 }
 
 form .error-msg {
@@ -190,6 +196,11 @@ form,
 
 }
 
+.bg-block-flex {
+    display: flex;
+    flex-direction: column;
+}
+
 form {
     order: 4;
 }
@@ -239,13 +250,16 @@ form {
         padding: 5rem 0 0 3.9rem;
     }
 
-    .background-block {
+    .bg-block {
         background-color: var(--navy-bg);
-        /* background-color: lightcoral; */
-        margin-top: 15.2rem;
+    }
+
+    .logo-container {
+        order: 4;
     }
 
     .text-wrapper p {
+        margin-top: 3.1rem;
         width: 445px;
     }
 
@@ -264,11 +278,26 @@ form {
         margin-left: -17.2rem;
     }
 
-    /* STYLE LOGOS */
+    .request-btn:hover, 
+    .request-btn:focus {
+        background-color: var(--light-green);
+    }
+
+    .logo-container {
+        justify-content: left;
+    }
+
+    .podcast-logo {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        margin-right: 4rem;
+    }
 
     .dotted-background {
         display: block;
         width: auto;
+        padding-top: 2rem;
     }
 
 
