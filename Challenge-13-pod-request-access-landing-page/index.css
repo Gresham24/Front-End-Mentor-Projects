@@ -37,7 +37,10 @@ html {
             Global styles
 =============================== */
 body {
-    background-color: var(--navy-bg);
+    background-image: url(images/mobile-bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 img {
@@ -96,7 +99,13 @@ TO DO:
 
 .email-input {
     background-color: var(--dark-grey);
+    color: white;
     padding-left: 3.2rem;
+}
+
+::placeholder {
+    color: var(--light-grey);
+    opacity: 60%;
 }
 
 .request-btn {
@@ -147,12 +156,15 @@ form .error-msg {
 }
 
 .container {
+    background-color: var(--navy-bg);
+    opacity: .9;
     padding: 6.2rem 2.4rem 9.4rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height: 100%;
     min-width: 240px;
     max-width: 535px;
 }
