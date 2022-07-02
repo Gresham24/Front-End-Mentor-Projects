@@ -6,10 +6,12 @@
     box-sizing: border-box;
 }
 
-/**** Reset the root font size to 10px. 
-To make  1.6rem = 10px ****/
 html {
     font-size: 62.5%;
+}
+
+img {
+    width: 100%;
 }
 
 /* ============================
@@ -33,19 +35,6 @@ html {
     --error-msg-ff: normal 400 1.2rem/1.4rem 'Chivo';
 }
 
-/* ============================
-            Global styles
-=============================== */
-body {
-    background-image: url(images/mobile-bg-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-img {
-    width: 100%;
-}
 
 /* ============================
             TYPOGRAPHY
@@ -143,10 +132,15 @@ form .error-msg {
     margin-left: .5rem;
     width: 6rem;
 }
-.google,
-.pocket-casts {
+.google {
     width: 9rem;
 }
+
+.pocket-casts {
+    width: 7rem;
+}
+
+
 /* ============================
             LAYOUT
 =============================== */
@@ -155,25 +149,43 @@ form .error-msg {
     display: none;
 }
 
+body {
+    background-image: url(images/mobile-bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
 .container {
     background-color: var(--navy-bg);
     opacity: .9;
-    padding: 6.2rem 2.4rem 9.4rem;
+    padding: 6.2rem 0 9.4rem;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     height: 100%;
     min-width: 240px;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-wrapper,
+form, 
+.logo-container {
     max-width: 535px;
+    padding: 0 2.4rem;
 }
 
 .text-wrapper {
     margin-top: 5.7em;
 }
 
-
+.text-wrapper p {
+    margin-top: 1.6rem;
+}
 
 /* ============================
             LAYOUT
