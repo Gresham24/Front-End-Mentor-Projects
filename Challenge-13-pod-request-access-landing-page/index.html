@@ -23,11 +23,11 @@
           Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
       </div>
 
-      <form id="form">
+      <form id="form" novalidate>
         <label for="email"></label>
-        <input type="email" id="email" class="email-input" placeholder="Email address">
-        <button class="request-btn">Request Access</button>
-        <p class="error-msg">Oops! Please check your email</p>
+        <input type="email" name="email" id="email" class="email-input" placeholder="Email address">
+        <button id="submit" class="request-btn">Request Access</button>
+        <p id="error-msg" class="error-msg"></p>
       </form>
 
       <div class="logo-container">
