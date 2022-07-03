@@ -6,14 +6,12 @@
     box-sizing: border-box;
 }
 
-img {
-    width: 100%;
-}
-
-/**** Reset the root font size to 10px. 
-To make  1.6rem = 10px ****/
 html {
     font-size: 62.5%;
+}
+
+img {
+    width: 100%;
 }
 
 /* ============================
@@ -25,17 +23,17 @@ html {
 :root {
     /**** colors ****/
     --green: #54E6AF;
+    --light-grey: #C2CBE5;
     --light-green: #B3FFE2;
-    --grey: #C2CBE5;
+    --grey: #5A668A;
     --dark-grey: #2C344B;
     --red: #FB3E3E;
-    --bg-black: #121725;
+    --navy-bg: #121725;
     /**** font ****/
-    --h1-ff: normal 300 5.2rem/6.2rem 'Chivo';
-    --p-ff: normal 300 1.8rem/2.8rem 'Chivo';
-    --btn-ff: normal 700 1.4rem/2.8rem 'Chivo';
+    --h1-ff: normal 300 2.6rem/3.8rem 'Chivo';
+    --p-ff: normal 300 1.5rem/2.5rem 'Chivo';
+    --input-ff: normal 400 1.4rem/2.8rem 'Chivo';
     --error-msg-ff: normal 400 1.2rem/1.4rem 'Chivo';
-    --plc-holder-ff: normal 700 1.4rem/2.8rem 'Chivo';
 }
 
 
@@ -45,13 +43,8 @@ html {
 
 h1 {
     font: var(--h1-ff);
-    font-size: 2.6rem;
-    line-height: 3.8rem;
     color: var(--green);
-}
-
-::placeholder {
-    color: white;
+    text-transform: uppercase;
 }
 
 .accent-text {
@@ -65,55 +58,60 @@ p {
     color: var(--grey);
 }
 
-.request-btn {
-    font: var(--btn-ff);
-}
-
 .error-msg {
     color: var(--red);
     font: var(--error-msg-ff);
+    text-align: left;
 }
 
-/* Replace px with rem for padding and margins */
 
 /* ============================
             INPUT FORM
 =============================== */
 
-.email-input {
-    border: none;
-    border-radius: 28px;
-    /* width: 327px; */
+form {
     width: 100%;
-    height: 46px;
-    padding-left: 32px;
-    font: var(--plc-holder-ff);
-    color: white;
-    background-color: var(--dark-grey);
+    margin: 5.7rem auto;
 }
 
-.request-btn { 
-    padding: 0.9rem 0rem;
-    /* padding: 0.9rem 10.9rem; */
-    background-color: var(--green);
+.email-input,
+.request-btn {
     display: block;
     border: none;
-    border-radius: 28px;
-    margin-top: 16px;
+    border-radius: 2.8em;
+    padding: 0.9em 0;
     width: 100%;
-    /* width: 327px; */
-    margin-bottom: 8px;
+    font: var(--input-ff);
+    font-weight: 700;
 }
 
+.email-input {
+    background-color: var(--dark-grey);
+    color: white;
+    padding-left: 3.2rem;
+}
 
-form {
-    margin: 4.8rem auto;
+::placeholder {
+    color: var(--light-grey);
+    opacity: 60%;
+}
+
+.request-btn {
+    background-color: var(--green);
+    margin-top: 1.6rem;
+    cursor: pointer;
+}
+
+.request-btn:hover,
+.request-btn:focus {
+    background-color: var(--light-green);
 }
 
 form .error-msg {
-    margin-left: 32px;
+    font-weight: 700;
+    margin-top: .8em;
+    padding-left: 3.2rem;
 }
-
 
 /* ============================
             IMAGES
@@ -121,20 +119,26 @@ form .error-msg {
 
 .logo-container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 1.6rem;
-    padding-top: 3.3rem;
-    max-width: 535px;
+    width: 100%;
+    margin-top: 3.3rem;
 }
 
-.logo img {
-    width: 80px;
+/* TO DO: Find out how to center align the logos as the screen size decreases */
+.podcast-logo {
+    padding-top: 0.5rem;
+    margin-left: .5rem;
+    width: 6rem;
 }
 
-.google-podcasts img,
-.pocket-casts img {
-    width: 100px;
+.google {
+    width: 9rem;
+}
+
+.pocket-casts {
+    width: 7rem;
 }
 
 
@@ -142,161 +146,212 @@ form .error-msg {
             LAYOUT
 =============================== */
 
+.dotted-background {
+    display: none;
+}
+
 body {
-    background-color: var(--bg-black);
+    background-image: url(images/mobile-bg-image.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(images/image-host.jpg);
+    background-size: cover;
     height: 100vh;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 375px;
-    padding-top: 6.2rem;
-    height: 100vh;
+.text-wrapper,
+form,
+.logo-container {
+    max-width: 535px;
+    padding: 0 2.4rem;
 }
 
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
+.text-wrapper {
+    margin-top: 5.7em;
 }
 
-.content-wrapper h1,
-p {
-    text-align: center;
-}
-
-h1 {
-    margin-top: 5.7rem;
-}
-
-p {
+.text-wrapper p {
     margin-top: 1.6rem;
 }
 
+.container {
+    background-color: var(--navy-bg);
+    opacity: .9;
+    padding: 6.2rem 0 9.4rem;
+    margin: 0 auto;
+    text-align: center;
+    height: 100vh;
+    min-width: 240px;
+}
 
-/* TO DO: Create styling for buttons inn tablet and desktop mode*/
-
-@media (min-width: 375px) {
-    .content-wrapper {
-        align-items: center;
-        padding: 0rem 2.4rem;
-    }
-
-
-    .container {
-        opacity: .9;
-        background-color: var(--bg-black);
-    }
-
-    .content-wrapper h1,
-    p {
-        min-width: 327px;
-        text-align: center;
-    }
-
-    .logo img {
-        width: 60px;
-    }
-
-    .google-podcasts img,
-    .pocket-casts img {
-        width: 80px;
-    }
-
-    h1 {
-        order: 1;
-    }
-
-    p {
-        order: 2;
-    }
-
-    form {
-        order: 4;
-    }
-
-    .logo-container {
-        order: 3;
-        gap: 1.6rem;
-    }
-
-    .dotted-background {
-        display: none;
-    }
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
+.bg-block-flex {
+    display: flex;
+    flex-direction: column;
+}
 
-@media (min-width: 769px) {
+form {
+    order: 4;
+}
 
-    body {
-        background-position: top right;
-    }
 
-    .content-wrapper h1,
-    p {
-        text-align: left;
-    }
-/* replace ibg image with cropped version to avoid this styling */
-    .header-logo {
-        background-color: var(--bg-black);
-        padding: 80px 100px 100px 0px;
-    }
+
+/* ============================
+            MEDIA QUERIES
+=============================== */
+
+/******* TABLET *******/
+@media (min-width: 768px) {
 
     h1 {
-        font: var(--h1-ff);
         font-size: 4.8rem;
         line-height: 5.6rem;
     }
 
     p {
         font-size: 1.8rem;
-        line-height: 2.5rem;
+        line-height: 2.8rem;
     }
 
-    .content-wrapper {
-        background-color: var(--bg-black);
-        width: 735px;
+    .text-wrapper,
+    form,
+    .logo-container {
+        min-width: 635px;
+        padding: 0;
     }
 
-    .content-wrapper p {
+    body {
+        background-image: url(images/tablet-bg-image.jpg);
+        background-color: var(--navy-bg);
+        background-size: auto;
+        background-position: top right;
+    }
+
+    .container-flex {
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 152px;
+    }
+
+    .container {
+        background: none;
+        opacity: 100%;
+        text-align: left;
+        padding: 5rem 0 0 3.9rem;
+    }
+
+    .bg-block {
+        background-color: var(--navy-bg);
+    }
+
+    .logo-container {
+        order: 4;
+        margin: 0;
+    }
+
+    .text-wrapper p {
+        margin-top: 3.1rem;
         width: 445px;
+    }
+
+    form {
+        margin-top: 4rem;
+    }
+
+    .email-input,
+    .request-btn {
+        display: inline;
+        max-width: 445px;
+    }
+
+    .email-input {
+        padding: 1.4em 3.2rem;
+    }
+
+    .request-btn {
+        width: 16.2rem;
+        position: relative;
+        right: 27%;
+    }
+
+    .request-btn:hover,
+    .request-btn:focus {
+        background-color: var(--light-green);
     }
 
     .logo-container {
         justify-content: left;
-        margin-bottom: 50px;
     }
 
-    .container {
-        align-items: flex-start;
-        padding: 0rem 2.4rem;
-        margin: 0 auto;
-
-    }
-
-
-}
-
-@media (min-width: 1440px) {
-    .container {
-        padding: 13rem 0rem 13rem 16.5rem;
+    .podcast-logo {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        margin-right: 4rem;
     }
 
     .dotted-background {
-        width: 100%;
+        display: block;
+        width: auto;
+    }
+}
+
+
+/******* DESKTOP *******/
+@media (min-width: 1124px) {
+
+    h1 {
+        font-size: 5.2rem;
+        line-height: 6.2rem;
     }
 
-    .content-wrapper {}
+    body {
+        background-image: url(images/desktop-bg-image.jpg);
+        background-size: auto;
+        background-position: 0;
+        background-position: right 130px;
+    }
+
+    .container {
+        padding: 10.2rem 0 13rem 16.5rem;
+    }
+
+    .container-flex {
+        gap: 0;
+    }
+
+    .bg-block {
+        margin-top: 10.3rem;
+        padding-right: 5.8rem;
+    }
+
+    .text-wrapper {
+        max-width: 665px;
+    }
+
+    .email-input,
+    .request-btn {
+        max-width: 427px;
+    }
+
+    form {
+        margin-left: 0;
+    }
+
+    .dotted-background {
+        position: relative;
+        width: 100%;
+        bottom: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
 
     .dotted-background img {
-        position: relative;
         width: auto;
-        left: 80%;
     }
 }
