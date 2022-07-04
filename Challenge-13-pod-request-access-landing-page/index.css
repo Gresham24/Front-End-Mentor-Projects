@@ -114,13 +114,17 @@ form .error-msg {
 
 
 .logo-container {
-    margin-top: 3.3rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .podcast-logo {
-    padding-top: 0.5rem;
-    margin-left: .5rem;
-    /* width: 6rem; */
+    padding-top: 2rem;
+    margin-left: 1rem;
+    width: 8rem;
 }
 
 
@@ -157,7 +161,7 @@ form,
 .container {
     background-color: var(--navy-bg);
     opacity: .9;
-    padding: 6.2rem 0 9.4rem;
+    padding-top: 6.2rem;
     margin: 0 auto;
     text-align: center;
     height: 100vh;
@@ -230,7 +234,7 @@ form {
 
     .logo-container {
         order: 4;
-        margin: 0;
+        margin-top: 2rem;
     }
 
     .text-wrapper p {
