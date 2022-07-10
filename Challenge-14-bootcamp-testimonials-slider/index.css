@@ -163,8 +163,25 @@ body {
 }
 
 
-
 /*======================
+
+        INTERACTIVITY
+
+======================== */
+
+.container-flex,
+.testimony-hidden {
+        display: none;
+}
+
+.testimonial-visible {
+        display: flex;
+}
+
+
+
+
+/*====================== 
 
         MEDIA QUERIES
 
@@ -172,9 +189,10 @@ body {
 
 
 @media (min-width: 1025px) {
-footer img {
-     display: block;
-}
+        footer img {
+                display: block;
+        }
+
         .testimonial-quote {
                 font-size: 3.2rem;
                 line-height: 4.4rem;
@@ -192,11 +210,12 @@ footer img {
                 display: flex;
                 gap: 10px;
         }
-/* TO DO: Make  the backgroud visibile and shift the image and quote down */
+
         .container-flex {
                 flex-direction: row;
                 justify-content: center;
-                height:123%;
+                height: 115%;
+                margin-top: 40px;
         }
 
         /* ===== buttons ===== */
