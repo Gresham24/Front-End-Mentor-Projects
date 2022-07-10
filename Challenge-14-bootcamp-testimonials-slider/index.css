@@ -70,7 +70,7 @@ footer img {
         box-shadow: var(--img-shadow);
 }
 
-/* background images */
+/* ====background images==== */
 .testimony-container {
         background: url(images/pattern-bg.svg) no-repeat center 13%;
         background-size: 326.5px;
@@ -97,13 +97,17 @@ footer img {
         display: flex;
         align-items: center;
         justify-content: center;
+        transform: translateY(-24px);
+        background-color: white;
+
 }
 
 .slider-buttons button {
         border: none;
         cursor: pointer;
-        padding: 1.4rem 1.7rem;
-        background-color: transparent;
+        padding: 1.4rem 0;
+        width: 100%;
+        background-color: white;
 }
 
 .prev-btn {
@@ -146,10 +150,15 @@ footer img {
 
 .testimonial-text-wrapper {
         order: 3;
+        padding: 0 3.2rem;
+        padding-top: 2.5rem;
+        max-width: 481px;
 }
 
 .testimony-container {
         padding-top: 5.4rem;
+        overflow-x: hidden;
+        min-width: 375px;
 }
 
 
