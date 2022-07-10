@@ -19,7 +19,7 @@ html {
         --grayish-blue: hsl(240, 18%, 77%);
         /* FONT */
         --quote-ff: normal 300 1.8rem/2.4rem 'Inter';
-        --name-title-ff: normal 700 1.5rem/2em 'Inter';
+        --name-title-ff: normal 700 1.5rem 'Inter';
         /* SHADOW */
         --img-shadow: 0px 40px 50px -30px #2424717E;
         --btn-shadow: 0px 15px 20px -10px #24247119;
@@ -33,7 +33,6 @@ html {
 
 .signature {
         font: var(--name-title-ff);
-        text-align: center;
 }
 
 .name {
@@ -48,40 +47,7 @@ html {
 .testimonial-quote {
         font: var(--quote-ff);
         color: var(--dark-blue);
-        text-align: center;
 }
-
-
-
-/*======================
-
-        IMAGES
-
-======================== */
-
-footer img {
-        width: 100%;
-}
-
-.tanya-img,
-.john-img {
-        width: 254px;
-        border-radius: .5rem;
-        box-shadow: var(--img-shadow);
-}
-
-/* ====background images==== */
-.testimony-container {
-        background: url(images/pattern-bg.svg) no-repeat center 13%;
-        background-size: 326.5px;
-}
-
-.testimonial-text-wrapper {
-        background: url(images/pattern-quotes.svg) no-repeat center top;
-        background-size: 60px;
-}
-
-
 
 
 /*======================
@@ -106,7 +72,7 @@ footer img {
         border: none;
         cursor: pointer;
         padding: 1.4rem 0;
-        width: 100%;
+        width: 8rem;
         background-color: white;
 }
 
@@ -127,11 +93,48 @@ footer img {
 }
 
 
+
+/*======================
+
+        IMAGES
+
+======================== */
+
+footer img {
+        height: 7.2rem;
+}
+
+.tanya-img,
+.john-img {
+        width: 254px;
+        border-radius: .5rem;
+        box-shadow: var(--img-shadow);
+}
+
+/* ====background images==== */
+.testimony-container {
+        background: url(images/pattern-bg.svg) no-repeat center 13%;
+        background-size: 326.5px;
+}
+
+.testimonial-text-wrapper {
+        background: url(images/pattern-quotes.svg) no-repeat center top;
+        background-size: 60px;
+}
+
+
 /*======================
 
         LAYOUT
 
 ======================== */
+
+body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
 
 .container-flex {
         display: flex;
@@ -139,30 +142,25 @@ footer img {
         align-items: center;
 }
 
+.signature {
+        order: 2;
+        padding-top: 2rem;
+}
+
 .testimonial-text-wrapper {
         display: flex;
         flex-direction: column;
-}
-
-.signature {
-        order: 2;
-}
-
-.testimonial-text-wrapper {
         order: 3;
         padding: 0 3.2rem;
         padding-top: 2.5rem;
         max-width: 481px;
+        text-align: center;
 }
 
 .testimony-container {
         padding-top: 5.4rem;
-        overflow-x: hidden;
         min-width: 375px;
 }
-
-
-
 
 
 
@@ -173,4 +171,59 @@ footer img {
 ======================== */
 
 
-@media (min-width: 1440px) {}
+@media (min-width: 1025px) {
+footer img {
+     display: block;
+}
+        .testimonial-quote {
+                font-size: 3.2rem;
+                line-height: 4.4rem;
+        }
+
+        .testimonial-text-wrapper {
+                max-width: 635px;
+                padding: 0;
+                text-align: left;
+                order: 0;
+                transform: translateX(10%);
+        }
+
+        .signature {
+                display: flex;
+                gap: 10px;
+        }
+/* TO DO: Make  the backgroud visibile and shift the image and quote down */
+        .container-flex {
+                flex-direction: row;
+                justify-content: center;
+                height:123%;
+        }
+
+        /* ===== buttons ===== */
+        .slider-buttons {
+                transform: translateY(270px) translateX(-480px);
+        }
+
+
+        /* ===== images ===== */
+        .tanya-img,
+        .john-img {
+                width: auto;
+        }
+
+        .testimony-container {
+                background-size: auto;
+                background-position: 90% 0%;
+                padding-top: 0;
+        }
+
+        .testimonial-text-wrapper {
+                background-size: 120px;
+                padding-top: 6.4rem;
+        }
+
+        footer img {
+                height: 100%;
+        }
+
+}
