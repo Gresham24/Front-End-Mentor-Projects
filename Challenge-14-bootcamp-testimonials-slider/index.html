@@ -11,12 +11,9 @@
 
   <title>Challenge 14 | Coding Bootcamp Testimonials Slider</title>
 </head>
-<!-- TO DO: 
-      1. WRAP THE IMAGE, SIGNATURE & QUOTE IN A DIV
-      2. HAVE ONE SET OF BUTTONS TO ASSIGN THE CLICK EVENT
-      OR 3. use target(e) on the event listener -->
+
 <body>
-  <main>
+  <main class="main-flex">
 
     <!-- TESTIMONY 1 -->
     <section class="testimony-container container-flex testimonial-visible">
@@ -35,13 +32,13 @@
       </div>
       <img src="images/image-tanya.jpg" class="tanya-img" alt="Tanya holding head with arm">
 
-      <div class="slider-buttons">
-        <button id="prev-btn" class="prev-btn" aria-label="Previous testimonial"><img src="images/icon-prev.svg"
-            alt="scroll to previous testimonial"></button>
-        <button id="next-btn" class="next-btn" aria-label="Next testimonial"><img src="images/icon-next.svg"
-            alt="scroll to next testimonial"></button>
-      </div>
     </section>
+    <div class="slider-buttons">
+      <button id="prev-btn" class="prev-btn" aria-label="Previous testimonial"><img src="images/icon-prev.svg"
+          alt="scroll to previous testimonial"></button>
+      <button id="next-btn" class="next-btn" aria-label="Next testimonial"><img src="images/icon-next.svg"
+          alt="scroll to next testimonial"></button>
+    </div>
 
     <!-- TESTIMONY 2 -->
     <section class="testimony-container container-flex">
@@ -59,13 +56,13 @@
       </div>
 
       <img src="images/image-john.jpg" class="john-img" alt="John smiling with arms folded">
-
+      <!-- 
       <div class="slider-buttons">
         <button id="prev-btn" class="prev-btn" aria-label="Previous testimonial"><img src="images/icon-prev.svg"
             alt="scroll to previous testimonial"></button>
         <button id="next-btn" class="next-btn" aria-label="Next testimonial"><img src="images/icon-next.svg"
             alt="scroll to next testimonial"></button>
-      </div>
+      </div> -->
     </section>
   </main>
   <footer>
