@@ -63,9 +63,9 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        transform: translateY(-224px);
+        position: absolute;
+        transform: translateY(28rem);
         background-color: white;
-
 }
 
 .slider-buttons button {
@@ -113,8 +113,11 @@ footer img {
 
 /* ====background images==== */
 .testimony-container {
-        background: url(images/pattern-bg.svg) no-repeat center 13%;
+        /* position: absolute; */
+        background: url(images/pattern-bg.svg) no-repeat;
+        background-position: center top;
         background-size: 326.5px;
+        
 }
 
 .testimonial-text-wrapper {
@@ -147,6 +150,8 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        gap: 5.7rem;
 }
 
 .signature {
@@ -155,6 +160,7 @@ body {
 }
 
 .testimonial-text-wrapper {
+        position: relative;
         display: flex;
         flex-direction: column;
         order: 3;
@@ -165,7 +171,8 @@ body {
 }
 
 .testimony-container {
-        padding-top: 5.4rem;
+        margin-top: 2.4rem;
+        padding-top: 3rem;
         min-width: 375px;
 }
 
@@ -197,7 +204,7 @@ body {
 /*===== TABLET MODE =====*/
 @media (min-width: 768px) {
 
-        
+
 
 }
 
