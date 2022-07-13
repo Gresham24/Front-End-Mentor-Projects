@@ -211,6 +211,13 @@ body {
         .testimonial-text-wrapper {
                 max-width: 635px;
         }
+
+        /* ===== buttons ===== */
+        .slider-buttons {
+                transform: translateY(37rem);
+        }
+
+        /* ===== images ===== */
         .tanya-img,
         .john-img {
                 width: 320px;
@@ -218,10 +225,7 @@ body {
 
         .testimony-container {
                 background-size: 400px;
-        margin-top: 4.4rem;
-        }
-        .slider-buttons {
-        transform: translateY(37rem);
+                margin-top: 4.4rem;
         }
 
         .testimonial-text-wrapper {
@@ -260,13 +264,14 @@ body {
         .container-flex {
                 flex-direction: row;
                 justify-content: center;
-                height: 115%;
                 margin-top: 40px;
         }
 
+
         /* ===== buttons ===== */
         .slider-buttons {
-                transform: translateY(270px) translateX(-480px);
+                position: relative;
+                transform: translateY(-50%) translateX(160%);
         }
 
 
@@ -274,11 +279,12 @@ body {
         .tanya-img,
         .john-img {
                 width: auto;
+                transform: translateX(-10%);
         }
 
         .testimony-container {
                 background-size: auto;
-                background-position: 90% 0%;
+                background-position: 120% 50%;
                 padding-top: 0;
         }
 
