@@ -21,7 +21,7 @@ function hideTestimonials() {
 
 function moveToNextTestimony() {
     hideTestimonials()
-    if (testimonyPosition === totalTestimonials) {
+    if (testimonyPosition === totalTestimonials+1) {
         testimonyPosition = 0;
     } else {
         testimonyPosition++;
