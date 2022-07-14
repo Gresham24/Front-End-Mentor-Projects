@@ -201,7 +201,7 @@ body {
 ======================== */
 
 /*===== TABLET MODE =====*/
-@media (min-width: 768px) {
+@media (min-width: 685px) {
 
         .testimonial-quote {
                 font-size: 2.2rem;
@@ -241,10 +241,10 @@ body {
 
 
 /*===== DESKTOP MODE =====*/
-@media (min-width: 1025px) {
+@media (min-width: 970px) {
 
         .testimonial-quote {
-                font-size: 3rem;
+                font-size: 3.2rem;
                 line-height: 4.4rem;
         }
 
@@ -254,6 +254,7 @@ body {
                 text-align: left;
                 order: 0;
                 transform: translateX(10%);
+                z-index: 1;
         }
 
         .signature {
