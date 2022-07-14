@@ -120,7 +120,8 @@ footer img {
 }
 
 .testimonial-text-wrapper {
-        background: url(images/pattern-quotes.svg) no-repeat center top;
+        background: url(images/pattern-quotes.svg) no-repeat; 
+        background-position: center top;
         background-size: 60px;
 }
 
@@ -249,12 +250,18 @@ body {
         }
 
         .testimonial-text-wrapper {
-                max-width: 635px;
                 padding: 0;
                 text-align: left;
                 order: 0;
+                padding-top: 6.4rem;
                 transform: translateX(10%);
                 z-index: 1;
+        }
+        .testimony-container {
+                background-color: antiquewhite;
+                border: solid 1px black;
+                margin: 0 auto;
+                height: 90vh;
         }
 
         .signature {
@@ -264,15 +271,12 @@ body {
 
         .container-flex {
                 flex-direction: row;
-                justify-content: center;
-                margin-top: 40px;
         }
-
 
         /* ===== buttons ===== */
         .slider-buttons {
                 position: relative;
-                transform: translateY(-50%) translateX(160%);
+                transform: translateY(-12.4rem) translateX(160%);
         }
 
 
@@ -285,17 +289,17 @@ body {
 
         .testimony-container {
                 background-size: auto;
-                background-position: 120% 50%;
-                padding-top: 0;
+                background-position: 110% 50%;
         }
 
         .testimonial-text-wrapper {
                 background-size: 120px;
-                padding-top: 6.4rem;
+                background-position: 20% top;
         }
 
         footer img {
                 height: 100%;
+                border: solid 1px green;
         }
 
 }
