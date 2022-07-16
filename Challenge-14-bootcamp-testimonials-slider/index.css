@@ -263,7 +263,6 @@ body {
         .testimony-container {
                 /* bg-color added to show container */
                 background-color: antiquewhite;
-                border: solid 1px black;
                 margin: 0 auto;
                 height: 90vh;
         }
@@ -303,7 +302,6 @@ body {
 
         footer img {
                 height: 100%;
-                border: solid 1px green;
         }
 
 }
