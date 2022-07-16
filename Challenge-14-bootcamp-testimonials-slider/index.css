@@ -1,3 +1,6 @@
+/* NEED HELP with the testimony-container: the background image gets cut
+I need it to overflow outside of the container */
+
 * {
         margin: 0;
         padding: 0;
@@ -258,6 +261,7 @@ body {
                 z-index: 1;
         }
         .testimony-container {
+                /* bg-color added to show container */
                 background-color: antiquewhite;
                 border: solid 1px black;
                 margin: 0 auto;
