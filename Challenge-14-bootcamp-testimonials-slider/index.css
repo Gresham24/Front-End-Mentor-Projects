@@ -261,8 +261,6 @@ body {
                 z-index: 1;
         }
         .testimony-container {
-                /* bg-color added to show container */
-                background-color: antiquewhite;
                 margin: 0 auto;
                 height: 90vh;
         }
@@ -279,7 +277,7 @@ body {
         /* ===== buttons ===== */
         .slider-buttons {
                 position: relative;
-                transform: translateY(-12.4rem) translateX(160%);
+                transform: translateY(-13.5rem) translateX(160%);
         }
 
 
