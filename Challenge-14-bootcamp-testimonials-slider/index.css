@@ -67,8 +67,9 @@ html {
         align-items: center;
         justify-content: center;
         position: absolute;
-        transform: translateY(28rem);
-        top: 41%;
+        /* transform: translateY(28rem); */
+        /* top: 41%; */
+        bottom: 65%;
         background-color: white;
 }
 
@@ -222,7 +223,7 @@ body {
         /* ===== buttons ===== */
         .slider-buttons {
                 /* transform: translateY(37rem); */
-                top: 53%;
+                bottom: 55%;
         }
 
         /* ===== images ===== */
@@ -280,8 +281,9 @@ body {
 
         /* ===== buttons ===== */
         .slider-buttons {
-                /* position: absolute; */
-                bottom: 52%;
+                /* position: relative;
+                transform: translateY(-13.5rem) translateX(160%); */
+                bottom: 17%;
                 left: 55%;
         }
 
