@@ -68,6 +68,7 @@ html {
         justify-content: center;
         position: absolute;
         transform: translateY(28rem);
+        top: 41%;
         background-color: white;
 }
 
@@ -180,6 +181,8 @@ body {
 }
 
 
+
+
 /*======================
 
         INTERACTIVITY
@@ -218,7 +221,8 @@ body {
 
         /* ===== buttons ===== */
         .slider-buttons {
-                transform: translateY(37rem);
+                /* transform: translateY(37rem); */
+                top: 53%;
         }
 
         /* ===== images ===== */
@@ -262,7 +266,7 @@ body {
         }
         .testimony-container {
                 margin: 0 auto;
-                height: 90vh;
+                min-height: 100vh;
         }
 
         .signature {
@@ -276,8 +280,9 @@ body {
 
         /* ===== buttons ===== */
         .slider-buttons {
-                position: relative;
-                transform: translateY(-13.5rem) translateX(160%);
+                /* position: absolute; */
+                bottom: 52%;
+                left: 55%;
         }
 
 
@@ -300,6 +305,10 @@ body {
 
         footer img {
                 height: 100%;
+        }
+        footer {
+                position: absolute;
+                bottom:0;
         }
 
 }
