@@ -16,6 +16,7 @@ function validate() {
         clearErrors();
     } else {
         error.innerHTML = 'Oops! Please check your email';
+        email.setAttribute('aria-invalid', 'true');
     }
 }
 

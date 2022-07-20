@@ -132,7 +132,8 @@ form .error-msg {
             LAYOUT
 =============================== */
 
-.dotted-background {
+.dotted-background, 
+label {
     display: none;
 }
 

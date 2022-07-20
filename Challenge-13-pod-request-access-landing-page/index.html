@@ -24,13 +24,11 @@
       </div>
 
       <form id="form" novalidate>
-        <label for="email"></label>
+        <label for="email">Email</label>
         <input type="email" name="email" id="email" class="email-input" aria-label="Enter your email"
           aria-describedby="error-msg" placeholder="Email address">
         <button id="submit" class="request-btn">Request Access</button>
-        <!-- Add aria-live attribute to error message AND remove display: none -->
-        <!-- when the error message inside gets populated it will be announced by screenreaders and associated with the input correctly -->
-        <p id="error-msg" class="error-msg"></p>
+        <p id="error-msg" aria-live="polite" class="error-msg"></p>
       </form>
 
       <div class="logo-container">
