@@ -3,4 +3,4 @@ This challenge was to build a sliding testimonial component
 
 ## Hosted at: 
 
-(link coming soon)
+https://challenge-14-bootcamp-testimonials-slider.netlify.app
