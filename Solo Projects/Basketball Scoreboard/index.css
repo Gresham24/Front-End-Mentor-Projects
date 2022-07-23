@@ -1,8 +1,40 @@
-body {
+*,
+*::after,
+*::before {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html {
+    font-size: 62.5%;
+}
+
+/* ============================
+
+            CUSTOM VARIABLES
+
+=============================== */
+
+:root {
+    /**** colors ****/
+    --white: #EEEEEE;
+    --navy: #1B244A;
+    --light-blue: #9AABD8;
+    --red: #F94F6D;
+    --black: #080001;
+    /**** font ****/
+    --h1-ff: normal 700 4rem/3.5rem 'Inter';
+    --score-ff: normal 9rem/12.6rem 'cursed-timer-ulil-regular', sans-serif;
+    --btn-ff: normal 1.8rem/2.7rem 'cursed-timer-ulil-regular', sans-serif;
+}
+
 
 .container {
     display: flex;
     justify-content: space-around;
 }
+
+/* 
+font-family: 'cursed-timer-ulil-regular', sans-serif;
+*/
