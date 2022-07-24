@@ -39,6 +39,7 @@ html {
 h1 {
     font: var(--h1-ff);
     color: var(--white);
+    text-align: center;
 }
 
 .score {
@@ -60,12 +61,21 @@ button {
 =============================== */
 
 button {
-    background-color: transparent;
+    background-color: var(--navy);
     border: solid 2px var(--light-blue);
     border-radius: .5rem;
     padding: .8rem;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: #313c6f;
+    color: white;
+}
+
+button:active {
+    background-color: #1e2d70;
+}
 
 
 /* ============================
@@ -78,15 +88,26 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: var(--navy);
+    height: 100vh;
 }
 
-.container {
-    background-color: var(--navy);
-    
-}
 
 .score-container {
     background-color: var(--black);
     text-align: center;
     border-radius: .5rem;
+    min-width: 15.5rem;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-scoreboard,
+.guest-scoreboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
 }
