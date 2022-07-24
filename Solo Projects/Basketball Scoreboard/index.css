@@ -95,8 +95,9 @@ h1 {
 }
 
 .reset-btn:active {
-background-color: rgb(255, 111, 111);
+    background-color: rgb(255, 111, 111);
 }
+
 /* ============================
 
             LAYOUT
@@ -144,9 +145,33 @@ background-color: rgb(255, 111, 111);
 =============================== */
 
 /*===== DESKTOP & TABLET MODE =====*/
-@media (min-width: 470px) {
+@media (min-width: 610px) {
 
     .container {
         flex-direction: row;
     }
+
+    .button-wrapper {
+        justify-content: space-around;
+
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    .button-wrapper button {
+        font-size: 2.4rem;
+    }
+
+    .reset-btn {
+        font-size: 1.4rem;
+        padding: 1.4rem;
+    }
+
+    .home-scoreboard,
+    .guest-scoreboard {
+        gap: 3rem;
+    }
+
 }
