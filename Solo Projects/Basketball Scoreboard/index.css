@@ -86,10 +86,12 @@ button:active {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: var(--navy);
     height: 100vh;
+    min-width: 37.5rem;
 }
 
 
@@ -109,5 +111,5 @@ button:active {
 .guest-scoreboard {
     display: flex;
     flex-direction: column;
-    gap: 2.6rem;
+    gap: 2.2rem;
 }
