@@ -1,48 +1,45 @@
 /* ======================================
-        VARIABLE & OBJECT DECLARATIONS
+        VARIABLE DECLARATIONS
 ========================================= */
-const homeScore = document.getElementById('home-score');
-const guestScore = document.getElementById('guest-score');
+const homeScoreDisplay = document.getElementById('home-score');
+const guestScoreDisplay = document.getElementById('guest-score');
 
 // get the home & guest scores and convert them to a number
-const TotalHomeScore = Number(homeScore.textContent)   
-const TotalGuestScore = Number(guestScore.textContent)
+// let TotalHomeScore = Number(homeScoreDisplay.textContent);
+// let TotalGuestScore = Number(guestScoreDisplay.textContent);
 
 // Get buttons
-const homeButtons = document.querySelectorAll('.home-button-wrapper');
-const guestButtons = document.querySelectorAll('.guest-button-wrapper');
+// const homeButtons = document.querySelector('.home-button-wrapper');
+// const guestButtons = document.querySelector('.guest-button-wrapper');
 const resetButton = document.getElementById('reset-game');
+const container = document.querySelector('.container');
 
-const hScoreObj = {
-        add1: 1,
-        add2: 2,
-        add3: 3
-}
-
-const qScoreObj = {
-        add1: 1,
-        add2: 2,
-        add3: 3
-}
-
+let TotalHomeScore = 0;
+let TotalGuestScore = 0;
 
 
 /* ======================================
         GLOBAL FUNCTIONS
 ========================================= */
 
+container.addEventListener('click', function (e) {
+        const target = e.target;
+        const home = target.dataset.homePoint;
+        const guest = target.dataset.guestPoint;
+        if (home) {
+                TotalHomeScore += Number(home);
+                homeScoreDisplay.textContent = TotalHomeScore;
+        }
 
+        if (guest) {
+                TotalGuestScore += Number(guest);
+                guestScoreDisplay.textContent = TotalGuestScore;
+        }
+})
 
 
 /* ============================
         FUNCTIONS
 =============================== */
 
-// function addToHomeScore() {
-//         add1home.addEventListener('click', function (e) {
-//                 e.preventDefault;
-//                 console.log('test successful');
-//         })
-// }
 
-// addToHomeScore();
