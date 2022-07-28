@@ -112,7 +112,8 @@ h1 {
     background-color: var(--navy);
     height: 100vh;
     min-width: 37.5rem;
-    padding: 10px;
+    padding: 1rem;
+    gap: 2rem;
 }
 
 
@@ -150,6 +151,8 @@ h1 {
 
     .container {
         flex-direction: row;
+        gap: 0;
+
     }
 
     .button-wrapper {
