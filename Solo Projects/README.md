@@ -7,3 +7,6 @@ Password Generator: https://solo-project-password-generator.netlify.app/
 
 
 Invoice Creator: https://solo-project-invoice-creator.netlify.app/
+
+
+Basketball Scoreboard: https://solo-project-basketball-scoreboard.netlify.app/
