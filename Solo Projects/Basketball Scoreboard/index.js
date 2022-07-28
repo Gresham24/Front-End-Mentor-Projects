@@ -19,8 +19,20 @@ let TotalGuestScore = 0;
 
 
 /* ======================================
-        GLOBAL FUNCTIONS
+        FUNCTIONS
 ========================================= */
+
+function resetGame() {
+        TotalGuestScore = 0;
+        TotalHomeScore = 0;
+        guestScoreDisplay.textContent = TotalGuestScore;
+        homeScoreDisplay.textContent = TotalHomeScore;
+}
+
+
+/* ============================
+        EVENT LISTENERS
+=============================== */
 
 container.addEventListener('click', function (e) {
         const target = e.target;
@@ -37,9 +49,6 @@ container.addEventListener('click', function (e) {
         }
 })
 
-
-/* ============================
-        FUNCTIONS
-=============================== */
+resetButton.addEventListener('click', resetGame)
 
 
