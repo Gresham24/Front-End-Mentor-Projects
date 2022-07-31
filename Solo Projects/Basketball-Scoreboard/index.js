@@ -4,13 +4,6 @@
 const homeScoreDisplay = document.getElementById('home-score');
 const guestScoreDisplay = document.getElementById('guest-score');
 
-// get the home & guest scores and convert them to a number
-// let TotalHomeScore = Number(homeScoreDisplay.textContent);
-// let TotalGuestScore = Number(guestScoreDisplay.textContent);
-
-// Get buttons
-// const homeButtons = document.querySelector('.home-button-wrapper');
-// const guestButtons = document.querySelector('.guest-button-wrapper');
 const resetButton = document.getElementById('reset-game');
 const container = document.querySelector('.container');
 
