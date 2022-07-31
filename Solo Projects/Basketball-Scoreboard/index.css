@@ -104,13 +104,15 @@ h1 {
 
 =============================== */
 
+body {
+    background-color: var(--navy);
+}
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--navy);
-    height: 100vh;
     min-width: 37.5rem;
     padding: 1rem;
     gap: 2rem;
@@ -152,7 +154,7 @@ h1 {
     .container {
         flex-direction: row;
         gap: 0;
-
+        height: 100vh;
     }
 
     .button-wrapper {
