@@ -28,9 +28,9 @@ function resetGame() {
 =============================== */
 
 container.addEventListener('click', function (e) {
-        const target = e.target;
-        const home = target.dataset.homePoint;
-        const guest = target.dataset.guestPoint;
+        const btnClick = e.target;
+        const home = btnClick.dataset.homePoint;
+        const guest = btnClick.dataset.guestPoint;
         if (home) {
                 TotalHomeScore += Number(home);
                 homeScoreDisplay.textContent = TotalHomeScore;
