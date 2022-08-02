@@ -7,8 +7,8 @@ const guestScoreDisplay = document.getElementById('guest-score');
 const resetButton = document.getElementById('reset-game');
 const container = document.querySelector('.container');
 
-let TotalHomeScore = 0;
-let TotalGuestScore = 0;
+let totalHomeScore = 0;
+let totalGuestScore = 0;
 
 
 /* ======================================
@@ -16,10 +16,23 @@ let TotalGuestScore = 0;
 ========================================= */
 
 function resetGame() {
-        TotalGuestScore = 0;
-        TotalHomeScore = 0;
-        guestScoreDisplay.textContent = TotalGuestScore;
-        homeScoreDisplay.textContent = TotalHomeScore;
+        totalGuestScore = 0;
+        totalHomeScore = 0;
+        guestScoreDisplay.textContent = totalGuestScore;
+        homeScoreDisplay.textContent = totalHomeScore;
+}
+
+function showLeadingTeam() {
+        if (totalHomeScore > totalGuestScore) {
+                document.getElementById('home-title').style.color = 'var(--green)';
+        } else {
+                document.getElementById('home-title').style.color = 'var(--white)';
+        }
+        if (totalGuestScore > totalHomeScore) {
+                document.getElementById('guest-title').style.color = 'var(--green)';
+        } else {
+                document.getElementById('guest-title').style.color = 'var(--white)';
+        }
 }
 
 
@@ -32,14 +45,16 @@ container.addEventListener('click', function (e) {
         const home = btnClick.dataset.homePoint;
         const guest = btnClick.dataset.guestPoint;
         if (home) {
-                TotalHomeScore += Number(home);
-                homeScoreDisplay.textContent = TotalHomeScore;
+                totalHomeScore += Number(home);
+                homeScoreDisplay.textContent = totalHomeScore;
         }
 
         if (guest) {
-                TotalGuestScore += Number(guest);
-                guestScoreDisplay.textContent = TotalGuestScore;
+                totalGuestScore += Number(guest);
+                guestScoreDisplay.textContent = totalGuestScore;
         }
+showLeadingTeam()
+
 })
 
 resetButton.addEventListener('click', resetGame)
