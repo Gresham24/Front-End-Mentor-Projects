@@ -1,10 +1,46 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+
+    <title>Gresham's Oldagram</title>
+</head>
+
+<body>
+    <header>
         <img src="images/logo.png">
-        <script src="index.js"></script>
-    </body>
+        <img src="images/user-avatar.png" alt="Per's profile photo">
+    </header>
+    <main>
+        <section class="user-details">
+            <img src="images/avatar-vangogh.jpg" alt="Vincent van Gogh's profile photo">
+            <div class="name-location">
+                <p class="name">Vincent van Gogh</p>
+                <p class="location">Zudert, Netherlands</p>
+            </div>
+        </section>
+        <section class="post-content">
+            <img src="images/post-vangogh.jpg" alt="post of Vincent van Gogh">
+        </section>
+    </main>
+    <footer class="post-details">
+        <div class="interaction-buttons">
+            <button><img src="images/icon-heart.png" alt="button to like like post"></button>
+            <button><img src="images/icon-comment.png" alt="button to comment on the post"></button>
+            <button><img src="images/icon-dm.png" alt="button to share the post"></button>
+        </div>
+        <div class="likes-count">
+            <p id="likes" class="name"></p>
+        </div>
+        <div class="description">
+            <p><span class="name">vincey1853</span> just took a few mushrooms lol</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
 </html>
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic" rel="stylesheet" />
