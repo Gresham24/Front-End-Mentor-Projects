@@ -27,11 +27,29 @@ html {
     --desc-ff: normal 400 1.3rem/1.6rem 'Source Sans Pro';
 }
 
-
-
 /* ============================
 
             TYPOGRAPHY
+
+=============================== */
+
+.username,
+.likes,
+.name {
+    font: var(--username-ff);
+}
+
+.location {
+    font: var(--location-ff);
+}
+
+.username-caption p {
+    font: var(--desc-ff);
+}
+
+/* ============================
+
+            IMAGES
 
 =============================== */
 
@@ -44,11 +62,18 @@ html {
 
 =============================== */
 
+.post-buttons button {
+    border: none;
+    background-color: transparent;
+}
 
-
+.post-buttons button:active {
+    opacity: 70%;
+}
 
 /* ============================
 
             LAYOUT
 
 =============================== */
+
