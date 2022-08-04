@@ -1,5 +1,54 @@
-html, body {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+/* ============================
+
+            CUSTOM VARIABLES
+
+=============================== */
+
+:root {
+    /******** colors ********/
+    --white: #EDEDED;
+    --grey: #C6C6C6;
+    --black: #000000;
+    /******** font ********/
+    --username-ff: normal 700 1.3rem/1.6rem 'Source Sans Pro';
+    --location-ff: normal 400 1.2rem/1.5rem 'Source Sans Pro';
+    --desc-ff: normal 400 1.3rem/1.6rem 'Source Sans Pro';
+}
+
+
+
+/* ============================
+
+            TYPOGRAPHY
+
+=============================== */
+
+
+
+
+/* ============================
+
+            BUTTONS
+
+=============================== */
+
+
+
+
+/* ============================
+
+            LAYOUT
+
+=============================== */
