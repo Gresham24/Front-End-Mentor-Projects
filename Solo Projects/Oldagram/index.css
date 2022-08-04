@@ -18,7 +18,7 @@ html {
 
 :root {
     /******** colors ********/
-    --white: #EDEDED;
+    --off-white: #EDEDED;
     --grey: #C6C6C6;
     --black: #000000;
     /******** font ********/
@@ -47,14 +47,30 @@ html {
     font: var(--desc-ff);
 }
 
+
+
 /* ============================
 
             IMAGES
 
 =============================== */
 
+.avatar-img {
+    height: 3.4rem;
+    border-radius: 2.8rem;
+}
 
+.logo {
+    height: 3.3rem;
+}
 
+.post-image img {
+width: 37.5rem;
+height: 37.5rem;
+}
+button img {
+    height: 2.2rem;
+}
 
 /* ============================
 
@@ -71,9 +87,33 @@ html {
     opacity: 70%;
 }
 
+
+
 /* ============================
 
             LAYOUT
 
 =============================== */
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey);
+}
+
+.container {
+    width: 37.5rem;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid .1rem var(--grey);
+}
+
+.user-info {
+    display: flex;
+    gap: .7rem;
+}

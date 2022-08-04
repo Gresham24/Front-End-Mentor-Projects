@@ -11,43 +11,42 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.png">
-        <img src="images/user-avatar.png" alt="Per's profile photo">
-    </header>
+    <div class="container">
+        <header>
+            <img src="images/logo.png" class="logo" alt="oldagram logo">
+            <img src="images/user-avatar.png" class="avatar-img" alt="Per's profile photo">
+        </header>
 
-    <div class="divider"></div>
+        <main>
+            <section class="user-info">
+                <img src="images/avatar-vangogh.jpg" class="avatar-img" alt="Vincent van Gogh's profile photo">
+                <div class="name-location">
+                    <p class="username">Vincent van Gogh</p>
+                    <p class="location">Zudert, Netherlands</p>
+                </div>
+            </section>
 
-    <main>
-        <section class="user-info">
-            <img src="images/avatar-vangogh.jpg" alt="Vincent van Gogh's profile photo">
-            <div class="name-location">
-                <p class="username">Vincent van Gogh</p>
-                <p class="location">Zudert, Netherlands</p>
+            <section class="post-image">
+                <img src="images/post-vangogh.jpg" id="post-image" alt="post of Vincent van Gogh">
+            </section>
+        </main>
+
+        <footer class="post-details">
+            <div class="post-buttons">
+                <button id="like"><img src="images/icon-heart.png" alt="button to like like post"></button>
+                <button id="comment"><img src="images/icon-comment.png" alt="button to comment on the post"></button>
+                <button id="share"><img src="images/icon-dm.png" alt="button to share the post"></button>
             </div>
-        </section>
 
-        <section class="post-image">
-            <img src="images/post-vangogh.jpg" id="post-image" alt="post of Vincent van Gogh">
-        </section>
-    </main>
+            <div class="like-count">
+                <p id="likes" class="likes"></p>
+            </div>
 
-    <footer class="post-details">
-        <div class="post-buttons">
-            <button id="like"><img src="images/icon-heart.png" alt="button to like like post"></button>
-            <button id="comment"><img src="images/icon-comment.png" alt="button to comment on the post"></button>
-            <button id="share"><img src="images/icon-dm.png" alt="button to share the post"></button>
-        </div>
-
-        <div class="like-count">
-            <p id="likes" class="likes"></p>
-        </div>
-
-        <div class="username-caption">
-            <p><span class="name">vincey1853</span> just took a few mushrooms lol</p>
-        </div>
-    </footer>
-
+            <div class="username-caption">
+                <p><span class="name">vincey1853</span> just took a few mushrooms lol</p>
+            </div>
+        </footer>
+    </div>
     <script src="index.js"></script>
 </body>
 
