@@ -103,17 +103,27 @@ body {
 }
 
 .container {
-    width: 37.5rem;
+    min-width: 37.5rem;
     background-color: white;
+    border: solid 4px;
+    border-radius: 1rem;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     border-bottom: solid .1rem var(--grey);
+    padding: .5rem;
+
 }
 
 .user-info {
     display: flex;
     gap: .7rem;
+    padding: .5rem;
+
+}
+
+footer {
+    padding: .5rem;
 }
