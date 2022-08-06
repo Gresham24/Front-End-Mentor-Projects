@@ -68,7 +68,7 @@ html {
     width: 37.5rem;
     height: 37.5rem;
 }
- 
+
 button img {
     height: 2.2rem;
 }
@@ -84,11 +84,14 @@ button img {
     background-color: transparent;
 }
 
-.post-buttons button:active {
+.post-buttons button:hover {
+    cursor: pointer;
     opacity: 70%;
 }
 
-
+.post-image img:hover {
+cursor: pointer;
+}
 
 /* ============================
 
@@ -111,7 +114,7 @@ header {
     padding: .5rem;
 }
 
-.user-info {
+.user-info{
     display: flex;
     gap: .7rem;
     padding: 1rem;
@@ -122,6 +125,10 @@ footer {
     border-bottom: solid 2.5rem #EDEDED;
 }
 
+.username-caption,
+.like-count  {
+    margin-top: 1.2rem;
+}
 
 .container {
     background-color: white;
