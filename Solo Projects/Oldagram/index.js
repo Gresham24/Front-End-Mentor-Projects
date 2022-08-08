@@ -17,7 +17,7 @@ const posts = [
         comment: "i'm feelin a bit stressed tbh",
         likes: 4
     },
-        {
+    {
         name: "Joseph Ducreux",
         username: "jd1735",
         location: "Paris, France",
@@ -30,3 +30,8 @@ const posts = [
 
 const post1Btn = document.getElementById('like-post-1');
 
+post1Btn.addEventListener('click', function () {
+    let vincentLikes = posts[0].likes;
+    vincentLikes++;
+    document.getElementById('likes-post-1').innerText = `${vincentLikes} likes`;
+})
