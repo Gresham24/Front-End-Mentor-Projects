@@ -27,3 +27,6 @@ const posts = [
         likes: 152
     }
 ]
+
+const post1Btn = document.getElementById('like-post-1');
+
