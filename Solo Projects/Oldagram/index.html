@@ -11,107 +11,89 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="user-post">
+    <main>
+        <header class="feed-header">
+            <img src="images/logo.png" class="logo" alt="oldagram logo">
+            <img src="images/user-avatar.png" class="avatar-img" alt="Per's profile photo">
+        </header>
+
+        <!-- FIRST POST -->
+        <section>
             <header>
-                <img src="images/logo.png" class="logo" alt="oldagram logo">
-                <img src="images/user-avatar.png" class="avatar-img" alt="Per's profile photo">
+                <img src="images/avatar-vangogh.jpg" class="avatar-img" alt="Vincent van Gogh's profile photo">
+                <div class="name-location">
+                    <p class="username">Vincent van Gogh</p>
+                    <p class="location">Zundert, Netherlands</p>
+                </div>
             </header>
 
-            <main>
-                <section class="user-info">
-                    <img src="images/avatar-vangogh.jpg" class="avatar-img" alt="Vincent van Gogh's profile photo">
-                    <div class="name-location">
-                        <p class="username">Vincent van Gogh</p>
-                        <p class="location">Zundert, Netherlands</p>
-                    </div>
-                </section>
+            <article>
+                <img src="images/post-vangogh.jpg" id="post-image-1" class="post-image" alt="post of Vincent van Gogh">
+            </article>
 
-                <section class="post-image">
-                    <img src="images/post-vangogh.jpg" id="post-image-1" alt="post of Vincent van Gogh">
-                </section>
-            </main>
-
-            <footer class="post-details">
-                <div class="post-buttons">
+            <article class="post-details">
+                <div class="post-button-wrapper">
                     <button id="like-post-1"><img src="images/icon-heart.png" alt="button to like post"></button>
                     <button><img src="images/icon-comment.png" alt="button to comment on the post"></button>
                     <button><img src="images/icon-dm.png" alt="button to share the post"></button>
                 </div>
+                <p id="likes-post-1" class="likes">21 likes</p>
+                <p class="username-caption"><span class="name">vincey1853</span> just took a few mushrooms lol</p>
+            </article>
+        </section>
 
-                <div class="like-count">
-                    <p id="likes-post-1" class="likes">21 likes</p>
+        <!-- SECOND POST -->
+        <section>
+            <header>
+                <img src="images/avatar-courbet.jpg" class="avatar-img" alt="Gustave Courbet's profile photo">
+                <div class="name-location">
+                    <p class="username">Gustave Courbet</p>
+                    <p class="location">Ornans, France</p>
                 </div>
+            </header>
 
-                <div class="username-caption">
-                    <p><span class="name">vincey1853</span> just took a few mushrooms lol</p>
-                </div>
-            </footer>
-        </div>
-        <div class="user-post">
-            <main>
-                <section class="user-info">
-                    <img src="images/avatar-courbet.jpg" class="avatar-img" alt="Gustave Courbet's profile photo">
-                    <div class="name-location">
-                        <p class="username">Gustave Courbet</p>
-                        <p class="location">Ornans, France</p>
-                    </div>
-                </section>
+            <article>
+                <img src="images/post-courbet.jpg" id="post-image-2"  class="post-image" alt="post of Gustave Courbet">
+            </article>
 
-                <section class="post-image">
-                    <img src="images/post-courbet.jpg" id="post-image-2" alt="post of Gustave Courbet">
-                </section>
-            </main>
-
-            <footer class="post-details">
-                <div class="post-buttons">
+            <article class="post-details">
+                <div class="post-button-wrapper">
                     <button id="like-post-2"><img src="images/icon-heart.png" alt="button to like post"></button>
                     <button><img src="images/icon-comment.png" alt="button to comment on the post"></button>
                     <button><img src="images/icon-dm.png" alt="button to share the post"></button>
                 </div>
+                <p id="likes-post-2" class="likes">4 likes</p>
+                <p class="username-caption"><span class="name">gus1819</span> i'm feelin a bit stressed tbh</p>
+            </article>
+        </section>
 
-                <div class="like-count">
-                    <p id="likes-post-2" class="likes">4 likes</p>
+        <!-- THIRD POST -->
+        <section>
+            <header>
+                <img src="images/avatar-ducreux.jpg" class="avatar-img" alt="Joseph's profile photo">
+                <div class="name-location">
+                    <p class="username">Joseph Ducreux</p>
+                    <p class="location">Paris, France</p>
                 </div>
+            </header>
 
-                <div class="username-caption">
-                    <p><span class="name">gus1819</span> i'm feelin a bit stressed tbh</p>
-                </div>
-            </footer>
-        </div>
-        <div class="user-post">
-            <main>
-                <section class="user-info">
-                    <img src="images/avatar-ducreux.jpg" class="avatar-img" alt="Joseph's profile photo">
-                    <div class="name-location">
-                        <p class="username">Joseph Ducreux</p>
-                        <p class="location">Paris, France</p>
-                    </div>
-                </section>
+            <article>
+                <img src="images/post-ducreux.jpg" id="post-image-3"  class="post-image" alt="post of Joseph Ducreux">
+            </article>
 
-                <section class="post-image">
-                    <img src="images/post-ducreux.jpg" id="post-image-3" alt="post of Joseph Ducreux">
-                </section>
-            </main>
-
-            <footer class="post-details">
-                <div class="post-buttons">
+            <article class="post-details">
+                <div class="post-button-wrapper">
                     <button id="like-post-3"><img src="images/icon-heart.png" alt="button to like post"></button>
                     <button><img src="images/icon-comment.png" alt="button to comment on the post"></button>
                     <button><img src="images/icon-dm.png" alt="button to share the post"></button>
                 </div>
-
-                <div class="like-count">
-                    <p id="likes-post-3" class="likes">152 likes</p>
-                </div>
-
-                <div class="username-caption">
-                    <p><span class="name">jd1735</span> gm friends! which coin are YOU stacking up today?? post below
-                        and WAGMI!</p>
-                </div>
-            </footer>
-        </div>
-    </div>
+                <p id="likes-post-3" class="likes">152 likes</p>
+                <p class="username-caption"><span class="name">jd1735</span> gm friends! which coin are YOU stacking up
+                    today?? post below
+                    and WAGMI!</p>
+            </article>
+        </section>
+    </main>
     <script src="index.js"></script>
 </body>
 

@@ -43,7 +43,7 @@ html {
     font: var(--location-ff);
 }
 
-.username-caption p {
+.username-caption {
     font: var(--desc-ff);
 }
 
@@ -55,16 +55,16 @@ html {
 
 =============================== */
 
+.logo {
+    height: 6rem;
+}
+
 .avatar-img {
     height: 3.4rem;
     border-radius: 2.8rem;
 }
 
-.logo {
-    height: 6rem;
-}
-
-.post-image img {
+.post-image {
     width: 37.5rem;
     height: 37.5rem;
 }
@@ -79,12 +79,12 @@ button img {
 
 =============================== */
 
-.post-buttons button {
+.post-button-wrapper button {
     border: none;
     background-color: transparent;
 }
 
-.post-buttons button:hover {
+.post-button-wrapper button:hover {
     cursor: pointer;
     opacity: 70%;
 }
@@ -106,36 +106,38 @@ body {
     background-color: var(--grey);
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: solid .1rem var(--grey);
-    padding: .5rem;
-}
-
-.user-info{
-    display: flex;
-    gap: .7rem;
-    padding: 1rem;
-}
-
-footer {
-    padding: 2.1rem 0 1rem 1rem;
-    border-bottom: solid 2.5rem #EDEDED;
-}
-
-.username-caption,
-.like-count  {
-    margin-top: 1.2rem;
-}
-
-.container {
+main {
     background-color: white;
     border: solid 4px;
     border-radius: 1rem;
 }
 
-.user-post {
+.feed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid .1rem var(--grey);
+    padding: 0.5rem 1.5rem;
+}
+
+section {
     width: 37.5rem;
 }
+
+section header {
+    display: flex;
+    gap: .7rem;
+    padding: 1rem;
+}
+
+.post-details {
+    padding: 2.1rem 0 1rem 1rem;
+    border-bottom: solid 2.5rem #EDEDED;
+}
+
+.username-caption,
+.likes  {
+    margin-top: 1.2rem;
+}
+
+
