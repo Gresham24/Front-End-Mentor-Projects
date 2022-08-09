@@ -89,7 +89,7 @@ button img {
     opacity: 70%;
 }
 
-.post-image img:hover {
+.post-image:hover {
 cursor: pointer;
 }
 
