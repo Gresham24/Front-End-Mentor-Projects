@@ -45,6 +45,21 @@ const posts = [
         likes: 152
     }
 ]
+/* 
+// Loops through usernames on DOM to fetch the name of the post
+
+for (let i = 0; i < userName.length; i++) {
+    const usernameEl = userName[i];
+    // console.log(usernameEl.textContent);
+}
+
+for (let j = 0; j < posts.length; j++) {
+    const name = posts[j].name;
+    // console.log(name);
+}
+*/
+
+
 
 
 /* ============================

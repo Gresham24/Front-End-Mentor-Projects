@@ -104,6 +104,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--grey);
+    margin-top: 3rem;
 }
 
 main {
