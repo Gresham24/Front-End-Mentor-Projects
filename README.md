@@ -1,6 +1,6 @@
 # Frontend Mentor Web Components
 
-This repository contains all the website components I created from [Frontend Mentor](https://www.frontendmentor.io/). The hosted links to each completed component below 
+This repository contains all the website components I created from [Frontend Mentor](https://www.frontendmentor.io/). You can view the components I've built by following the links below: 
 
 1. [Testimonial page](https://assessment-challenge-testimonial.netlify.app)
 2. [Huddle landing page](https://challenge-1-huddle-landing-page.netlify.app)
