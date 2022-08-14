@@ -1,4 +1,4 @@
-# FAQ Accordion challenge
+# Podcast request challenge
 This challenge was to build Podcast request access landing page 
 
 ## Hosted at: 

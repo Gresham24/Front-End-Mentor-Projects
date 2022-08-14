@@ -1,4 +1,4 @@
-# FAQ Accordion challenge
+# Bootcamp testimonial slider challenge
 This challenge was to build a sliding testimonial component 
 
 ## Hosted at: 
