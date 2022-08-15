@@ -65,8 +65,8 @@ html {
 }
 
 .post-image {
-    width: 37.5rem;
-    height: 37.5rem;
+    width: 36.5rem;
+    /* height: 37.5rem; */
 }
 
 button img {
@@ -101,16 +101,23 @@ cursor: pointer;
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     background-color: var(--grey);
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
+    width: 37.5rem;
+    background-color: white;
+    border: solid 5px;
+    border-radius: 1rem;
+    margin: 3rem auto;
 }
 
 main {
-    background-color: white;
+    /* background-color: white;
     border: solid 4px;
-    border-radius: 1rem;
+    border-radius: 1rem; */
+
 }
 
 .feed-header {
@@ -122,7 +129,7 @@ main {
 }
 
 section {
-    width: 37.5rem;
+    /* width: 37.5rem; */
 }
 
 section header {
