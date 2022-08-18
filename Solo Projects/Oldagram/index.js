@@ -1,3 +1,9 @@
+// Render the HTML to the JS
+// Deconstruct the object - create variables of the object properties 
+// Add the variables to the HTML on the JS
+// create a function where the like count increases and gets stored in a variable
+// create an event listener that alls the function
+
 /* ============================
     VARIABLES
 =============================== */
