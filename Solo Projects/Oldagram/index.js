@@ -1,5 +1,5 @@
 // Render the HTML to the JS
-// Deconstruct the object - create variables of the object properties 
+// Deconstruct the array - create variables of the object properties 
 // Add the variables to the HTML on the JS
 // create a function where the like count increases and gets stored in a variable
 // create an event listener that alls the function
@@ -52,6 +52,15 @@ const posts = [
     }
 ]
 
+
+const [...rest] = posts;
+
+// console.log(name);
+// console.log(rest);
+// console.log(postLocation);
+// console.log(post);
+// console.log(comment);
+// console.log(likes);
 
 /* ============================
     FUNCTIONS
