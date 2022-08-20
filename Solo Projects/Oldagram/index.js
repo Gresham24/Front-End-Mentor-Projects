@@ -22,6 +22,10 @@ const post3likeCount = document.getElementById('likes-post-3');
 
 const userName = document.querySelectorAll('.username');
 
+// ------------------------------------------------------------------
+
+const userPosts = document.getElementsByClassName('user-post');
+
 const posts = [
     {
         name: "Vincent van Gogh",
@@ -55,12 +59,60 @@ const posts = [
 
 const [...rest] = posts;
 
-// console.log(name);
+// console.log(userHandle);
 // console.log(rest);
 // console.log(postLocation);
 // console.log(post);
 // console.log(comment);
 // console.log(likes);
+
+// console.log(userPosts);
+
+
+for (let i = 0; i < userPosts.length; i++) {
+    const userPost = userPosts[i];
+    console.log(userPost);
+    userPost.innerHTML = `
+        <header>
+            <img src="${posts[i].avatar}" class="avatar-img" alt="Vincent van Gogh's profile photo">
+            <div class="user-info">
+                <p class="username">${posts[i].name}</p>
+                <p class="location">${posts[i].location}</p>
+            </div>
+        </header>
+
+        <article>
+            <img src="${posts[i].post}" id="post-image-1" class="post-image" alt="post of Vincent van Gogh">
+        </article>
+
+        <article class="post-details">
+            <div class="post-button-wrapper">
+                <button id="like-post-1"><img src="images/icon-heart.png" alt="button to like post"></button>
+                <button><img src="images/icon-comment.png" alt="button to comment on the post"></button>
+                <button><img src="images/icon-dm.png" alt="button to share the post"></button>
+            </div>
+            <p id="likes-post-1" class="likes">${posts[i].likes} likes</p>
+            <p class="username-caption"><span class="name">${posts[i].username}</span> ${posts[i].comment}</p>
+        </article>
+    `
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ============================
     FUNCTIONS
@@ -88,29 +140,29 @@ function displayJosephLikes() {
     EVENT LISTENERS
 =============================== */
 
-// Post one like buttons 
-post1LikeBtn.addEventListener('click', function () {
-    displayVincetLikes()
-})
+// // Post one like buttons 
+// post1LikeBtn.addEventListener('click', function () {
+//     displayVincetLikes()
+// })
 
-post1img.addEventListener('dblclick', function () {
-    displayVincetLikes()
-})
+// post1img.addEventListener('dblclick', function () {
+//     displayVincetLikes()
+// })
 
-// Post two like buttons 
-post2LikeBtn.addEventListener('click', function () {
-    displayGustaveLikes()
-})
+// // Post two like buttons 
+// post2LikeBtn.addEventListener('click', function () {
+//     displayGustaveLikes()
+// })
 
-post2img.addEventListener('dblclick', function () {
-    displayGustaveLikes()
-})
+// post2img.addEventListener('dblclick', function () {
+//     displayGustaveLikes()
+// })
 
-// Post three like buttons 
-post3LikeBtn.addEventListener('click', function () {
-    displayJosephLikes()
-})
+// // Post three like buttons 
+// post3LikeBtn.addEventListener('click', function () {
+//     displayJosephLikes()
+// })
 
-post3img.addEventListener('dblclick', function () {
-    displayJosephLikes()
-})
+// post3img.addEventListener('dblclick', function () {
+//     displayJosephLikes()
+// })
