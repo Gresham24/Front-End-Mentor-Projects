@@ -25,6 +25,8 @@ const userName = document.querySelectorAll('.username');
 // ------------------------------------------------------------------
 
 const userPosts = document.getElementsByClassName('user-post');
+const postLikes = document.getElementsByClassName('like-button');
+const btnWrapper = document.getElementsByClassName('post-button-wrapper');
 
 const posts = [
     {
@@ -56,22 +58,11 @@ const posts = [
     }
 ]
 
-
-const [...rest] = posts;
-
-// console.log(userHandle);
-// console.log(rest);
-// console.log(postLocation);
-// console.log(post);
-// console.log(comment);
-// console.log(likes);
-
-// console.log(userPosts);
-
-
+// Loops through the classes that contain the posts to get the position
 for (let i = 0; i < userPosts.length; i++) {
+    let likeValue = posts[i].likes;
     const userPost = userPosts[i];
-    console.log(userPost);
+    // Displays the posts on the DOM while fetching the user content from the posts array
     userPost.innerHTML = `
         <header>
             <img src="${posts[i].avatar}" class="avatar-img" alt="Vincent van Gogh's profile photo">
@@ -87,7 +78,7 @@ for (let i = 0; i < userPosts.length; i++) {
 
         <article class="post-details">
             <div class="post-button-wrapper">
-                <button id="like-post-1"><img src="images/icon-heart.png" alt="button to like post"></button>
+                <button class="like-button"><img src="images/icon-heart.png" alt="button to like post"></button>
                 <button><img src="images/icon-comment.png" alt="button to comment on the post"></button>
                 <button><img src="images/icon-dm.png" alt="button to share the post"></button>
             </div>
@@ -95,16 +86,31 @@ for (let i = 0; i < userPosts.length; i++) {
             <p class="username-caption"><span class="name">${posts[i].username}</span> ${posts[i].comment}</p>
         </article>
     `
+    // Get the nodeList of like buttons
+    for (let j = 0; j < btnWrapper.length; j++) {
+        let likeButton = btnWrapper[j].childNodes;
+
+        btnWrapper[j].addEventListener('click', function (event) {
+            event.preventDefault;
+            // console.log(likeButton);
+
+            if (event.target.className === 'like-button') {
+                console.log('button clicked!');
+            }
+            // increaseLikes = () => posts[i].likes + 1;
+            // console.log(increaseLikes());
+        });
+    }
 }
 
 
+// function increaseLikes (likesProp) {
+//     let numOfLikes = Number(likesProp);
+//     numOfLikes++;
 
+// }
 
-
-
-
-
-
+// increaseLikes();
 
 
 
@@ -118,11 +124,11 @@ for (let i = 0; i < userPosts.length; i++) {
     FUNCTIONS
 =============================== */
 
-function displayVincetLikes() {
-    let vincentLikes = posts[0].likes;
-    vincentLikes++;
-    post1likeCount.innerText = `${vincentLikes} likes`;
-}
+// function displayVincetLikes() {
+//     let vincentLikes = posts[0].likes;
+//     vincentLikes++;
+//     post1likeCount.innerText = `${vincentLikes} likes`;
+// }
 
 function displayGustaveLikes() {
     let gustaveLikes = posts[1].likes;
