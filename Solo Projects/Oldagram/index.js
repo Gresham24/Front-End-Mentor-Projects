@@ -1,31 +1,9 @@
-// Render the HTML to the JS
-// Deconstruct the array - create variables of the object properties 
-// Add the variables to the HTML on the JS
-// create a function where the like count increases and gets stored in a variable
-// create an event listener that alls the function
-
 /* ============================
     VARIABLES
 =============================== */
 
-const post1LikeBtn = document.getElementById('like-post-1');
-const post1img = document.getElementById('post-image-1');
-const post1likeCount = document.getElementById('likes-post-1');
-
-const post2LikeBtn = document.getElementById('like-post-2');
-const post2img = document.getElementById('post-image-2');
-const post2likeCount = document.getElementById('likes-post-2');
-
-const post3LikeBtn = document.getElementById('like-post-3');
-const post3img = document.getElementById('post-image-3');
-const post3likeCount = document.getElementById('likes-post-3');
-
-const userName = document.querySelectorAll('.username');
-
-// ------------------------------------------------------------------
-
 const userPosts = document.getElementsByClassName('user-post');
-const postLikes = document.getElementsByClassName('like-button');
+const likeBtn = document.getElementsByClassName('like-button');
 const btnWrapper = document.getElementsByClassName('post-button-wrapper');
 
 const posts = [
@@ -60,7 +38,7 @@ const posts = [
 
 // Loops through the classes that contain the posts to get the position
 for (let i = 0; i < userPosts.length; i++) {
-    let likeValue = posts[i].likes;
+    // let likeValue = posts[i].likes;
     const userPost = userPosts[i];
     // Displays the posts on the DOM while fetching the user content from the posts array
     userPost.innerHTML = `
@@ -86,32 +64,28 @@ for (let i = 0; i < userPosts.length; i++) {
             <p class="username-caption"><span class="name">${posts[i].username}</span> ${posts[i].comment}</p>
         </article>
     `
-    // Get the nodeList of like buttons
-    for (let j = 0; j < btnWrapper.length; j++) {
-        let likeButton = btnWrapper[j].childNodes;
-
-        btnWrapper[j].addEventListener('click', function (event) {
-            event.preventDefault;
-            // console.log(likeButton);
-
-            if (event.target.className === 'like-button') {
-                console.log('button clicked!');
-            }
-            // increaseLikes = () => posts[i].likes + 1;
-            // console.log(increaseLikes());
-        });
-    }
 }
 
 
-// function increaseLikes (likesProp) {
-//     let numOfLikes = Number(likesProp);
-//     numOfLikes++;
 
-// }
 
-// increaseLikes();
+// Get the nodeList of like buttons
+for (let j = 0; j < btnWrapper.length; j++) {
 
+    // console.log(btnWrapper[j].children);
+
+    btnWrapper[j].addEventListener('click', event => {
+        
+        let target = event.target;
+        // console.log(btnWrapper[j].children[0]);
+        // console.log(likeBtn[0]);
+        // console.log(event.target);
+
+
+        // if (event.target.className === 'like-button') {
+        // }
+    });
+}
 
 
 
@@ -129,46 +103,3 @@ for (let i = 0; i < userPosts.length; i++) {
 //     vincentLikes++;
 //     post1likeCount.innerText = `${vincentLikes} likes`;
 // }
-
-function displayGustaveLikes() {
-    let gustaveLikes = posts[1].likes;
-    gustaveLikes++;
-    post2likeCount.innerText = `${gustaveLikes} likes`;
-}
-
-function displayJosephLikes() {
-    let josephLikes = posts[2].likes;
-    josephLikes++;
-    post3likeCount.innerText = `${josephLikes} likes`;
-}
-
-/* ============================
-    EVENT LISTENERS
-=============================== */
-
-// // Post one like buttons 
-// post1LikeBtn.addEventListener('click', function () {
-//     displayVincetLikes()
-// })
-
-// post1img.addEventListener('dblclick', function () {
-//     displayVincetLikes()
-// })
-
-// // Post two like buttons 
-// post2LikeBtn.addEventListener('click', function () {
-//     displayGustaveLikes()
-// })
-
-// post2img.addEventListener('dblclick', function () {
-//     displayGustaveLikes()
-// })
-
-// // Post three like buttons 
-// post3LikeBtn.addEventListener('click', function () {
-//     displayJosephLikes()
-// })
-
-// post3img.addEventListener('dblclick', function () {
-//     displayJosephLikes()
-// })
