@@ -66,7 +66,6 @@ html {
 
 .post-image {
     width: 36.5rem;
-    /* height: 37.5rem; */
 }
 
 button img {
@@ -103,21 +102,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     background-color: var(--grey);
-    /* margin-top: 3rem; */
     width: 37.5rem;
     background-color: white;
     border: solid 5px;
     border-radius: 1rem;
     margin: 3rem auto;
-}
-
-main {
-    /* background-color: white;
-    border: solid 4px;
-    border-radius: 1rem; */
-
 }
 
 .feed-header {
@@ -126,10 +116,6 @@ main {
     align-items: center;
     border-bottom: solid .1rem var(--grey);
     padding: 0.5rem 1.5rem;
-}
-
-section {
-    /* width: 37.5rem; */
 }
 
 section header {
