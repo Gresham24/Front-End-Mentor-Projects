@@ -2,9 +2,7 @@
     VARIABLES
 =============================== */
 
-const likeBtn = document.getElementsByClassName('like-button');
-const btnWrapper = document.getElementsByClassName('post-button-wrapper');
-const userPosts = Array.from(document.getElementsByClassName('user-post'));
+const main = document.getElementById('main');
 
 const posts = [
     {
@@ -37,14 +35,9 @@ const posts = [
 ]
 
 
-for (const { name, username, location, avatar, post, comment, likes } of posts) {
-    renderPosts(avatar, name, location, post, likes, username, comment);
-}
-
-
-function renderPosts(avatar, name, location, post, likes, username, comment) {
-    userPosts.forEach(element => {
-        element.innerHTML += `
+function renderPosts() {
+    posts.forEach(userPost => { const { name, username, location, avatar, post, comment, likes } = userPost
+        main.innerHTML += `
         <header>
             <img src="${avatar}" class="avatar-img" alt="Vincent van Gogh's profile photo">
             <div class="user-info">
@@ -69,3 +62,5 @@ function renderPosts(avatar, name, location, post, likes, username, comment) {
     `
     });
 }
+
+renderPosts()
