@@ -12,21 +12,25 @@ html {
 
 /* ============================
 
-            CUSTOM VARIABLES
+    CUSTOM VARIABLES
 
 =============================== */
 
-:root{
+:root {
     /******** colors ********/
-    
+    --white: hsl(0, 0%, 98%);
+    --grey: hsl(0, 0%, 41%);
+    --black: hsl(0, 0%, 8%);
     /******** font ********/
-    
+    --h1-font: normal 700 3.6rem/4.2rem 'Epilogue';
+    --p-font: normal 500 1.6rem/2.6rem 'Epilogue';
+    --btn-font: normal 700 1.6rem/2.6rem 'Epilogue';
 }
 
 
 /* ============================
 
-            TYPOGRAPHY
+    TYPOGRAPHY
 
 =============================== */
 
@@ -35,7 +39,7 @@ html {
 
 /* ============================
 
-            BUTTONS
+    BUTTONS
 
 =============================== */
 
@@ -43,6 +47,6 @@ html {
 
 /* ============================
 
-            LAYOUT
+    LAYOUT
 
 =============================== */
