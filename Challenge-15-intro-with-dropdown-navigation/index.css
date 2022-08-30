@@ -34,7 +34,22 @@ html {
 
 =============================== */
 
+h1 {
+    font: var(--h1-font);
+}
 
+main p {
+    font: var(--p-font);
+}
+
+main button {
+    font: var(--btn-font);
+}
+
+menu ul, li {
+    font: var(--p-font);
+ 
+}
 
 
 /* ============================
@@ -63,7 +78,4 @@ MEDIA-QUERIES
 
 =============================== */
 
-@media (min-width: 375px) {
-
-
-}
+@media (min-width: 375px) {}
