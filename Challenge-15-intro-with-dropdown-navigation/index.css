@@ -40,6 +40,7 @@ h1 {
 
 main p {
     font: var(--p-font);
+    color: var(--grey);
 }
 
 main button {
@@ -49,7 +50,6 @@ main button {
 menu ul, li {
     font: var(--p-font);
     color: var(--grey);
- 
 }
 
 
@@ -88,6 +88,27 @@ menu ul, li {
     border-radius: 1.5rem;
 }
 
+/* ============================
+
+    IMAGES
+
+=============================== */
+
+.logo-wrapper {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-wrapper img {
+    width: 20%;
+}
+
+.hero-img {
+    width: 100%;
+}
+
 
 /* ============================
 
@@ -95,11 +116,33 @@ menu ul, li {
 
 =============================== */
 
-body {
-    min-width: 37.5rem;
+.container {
+    width: 375px;
+    padding: 1.6rem 0 9rem 0;
+
 }
 
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: wheat;
+}
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+text-align: center;
+    gap: 24px;
+    padding: 4.8rem 1.5rem;
+}
 
 /* ============================
 
