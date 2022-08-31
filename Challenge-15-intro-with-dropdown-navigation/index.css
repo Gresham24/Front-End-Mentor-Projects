@@ -48,6 +48,7 @@ main button {
 
 menu ul, li {
     font: var(--p-font);
+    color: var(--grey);
  
 }
 
@@ -58,6 +59,30 @@ menu ul, li {
 
 =============================== */
 
+.menu-hamburger-btn {
+    background: none;
+    border: none;
+}
+
+.login-btn,
+.register-btn {
+    background-color: white;
+    border: none;
+    padding: 1.3rem 6.6rem;
+    border-radius: 1.4rem;
+}
+
+.register-btn {
+    border: solid var(--grey) 1.5px;
+}
+
+.learn-more-btn {
+    background-color: var(--black);
+    color: white;
+    border: none;
+    padding: 1.2rem 2.4rem;
+    border-radius: 1.5rem;
+}
 
 
 /* ============================
