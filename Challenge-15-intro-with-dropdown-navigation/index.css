@@ -60,12 +60,14 @@ menu ul, li {
 =============================== */
 
 .menu-hamburger-btn {
+    cursor: pointer;
     background: none;
     border: none;
 }
 
 .login-btn,
 .register-btn {
+    cursor: pointer;
     background-color: white;
     border: none;
     padding: 1.3rem 6.6rem;
@@ -73,10 +75,12 @@ menu ul, li {
 }
 
 .register-btn {
+    cursor: pointer;
     border: solid var(--grey) 1.5px;
 }
 
 .learn-more-btn {
+    cursor: pointer;
     background-color: var(--black);
     color: white;
     border: none;
