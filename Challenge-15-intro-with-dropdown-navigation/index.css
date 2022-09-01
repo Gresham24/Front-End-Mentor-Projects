@@ -126,7 +126,7 @@ menu ul, li {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    background-color: wheat;
+    /* background-color: wheat; */
 }
 
 main {
