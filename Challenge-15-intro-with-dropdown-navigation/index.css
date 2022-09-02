@@ -144,6 +144,10 @@ text-align: center;
     padding: 4.8rem 1.5rem;
 }
 
+menu li {
+    list-style: none;
+}
+
 /* ============================
 
 MEDIA-QUERIES
