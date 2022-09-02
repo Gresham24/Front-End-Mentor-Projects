@@ -47,7 +47,8 @@ main button {
     font: var(--btn-font);
 }
 
-menu ul, li {
+menu ul,
+li {
     font: var(--p-font);
     color: var(--grey);
 }
@@ -116,18 +117,73 @@ menu ul, li {
 
 =============================== */
 
+body {
+    background-color: #E5E5E5;
+}
+
 .container {
     width: 375px;
     padding: 1.6rem 0 9rem 0;
-
+    background-color: white;
 }
 
 .container-flex {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    /* background-color: wheat; */
 }
+
+/* === menu buttons === */
+
+menu li {
+    list-style: none;
+    margin-bottom: 1.6rem;
+    margin-left: 2.4rem;
+}
+
+.features-btn::after,
+.company-btn::after {
+    content: url('images/icon-arrow-up.svg');
+    margin-left: 1.6rem;
+}
+
+.to-do-btn::before {
+    content: url('images/icon-todo.svg');
+}
+
+.calendar-btn::before {
+    content: url('images/icon-calendar.svg');
+}
+
+.reminders-btn::before {
+    content: url('images/icon-reminders.svg');
+}
+
+.planning-btn::before {
+    content: url('images/icon-planning.svg');
+}
+
+.to-do-btn::before,
+.calendar-btn::before,
+.reminders-btn::before,
+.planning-btn::before {
+    margin-right: 1.6rem;
+}
+
+.drop {
+    margin-left: 2.4rem;
+}
+
+
+.access-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
 
 main {
     display: flex;
@@ -139,14 +195,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-text-align: center;
+    text-align: center;
     gap: 24px;
     padding: 4.8rem 1.5rem;
 }
 
-menu li {
-    list-style: none;
-}
 
 /* ============================
 
