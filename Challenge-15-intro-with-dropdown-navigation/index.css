@@ -69,7 +69,7 @@ li {
 .login-btn,
 .register-btn {
     cursor: pointer;
-    background-color: white;
+    background-color: var(--white);
     border: none;
     padding: 1.3rem 6.6rem;
     border-radius: 1.4rem;
@@ -83,10 +83,51 @@ li {
 .learn-more-btn {
     cursor: pointer;
     background-color: var(--black);
-    color: white;
+    color: var(--white);
     border: none;
     padding: 1.2rem 2.4rem;
     border-radius: 1.5rem;
+}
+
+/* === menu buttons === */
+
+.menu-close-btn {
+    background: none;
+    border: none;
+    margin-bottom: 3rem;
+}
+
+.features-btn::after,
+.company-btn::after {
+    content: url('images/icon-arrow-up.svg');
+    margin-left: 1.6rem;
+}
+
+.to-do-btn::before {
+    content: url('images/icon-todo.svg');
+}
+
+.calendar-btn::before {
+    content: url('images/icon-calendar.svg');
+}
+
+.reminders-btn::before {
+    content: url('images/icon-reminders.svg');
+}
+
+.planning-btn::before {
+    content: url('images/icon-planning.svg');
+}
+
+.to-do-btn::before,
+.calendar-btn::before,
+.reminders-btn::before,
+.planning-btn::before {
+    margin-right: 1.2rem;
+}
+
+.dropdown-btn {
+    margin-left: 2rem;
 }
 
 /* ============================
@@ -122,73 +163,61 @@ body {
 }
 
 .container {
-    width: 375px;
-    padding: 1.6rem 0 9rem 0;
+    width: 500px;
+    /* padding: 1.6rem 1.6rem 0 1.6rem; */
     background-color: white;
 }
 
 .container-flex {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     margin: 0 auto;
 }
 
-/* === menu buttons === */
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav,
+main,
+.body-content,
+.logo-wrapper {
+    padding: 1.6rem 1.6rem;
+}
+
+/* === menu bar === */
+
+.menu-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+menu {
+    /* visibility:hidden; */
+    width: 24rem;
+    background-color: var(--white);
+    padding: 2.4rem 2.4rem 12.4rem;
+}
 
 menu li {
     list-style: none;
     margin-bottom: 1.6rem;
-    margin-left: 2.4rem;
 }
 
-.features-btn::after,
-.company-btn::after {
-    content: url('images/icon-arrow-up.svg');
-    margin-left: 1.6rem;
-}
-
-.to-do-btn::before {
-    content: url('images/icon-todo.svg');
-}
-
-.calendar-btn::before {
-    content: url('images/icon-calendar.svg');
-}
-
-.reminders-btn::before {
-    content: url('images/icon-reminders.svg');
-}
-
-.planning-btn::before {
-    content: url('images/icon-planning.svg');
-}
-
-.to-do-btn::before,
-.calendar-btn::before,
-.reminders-btn::before,
-.planning-btn::before {
-    margin-right: 1.6rem;
-}
-
-.drop {
-    margin-left: 2.4rem;
-}
-
-
-.access-btns {
+.access-btn-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-
-
 
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2.4rem 0 ;
 }
 
 .body-content {
