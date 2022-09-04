@@ -163,10 +163,9 @@ body {
 }
 
 .container {
-    width: 500px;
+    min-width: 375px;
     background-color: white;
     margin: 0 auto;
-
 }
 
 .container-flex {
@@ -203,8 +202,6 @@ main {
     padding-bottom: 9.4rem;
 }
 
-
-
 /* === menu bar === */
 
 .menu-flex {
@@ -215,7 +212,7 @@ main {
 
 menu {
     /* visibility:hidden; */
-    width: 24rem;
+    /* width: 24rem; */
     /* height: 100%; */
     background-color: var(--white);
     padding: 2.4rem 2.4rem 12.4rem;
@@ -244,4 +241,42 @@ MEDIA-QUERIES
 
 =============================== */
 
-@media (min-width: 375px) {}
+
+/* TABLET */
+
+@media (min-width: 740px) {
+
+    /*=== Typography ===*/
+
+    h1 {
+        font-size: 6.4rem;
+        line-height: 6.4rem;
+    }
+    
+    main p {
+        font-size: 1.8rem;
+    }
+    
+    main button {
+        font-size: 1.8rem;
+    }
+
+    /*=== Images ===*/
+
+    .logo-wrapper img {
+        width: 20%;
+    }
+
+
+    /*=== Layout ===*/
+
+    .body-content p {
+        width: 64.8rem;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 980px) { 
+
+
+}
