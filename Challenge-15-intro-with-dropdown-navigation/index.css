@@ -138,7 +138,6 @@ li {
 
 .logo-wrapper {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     justify-content: space-between;
 }
@@ -160,12 +159,15 @@ li {
 
 body {
     background-color: #E5E5E5;
+    height: 100%;
+
 }
 
 .container {
     min-width: 375px;
     background-color: white;
     margin: 0 auto;
+    height: 100%;
 }
 
 .container-flex {
@@ -212,13 +214,11 @@ main {
 
 menu {
     /* visibility:hidden; */
-    /* width: 24rem; */
-    /* height: 100%; */
     background-color: var(--white);
     padding: 2.4rem 2.4rem 12.4rem;
 
     /***** absolute positioning was used to make it go over the content *****/
-    /* position: absolute; */
+    /* position: absolute;e */
 
 }
 
