@@ -278,5 +278,13 @@ MEDIA-QUERIES
 /* DESKTOP */
 @media (min-width: 980px) { 
 
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .menu-flex {
+        flex-direction: row;
+    }
 }
