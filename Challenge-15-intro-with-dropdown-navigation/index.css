@@ -185,7 +185,7 @@ nav,
     padding: 1.6rem 1.6rem;
 }
 
-main {
+.main-flex {
     display: flex;
     flex-direction: column;
     padding-top: 2.4rem;
@@ -252,11 +252,11 @@ MEDIA-QUERIES
         font-size: 6.4rem;
         line-height: 6.4rem;
     }
-    
+
     main p {
         font-size: 1.8rem;
     }
-    
+
     main button {
         font-size: 1.8rem;
     }
@@ -276,7 +276,7 @@ MEDIA-QUERIES
 }
 
 /* DESKTOP */
-@media (min-width: 980px) { 
+@media (min-width: 980px) {
 
     .container-flex {
         display: flex;
@@ -299,15 +299,19 @@ MEDIA-QUERIES
         gap: 10px;
     }
 
-    .login-btn, 
+    .login-btn,
     .register-btn {
         background-color: white;
     }
 
     .menu-close-btn {
-        visibility:hidden;
+        visibility: hidden;
     }
 
+    .main-flex {
+        flex-direction: row;
+
+    }
 
 
 
