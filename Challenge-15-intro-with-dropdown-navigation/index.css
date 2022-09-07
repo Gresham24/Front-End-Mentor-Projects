@@ -286,5 +286,30 @@ MEDIA-QUERIES
 
     .menu-flex {
         flex-direction: row;
+        background-color: white;
+        align-items: baseline;
     }
+
+    menu li {
+        margin-left: 3rem;
+    }
+
+    .access-btn-wrapper {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .login-btn, 
+    .register-btn {
+        background-color: white;
+    }
+
+    .menu-close-btn {
+        visibility:hidden;
+    }
+
+
+
+
+
 }
