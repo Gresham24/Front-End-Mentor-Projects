@@ -177,6 +177,8 @@ body {
 .nav-flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
 }
 
 nav,
@@ -189,6 +191,8 @@ nav,
     display: flex;
     flex-direction: column;
     padding-top: 2.4rem;
+    align-items: center;
+
 }
 
 .body-content {
@@ -304,15 +308,18 @@ MEDIA-QUERIES
         background-color: white;
     }
 
-    .menu-close-btn {
+    .menu-close-btn,
+    .menu-hamburger-btn {
         visibility: hidden;
     }
 
     .main-flex {
         flex-direction: row;
-
     }
 
+    .nav-flex img {
+        
+    }
 
 
 
