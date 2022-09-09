@@ -178,7 +178,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+background-color: beige;
+width: 100%;
 }
 
 nav,
@@ -192,7 +193,7 @@ nav,
     flex-direction: column;
     padding-top: 2.4rem;
     align-items: center;
-
+/* background-color: red; */
 }
 
 .body-content {
