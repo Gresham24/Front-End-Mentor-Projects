@@ -22,9 +22,10 @@ html {
     --grey: hsl(0, 0%, 41%);
     --black: hsl(0, 0%, 8%);
     /******** font ********/
-    --h1-font: normal 700 3.6rem/4.2rem 'Epilogue';
-    --p-font: normal 500 1.6rem/2.6rem 'Epilogue';
-    --btn-font: normal 700 1.6rem/2.6rem 'Epilogue';
+    --h1-font: normal 700 8rem/8rem 'Epilogue';
+    --nav-font: normal 500 1.4rem/1.6rem 'Epilogue';
+    --p-font: normal 500 1.8rem/2.8rem 'Epilogue';
+    --btn-font: normal 700 1.8rem/2.8rem 'Epilogue';
 }
 
 
@@ -38,21 +39,30 @@ h1 {
     font: var(--h1-font);
 }
 
-main p {
+.body-text p {
     font: var(--p-font);
     color: var(--grey);
 }
 
-main button {
+.learn-more-btn {
     font: var(--btn-font);
 }
 
-menu ul,
-li {
-    font: var(--p-font);
+.nav-links-wrapper ul {
+    list-style: none;
+}
+
+.nav-links-wrapper a {
+    font: var(--nav-font);
+    text-decoration: none;
     color: var(--grey);
 }
 
+.login-btn,
+.register-btn {
+    font: var(--nav-font);
+    color: var(--grey);
+}
 
 /* ============================
 
@@ -60,47 +70,23 @@ li {
 
 =============================== */
 
-.menu-hamburger-btn {
+.menu-toggle-btn {
     cursor: pointer;
-    background: none;
-    border: none;
-}
-
-.login-btn,
-.register-btn {
-    cursor: pointer;
-    background-color: var(--white);
-    border: none;
-    padding: 1.3rem 6.6rem;
-    border-radius: 1.4rem;
-}
-
-.register-btn {
-    cursor: pointer;
-    border: solid var(--grey) 1.5px;
-}
-
-.learn-more-btn {
-    cursor: pointer;
-    background-color: var(--black);
-    color: var(--white);
-    border: none;
-    padding: 1.2rem 2.4rem;
-    border-radius: 1.5rem;
-}
-
-/* === menu buttons === */
-
-.menu-close-btn {
     background: none;
     border: none;
     margin-bottom: 3rem;
+    
+}
+
+/* nav buttons */
+.nav-links-wrapper a:hover {
+    color: var(--black);
 }
 
 .features-btn::after,
 .company-btn::after {
     content: url('images/icon-arrow-up.svg');
-    margin-left: 1.6rem;
+    margin-left: .8rem;
 }
 
 .to-do-btn::before {
@@ -123,12 +109,47 @@ li {
 .calendar-btn::before,
 .reminders-btn::before,
 .planning-btn::before {
-    margin-right: 1.2rem;
+    margin-right: 1.5rem;
 }
 
-.dropdown-btn {
-    margin-left: 2rem;
+/* access buttons */
+.login-btn,
+.register-btn {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 1.4rem;
 }
+
+.register-btn {
+    cursor: pointer;
+    padding: 1.3rem 2.2rem;
+    border: solid var(--grey) 1.5px;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+    color: var(--black);
+    border-color: var(--black);
+}
+
+
+/* body buttons */
+.learn-more-btn {
+    cursor: pointer;
+    background-color: var(--black);
+    color: var(--white);
+    border: solid var(--black) 1.5px;
+    padding: 1.2rem 2.4rem;
+    border-radius: 1.5rem;
+}
+
+.learn-more-btn:hover {
+    border: solid var(--black) 1.5px;
+    background-color: white;
+    color: var(--black);
+}
+
 
 /* ============================
 
@@ -136,19 +157,7 @@ li {
 
 =============================== */
 
-.logo-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.logo-wrapper img {
-    width: 20%;
-}
-
-.hero-img {
-    width: 100%;
-}
 
 
 /* ============================
@@ -156,87 +165,6 @@ li {
     LAYOUT
 
 =============================== */
-
-body {
-    background-color: #E5E5E5;
-    height: 100%;
-
-}
-
-.container {
-    min-width: 375px;
-    background-color: white;
-    margin: 0 auto;
-    height: 100%;
-}
-
-.container-flex {
-    display: flex;
-}
-
-.nav-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-background-color: beige;
-width: 100%;
-}
-
-nav,
-.body-content,
-.logo-wrapper {
-    padding: 1.6rem 1.6rem;
-}
-
-.main-flex {
-    display: flex;
-    flex-direction: column;
-    padding-top: 2.4rem;
-    align-items: center;
-/* background-color: red; */
-}
-
-.body-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 24px;
-    padding: 4.8rem 1.5rem;
-}
-
-.logo-wrapper {
-    padding-bottom: 9.4rem;
-}
-
-/* === menu bar === */
-
-.menu-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-menu {
-    /* visibility:hidden; */
-    background-color: var(--white);
-    padding: 2.4rem 2.4rem 12.4rem;
-
-    /***** absolute positioning was used to make it go over the content *****/
-    /* position: absolute;e */
-
-}
-
-menu li {
-    list-style: none;
-    margin-bottom: 1.6rem;
-}
-
-.access-btn-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 
@@ -247,81 +175,17 @@ MEDIA-QUERIES
 =============================== */
 
 
-/* TABLET */
+/* ==== TABLET ==== */
 
-@media (min-width: 740px) {
+/* @media (max-width: ) {
 
-    /*=== Typography ===*/
-
-    h1 {
-        font-size: 6.4rem;
-        line-height: 6.4rem;
-    }
-
-    main p {
-        font-size: 1.8rem;
-    }
-
-    main button {
-        font-size: 1.8rem;
-    }
-
-    /*=== Images ===*/
-
-    .logo-wrapper img {
-        width: 20%;
-    }
-
-
-    /*=== Layout ===*/
-
-    .body-content p {
-        width: 64.8rem;
-    }
-}
-
-/* DESKTOP */
-@media (min-width: 980px) {
-
-    .container-flex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu-flex {
-        flex-direction: row;
-        background-color: white;
-        align-items: baseline;
-    }
-
-    menu li {
-        margin-left: 3rem;
-    }
-
-    .access-btn-wrapper {
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    .login-btn,
-    .register-btn {
-        background-color: white;
-    }
-
-    .menu-close-btn,
-    .menu-hamburger-btn {
-        visibility: hidden;
-    }
-
-    .main-flex {
-        flex-direction: row;
-    }
-
-    .nav-flex img {
-        
-    }
+} */
 
 
 
-}
+
+/* ==== MOBILE ==== */
+
+/* @media (max-width: ) {
+
+} */
