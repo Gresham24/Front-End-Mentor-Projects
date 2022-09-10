@@ -16,39 +16,39 @@
 </head>
 
 <body>
-
-  <nav class="navbar">
+  <header>
     <div class="header-logo"><img src="images/logo.svg" alt="snap logo"></div>
 
     <button id="menu-toggle-btn" class="menu-toggle-btn"><img src="images/icon-menu.svg"
         alt="menu toggle icon"></button>
 
-    <menu>
-      <div class="navbar-links">
+  </header>
+  <nav>
+    <div class="nav-links-wrapper">
+      <ul>
+        <li class="dropdown features-btn"><a href="#">Features</a></li>
         <ul>
-          <li class="dropdown"><a href="#">Features</a></li>
-          <ul>
-            <li><a href="#">Todo List</a> </li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Reminders</a></li>
-            <li><a href="#">Planning</a></li>
-          </ul>
-          <li class="dropdown"><a href="#">Company</a></li>
-          <ul>
-            <li><a href="#">History</a> </li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">About</a></li>
+          <li class="to-do-btn"><a href="#">Todo List</a> </li>
+          <li class="calendar-btn"><a href="#">Calendar</a></li>
+          <li class="reminders-btn"><a href="#">Reminders</a></li>
+          <li class="planning-btn"><a href="#">Planning</a></li>
         </ul>
-      </div>
+        <li class="dropdown company-btn"><a href="#">Company</a></li>
+        <ul>
+          <li><a href="#">History</a> </li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
 
-      <div class="access-btns">
-        <button class="login-btn">Login</button>
-        <button class="register-btn">Register</button>
-      </div>
-    </menu>
+    <div class="access-btns-wrapper">
+      <button class="login-btn">Login</button>
+      <button class="register-btn">Register</button>
+    </div>
+
   </nav>
 
   <section class="text-col">
@@ -56,7 +56,7 @@
       <h1>Make remote work</h1>
       <p>Get your team in sync, no matter your location. Streamline processes,
         create team rituals, and watch productivity soar.</p>
-      <button id="#" class="learn-more-btn">Learn more</button>
+      <button class="learn-more-btn">Learn more</button>
     </div>
 
     <div class="logo-wrapper">
