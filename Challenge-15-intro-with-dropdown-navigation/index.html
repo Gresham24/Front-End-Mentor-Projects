@@ -16,61 +16,65 @@
 </head>
 
 <body>
-  <header>
-    <div class="header-logo"><img src="images/logo.svg" alt="snap logo"></div>
+  <div class="container">
+    <header>
+      <div class="header-logo"><img src="images/logo.svg" alt="snap logo"></div>
 
-    <button id="menu-toggle-btn" class="menu-toggle-btn"><img src="images/icon-menu.svg"
-        alt="menu toggle icon"></button>
+      <button id="menu-toggle-btn" class="menu-toggle-btn"><img src="images/icon-menu.svg"
+          alt="menu toggle icon"></button>
 
-  </header>
-  <nav>
-    <div class="nav-links-wrapper">
-      <ul>
-        <li class="dropdown features-btn"><a href="#">Features</a></li>
-        <ul>
-          <li class="to-do-btn"><a href="#">Todo List</a> </li>
-          <li class="calendar-btn"><a href="#">Calendar</a></li>
-          <li class="reminders-btn"><a href="#">Reminders</a></li>
-          <li class="planning-btn"><a href="#">Planning</a></li>
-        </ul>
-        <li class="dropdown company-btn"><a href="#">Company</a></li>
-        <ul>
-          <li><a href="#">History</a> </li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </div>
+      <nav>
+        <div class="nav-links-wrapper">
+          <ul class="nav-links">
+            <li class="dropdown features-btn"><a href="#">Features</a></li>
+            <ul>
+              <li class="to-do-btn"><a href="#">Todo List</a> </li>
+              <li class="calendar-btn"><a href="#">Calendar</a></li>
+              <li class="reminders-btn"><a href="#">Reminders</a></li>
+              <li class="planning-btn"><a href="#">Planning</a></li>
+            </ul>
+            <li class="dropdown company-btn"><a href="#">Company</a></li>
+            <ul>
+              <li><a href="#">History</a> </li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
 
-    <div class="access-btns-wrapper">
-      <button class="login-btn">Login</button>
-      <button class="register-btn">Register</button>
-    </div>
+        <div class="access-btns-wrapper">
+          <button class="login-btn">Login</button>
+          <button class="register-btn">Register</button>
+        </div>
+      </nav>
+    </header>
 
-  </nav>
+    <main>
+      <section class="text-col">
+        <div class="body-content">
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.</p>
+          <button class="learn-more-btn">Learn more</button>
+        </div>
 
-  <section class="text-col">
-    <div class="body-text">
-      <h1>Make remote work</h1>
-      <p>Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.</p>
-      <button class="learn-more-btn">Learn more</button>
-    </div>
+        <div class="logo-wrapper">
+          <img src="images/client-databiz.svg" alt="databiz logo">
+          <img src="images/client-audiophile.svg" alt="audiophile logo">
+          <img src="images/client-meet.svg" alt="meet logo">
+          <img src="images/client-maker.svg" alt="maker logo">
+        </div>
+      </section>
 
-    <div class="logo-wrapper">
-      <img src="images/client-databiz.svg" alt="databiz logo">
-      <img src="images/client-audiophile.svg" alt="audiophile logo">
-      <img src="images/client-meet.svg" alt="meet logo">
-      <img src="images/client-maker.svg" alt="maker logo">
-    </div>
-  </section>
-
-  <!-- flex-direction: column/row-reverse for mobile -->
-  <section class="hero-img-wrapper">
-    <img src="images/image-hero-mobile.png" alt="man on laptop">
-  </section>
+      <!-- flex-direction: column/row-reverse for mobile -->
+      <section class="hero-img-wrapper">
+        <!-- change image for mobile & tablet view -->
+        <img src="images/image-hero-desktop.png" alt="man on laptop">
+      </section>
+    </main>
+  </div>
 </body>
 
 </html>
