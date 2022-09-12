@@ -86,7 +86,7 @@ h1 {
 
 .features-btn::after,
 .company-btn::after {
-    content: url('images/icon-arrow-up.svg');
+    content: url('images/icon-arrow-down.svg');
     margin-left: .8rem;
 }
 
@@ -95,12 +95,6 @@ h1 {
     cursor: pointer;
 }
 
-.to-do-btn img,
-.calendar-btn img,
-.reminders-btn img,
-.planning-btn img {
-    width: 1.4rem;
-}
 
 .dropdown-company li:hover,
 .dropdown-features li:hover {
@@ -161,6 +155,12 @@ h1 {
     width: 100%;
 }
 
+.to-do-btn img,
+.calendar-btn img,
+.reminders-btn img,
+.planning-btn img {
+    width: 1.4rem;
+}
 
 /* ============================
 
@@ -210,6 +210,9 @@ nav {
     border-radius: 1.4rem;
     box-shadow: var(--nav-shadow);
     position: absolute;
+    display: none;
+    /* visibility: hidden;
+    opacity: 0; */
 }
 
 .dropdown-features {
@@ -221,6 +224,30 @@ nav {
     top: 3rem;
     left: 9rem;
 }
+
+
+/* Dropdown Effect */
+
+.dropdown-company.active,
+.dropdown-features.active  {
+    display: flex;
+}
+
+
+/* Change between up and Down arrow
+
+.features-btn:active:after,
+.company-btn:active:after {
+    content: url('images/icon-arrow-up.svg');
+    margin-left: .8rem;
+} */
+
+
+
+
+
+
+
 
 .access-btns-wrapper {
     display: flex;
