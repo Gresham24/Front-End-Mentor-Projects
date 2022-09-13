@@ -19,36 +19,39 @@
   <div class="container">
     <header>
       <div class="header-logo"><img src="images/logo.svg" alt="snap logo"></div>
+      
+      <div class="nav-container-flex">
+        <button id="menu-toggle-btn" class="menu-toggle-btn"><img src="images/icon-menu.svg"
+            alt="menu toggle icon"></button>
 
-      <button id="menu-toggle-btn" class="menu-toggle-btn"><img src="images/icon-menu.svg"
-          alt="menu toggle icon"></button>
-
-      <nav>
-        <div class="nav-links-wrapper">
-          <ul class="nav-links">
-            <li id="features-btn" class="features-btn menu-item"><a href="#">Features</a></li>
-            <ul id="features-links" class="dropdown-features">
-              <li class="to-do-btn"><img src="images/icon-todo.svg" alt=""><a href="#">Todo List</a></li>
-              <li class="calendar-btn"><img src="images/icon-calendar.svg" alt=""><a href="#">Calendar</a></li>
-              <li class="reminders-btn"><img src="images/icon-reminders.svg" alt=""><a href="#">Reminders</a></li>
-              <li class="planning-btn"><img src="images/icon-planning.svg" alt=""><a href="#">Planning</a></li>
+        <nav>
+          <div class="nav-links-wrapper">
+            <ul class="nav-links">
+              <li id="features-btn" class="features-btn menu-item"><a href="#">Features</a></li>
+              <ul id="features-links" class="dropdown-features">
+                <li class="to-do-btn"><img src="images/icon-todo.svg" alt=""><a href="#">Todo List</a></li>
+                <li class="calendar-btn"><img src="images/icon-calendar.svg" alt=""><a href="#">Calendar</a></li>
+                <li class="reminders-btn"><img src="images/icon-reminders.svg" alt=""><a href="#">Reminders</a></li>
+                <li class="planning-btn"><img src="images/icon-planning.svg" alt=""><a href="#">Planning</a></li>
+              </ul>
+              <li id="company-btn" class="company-btn menu-item"><a href="#">Company</a></li>
+              <ul id="company-links" class="dropdown-company">
+                <li><a href="#">History</a> </li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
             </ul>
-            <li id="company-btn" class="company-btn menu-item"><a href="#">Company</a></li>
-            <ul id="company-links" class="dropdown-company">
-              <li><a href="#">History</a> </li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </div>
+          </div>
 
-        <div class="access-btns-wrapper">
-          <button class="login-btn">Login</button>
-          <button class="register-btn">Register</button>
-        </div>
-      </nav>
+          <div class="access-btns-wrapper">
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+          </div>
+        </nav>
+      </div>
+
     </header>
 
     <main>
@@ -70,8 +73,7 @@
 
       <!-- flex-direction: column/row-reverse for mobile -->
       <section class="hero-img-wrapper">
-        <!-- change image for mobile & tablet view -->
-        <img src="images/image-hero-desktop.png" alt="man on laptop">
+        <img src="images/image-hero-mobile.png" alt="man on laptop">
       </section>
     </main>
   </div>
