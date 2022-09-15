@@ -196,7 +196,7 @@ header {
     display: flex;
     justify-content: space-between;
     position: relative;
-    background-color: bisque;
+    height: 100%;
 }
 
 .header-logo {
