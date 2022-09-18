@@ -188,19 +188,17 @@ h1 {
 =============================== */
 
 body {
+    position: relative;
     height: 100%;
 }
 
 .container {
     min-width: 37.5rem;
-    height: 100%;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    position: relative;
-
 }
 
 .header-logo {
@@ -215,9 +213,7 @@ header {
     position: absolute;
     right: 0;
     background-color: aquamarine;
-    z-index: 100;
-    /* height: 100%; */
-
+    height: 100%;
 }
 
 .menu-close-btn, 
@@ -304,9 +300,10 @@ MEDIA-QUERIES
 
 /* ==== TABLET ==== */
 
-@media (max-width: 768) {
-    .body-content {
-         
+@media (min-width: 768px) {
+    .body-content p {
+        width: 70rem;
+        background-color: gold;
     }
 
 
