@@ -190,6 +190,11 @@ h1 {
 body {
     position: relative;
     height: 100%;
+    z-index: 3;
+
+    /***** Change color when hovered over *****/
+    /* background-color: var(--black);
+    opacity: 0.75; */
 }
 
 .container {
@@ -212,15 +217,23 @@ header {
     background-color: var(--white);
     position: absolute;
     right: 0;
-    background-color: aquamarine;
     height: 100%;
+    z-index: 50;
 }
 
-.menu-close-btn, 
+.menu-close-btn,
 .menu-toggle-btn {
     padding-top: 1.6rem;
     padding-left: 1.6rem;
 }
+
+
+.menu-close-btn {
+    text-align: right;
+    width: 100%;
+    padding-right: 2.4rem;
+}
+
 
 nav {
     padding: 0rem 2.4rem;
@@ -238,8 +251,6 @@ nav {
 }
 
 
-
-
 .access-btns-wrapper {
     display: flex;
     flex-direction: column;
@@ -252,6 +263,10 @@ main {
     display: flex;
     flex-direction: column-reverse;
     height: 100%;
+    position: relative;
+    /* z-index: 3;
+    background-color: var(--black);
+    opacity: 0.75; */
 }
 
 .text-col {
@@ -289,6 +304,16 @@ main {
     padding-bottom: 5rem;
 }
 
+/* ============================
+
+    INTERACTIVITY 
+
+=============================== */
+
+.hidden {
+    display: none;
+}
+
 
 
 /* ============================
@@ -306,15 +331,36 @@ MEDIA-QUERIES
         background-color: gold;
     }
 
+    .header-logo {
+        padding: 3.2rem;
+    }
 
+    .menu-close-btn {
+        padding: 3.2rem;
+    }
+
+    .logo-wrapper img {
+        width: 15%;
+    }
+
+    .nav-container-flex {
+        min-width: 48rem;
+    }
+
+.nav-links-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+    .nav-links-wrapper a {
+        font-size: 2rem;
+    }
 
 }
 
 
 
 
-/* ==== MOBILE ==== */
+/* ==== DESKTOP ==== */
 
-/* @media (max-width: ) {
-
-} */
+@media (min-width: 1024px) {}
