@@ -219,7 +219,7 @@ header {
 .nav-container-flex {
     min-width: 24rem;
     background-color: var(--white);
-    position: absolute;
+    position: fixed;
     right: 0;
     height: 100%;
     z-index: 50;
