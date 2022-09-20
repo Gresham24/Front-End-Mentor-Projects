@@ -419,19 +419,48 @@ MEDIA-QUERIES
         border-radius: 1.4rem;
         box-shadow: var(--nav-shadow);
         position: absolute;
-        /* display: none; */
     }
 
 
     .dropdown-features {
+        display: none;
         top: 3rem;
         left: -6rem;
     }
 
     .dropdown-company {
+        display: none;
         top: 3rem;
         left: 9rem;
     }
+
+/* ============================
+
+    INTERACTIVITY 
+
+=============================== */
+
+/* 
+    TO DO: 
+        - ADD SMOOTH TRANSITION 
+        - FLIP THE ARROW 
+        - MAKE IT STICK FOR 2 SECONDS 
+*/
+
+    .feature-dropdown-btn:hover .dropdown-features {
+        display: initial;
+    }
+
+    .company-dropdown-btn:hover .dropdown-company {
+        display: initial;
+    }
+
+    .features-btn:hover::after,
+    .company-btn:hover::after {
+        content: url('images/icon-arrow-down.svg');
+        margin-left: .8rem;
+    }
+
 
 
     .nav-links>li {
