@@ -224,6 +224,8 @@ header {
     height: 100%;
     z-index: 50;
     display: none;
+    /* transition: 2s ease; */
+
 }
 
 .menu-close-btn,
@@ -312,12 +314,11 @@ main {
 
 =============================== */
 
-.hidden {
-    display: none;
-}
 
 .shown {
     display: initial;
+    /* transition: 2s ease; */
+
 }
 
 
@@ -359,6 +360,12 @@ MEDIA-QUERIES
     .nav-links-wrapper a {
         font-size: 1.4rem;
     }
+
+    .shown {
+        display: initial;
+        /* transition: 2s ease; */
+    
+    }
 }
 
 
@@ -381,6 +388,7 @@ MEDIA-QUERIES
         NAV LINKS AGAINST THE LOGO */
 
     .nav-container-flex {
+        display: initial;
         width: 85%;
         height: auto;
         background-color: transparent;
@@ -390,7 +398,6 @@ MEDIA-QUERIES
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        /* background-color: aqua; */
     }
 
     .nav-links {
