@@ -268,9 +268,6 @@ main {
     flex-direction: column-reverse;
     height: 100%;
     position: relative;
-    /* z-index: 3;
-    background-color: var(--black);
-    opacity: 0.75; */
 }
 
 .text-col {
@@ -318,6 +315,9 @@ main {
     display: none;
 }
 
+.shown {
+    display: initial;
+}
 
 
 /* ============================

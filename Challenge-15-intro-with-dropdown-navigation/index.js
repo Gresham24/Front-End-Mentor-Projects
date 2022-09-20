@@ -1,23 +1,47 @@
-const dropdownButton = document.getElementsByClassName('menu-item');
-const companyButton = document.getElementById('company-btn');
-const featuresButton = document.getElementById('features-btn');
+// const dropdownButton = document.getElementsByClassName('menu-item');
+// const companyButton = document.getElementById('company-btn');
+// const featuresButton = document.getElementById('features-btn');
 
-Array.from(dropdownButton).forEach(item => {
-    // console.log(item);
 
-    item.addEventListener('click', buttonClickCheck);
 
-});
+// Array.from(dropdownButton).forEach(item => {
+//     // console.log(item);
 
-// console.log(featuresButton.id);
+//     item.addEventListener('click', buttonClickCheck);
 
-function buttonClickCheck() {
-    if (featuresButton.id == 'features-btn') {
-        featuresButton.classList.toggle('active');    
-        companyButton.classList.remove('active');
-    }
-    if (companyButton.id == 'company-btn') {
-        companyButton.classList.toggle('active');    
-        featuresButton.classList.remove('active');
-    }
+// });
+
+// // console.log(featuresButton.id);
+
+// function buttonClickCheck() {
+//     if (featuresButton.id == 'features-btn') {
+//         featuresButton.classList.toggle('active');    
+//         companyButton.classList.remove('active');
+//     }
+//     if (companyButton.id == 'company-btn') {
+//         companyButton.classList.toggle('active');    
+//         featuresButton.classList.remove('active');
+//     }
+// }
+
+const closeMenuButton = document.getElementById('menu-close-btn');
+const showMenuButton = document.getElementById('menu-toggle-btn');
+const navBar = document.getElementById('nav-bar');
+
+function showNavMenu() {
+
+    navBar.classList.remove('hidden');
+    navBar.classList.add('shown');
+    console.log(navBar);
+    
 }
+
+function hideNavMenu() {
+    navBar.classList.add('hidden');
+    navBar.classList.remove('shown');
+    console.log(navBar);
+    
+}
+
+showMenuButton.addEventListener('click', showNavMenu);
+closeMenuButton.addEventListener('click', hideNavMenu);
