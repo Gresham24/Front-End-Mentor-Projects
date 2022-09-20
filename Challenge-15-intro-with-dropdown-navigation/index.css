@@ -223,6 +223,7 @@ header {
     right: 0;
     height: 100%;
     z-index: 50;
+    display: none;
 }
 
 .menu-close-btn,
