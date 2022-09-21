@@ -341,7 +341,7 @@ MEDIA-QUERIES
     }
 
     .menu-close-btn {
-        padding: 3.2rem;
+        /* padding: 3.2rem; */
     }
 
     .logo-wrapper img {
@@ -349,16 +349,16 @@ MEDIA-QUERIES
     }
 
     .nav-container-flex {
-        min-width: 48rem;
+        /* min-width: 48rem; */
     }
 
     .nav-links-wrapper {
-        display: flex;
-        justify-content: center;
+        /* display: flex; */
+        /* justify-content: center; */
     }
 
     .nav-links-wrapper a {
-        font-size: 1.4rem;
+        /* font-size: 1.4rem; */
     }
 
     .shown {
