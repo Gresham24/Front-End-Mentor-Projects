@@ -195,10 +195,6 @@ body {
     position: relative;
     height: 100%;
     z-index: 3;
-
-    /***** Change color when hovered over *****/
-    /* background-color: var(--black);
-    opacity: 0.75; */
 }
 
 .container {
@@ -318,9 +314,14 @@ main {
 .shown {
     display: initial;
     /* transition: 2s ease; */
-
 }
 
+.bg-cover {
+    /* background-color: var(--black); */
+    /* opacity: .75; */
+    position: relative;
+    z-index: 10;
+}
 
 /* ============================
 
@@ -340,25 +341,8 @@ MEDIA-QUERIES
         padding: 3.2rem;
     }
 
-    .menu-close-btn {
-        /* padding: 3.2rem; */
-    }
-
     .logo-wrapper img {
         width: 15%;
-    }
-
-    .nav-container-flex {
-        /* min-width: 48rem; */
-    }
-
-    .nav-links-wrapper {
-        /* display: flex; */
-        /* justify-content: center; */
-    }
-
-    .nav-links-wrapper a {
-        /* font-size: 1.4rem; */
     }
 
     .shown {
@@ -392,6 +376,7 @@ MEDIA-QUERIES
         width: 85%;
         height: auto;
         background-color: transparent;
+        position: absolute;
     }
 
     nav {
@@ -434,11 +419,9 @@ MEDIA-QUERIES
         left: 9rem;
     }
 
-/* ============================
-
+/* =================
     INTERACTIVITY 
-
-=============================== */
+==================== */
 
 /* 
     TO DO: 
@@ -539,7 +522,6 @@ MEDIA-QUERIES
     }
 
     .logo-wrapper {
-        /* padding: 0; */
         margin: 0;
     }
 
