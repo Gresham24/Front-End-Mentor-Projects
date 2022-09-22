@@ -116,6 +116,9 @@ h1 {
     margin-left: 1rem;
 }
 
+.company-btn {
+    margin-top: 1.6rem;
+}
 
 /* access buttons */
 .login-btn,
@@ -309,6 +312,11 @@ main {
     INTERACTIVITY 
 
 =============================== */
+
+.dropdown-features,
+.dropdown-company {
+    display: none;
+}
 
 
 .shown {
