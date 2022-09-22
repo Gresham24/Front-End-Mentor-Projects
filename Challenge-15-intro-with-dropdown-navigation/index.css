@@ -101,6 +101,12 @@ h1 {
     margin-left: .8rem;
 }
 
+/* .features-btn:active::after,
+.company-btn:active::after {
+    content: url('images/icon-arrow-down.svg');
+    margin-left: .8rem;
+} */
+
 .features-btn:hover,
 .company-btn:hover {
     cursor: pointer;
@@ -331,6 +337,13 @@ main {
     z-index: 10;
 }
 
+.arrow-flip::after {
+    content: url('images/icon-arrow-down.svg');
+    margin-left: .8rem;
+}
+
+
+
 /* ============================
 
 MEDIA-QUERIES
@@ -417,14 +430,14 @@ MEDIA-QUERIES
 
     .dropdown-features {
         display: none;
-        top: 3rem;
-        left: -6rem;
+        top: 5rem;
+        left: -5rem;
     }
 
     .dropdown-company {
         display: none;
-        top: 3rem;
-        left: 9rem;
+        top: 5rem;
+        left: 11rem;
     }
 
 /* =================

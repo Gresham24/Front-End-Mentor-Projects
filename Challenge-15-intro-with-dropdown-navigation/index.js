@@ -24,19 +24,19 @@ closeMenuButton.addEventListener('click', hideNavMenu);
 // Nav accordion
 
 const featuresButton = document.getElementById('features-btn');
-const companyButton = document.getElementById('company-btn');
 const featuresLinks = document.getElementById('features-links');
+const companyButton = document.getElementById('company-btn');
 const companyLinks = document.getElementById('company-links');
 
 
 function toggleFeaturesBtn() {
-    console.log('clicked');
     featuresLinks.classList.toggle('shown');
+    featuresButton.classList.toggle('arrow-flip');
 }
 
 function toggleCompanyBtn() {
-    console.log('clicked');
     companyLinks.classList.toggle('shown');
+    companyButton.classList.toggle('arrow-flip');
 }
 
 featuresButton.addEventListener('click', toggleFeaturesBtn);
