@@ -1,20 +1,27 @@
 
+
+// TO DO: ADD SMOOTH TRANSITION
+
 /* ============================
     MOBILE INTERACTIVITY 
 =============================== */
 
 
-// TO DO: ADD SMOOTH TRANSITION
+const overlay = document.querySelector('main');
+
 const closeMenuButton = document.getElementById('menu-close-btn');
 const showMenuButton = document.getElementById('menu-toggle-btn');
 const navBar = document.getElementById('nav-bar');
 
 function showNavMenu() {
-    navBar.classList.toggle('shown');
+    navBar.classList.toggle('shown');    
+    overlay.className = 'bg-cover';
 }
 
 function hideNavMenu() {
     navBar.classList.remove('shown');
+    overlay.classList.toggle('bg-cover');
+
 }
 
 showMenuButton.addEventListener('click', showNavMenu);

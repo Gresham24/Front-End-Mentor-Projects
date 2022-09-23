@@ -330,10 +330,15 @@ main {
     /* transition: 2s ease; */
 }
 
-.bg-cover {
-    /* background-color: var(--black); */
-    /* opacity: .75; */
-    position: relative;
+.bg-cover::before {
+    content: "";
+    background-color: var(--black); 
+    opacity: .75;
+    top: -10rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
     z-index: 10;
 }
 
@@ -438,6 +443,10 @@ MEDIA-QUERIES
         display: none;
         top: 5rem;
         left: 11rem;
+    }
+
+    .bg-cover::before {
+        display: none;
     }
 
 /* =================
