@@ -453,13 +453,6 @@ MEDIA-QUERIES
     INTERACTIVITY 
 ==================== */
 
-/* 
-    TO DO: 
-        - ADD SMOOTH TRANSITION 
-        - FLIP THE ARROW 
-        - MAKE IT STICK FOR 2 SECONDS 
-*/
-
     .feature-dropdown-btn:hover .dropdown-features {
         display: initial;
     }
@@ -512,8 +505,9 @@ MEDIA-QUERIES
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        margin: 0px auto;
         gap: 8rem;
-        margin-top: 10rem;
+        margin-top: 15rem;
         height: auto;
     }
 
