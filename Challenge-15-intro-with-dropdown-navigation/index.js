@@ -1,7 +1,4 @@
 
-
-// TO DO: ADD SMOOTH TRANSITION
-
 /* ============================
     MOBILE INTERACTIVITY 
 =============================== */

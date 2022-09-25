@@ -68,6 +68,7 @@ h1 {
     color: var(--grey);
 }
 
+
 /* ============================
 
     BUTTONS
@@ -79,7 +80,7 @@ h1 {
     background: none;
     border: none;
     margin-bottom: 3rem;
-    /* display: none; */
+    margin-right: 3rem;
 }
 
 .menu-close-btn {
@@ -87,7 +88,6 @@ h1 {
     background: none;
     border: none;
     margin-bottom: 3rem;
-    /* display: none; */
 }
 
 /* nav buttons */
@@ -101,11 +101,6 @@ h1 {
     margin-left: .8rem;
 }
 
-/* .features-btn:active::after,
-.company-btn:active::after {
-    content: url('images/icon-arrow-down.svg');
-    margin-left: .8rem;
-} */
 
 .features-btn:hover,
 .company-btn:hover {
@@ -194,6 +189,7 @@ h1 {
     display: none;
 }
 
+
 /* ============================
 
     LAYOUT
@@ -229,8 +225,6 @@ header {
     height: 100%;
     z-index: 50;
     display: none;
-    /* transition: 2s ease; */
-
 }
 
 .menu-close-btn,
@@ -313,6 +307,7 @@ main {
     padding-bottom: 5rem;
 }
 
+
 /* ============================
 
     INTERACTIVITY 
@@ -327,7 +322,6 @@ main {
 
 .shown {
     display: initial;
-    /* transition: 2s ease; */
 }
 
 .bg-cover::before {
@@ -373,8 +367,6 @@ MEDIA-QUERIES
 
     .shown {
         display: initial;
-        /* transition: 2s ease; */
-    
     }
 }
 
@@ -393,9 +385,6 @@ MEDIA-QUERIES
     .access-btns-wrapper {
         flex-direction: row;
     }
-
-    /* TO DO: FIX THE ALIGNING OF THE 
-        NAV LINKS AGAINST THE LOGO */
 
     .nav-container-flex {
         display: initial;
