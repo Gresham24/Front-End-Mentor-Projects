@@ -336,17 +336,6 @@ main {
     z-index: 10;
 }
 
-/* .cover {
-    background-color: var(--black); 
-    opacity: .75;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    z-index: 10;
-} */
-
 .arrow-flip::after {
     content: url('images/icon-arrow-down.svg');
     margin-left: .8rem;
@@ -380,8 +369,6 @@ MEDIA-QUERIES
         display: initial;
     }
 }
-
-
 
 
 /* ==== DESKTOP ==== */
@@ -466,7 +453,6 @@ MEDIA-QUERIES
         content: url('images/icon-arrow-down.svg');
         margin-left: .8rem;
     }
-
 
 
     .nav-links>li {
