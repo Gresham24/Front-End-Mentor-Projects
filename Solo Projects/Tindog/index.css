@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ============================
+
+    CUSTOM VARIABLES
+
+=============================== */
+
+:root {
+    /******** colors ********/
+    --white: #F8F8F8;
+    --grey: #B7B7B7;
+    /******** gradient ********/
+    --white-gradient: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+    /******** font ********/
+    --h3-font: normal 600 3.2rem/3.6rem 'Poppins';
+    --p-font: normal 400 2.4rem/3.2rem 'Poppins';
+    /******** shadows ********/
+    --btn-shadow: 0px 10px 20px 0px #E9E9EA;
+}
+
+/* ============================
+
+    TYPOGRAPHY
+
+=============================== */
+
+.user-info h3 {
+    font: var(--h3-font);
+}
+
+.user-info p {
+    font: var(--p-font);
+}
+
+
+/* ============================
+
+    IMAGES
+
+=============================== */
+
+img {
+    /* width: 100%; */
+}
+
+header img {
+        width: 50%;
+
+}
+
+header img:hover {
+    cursor: pointer;
+}
+
+.icon-chat img {
+    
+}
+
+
+.post-img img {
+    width: 100%;
+}
+
+
+
+
+/* ============================
+
+    LAYOUT
+
+=============================== */
+
+.container {
+    max-width: 55rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
