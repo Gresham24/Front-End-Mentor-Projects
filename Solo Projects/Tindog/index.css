@@ -54,17 +54,12 @@ img {
     /* width: 100%; */
 }
 
-header img {
-        width: 50%;
-
+.header-icons img {
+    width: 30%;
 }
 
-header img:hover {
+.header-icons img:hover {
     cursor: pointer;
-}
-
-.icon-chat img {
-    
 }
 
 
@@ -72,6 +67,12 @@ header img:hover {
     width: 100%;
 }
 
+
+/* ============================
+
+    BUTTONS
+
+=============================== */
 
 
 
@@ -81,8 +82,17 @@ header img:hover {
 
 =============================== */
 
+body {
+    /* height: 100vh; */
+}
+
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
     max-width: 55rem;
+    border: solid 3px maroon;
 }
 
 header {
