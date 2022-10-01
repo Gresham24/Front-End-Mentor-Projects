@@ -37,7 +37,7 @@ html {
 
 .user-info h3 {
     font: var(--h3-font);
-    /* color: white; */
+    color: white;
 }
 
 .user-info p {
@@ -106,7 +106,8 @@ header img:hover {
 =============================== */
 
 body {
-    background: var(--white-gradient);
+    background-color: rgb(218, 218, 218);
+    height: 100vh;
 }
 
 .container {
@@ -115,7 +116,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     max-width: 55rem;
-    border: solid 3px maroon;
+    background: var(--white-gradient);
 }
 
 header {
@@ -125,6 +126,21 @@ header {
     padding: 2rem 2.4rem;
 }
 
+main {
+    padding: 0rem 0.8rem;
+    margin-bottom: -5rem;
+}
+
+.post-img img {
+    border-radius: 1.5rem;
+}
+
+.user-info {
+    padding-left: 1.2rem;
+    position: relative;
+    bottom: 8rem;    
+}
+
 
 .vote-btn-wrapper {
     display: flex;
@@ -132,3 +148,4 @@ header {
     gap: 2.4rem;
     padding-bottom: 2.4rem;
 }
+
