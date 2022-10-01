@@ -1,7 +1,9 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="index.css">
 </head>
@@ -9,9 +11,10 @@
 <body>
     <div class="container">
         <header>
-            <img src="images/icon-profile.png" class="profile-pic" alt="default profile picture">
-            <img src="images/logo.png" class="logo" alt="tindog logo">
-            <img src="images/icon-chat.png"  alt="chat icon"> 
+            <div class="header-icons"><img src="images/icon-profile.png" class="profile-pic"
+                    alt="default profile picture"></div>
+            <div class="header-icons"><img src="images/logo.png" class="logo" alt="tindog logo"></div>
+            <div class="header-icons"><img src="images/icon-chat.png" alt="chat icon"> </div>
         </header>
         <main>
             <div id="post-img" class="post-img"><img src="images/dog-teddy.jpg" alt="picture of teddy"></div>
@@ -21,11 +24,10 @@
             </div>
         </main>
         <footer>
-            <div class="decline-btn-wrapper">
-                <img src="images/icon-cross.png" id="accept-btn" class="accept-btn" alt="accept badge">
-            </div>
-            <div class="accept-btn-wrapper">
-                <img src="images/icon-heart.png" id="decline-btn" class="decline-btn" alt="decline badge">
+            <div class="vote-btn">
+                <button id="decline-btn" class="decline-btn"> <img src="images/icon-cross.png"
+                        alt="decline badge"></button>
+                <button id="accept-btn" class="accept-btn"><img src="images/icon-heart.png" alt="accept badge"></button>
             </div>
         </footer>
     </div>
