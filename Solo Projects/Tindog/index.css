@@ -37,10 +37,12 @@ html {
 
 .user-info h3 {
     font: var(--h3-font);
+    /* color: white; */
 }
 
 .user-info p {
     font: var(--p-font);
+    color: var(--grey);
 }
 
 
@@ -74,6 +76,14 @@ img {
 
 =============================== */
 
+.decline-btn,
+.accept-btn {
+    background-color: white;
+    border: none;
+    border-radius: 7rem;
+    padding: 2rem;
+    box-shadow: var(--btn-shadow);
+}
 
 
 /* ============================
@@ -83,7 +93,7 @@ img {
 =============================== */
 
 body {
-    /* height: 100vh; */
+    background: var(--white-gradient);
 }
 
 .container {
@@ -98,5 +108,14 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
+}
+
+
+
+.vote-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+    padding-bottom: 2.4rem;
 }
