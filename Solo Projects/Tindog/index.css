@@ -155,3 +155,36 @@ main {
     padding-bottom: 2.4rem;
 }
 
+
+
+/* ============================
+
+    INTERACTIVITY
+
+=============================== */
+
+.yes-badge img {
+    width: 35%;
+}
+
+.yes-badge {
+    position: absolute;
+    top: 5.5rem;
+    transform: rotate(-30deg);
+    display: none;
+}
+
+.nope-badge img {
+    width: 35%;
+}
+
+.nope-badge {
+    position: absolute;
+    top: 5.5rem;
+    transform: rotate(-30deg);
+    display: none;
+}
+
+.show-badge {
+    display: initial;
+}
