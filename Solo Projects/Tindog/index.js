@@ -10,8 +10,12 @@ To do  list:
 */ 
 
 
-import { dogs } from './data.js';
+import dogs from './data.js';
+import dog from './Dog.js';
 
 const likeButton = document.getElementById('accept-btn');
 const dislikeButton = document.getElementById('decline-btn');
 
+likeButton.addEventListener('click', function() {
+    
+})
