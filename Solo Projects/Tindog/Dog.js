@@ -1,22 +1,26 @@
-// Create the Dog class here
 
 class Dog {
     constructor(data) {
         Object.assign(this, data);
     }
 
-    renderUserInfo() {
-        const { name, age, bio } = this;
+    setMatchStatus(bool) {
+        this.hasBeenLiked = bool
+        this.hasBeenSwiped = true
+    }
+
+    getDogHtml() {
+        const { name, avatar, age, bio } = this;
         return `
-        <h3>${name}, ${age}</h3>
-        <p>${bio}</p>
+        <div id="post-img" class="post-img"><img src="${avatar}" alt="picture of ${name}"></div>
+        <div class="user-info">
+            <h3 id="username-age">${name}, ${age}</h3>
+            <p id="bio">${bio}</p>
+        </div>
         `
     }
 
-    renderPostImg() {
-        const { avatar } = this;
-        document.getElementById('post-img').innerHTML = `<img src="${avatar}" alt="dog post picture">`;
-    }
+
 }
 
-export { Dog };
+export default Dog;

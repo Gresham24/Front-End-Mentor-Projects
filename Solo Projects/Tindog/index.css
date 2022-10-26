@@ -99,11 +99,18 @@ header img:hover {
     box-shadow: 0px 10px 20px 0px #CCF1E6;
 }
 
+.accept-btn:active {
+    background-color: #d1fbef;
+}
+
 .decline-btn:hover {
     box-shadow: 0px 10px 20px 0px #EDD9DF;
     background-color: #FFE7EF;
 }
 
+.decline-btn:active {
+    background-color: #f9d7e2;
+}
 
 /* ============================
 
@@ -148,7 +155,7 @@ main {
 }
 
 
-.vote-btn-wrapper {
+footer {
     display: flex;
     justify-content: center;
     gap: 2.4rem;
@@ -171,7 +178,7 @@ main {
     position: absolute;
     top: 5.5rem;
     transform: rotate(-30deg);
-    display: none;
+    /* display: none; */
 }
 
 .nope-badge img {
@@ -182,7 +189,7 @@ main {
     position: absolute;
     top: 5.5rem;
     transform: rotate(-30deg);
-    display: none;
+    /* display: none; */
 }
 
 .show-badge {
