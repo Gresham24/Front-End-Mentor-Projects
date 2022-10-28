@@ -178,7 +178,7 @@ footer {
     position: absolute;
     top: 5.5rem;
     transform: rotate(-30deg);
-    /* display: none; */
+    display: none;
 }
 
 .nope-badge img {
@@ -189,7 +189,7 @@ footer {
     position: absolute;
     top: 5.5rem;
     transform: rotate(-30deg);
-    /* display: none; */
+    display: none;
 }
 
 .show-badge {

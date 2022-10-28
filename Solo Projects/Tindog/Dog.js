@@ -5,22 +5,23 @@ class Dog {
     }
 
     setMatchStatus(bool) {
-        this.hasBeenLiked = bool
-        this.hasBeenSwiped = true
+        this.hasBeenLiked = bool;
+        this.hasBeenSwiped = true;
     }
 
     getDogHtml() {
         const { name, avatar, age, bio } = this;
         return `
-        <div id="post-img" class="post-img"><img src="${avatar}" alt="picture of ${name}"></div>
+        <div id="post-img" class="post-img">
+            <img src="${avatar}">
+        </div>
         <div class="user-info">
-            <h3 id="username-age">${name}, ${age}</h3>
-            <p id="bio">${bio}</p>
+            <h3>${name}, ${age}</h3>
+            <p>${bio}</p>
         </div>
         `
     }
-
-
 }
+
 
 export default Dog;

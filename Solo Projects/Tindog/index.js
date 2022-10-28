@@ -3,23 +3,24 @@
 // LIKE and NOPE badges should display for 2 seconds on the post - use setTimeout()
 
 
-
-import dogsData from './data.js';
 import Dog from './Dog.js';
+import dogsData from './data.js';
 
 const likeButton = document.getElementById('accept-btn');
 const dislikeButton = document.getElementById('decline-btn');
+const mainPost = document.getElementById('main-post');
+
 
 let currentDogIndex = 0;
 let currentDog = new Dog(dogsData[currentDogIndex]);
 
-likeButton.addEventListener('click', yes);
+document.getElementById('accept-btn').addEventListener('click', yes);
 
 
 render();
 
 function render() {
-    document.getElementById('card').innerHTML = currentDog.getDogHtml();
+    document.getElementById('main-post').innerHTML = currentDog.getDogHtml();
 }
 
 function getNewDog() {
@@ -32,3 +33,9 @@ function yes() {
     currentDog.setMatchStatus(true);
     getNewDog();
 }
+
+// mainPost.innerHTML = `<div id="post-img" class="post-img"><img src="images/dog-teddy.jpg" alt="picture of teddy"></div>
+// <div class="user-info">
+//     <h3 id="username-age">Teddy, 30</h3>
+//     <p id="bio">How you doing?</p>
+// </div>`
