@@ -24,7 +24,7 @@ html {
     --white-gradient: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
     /******** font ********/
     --h3-font: normal 600 3.2rem/3.6rem 'Poppins';
-    --p-font: normal 400 2.4rem/3.2rem 'Poppins';
+    --p-font: normal 400 1.6rem/3.2rem 'Poppins';
     /******** shadows ********/
     --btn-shadow: 0px 10px 20px 0px #E9E9EA;
 }
@@ -169,6 +169,10 @@ footer {
     INTERACTIVITY
 
 =============================== */
+
+.show-badge {
+    display: initial;
+}
 
 .yes-badge img {
     width: 35%;
