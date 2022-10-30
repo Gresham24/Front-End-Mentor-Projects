@@ -13,7 +13,7 @@ class Dog {
         const { name, avatar, age, bio } = this;
         return `
         <div id="post-img" class="post-img">
-            <img src="${avatar}">
+            <img src=${avatar}>
         </div>
         <div class="user-info">
             <h3>${name}, ${age}</h3>
