@@ -9,18 +9,21 @@ import dogsData from './data.js';
 const likeButton = document.getElementById('accept-btn');
 const dislikeButton = document.getElementById('decline-btn');
 const mainPost = document.getElementById('main-post');
+const yesBadge = document.getElementById('yes-badge');
 
+let hasBeenSwiped = false;
+let hasBeenLiked = false;
 
 let currentDogIndex = 0;
 let currentDog = new Dog(dogsData[currentDogIndex]);
 
-document.getElementById('accept-btn').addEventListener('click', yes);
+likeButton.addEventListener('click', yes);
 
 
 render();
 
 function render() {
-    document.getElementById('main-post').innerHTML = currentDog.getDogHtml();
+    mainPost.innerHTML = currentDog.getDogHtml();
 }
 
 function getNewDog() {
@@ -31,11 +34,12 @@ function getNewDog() {
 
 function yes() {
     currentDog.setMatchStatus(true);
-    getNewDog();
+    if (!hasBeenLiked) {
+        hasBeenLiked = true;
+        yesBadge.classList.toggle('show-badge');
+    }
+    setTimeout(() => {
+        getNewDog();
+        yesBadge.style.display = "none";
+    }, 2000);
 }
-
-// mainPost.innerHTML = `<div id="post-img" class="post-img"><img src="images/dog-teddy.jpg" alt="picture of teddy"></div>
-// <div class="user-info">
-//     <h3 id="username-age">Teddy, 30</h3>
-//     <p id="bio">How you doing?</p>
-// </div>`
