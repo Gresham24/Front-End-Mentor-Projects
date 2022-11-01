@@ -10,6 +10,7 @@ const likeButton = document.getElementById('accept-btn');
 const dislikeButton = document.getElementById('decline-btn');
 const mainPost = document.getElementById('main-post');
 const yesBadge = document.getElementById('yes-badge');
+const nopeBadge = document.getElementById('nope-badge');
 
 let hasBeenSwiped = false;
 let hasBeenLiked = false;
@@ -17,7 +18,8 @@ let hasBeenLiked = false;
 let currentDogIndex = 0;
 let currentDog = new Dog(dogsData[currentDogIndex]);
 
-likeButton.addEventListener('click', yes);
+likeButton.addEventListener('click', likeDog);
+dislikeButton.addEventListener('click', dislikeDog);
 
 
 render();
@@ -32,14 +34,17 @@ function getNewDog() {
     render();
 }
 
-function yes() {
+function likeDog() {
     currentDog.setMatchStatus(true);
     if (!hasBeenLiked) {
         hasBeenLiked = true;
-        yesBadge.classList.toggle('show-badge');
+        yesBadge.style.display = "initial";
     }
     setTimeout(() => {
         getNewDog();
+        hasBeenLiked = false;
         yesBadge.style.display = "none";
     }, 2000);
+    console.log(document.getElementById('badges'))
 }
+
