@@ -48,3 +48,14 @@ function likeDog() {
     console.log(document.getElementById('badges'))
 }
 
+function dislikeDog() {
+    currentDog.setMatchStatus(true);
+    if (!hasBeenLiked) {
+        nopeBadge.style.display = "initial";
+    }
+    setTimeout(() => {
+        getNewDog();
+        nopeBadge.style.display = "none";
+    }, 2000);
+    console.log(document.getElementById('badges'))
+}
