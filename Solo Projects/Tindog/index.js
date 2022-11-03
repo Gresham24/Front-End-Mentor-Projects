@@ -1,5 +1,5 @@
 import Dog from './Dog.js';
-import dogsData from './data.js';
+import dogs from './data.js';
 
 const likeButton = document.getElementById('accept-btn');
 const dislikeButton = document.getElementById('decline-btn');
@@ -11,7 +11,7 @@ let hasBeenSwiped = false;
 let hasBeenLiked = false;
 
 let currentDogIndex = 0;
-let currentDog = new Dog(dogsData[currentDogIndex]);
+let currentDog = new Dog(dogs[currentDogIndex]);
 
 likeButton.addEventListener('click', likeDog);
 dislikeButton.addEventListener('click', dislikeDog);
@@ -25,7 +25,7 @@ function render() {
 
 function getNewDog() {
     currentDogIndex += 1;
-    currentDog = new Dog(dogsData[currentDogIndex]);
+    currentDog = new Dog(dogs[currentDogIndex]);
     render();
 }
 
@@ -53,9 +53,3 @@ function dislikeDog() {
     }, 2000);
 }
 
-
-// function endOfArray() {
-//     if (currentDogIndex == dogs.length -1) {
-//         render();
-//     }
-// }
