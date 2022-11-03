@@ -1,8 +1,3 @@
-// hasBeenSwiped should be set to tru when one of the buttons are clicked
-// hasBeenLiked should only be set to true when you click on the heart button
-// LIKE and NOPE badges should display for 2 seconds on the post - use setTimeout()
-
-
 import Dog from './Dog.js';
 import dogsData from './data.js';
 
@@ -36,7 +31,7 @@ function getNewDog() {
 
 function likeDog() {
     currentDog.setMatchStatus(true);
-    if (!hasBeenLiked) {
+    if (!hasBeenSwiped) {
         hasBeenLiked = true;
         yesBadge.style.display = "initial";
     }
@@ -45,17 +40,22 @@ function likeDog() {
         hasBeenLiked = false;
         yesBadge.style.display = "none";
     }, 2000);
-    console.log(document.getElementById('badges'))
 }
 
 function dislikeDog() {
     currentDog.setMatchStatus(true);
-    if (!hasBeenLiked) {
+    if (!hasBeenSwiped) {
         nopeBadge.style.display = "initial";
     }
     setTimeout(() => {
         getNewDog();
         nopeBadge.style.display = "none";
     }, 2000);
-    console.log(document.getElementById('badges'))
 }
+
+
+// function endOfArray() {
+//     if (currentDogIndex == dogs.length -1) {
+//         render();
+//     }
+// }
