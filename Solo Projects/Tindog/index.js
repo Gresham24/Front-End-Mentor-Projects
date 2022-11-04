@@ -24,7 +24,7 @@ function render() {
 }
 
 function getNewDog() {
-    currentDogIndex += 1;
+    currentDogIndex === 2 ? currentDogIndex = 0 : currentDogIndex += 1;
     currentDog = new Dog(dogs[currentDogIndex]);
     render();
 }
