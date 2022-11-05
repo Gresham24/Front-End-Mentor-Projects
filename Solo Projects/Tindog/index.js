@@ -1,6 +1,10 @@
 import Dog from './Dog.js';
 import dogs from './data.js';
 
+/* ======================================
+        VARIABLES
+========================================= */
+
 const likeButton = document.getElementById('accept-btn');
 const dislikeButton = document.getElementById('decline-btn');
 const mainPost = document.getElementById('main-post');
@@ -13,21 +17,25 @@ let hasBeenLiked = false;
 let currentDogIndex = 0;
 let currentDog = new Dog(dogs[currentDogIndex]);
 
+/* ======================================
+        EVENT LISTENERS
+========================================= */
+
 likeButton.addEventListener('click', likeDog);
 dislikeButton.addEventListener('click', dislikeDog);
 
 
-render();
-
-function render() {
-    mainPost.innerHTML = currentDog.getDogHtml();
-}
+/* ======================================
+        FUNCTIONS
+========================================= */
 
 function getNewDog() {
     currentDogIndex === 2 ? currentDogIndex = 0 : currentDogIndex += 1;
     currentDog = new Dog(dogs[currentDogIndex]);
     render();
 }
+
+// ACCEPT BUTTON
 
 function likeDog() {
     currentDog.setMatchStatus(true);
@@ -42,6 +50,8 @@ function likeDog() {
     }, 2000);
 }
 
+// REJECT BUTTON
+
 function dislikeDog() {
     currentDog.setMatchStatus(true);
     if (!hasBeenSwiped) {
@@ -53,3 +63,10 @@ function dislikeDog() {
     }, 2000);
 }
 
+// RENDER THE DOG ON HTML
+
+function render() {
+    mainPost.innerHTML = currentDog.getDogHtml();
+}
+
+render();
