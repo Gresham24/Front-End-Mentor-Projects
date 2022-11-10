@@ -36,7 +36,15 @@ html {
     TYPOGRAPHY
 
 =============================== */
+.card h3 {
+    font: var(--title);
+    color: var(--neon-green);
+}
 
+.card p {
+    font: var(--body);
+    color: var(--light-cyan);
+}
 
 
 /* ============================
@@ -63,7 +71,15 @@ html {
 
 =============================== */
 
+.card {
+    width: 343px;
+    height: 315px;
+    background-color: var(--grayish-blue);
+}
 
+body {
+    background-color: var(--dark-blue);
+}
 
 
 /* ============================
