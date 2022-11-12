@@ -44,6 +44,8 @@ html {
 .card p {
     font: var(--body);
     color: var(--light-cyan);
+    text-align: center;
+
 }
 
 
@@ -53,7 +55,13 @@ html {
 
 =============================== */
 
-
+button {
+    padding: 2rem;
+    border-radius: 5rem;
+    border: none;
+    background-color: var(--neon-green);
+    cursor: pointer;
+}
 
 
 /* ============================
