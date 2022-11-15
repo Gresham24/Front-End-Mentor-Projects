@@ -24,8 +24,8 @@ html {
     --grayish-blue: hsl(217, 19%, 24%);
     --dark-grayish-blue: hsl(217, 19%, 38%);
     /******** font ********/
-    --title: normal 800 1.3rem/1.7rem 'Manrope';
-    --body: normal 800 2.8rem/3.8rem 'Manrope';
+    --title: normal 800 1.1rem/1.5git rem 'Manrope';
+    --body: normal 800 2.4rem/3.2rem 'Manrope';
     /******** shadows ********/
     --button-shadow: 0px 0px 40px 0px #53FFAA;
 }
@@ -84,21 +84,21 @@ button:hover {
 }
 
 .card {
-    width: 343px;
-    min-height: 315px;
+    /* min-width: 3.43rem; */
+    min-height: 3.15rem;
     background-color: var(--grayish-blue);
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10rem;
+    /* margin: 20rem 1.6rem; */
     border-radius: 1rem;
-    padding: 0rem 2.4rem;
 }
 
 body {
     background-color: var(--dark-blue);
+    min-width: 37.5rem;
 }
 
 .divider {
