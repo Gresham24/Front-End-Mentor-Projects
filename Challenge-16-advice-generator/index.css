@@ -100,6 +100,7 @@ button:active {
     justify-content: center;
     margin: 0 1.6rem;
     border-radius: 1rem;
+    bottom: 50%;
 }
 
 body {
@@ -110,6 +111,8 @@ body {
 .divider {
     padding: 2.4rem 0 3.2rem;
 }
+
+
 /* ============================
 
     INTERACTIVITY 
@@ -126,8 +129,5 @@ MEDIA-QUERIES
 =============================== */
 
 
-/* ==== TABLET ==== */
 
-
-/* ==== DESKTOP ==== */
 
