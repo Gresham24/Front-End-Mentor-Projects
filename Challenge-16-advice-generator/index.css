@@ -61,9 +61,8 @@ button {
     border: none;
     background-color: var(--neon-green);
     cursor: pointer;
-    position: absolute;
-    top: 60.5%;
-
+    position: relative;
+    top: 3.3rem;
 }
 
 button:hover {
@@ -71,7 +70,7 @@ button:hover {
     box-shadow: var(--button-shadow);
 }
 
-button:active { 
+button:active {
     cursor: pointer;
     background-color: #42e493;
     box-shadow: var(--button-shadow);
@@ -88,19 +87,26 @@ button:active {
     display: none;
 }
 
+.divider-mobile {
+    /* margin-top: 2rem; */
+}
+
 /* ============================
 
     LAYOUT
 
 =============================== */
 
+.card h3 {
+    padding-top: 4rem;
+}
 
 .card p {
     padding: 2.4rem;
 }
 
 .card {
-    height: 31.5rem;
+    /* min-height: 31.5rem; */
     background-color: var(--grayish-blue);
     display: flex;
     flex-direction: column;
@@ -118,10 +124,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.divider {
-    padding: 2.4rem 0 3.2rem;
 }
 
 
@@ -165,5 +167,3 @@ MEDIA-QUERIES
     }
 
 }
-
-
