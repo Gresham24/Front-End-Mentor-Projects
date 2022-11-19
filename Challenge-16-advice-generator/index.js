@@ -7,3 +7,6 @@ fetch('https://api.adviceslip.com/advice')
         document.getElementById('advice-text').textContent = data.slip.advice;
     });
 
+    document.getElementById('generate-advice').addEventListener('click', function() {
+        document.location.reload();
+    });
