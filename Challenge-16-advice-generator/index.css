@@ -62,8 +62,7 @@ button {
     background-color: var(--neon-green);
     cursor: pointer;
     position: absolute;
-    /* top: 3rem; */
-    top: 56%;
+    top: 60.5%;
 
 }
 
@@ -81,16 +80,23 @@ button:active {
 
 /* ============================
 
+    IMAGES 
+
+=============================== */
+
+.divider-desktop {
+    display: none;
+}
+
+/* ============================
+
     LAYOUT
 
 =============================== */
 
-.card h3 {
-    padding-top: 2rem;
-}
 
 .card p {
-    padding: 2.4rem 2.4rem 0 2.4rem;
+    padding: 2.4rem;
 }
 
 .card {
@@ -100,7 +106,8 @@ button:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 1.6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     border-radius: 1rem;
     margin-top: 10rem;
 }
@@ -108,6 +115,9 @@ button:active {
 body {
     background-color: var(--dark-blue);
     min-width: 37.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .divider {
@@ -130,6 +140,30 @@ MEDIA-QUERIES
 
 =============================== */
 
+@media (min-width: 540px) {
 
+    .divider-mobile {
+        display: none;
+    }
+
+    .divider-desktop {
+        display: initial;
+    }
+
+    .card p {
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+    }
+
+    .card h3 {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+
+    .card {
+        max-width: 54rem;
+    }
+
+}
 
 
