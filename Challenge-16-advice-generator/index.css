@@ -45,7 +45,6 @@ html {
     font: var(--body);
     color: var(--light-cyan);
     text-align: center;
-
 }
 
 
@@ -77,6 +76,7 @@ button:active {
 }
 
 
+
 /* ============================
 
     IMAGES 
@@ -87,9 +87,7 @@ button:active {
     display: none;
 }
 
-.divider-mobile {
-    /* margin-top: 2rem; */
-}
+
 
 /* ============================
 
@@ -106,7 +104,6 @@ button:active {
 }
 
 .card {
-    /* min-height: 31.5rem; */
     background-color: var(--grayish-blue);
     display: flex;
     flex-direction: column;
