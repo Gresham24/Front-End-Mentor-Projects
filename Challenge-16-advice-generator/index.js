@@ -1,4 +1,7 @@
-fetch('https://api.adviceslip.com/advice')
+const adviceGeneratorBtn = document.getElementById('generate-advice');
+
+adviceGeneratorBtn.addEventListener('click', function () {
+    fetch('https://api.adviceslip.com/advice')
     .then(res => res.json())
     .then(data => {
         const adviceID = data.slip.id;
@@ -6,7 +9,4 @@ fetch('https://api.adviceslip.com/advice')
         document.getElementById('advice-id').textContent = `Advice #${data.slip.id}`;
         document.getElementById('advice-text').textContent = data.slip.advice;
     });
-
-    document.getElementById('generate-advice').addEventListener('click', function() {
-        document.location.reload();
-    });
+});
