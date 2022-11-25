@@ -16,3 +16,6 @@ Oldagram: https://solo-project-oldagram.netlify.app/
 
 
 Tindog: https://solo-project-tindog.netlify.app/
+
+
+Colour Scheme Generator: **coming soon**
