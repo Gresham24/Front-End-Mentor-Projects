@@ -65,6 +65,14 @@ button {
 
 =============================== */
 
+button {
+    padding: 1.3rem 1.1rem;
+    background-color: transparent;
+    border: solid 1px var(--outline-grey);
+    box-shadow: var(--shadow);
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
 
 
 /* ============================
