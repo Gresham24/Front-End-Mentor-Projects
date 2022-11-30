@@ -81,9 +81,15 @@ button {
 
 =============================== */
 
+body {
+    background-color: #363131;
+}
 
-
-
+section {
+    min-width: 55rem;
+    height: 55rem;
+    background-color: hsla(0, 0%, 100%, 1);
+}
 
 /* ============================
 
