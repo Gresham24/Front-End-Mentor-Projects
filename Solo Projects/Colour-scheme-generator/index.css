@@ -49,7 +49,7 @@ button {
     color: var(--btn-black);
 }
 
-.hex-values {
+.hex-value-wrapper {
     font: var(--hex-ff);
     color: var(--hex-value-black);
 }
@@ -82,7 +82,7 @@ button {
 =============================== */
 
 body {
-    background-color: #363131;
+    background-color: #353535;
 }
 
 section {
