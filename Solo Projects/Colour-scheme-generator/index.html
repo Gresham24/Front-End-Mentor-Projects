@@ -13,8 +13,12 @@
         <h1>Colour Scheme Generator</h1>
         <section>
             <div class="inputs-wrapper">
-                <input id="seed-col" type="color" />
-                <div class="col-scheme">Monochrome</div>
+                <input id="seed-col" name="seed-col" type="color" />
+                <select id="col-scheme" name="col-scheme">
+                    <option value="Monochrome">Monochrome</option>
+                    <option value="Analogic">Analogic</option>
+                    <option value="Complement">Complement</option>
+                </select>
                 <button id="col-scheme-generator">Get colour scheme</button>
             </div>
             <div class="col-block-wrapper">
