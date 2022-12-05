@@ -114,14 +114,26 @@ section {
     border: none;
     width: 6rem;
     height: 4.2rem;
+    cursor: pointer;
 }
 
 #col-scheme {
     padding: 1rem 1.3rem;
     /* width: 100%; */
     min-width: 15rem;
+    cursor: pointer;
 }
 
+.col-block {
+    min-width: .54rem;
+    height: 11rem;
+    background-color:#D1D5DB;
+}
+
+.hex-value-wrapper {
+    display: flex;
+
+}
 /* ============================
 
             MEDIA QUERIES
