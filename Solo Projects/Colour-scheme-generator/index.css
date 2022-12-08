@@ -91,15 +91,16 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 40rem;
+    /* min-width: 40rem; */
     height: 100vh;
+    background-color: rgb(194, 104, 104); /* change colour*/
 }
 
 section {
-    height: 55rem;
-    background-color: hsla(0, 0%, 100%, 1);
-    /* display: flex;
-    flex-direction: column; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 55rem;
 }
 
 .inputs-wrapper {
@@ -119,20 +120,42 @@ section {
 
 #col-scheme {
     padding: 1rem 1.3rem;
-    /* width: 100%; */
     min-width: 15rem;
     cursor: pointer;
 }
 
-.col-block {
-    min-width: .54rem;
-    height: 11rem;
-    background-color:#D1D5DB;
+.col-block-wrapper {
+    display: flex;
+}
+
+.col-block-wrapper div {
+    width: 11rem;
+    height: 41.4rem;
+}
+
+#col-1 {
+    background-color: red;
+}
+
+#col-2 {
+    background-color: purple;
+}
+
+#col-3 {
+    background-color: green;
+}
+
+#col-4 {
+    background-color: yellow;
+}
+
+#col-5 {
+    background-color: blue;
 }
 
 .hex-value-wrapper {
     display: flex;
-
+    align-items: center;
 }
 /* ============================
 
