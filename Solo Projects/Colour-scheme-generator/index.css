@@ -42,7 +42,7 @@ html {
 
 h1 {
     font: var(--h1-ff);
-    color: var(--light-grey);
+    color: white;
 }
 
 button {
@@ -68,13 +68,29 @@ button {
 
 button {
     padding: 1.3rem 1.1rem;
-    background-color: transparent;
+    background-color: white;
     border: solid 1px var(--outline-grey);
     box-shadow: var(--shadow);
     border-radius: 0.4rem;
     cursor: pointer;
 }
 
+button:active {
+    background-color: rgb(240, 240, 240);
+}
+
+#seed-col {
+    border: none;
+    width: 6rem;
+    height: 4.2rem;
+    cursor: pointer;
+}
+
+#col-scheme {
+    padding: 1rem 1.3rem;
+    width: 50%;
+    cursor: pointer;
+}
 
 /* ============================
 
@@ -93,7 +109,7 @@ main {
     justify-content: center;
     /* min-width: 40rem; */
     height: 100vh;
-    background-color: rgb(194, 104, 104); /* change colour*/
+    background-color: rgb(200, 152, 152); /* change colour*/
 }
 
 section {
@@ -109,19 +125,6 @@ section {
     align-items: center;
     padding: 2.4rem 1.2rem;
     gap: 1.5rem;
-}
-
-#seed-col {
-    border: none;
-    width: 6rem;
-    height: 4.2rem;
-    cursor: pointer;
-}
-
-#col-scheme {
-    padding: 1rem 1.3rem;
-    min-width: 15rem;
-    cursor: pointer;
 }
 
 .col-block-wrapper {
@@ -155,8 +158,10 @@ section {
 
 .hex-value-wrapper {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.8rem;
 }
+
 /* ============================
 
             MEDIA QUERIES
