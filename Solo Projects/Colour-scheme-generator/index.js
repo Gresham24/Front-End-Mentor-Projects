@@ -3,6 +3,7 @@
 =============================== */
 
 const colSchemeBtn = document.getElementById('col-scheme-generator');
+const seedColValue = document.getElementById('seed-col').value.slice(1);
 
 
 /* ============================
@@ -17,7 +18,11 @@ colSchemeBtn.addEventListener('click', getSeedCol)
 =============================== */
 
 function getSeedCol() {
-    const seedColValue = document.getElementById('seed-col').value;
-    // console.log(seedColValue);
     return seedColValue;
 }
+
+fetch(`https://www.thecolorapi.com/id?hex=${seedColValue}`)
+    .then(res => res.json())
+    .then(data => console.log(data))
+
+
