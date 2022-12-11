@@ -6,47 +6,23 @@ const colSchemeBtn = document.getElementById('col-scheme-generator');
 let seedColVal = '';
 let colSchemeVal = '';
 
-// console.log(colSchemeVal)
-// console.log(seedColVal)
-
-
-
 
 /* ============================
             Event Listeners
 =============================== */
 
-colSchemeBtn.addEventListener('click', displayHexVal);
-
+colSchemeBtn.addEventListener('click', displayHTML);
 
 
 /* ============================
             Functions
 =============================== */
 
-// function getSeedCol() {
-//     seedColVal = document.getElementById('seed-col').value.slice(1);
-//     return console.log(seedColVal);
-// }
+displayHTML();
 
-// function getSchemeCol() {
-//     colSchemeVal = document.getElementById('col-scheme').value;
-//     return console.log(colSchemeVal);
+function displayHTML() {
 
-// }
-
-
-
-/* ============================
-            Fetch Requests
-=============================== */
-
-
-function displayHexVal() {
-    seedColVal = document.getElementById('seed-col').value.slice(1);
-    colSchemeVal = document.getElementById('col-scheme').value;
-
-    fetch(`https://www.thecolorapi.com/scheme?hex=${seedColVal}&mode=${colSchemeVal}&count=5`)
+    fetch(`https://www.thecolorapi.com/scheme?hex=${getSeedCol()}&mode=${getColScheme()}&count=5`)
         .then(res => res.json())
         .then(data => {
             // Suggested improvement: loop through the values to avoid repetition
@@ -67,8 +43,19 @@ function displayHexVal() {
         })
 }
 
+function getColScheme() {
+    return colSchemeVal = document.getElementById('col-scheme').value;
+}
+
+function getSeedCol() {
+    return seedColVal = document.getElementById('seed-col').value.slice(1);
+}
 
 
+
+/* ============================
+            Fetch Requests
+=============================== */
 
     // fetch(`https://www.thecolorapi.com/id?hex=${seedColVal}`)
     //     .then(res => res.json())
