@@ -26,7 +26,6 @@ function displayHTML() {
         .then(res => res.json())
         .then(data => {
             // Suggested improvement: loop through the values to avoid repetition
-            // display the hex values
             document.querySelector('.hex-value-wrapper').innerHTML = `
         <p>${data.colors[0].hex.value}</p>
         <p>${data.colors[1].hex.value}</p>
@@ -34,7 +33,6 @@ function displayHTML() {
         <p>${data.colors[3].hex.value}</p>
         <p>${data.colors[4].hex.value}</p>
         `
-            // change the color blocks here
             document.getElementById("col-1").style.backgroundColor = data.colors[0].hex.value;
             document.getElementById("col-2").style.backgroundColor = data.colors[1].hex.value;
             document.getElementById("col-3").style.backgroundColor = data.colors[2].hex.value;
@@ -51,7 +49,7 @@ function getSeedCol() {
     return seedColVal = document.getElementById('seed-col').value.slice(1);
 }
 
-
+ 
 
 /* ============================
             Fetch Requests
