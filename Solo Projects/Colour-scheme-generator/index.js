@@ -49,7 +49,7 @@ function getSeedCol() {
     return seedColVal = document.getElementById('seed-col').value.slice(1);
 }
 
- 
+
 
 /* ============================
             Fetch Requests
