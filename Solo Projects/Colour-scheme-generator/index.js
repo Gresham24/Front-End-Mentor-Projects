@@ -48,27 +48,3 @@ function getColScheme() {
 function getSeedCol() {
     return seedColVal = document.getElementById('seed-col').value.slice(1);
 }
-
-
-
-/* ============================
-            Fetch Requests
-=============================== */
-
-    // fetch(`https://www.thecolorapi.com/id?hex=${seedColVal}`)
-    //     .then(res => res.json())
-    //     .then(data => console.log(data));
-
-    // fetch(`https://www.thecolorapi.com/scheme?hex=${seedColVal}&mode=${colSchemeVal}&count=5`)
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         console.log(data.colors[0].hex.value)
-
-    //         document.querySelector('.hex-value-wrapper').innerHTML = `
-    //         <p>${data.colors[0].hex.value}</p>
-    //         <p>${data.colors[1].hex.value}</p>
-    //         <p>${data.colors[2].hex.value}</p>
-    //         <p>${data.colors[3].hex.value}</p>
-    //         <p>${data.colors[4].hex.value}</p>
-    //         `
-    //     })
