@@ -5,6 +5,9 @@
 const colSchemeBtn = document.getElementById('col-scheme-generator');
 let seedColVal = '';
 let colSchemeVal = '';
+let colBlock = document.querySelectorAll('.col-block');
+
+
 
 
 /* ============================
@@ -25,19 +28,16 @@ function displayHTML() {
     fetch(`https://www.thecolorapi.com/scheme?hex=${getSeedCol()}&mode=${getColScheme()}&count=5`)
         .then(res => res.json())
         .then(data => {
-            // Suggested improvement: loop through the values to avoid repetition
-            document.querySelector('.hex-value-wrapper').innerHTML = `
-        <p>${data.colors[0].hex.value}</p>
-        <p>${data.colors[1].hex.value}</p>
-        <p>${data.colors[2].hex.value}</p>
-        <p>${data.colors[3].hex.value}</p>
-        <p>${data.colors[4].hex.value}</p>
-        `
-            document.getElementById("col-1").style.backgroundColor = data.colors[0].hex.value;
-            document.getElementById("col-2").style.backgroundColor = data.colors[1].hex.value;
-            document.getElementById("col-3").style.backgroundColor = data.colors[2].hex.value;
-            document.getElementById("col-4").style.backgroundColor = data.colors[3].hex.value;
-            document.getElementById("col-5").style.backgroundColor = data.colors[4].hex.value;
+            // Bug: new hex values and colour blocks are generated, instead of overriding the old ones
+            // Bug: color blocks are not stretching to across the card
+            data.colors.forEach(color => {
+                document.querySelector('.hex-value-wrapper').innerHTML += `
+                <p>${color.hex.value}</p>
+                `
+                document.querySelector('.col-block-wrapper').innerHTML += `
+                <div style='background-color: ${color.hex.value}'></div>
+                `
+            });
         })
 }
 
@@ -48,3 +48,5 @@ function getColScheme() {
 function getSeedCol() {
     return seedColVal = document.getElementById('seed-col').value.slice(1);
 }
+
+

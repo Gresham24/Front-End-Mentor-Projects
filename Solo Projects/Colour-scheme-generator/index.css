@@ -109,7 +109,6 @@ main {
     justify-content: center;
     background-color: #c89898; 
     height: 100vh;
-
 }
 
 section {
@@ -134,6 +133,8 @@ section {
 .col-block-wrapper div {
     width: 11rem;
     height: 41.4rem;
+    justify-content: space-around;
+
 }
 
 .hex-value-wrapper {
