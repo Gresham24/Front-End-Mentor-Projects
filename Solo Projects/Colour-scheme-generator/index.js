@@ -7,9 +7,6 @@ let seedColVal = '';
 let colSchemeVal = '';
 let colBlock = document.querySelectorAll('.col-block');
 
-
-
-
 /* ============================
             Event Listeners
 =============================== */
@@ -21,7 +18,7 @@ colSchemeBtn.addEventListener('click', displayHTML);
             Functions
 =============================== */
 
-displayHTML();
+// displayHTML();
 
 function displayHTML() {
 
