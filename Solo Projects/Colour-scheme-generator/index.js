@@ -18,7 +18,6 @@ colSchemeBtn.addEventListener('click', displayHTML);
             Functions
 =============================== */
 
-// displayHTML();
 
 function displayHTML() {
 
@@ -26,7 +25,6 @@ function displayHTML() {
         .then(res => res.json())
         .then(data => {
             // Bug: new hex values and colour blocks are generated, instead of overriding the old ones
-            // Bug: color blocks are not stretching to across the card
             data.colors.forEach(color => {
                 document.querySelector('.hex-value-wrapper').innerHTML += `
                 <p>${color.hex.value}</p>
