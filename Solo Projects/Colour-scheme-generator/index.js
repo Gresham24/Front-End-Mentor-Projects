@@ -21,10 +21,13 @@ colSchemeBtn.addEventListener('click', displayHTML);
 
 function displayHTML() {
 
+    document.querySelector('.hex-value-wrapper').innerHTML = '';
+    document.querySelector('.col-block-wrapper').innerHTML = '';
+
+
     fetch(`https://www.thecolorapi.com/scheme?hex=${getSeedCol()}&mode=${getColScheme()}&count=5`)
         .then(res => res.json())
         .then(data => {
-            // Bug: new hex values and colour blocks are generated, instead of overriding the old ones
             data.colors.forEach(color => {
                 document.querySelector('.hex-value-wrapper').innerHTML += `
                 <p>${color.hex.value}</p>
