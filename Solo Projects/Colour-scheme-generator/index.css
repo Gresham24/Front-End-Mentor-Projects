@@ -135,7 +135,6 @@ section {
     width: 11rem;
     height: 41.4rem;
     justify-content: space-around;
-
 }
 
 .hex-value-wrapper {
@@ -145,6 +144,5 @@ section {
 }
 
 .hex-value-wrapper p:hover {
-    cursor: pointer;
     color: black;
 }

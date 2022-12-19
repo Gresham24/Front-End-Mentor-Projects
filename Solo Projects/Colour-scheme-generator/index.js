@@ -21,9 +21,7 @@ colSchemeBtn.addEventListener('click', displayHTML);
 
 function displayHTML() {
 
-    document.querySelector('.hex-value-wrapper').innerHTML = '';
-    document.querySelector('.col-block-wrapper').innerHTML = '';
-
+    clearValues();
 
     fetch(`https://www.thecolorapi.com/scheme?hex=${getSeedCol()}&mode=${getColScheme()}&count=5`)
         .then(res => res.json())
@@ -47,4 +45,7 @@ function getSeedCol() {
     return seedColVal = document.getElementById('seed-col').value.slice(1);
 }
 
-
+function clearValues() {
+    document.querySelector('.hex-value-wrapper').innerHTML = '';
+    document.querySelector('.col-block-wrapper').innerHTML = '';
+}
