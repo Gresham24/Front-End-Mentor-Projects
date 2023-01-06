@@ -18,4 +18,4 @@ This repository contains all the website components I created from [Frontend Men
 14. [Podcast Request access landing page](https://challenge-13-pod-request-access-page.netlify.app/)
 15. [Testimonial slider component](https://challenge-14-bootcamp-testimonials-slider.netlify.app)
 16. [Intro section with dropdown navigation](https://challenge-15-intro-with-dropdown-nav.netlify.app)
-17. [Random advice generator] (https://challenge-16-advice-generator.netlify.app/)
+17. [Random advice generator](https://challenge-16-advice-generator.netlify.app/)
